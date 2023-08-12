@@ -1,0 +1,3 @@
+<script type="IN/CompanyInsider" data-id="$$ITEM.id$"></script>
+
+$%INCLUDE widgets/com.temenos.widgets.social.linkedin/inc_linkedinRegisterWidget.wgt$$%ENDINCLUDE$

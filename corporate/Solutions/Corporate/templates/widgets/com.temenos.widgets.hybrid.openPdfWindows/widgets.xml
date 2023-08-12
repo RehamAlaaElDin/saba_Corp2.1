@@ -1,0 +1,8 @@
+
+  <widget callback="false" isHybridWidget="true" displayName="open PDF" name="openPdfWindows" type="Button">
+    <template type="source" value="./templates/widgets/openPdfWindows.wgt"/>
+    <custom>
+      <item includeInDesign="Never" layout="-1" mand="false" name="pdfURL" prompt="URL for the PDF" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+

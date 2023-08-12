@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="2">
+  <!---->
+<enqTcCollateral CollateralRight="" CollateralType="Cover Note Received" Currency="USD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCollaterals[1].Results[1].enqTcCollateral[A]" DS_UID="1" ExecutionValue="90,000.00" ExpiryDate="" Id="" NetAmountValue="90,000.00" NominalValue="100,000.00" PrimaryKey="" Status="" ThirdPartyValue="0">
+    <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCollaterals[1].Results[1].enqTcCollateral[C].Links" DS_UID="0" href="enqTcCollaterals('%7BPrimaryKey%7D')" rel="self" title="enqTcCollateral"/>
+  </enqTcCollateral>
+</DataSetRoot>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+	<widget icon="images/tree-table-icon.png" displayName="Tree Table" name="treetable" type="Table">
+		<template type="header" value="treetable-header.wgt" />
+		<template type="source" value="treetable.wgt" />
+		<custom>
+			<item name="id_dataitem"		  prompt="Data item for row id"    type="PropertyChooser" />
+			<item name="parent_id_dataitem"   prompt="Data item for parent id" type="PropertyChooser" />
+		</custom>
+	</widget>
+</widgets>

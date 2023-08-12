@@ -1,0 +1,135 @@
+$%COMMENT$ $Revision: 1.3 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.IS_READONLY() == true && ITEM.READONLYSTYLE() == Text$
+	<span  id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$ $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$"  class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$">$$ITEM.DATAITEM().DISPLAY_VALUE()$</span>
+$%ELSE$
+	<div id="wrapper_$$ITEM.ID()$">
+		<div id="tree_$$ITEM.ID()$" class="demo"></div>
+		<div id="input_$$ITEM.ID()$"> 
+			<input 
+				style="display: none" 
+				id="$$ITEM.ID()$" 
+				$%IF ITEM.IS_READONLY() == true$
+					disabled="disabled"
+				$%ENDIF$
+				class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$"				
+				onchange="$$ITEM.VALIDATION().ESCAPEQUOTES()$"
+				name="$$ITEM.DATAITEM()$"/>
+		</div>
+
+		<style type="text/css">
+
+			#tree_$$ITEM.ID()$ .tree .tree-classic li  {
+				font-family: inherit;
+			}
+			
+			#tree_$$ITEM.ID()$ .jstree-clicked, #tree_$$ITEM.ID()$ .jstree-checked>a {
+				$%IF ITEM.SELECTED_COLOUR != ""$
+					 background-color: $$ITEM.SELECTED_COLOUR$;
+					 border-color: $$ITEM.SELECTED_COLOUR$;
+				$%ENDIF$
+			}
+			
+			#tree_$$ITEM.ID()$ .jstree-hovered {
+				$%IF ITEM.HOVER_COLOUR != ""$ 
+					background-color: $$ITEM.HOVER_COLOUR$; 
+					border-color: $$ITEM.HOVER_COLOUR$; 			
+				$%ENDIF$
+				 
+			}
+		</style>
+
+		<script type="text/javascript">
+
+		$(function () {
+			
+			$("#tree_$$ITEM.ID()$").jstree({
+				"xml_data" : {
+					"data" : "" + 
+							"<root>" + 
+								$%FOREACH LISTITEM IN LIST$
+									"<item id='$$ITEM.DATAITEM().LISTITEM().KEY()$' parent_id='$$ITEM.DATAITEM().LISTITEM().GROUPVALUE()$'><content><name>$$ITEM.DATAITEM().LISTITEM().VALUE()$</name></content></item>" + 
+								$%ENDFOREACH$
+							"</root>"
+				},	
+				"themes" : {
+					"theme" : "default",
+					$%IF ITEM.SHOW_TREE_LINES == "Y"$"dots" : true,$%ELSE$"dots" : false,$%ENDIF$
+					"icons" : true
+				},
+				"ui" : {
+					"select_limit" : 1,
+					"selected_parent_close" : false,
+					"initially_select" : "$$ITEM.DATAITEM().VALUE()$".split("|")
+				},		
+				"checkbox" : {
+					"override_ui": true,
+					"two_state" : true
+				},
+				"types": { 
+					"types": {
+						"default": {
+							"hover_node" :false,
+							"select_node" : false,
+							"check_node" : false,
+							"uncheck_node" : false
+						}
+					}
+				}, 
+				
+				"plugins" : [ "themes", "xml_data", "ui" $%IF ITEM.IS_READONLY() == "true" $, "types" $%ENDIF$ $%IF ITEM.DATAITEM().IS_MULTISELECT() == "true"$, "checkbox" $%ENDIF$]
+				})
+				
+				.bind("before.jstree", function (event, data) {
+					$%IF ITEM.IS_READONLY() == "true"$
+						if (data.func == 'select_node.jstree') { 
+							 event.stopImmediatePropagation(); 
+							 return false; 
+						} 
+					$%ENDIF$
+				})
+				
+				.bind("select_node.jstree", function (event, data) {
+					$%IF ITEM.IS_READONLY() == "true"$
+						event.stopImmediatePropagation(); 
+						return false;
+					$%ELSE$
+						$("#$$ITEM.ID()$").val(data.rslt.obj.attr("id")).change();
+					$%ENDIF$				
+				})
+				.bind("check_node.jstree", function (event, data) {
+					$%IF ITEM.IS_READONLY() == "true"$
+						event.stopImmediatePropagation(); 
+						return false;
+					$%ELSE$
+						var selNodes = data.inst.get_checked(); 
+						var res = "";
+						for (var i = 0; i < selNodes.length; i++ ) {
+							res = res + selNodes[i].id;
+							if (i < selNodes.length - 1) {
+								res = res + "|";
+							}
+						}
+						$("#$$ITEM.ID()$").val(res).change();
+					$%ENDIF$					
+				})
+				.bind("uncheck_node.jstree", function (event, data) {
+					$%IF ITEM.IS_READONLY() == "true"$
+						event.stopImmediatePropagation(); 
+						return false;
+					$%ELSE$
+						var res = "";
+						var selNodes = data.inst.get_checked(); 
+						for (var i = 0; i < selNodes.length; i++ ) {
+							res = res + selNodes[i].id;
+							if (i < selNodes.length - 1) {
+								res = res + "|";
+							}
+						}
+						$("#$$ITEM.ID()$").val(res);
+						$$ITEM.CHECKHIDDEN()$
+					$%ENDIF$					
+				})				
+		});
+		</script>
+	</div>
+$%ENDIF$

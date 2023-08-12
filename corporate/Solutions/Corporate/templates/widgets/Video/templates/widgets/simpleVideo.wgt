@@ -1,0 +1,54 @@
+$%COMMENT$ $Revision: 1.6 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%if ITEM.VIDEO_TYPE = Flash$
+	<object width="$$ITEM.VIDEO_WIDTH$" height="$$ITEM.VIDEO_HEIGHT$" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.adobe.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
+		<param name="movie" value="$$ITEM.VIDEO_SRC$" />
+		<param name="autostart" $%IF ITEM.AUTOSTART == "Y"$value="true"$%ELSE$value="false"$%ENDIF$ />
+		<param name="play" $%IF ITEM.AUTOSTART == "Y"$value="true"$%ELSE$value="false"$%ENDIF$ />
+		<param name="hidden" $%IF ITEM.HIDDEN == "Y"$value="true"$%ELSE$value="false"$%ENDIF$ />
+		<param name="loop" $%IF ITEM.LOOP == "Y"$value="true"$%ELSE$value="false"$%ENDIF$ />
+		<param name="playcount" $%IF ITEM.PLAYCOUNT != ""$value="$$ITEM.PLAYCOUNT$"$%ENDIF$ />
+		<param name="volume" $%IF ITEM.VOLUME != ""$value="$$ITEM.VOLUME$"$%ENDIF$ />
+		<embed src="$$ITEM.VIDEO_SRC$" 
+			width="$$ITEM.VIDEO_WIDTH$" 
+			height="$$ITEM.VIDEO_HEIGHT$" 
+			pluginspage="http://get.adobe.com/flashplayer/" 
+			type="application/x-shockwave-flash" 
+			$%IF ITEM.AUTOSTART == "Y"$autostart="true"$%ELSE$autostart="false"$%ENDIF$
+			$%IF ITEM.AUTOSTART == "Y"$play="true"$%ELSE$play="false"$%ENDIF$
+			$%IF ITEM.HIDDEN == "Y"$hidden="true"$%ELSE$hidden="false"$%ENDIF$
+			$%IF ITEM.LOOP == "Y"$loop="true"$%ELSE$loop="false"$%ENDIF$
+			$%IF ITEM.PLAYCOUNT != ""$playcount="$$ITEM.PLAYCOUNT$"$%ENDIF$
+			$%IF ITEM.VOLUME == ""$volume="$$ITEM.VOLUME$"$%ENDIF$
+			>
+		</embed>
+	</object>
+$%else$
+$%if ITEM.VIDEO_TYPE = AVI$
+	$%SCRIPT$
+		var userAgent = "$$HTTP_HEADER.User-Agent$";
+		var ecCode = "";
+		if (userAgent.indexOf('Chrome') > -1) {
+			ecCode = '<object type="video/quicktime" data="$$ITEM.VIDEO_SRC$" width="$$ITEM.VIDEO_WIDTH$px" height="$$ITEM.VIDEO_HEIGHT$px"><param name="controller" value="false" ><param name="autoplay" $%IF ITEM.AUTOSTART == "Y"$value="true"$%ELSE$value="false"$%ENDIF$></object>';
+		}
+		else {
+			ecCode = '<embed src="$$ITEM.VIDEO_SRC$"></embed>';
+			}
+		ecCode;
+	$%ENDSCRIPT$
+$%else$
+	$%if ITEM.VIDEO_TYPE = MOV$
+	$%SCRIPT$
+		var userAgent = "$$HTTP_HEADER.User-Agent$";
+		var ecCode = "";
+		if (userAgent.indexOf('Chrome') > -1) {
+			ecCode = '<object type="video/quicktime" data="$$ITEM.VIDEO_SRC$" width="$$ITEM.VIDEO_WIDTH$px" height="$$ITEM.VIDEO_HEIGHT$px"><param name="pluginurl" value="http://www.apple.com/quicktime/download/" /><param name="controller" value="false" /><param name="autoplay" value="true" /></object>';
+		}
+		else {
+			ecCode = '<object CLASSID="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="$$ITEM.VIDEO_WIDTH$px" height="$$ITEM.VIDEO_HEIGHT$px" CODEBASE="http://www.apple.com/qtactivex/qtplugin.cab"><param name="src" value="$$ITEM.VIDEO_SRC$"><param name="qtsrc" value="rtsp://realmedia.uic.edu/itl/ecampb5/demo_broad.mov">	<param name="autoplay" value="true"><param name="loop" value="false"><param name="controller" value="true"><embed src="$$ITEM.VIDEO_SRC$" qtsrc="rtsp://realmedia.uic.edu/itl/ecampb5/demo_broad.mov" width="$$ITEM.VIDEO_WIDTH$" height="$$ITEM.VIDEO_HEIGHT$" autoplay="true" loop="false" controller="true" pluginspage="http://www.apple.com/quicktime/"></embed></object>';
+			}
+		ecCode;
+	$%ENDSCRIPT$
+	$%endif$
+$%endif$
+$%endif$
+

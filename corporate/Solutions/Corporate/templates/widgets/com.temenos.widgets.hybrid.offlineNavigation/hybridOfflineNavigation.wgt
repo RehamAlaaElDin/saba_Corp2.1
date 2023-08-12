@@ -1,0 +1,42 @@
+<!-- $Revision: 1.3 $ -->
+$$ITEM.EC_GENERATE()$
+<script type = "text/javascript" charset="utf-8">
+    document.getElementById("$$ITEM.ID()$").onclick = null;             $%COMMENT$  remove the button onclick $%ENDCOMMENT$
+    document.getElementById("$$ITEM.ID()$")
+            .addEventListener('click', function(e) {                    $%COMMENT$  listen to click event $%ENDCOMMENT$
+				var isOnline = (Connection.NONE != navigator.connection.type);
+				if (isOnline) {
+					$%COMMENT$  if the device is connected to the internet, normal navigation occurs $%ENDCOMMENT$
+					$$ITEM.ONCLICK()$            
+				} else {
+					$%COMMENT$  if the device is offline,  $%ENDCOMMENT$
+					var offlineDestination = "$$ITEM.GoToPhaseIfOffline$";
+					var replaceAllFunc = function (str, find, replace) {
+						return str.split(find).join(replace);
+					};
+					$%COMMENT$  replacing odd characters, the destination <offline page>.html should correspond to a valid file name $%ENDCOMMENT$
+					offlineDestination = replaceAllFunc(offlineDestination, " ", "");
+					offlineDestination = replaceAllFunc(offlineDestination, "-", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, ".", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "(", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, ")", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "/", "_");
+					var languageMapAlias = "$$LANGUAGE_MAP_ALIAS$";
+					if (/\S/.test(languageMapAlias)) {
+						$%COMMENT$  if we're using a language map for generating the offline page containing this widget, the button should navigate to an offline page using the same language $%ENDCOMMENT$
+						offlineDestination = offlineDestination + "_" + languageMapAlias;
+					} 	
+					var currentTheme = '';
+					if (typeof(window.CURRENT_THEME) !== 'undefined' && window.CURRENT_THEME) {
+						currentTheme = window.CURRENT_THEME;
+					}
+					if (/\S/.test(currentTheme)) {
+						$%COMMENT$  if we're using a theme for generating the offline page containing this widget, the button should navigate to an offline page using the same theme $%ENDCOMMENT$
+						offlineDestination = offlineDestination + "_" + currentTheme;
+					} 	
+					offlineDestination = offlineDestination + ".html";
+					$%COMMENT$  navigating to the offline page $%ENDCOMMENT$
+					window.location.href = offlineDestination;
+				};
+      }, false);
+</script>

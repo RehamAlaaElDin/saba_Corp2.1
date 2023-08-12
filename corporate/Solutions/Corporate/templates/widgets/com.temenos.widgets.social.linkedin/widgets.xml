@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget callback="false" icon="images/linkedin-icon.png" name="LinkedIN Login Button" type="Button">
+    <template type="source" value="loginButton.wgt"/>
+    <template type="header" value="Header.wgt"/>
+    <custom>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item help="Text for Logout action" includeInDesign="true" layout="-1" mand="false" name="logout_text" prompt="Log out text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/>
+      <item help="the name of the group where to save data after a succesful login" includeInDesign="true" layout="-1" mand="false" name="data_store_group" prompt="Data store group" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Group Chooser|-1|true|false|com.acquire.intelligentforms.entities.PropertyGroup" usage="7"/>
+      <item help="auto click on the button when the user is already logged in with Linkedin account." includeInDesign="true" layout="-1" mand="false" name="autoLogin" prompt="Auto login" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="Name of the variable that is used to store the authentication status." includeInDesign="true" layout="-1" mand="false" name="var_name" prompt="Variable name" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/linkedin-icon.png" name="LinkedIN Share Button" type="Item:">
+    <template type="source" value="shareButton.wgt"/>
+    <template type="header" value="Header.wgt"/>
+    <custom>
+      <item defaultValue="en_US" help="Language" includeInDesign="true" layout="-1" mand="true" name="language" prompt="Language" tab="Api Settings" type="javax.swing.JComboBox" typeValue="en_US^English|fr_FR^French|es_ES^Spanish|ru_RU^Russian|de_DE^German|it_IT^Italian|pt_BR^Portuguese|ro_RO^Romanian|tr_TR^Turkish|ja_JP^Japanese|in_ID^Indonesian|ms_MY^Malay|ko_KR^Korean|sv_SE^Swedish|cs_CZ^Czech|nl_NL^Dutch|pl_PL^Polish|no_NO^Norwegian|da_DK^Danish" usage="7"/>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item help="The url you want to share. If this attribute is not present, the plugin will share the current page's url" includeInDesign="true" layout="-1" mand="false" name="url" prompt="URL" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="no_attribute" help="Whether or not to show the the share count and where it gets displayed. Defaults to not showing if this attribute is not present. Valid options are &quot;right&quot; and &quot;top&quot;. " includeInDesign="true" layout="-1" mand="true" name="count" prompt="Count mode" type="javax.swing.JComboBox" typeValue="no_attribute^No Count|top^Vertical|right^Horizontal" usage="7"/>
+      <item help="Whether to show a zero or a placeholder in the counter if there are no shares ." includeInDesign="true" layout="-1" mand="false" name="showZero" prompt="Show Zero" type="com.acquire.util.FocusCheckbox" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/linkedin-icon.png" name="LinkedIN Follow Company" type="Item:">
+    <template type="header" value="Header.wgt"/>
+    <template type="source" value="followButton.wgt"/>
+    <custom>
+      <item defaultValue="en_US" help="Language" includeInDesign="true" layout="-1" mand="true" name="language" prompt="Language" tab="Api Settings" type="javax.swing.JComboBox" typeValue="en_US^English|fr_FR^French|es_ES^Spanish|ru_RU^Russian|de_DE^German|it_IT^Italian|pt_BR^Portuguese|ro_RO^Romanian|tr_TR^Turkish|ja_JP^Japanese|in_ID^Indonesian|ms_MY^Malay|ko_KR^Korean|sv_SE^Swedish|cs_CZ^Czech|nl_NL^Dutch|pl_PL^Polish|no_NO^Norwegian|da_DK^Danish" usage="7"/>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="true" name="id" prompt="Company ID" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="none" help="Whether or not to show the the follow count and where it gets displayed. Defaults to not showing if this attribute is not present. " includeInDesign="true" layout="-1" mand="true" name="count" prompt="Count mode" type="javax.swing.JComboBox" typeValue="none^No Count|top^Vertical|right^Horizontal" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/linkedin-icon.png" name="LinkedIN Member Profile" type="Item:">
+    <template type="header" value="Header.wgt"/>
+    <template type="source" value="memberProfile.wgt"/>
+    <custom>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item help="The public profile URL of the profile you want to show. The profile URL can be obtained from the users profile on http://linkedin.com and looks like this http://www.linkedin.com/in/reidhoffman" includeInDesign="true" layout="-1" mand="true" name="id" prompt="profile URL" type="javax.swing.JTextField" usage="7"/>
+      <item help="This attribute affects how the plugin displays when rendered. There are three accepted values for this plugin: inline, click, or hover (the default)" includeInDesign="true" layout="-1" mand="false" name="format" prompt="Format" type="javax.swing.JComboBox" typeValue="inline|click|hover|full profile" usage="7"/>
+      <item defaultValue="Y" help="This attribute affects whether or not the connection information shows below the person's profile.Not applicable for full profile format." includeInDesign="true" layout="-1" mand="false" name="related" prompt="Show connections" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="When the format is set to click or hover, this attribute provides the text that will appear after the LinkedIn icon" includeInDesign="true" layout="-1" mand="false" name="text" prompt="Text" type="javax.swing.JTextField" usage="7"/>
+      <item help="This attribute controls the width, in pixels, of the plugin in inline mode. It can not be set below 300 pixels as this will break the layout of the plugin. Values less than 300 will be adjusted up to 300." includeInDesign="true" layout="-1" mand="false" name="width" prompt="Width" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/linkedin-icon.png" name="LinkedIN Company Insider" type="Item:">
+    <template type="source" value="companyInsider.wgt"/>
+    <template type="header" value="Header.wgt"/>
+    <custom>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="true" name="id" prompt="Company ID" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget callback="false" icon="images/linkedin-icon.png" name="LinkedIN Company Profile" type="Item:">
+    <template type="source" value="companyProfile.wgt"/>
+    <template type="header" value="Header.wgt"/>
+    <custom>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="true" name="id" prompt="Company ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="This attribute affects how the plugin displays when rendered. There are three accepted values for this plugin: inline, click, or hover (the default)" includeInDesign="true" layout="-1" mand="false" name="format" prompt="Format" type="javax.swing.JComboBox" typeValue="inline|click|hover" usage="7"/>
+      <item defaultValue="Y" help="This attribute affects whether or not the connection information shows below the company's profile." includeInDesign="true" layout="-1" mand="false" name="related" prompt="Show connections" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="When the format is set to click or hover, this attribute provides the text that will appear after the LinkedIn icon" includeInDesign="true" layout="-1" mand="false" name="text" prompt="Text" type="javax.swing.JTextField" usage="7"/>
+      <item help="This attribute controls the width, in pixels, of the plugin in inline mode. It can not be set below 300 pixels as this will break the layout of the plugin. Values less than 300 will be adjusted up to 300." includeInDesign="true" layout="-1" mand="false" name="width" prompt="Width" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/linkedin-icon.png" name="LinkedIN Jobs" type="Item:">
+    <template type="source" value="Jobs.wgt"/>
+    <template type="header" value="Header.wgt"/>
+    <custom>
+      <item help="LinkedIN Application Key" includeInDesign="true" layout="-1" mand="true" name="apikey" prompt="Api Key" tab="Api Settings" type="javax.swing.JTextField" usage="7"/>
+      <item help="Company ID.If  is empty it will display all jobs for all companies." includeInDesign="true" layout="-1" mand="false" name="id" prompt="Company ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="This attribute affects how the plugin displays when rendered. There are three accepted values for this plugin: inline, click, or hover (the default)" includeInDesign="true" layout="-1" mand="false" name="format" prompt="Format" type="javax.swing.JComboBox" typeValue="inline|click|hover" usage="7"/>
+      <item help="When the format is set to click or hover, this attribute provides the text that will appear after the LinkedIn icon" includeInDesign="true" layout="-1" mand="false" name="text" prompt="Text" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

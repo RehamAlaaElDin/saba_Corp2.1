@@ -1,0 +1,83 @@
+/* #progressbar {
+	background: url(../images/progress.gif) !IMPORTANT;
+	background-repeat: repeat-x;
+    display: inline;
+    float: left;
+    height: 16px;
+    width: 180px;
+	margin-left: 141px;
+}  */             
+/* .successmessagestyle
+  {
+   color: #7AAD02;
+    display: inline;
+    font-weight: bold;
+    margin-left: -32px;
+    text-align: left;
+    width: 100%;
+	background: url(../images/success.png) !IMPORTANT;
+	padding-left: 19px;
+	background-repeat:no-repeat !IMPORTANT;
+  } */
+ 
+/*  .successmessagestyle:before {
+  content: "Completed";
+} */
+  
+/* .ui-progressbar .ui-progressbar-value {
+    margin: 0;
+    background: #a1a1a1 !IMPORTANT;
+    border: medium none;
+} */
+
+/* .ui-progressbar {
+    height: 16px !IMPORTANT;
+    margin-top: 25px !IMPORTANT;
+    border: medium none !IMPORTANT;
+    background: #a1a1a1 !IMPORTANT;
+	margin-left:20px;
+} */
+/* #progress
+{
+width:242px;
+float:left;
+color:#000;
+font-size:13px;
+text-align:center;
+margin-left: 120px;
+} */
+  
+/* .progressbarsection
+ {
+    display: inline;
+    float: right;
+    margin: -11px 67px 20px 10px;
+    width:242px;
+} */
+
+div.progressbarsection,
+div.progressbarsection #progressbar {
+	display: block;
+	width: 100%;
+	float: none;
+	margin: 0;
+	border: none;
+}
+div.progressbarsection #progressbar {
+	background-image: none;
+	background-color: #e3e1e1;
+}
+div.progressbarsection .ui-progressbar-value {
+	margin: 0;
+	background: #f39c12;
+}
+div.progressbarsection .ui-progressbar-value.progress-complete {
+	background: #23c162;
+}
+div.progressbarsection #progress {
+	text-align: center;
+	font-family: "TC-light";
+    font-weight: bold;
+	color: #666666;
+	padding: .5rem 0;
+}

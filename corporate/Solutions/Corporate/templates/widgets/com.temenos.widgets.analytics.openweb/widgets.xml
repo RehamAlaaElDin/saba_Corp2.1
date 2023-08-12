@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget icon="/images/openweb.png" name="OpenWeb" type="Item:">
+    <template type="header" value="openweb_header.wgt"/>
+    <custom>
+      <item help="Enter the id of the website you want to track (you can get the site id from the OpenWeb's platform)" includeInDesign="Always" layout="-1" mand="true" name="SiteId" prompt="Website Id" type="javax.swing.JTextField" usage="7"/>
+      <item help="Enter the url of the Open Web Analitycs installment." includeInDesign="Always" layout="-1" mand="true" name="AppURL" prompt="Application URL" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

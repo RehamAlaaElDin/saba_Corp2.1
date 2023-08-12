@@ -1,0 +1,90 @@
+<script type = "text/javascript" charset="utf-8">
+var inAppBrowserRef;
+var pushNotification;
+function onDeviceReady() {
+				try
+				{
+
+    pushNotification = window.plugins.pushNotification;
+					pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});
+                	var url = document.getElementById("QUE_CEA2D5381898CFEF20429").value
+var target = "_blank";
+
+    var options = "location=yes,hidden=yes";
+
+    inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+
+    inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
+
+    inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
+
+    inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
+	              
+				}
+				catch(err)
+				{
+					txt="There was an error on this page.\n\n";
+					txt+="Error description: " + err.message + "\n\n";
+					alert(txt);
+				}
+            }
+function loadStartCallBack() {
+var options = { dimBackground: false };
+
+}
+
+function loadStopCallBack() {
+
+    if (inAppBrowserRef != undefined) {
+        inAppBrowserRef.show();
+    }
+
+}
+
+function loadErrorCallBack(params) {
+
+
+    inAppBrowserRef.close();
+
+    inAppBrowserRef = undefined;
+
+}
+
+function onNotificationAPN(e) {
+                console.log("OnNotification")
+                console.log(e)
+if(e.alert)
+{
+ var data = JSON.parse(e.alert);
+ if(data.type == "loading")
+{
+}
+else if(data.type== "activation")
+{
+var user = data.message.split(":");
+document.getElementById("QUE_B17704E5B0FEF2431448").value = user[0];
+document.getElementById("QUE_B17704E5B0FEF2431451").value = user[1];
+document.getElementById("BUT_CEA2D5381898CFEF20433").click();
+document.getElementById("BUT_B17704E5B0FEF2431526").click();
+}
+else {
+}
+}
+            }
+
+function tokenHandler (result) {
+console.log(result);
+            }
+
+            function successHandler (result) {
+console.log("Logging success");
+console.log(result);
+            }
+
+            function errorHandler (error) {
+console.log("Logging error");
+console.log(error);
+            }
+
+document.addEventListener('deviceready', onDeviceReady, true);
+</script>

@@ -1,0 +1,7 @@
+<div id='$$ITEM.ID()$'>$$ITEM.EC_GENERATE()$</div>
+<script>
+var genText = document.getElementById('$$ITEM.ID()$');
+if ('$$ITEM.CharNr$') {
+window.com.temenos.widgets.truncateText.excerptMethod(genText,'$$ITEM.CharNr$','$$ITEM.More$','$$ITEM.Style$');
+}
+</script>

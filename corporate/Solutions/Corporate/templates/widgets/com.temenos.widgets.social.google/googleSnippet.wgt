@@ -1,0 +1,6 @@
+<meta property="og:type" content="article" />
+$%IF ITEM.title != ""$<meta itemprop="og:title" content="$$ITEM.title$" />$%ENDIF$
+$%IF ITEM.description != ""$<meta itemprop="og:description" content="$$ITEM.description$" />$%ENDIF$
+$%IF ITEM.image != ""$<meta property="og:image" content="$$ITEM.image$" />$%ENDIF$
+
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

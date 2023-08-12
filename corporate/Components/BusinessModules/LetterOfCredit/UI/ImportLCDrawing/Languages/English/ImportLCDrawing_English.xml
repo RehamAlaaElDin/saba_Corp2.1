@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="ImportLCDrawing" project="ImportLCDrawing" sourcelanguage="en-GB" targetlanguage="en-GB" updated="26/03/18 15:27" version="1">
+  <Comment/>
+  <ProcessEntities>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ImportLCDrawing" eid="C2F486AB7A84B1B33706601" path="ImportLCDrawing" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="5E8261C5EEAE14CE264414:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE263258:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE263256:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="5E8261C5EEAE14CE291251:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE264432:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE263254:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="C2F486AB7A84B1B33708124:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE263077:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="C2F486AB7A84B1B33708123:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE263252:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="5E8261C5EEAE14CE264437:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33706601:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ImportLCDrawing" eid="C2F486AB7A84B1B33707582" type="Phase">
+        <Container class="com.acquire.intelligentforms.entities.ItemGroup" displayString="ImportLCDrawingList" eid="C2F486AB7A84B1B33707583" type="Item Group">
+          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Import LC Drawing List" eid="C2F486AB7A84B1B33707584" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.Import LC Drawing List" type="Heading">
+            <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708126:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707584:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708126:ImportLCDrawing" mappingType="OVERRIDE" original="Import LC Drawing List" specifiedBy="C2F486AB7A84B1B33707584:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708126:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707584:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708126:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707584:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+          </ProcessEntity>
+          <Container class="com.acquire.intelligentforms.entities.ItemGroup" displayString="ImportLCDrawingFilter" eid="C2F486AB7A84B1B33707585" type="Item Group">
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="LC Type" eid="C2F486AB7A84B1B33707586" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.LC Type" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707586:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707586:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="OVERRIDE" original="LC Type" specifiedBy="C2F486AB7A84B1B33707586:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707586:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707586:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="OVERRIDE" original="Please select the $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708128:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707586:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708128:ImportLCDrawing" mappingType="OVERRIDE" original="Please select a valid $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708128:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Document Status" eid="C2F486AB7A84B1B33823434" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.Document Status" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="OVERRIDE" original="Document Status" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33823435:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33823434:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Date" eid="C2F486AB7A84B1B33707611" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.Date" type="Heading">
+              <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708129:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707611:Heading" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708129:ImportLCDrawing" mappingType="OVERRIDE" original="Date" specifiedBy="C2F486AB7A84B1B33707611:Heading" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708129:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707611:Heading" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708129:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707611:Heading" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="From" eid="C2F486AB7A84B1B33707612" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.From" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="OVERRIDE" original="From" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidDateMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidDaysInMonthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidLeapYearMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxDateMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinDateMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="OVERRIDE" original="Please select the $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708130:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707612:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708130:ImportLCDrawing" mappingType="OVERRIDE" original="Please select a valid $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708130:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="To" eid="C2F486AB7A84B1B33707638" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.To" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="OVERRIDE" original="To" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidDateMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidDaysInMonthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidLeapYearMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxDateMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinDateMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="OVERRIDE" original="Please select the $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708131:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707638:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708131:ImportLCDrawing" mappingType="OVERRIDE" original="Please select a valid $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708131:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Currency" eid="C2F486AB7A84B1B33707717" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.Currency" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707717:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707717:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="OVERRIDE" original="Currency" specifiedBy="C2F486AB7A84B1B33707717:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707717:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707717:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="OVERRIDE" original="Please select the $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708135:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707717:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708135:ImportLCDrawing" mappingType="OVERRIDE" original="Please select a valid $$ITEM.DISPLAY_TEXT()$" specifiedBy="C2F486AB7A84B1B33708135:Rich Presentation Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Status" eid="C2F486AB7A84B1B33707742" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingFilter.Status" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="OVERRIDE" original="Status" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708136:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707742:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+          </Container>
+          <Container class="com.acquire.intelligentforms.entities.ItemGroup" displayString="Download Buttons" eid="C2F486AB7A84B1B33707833" type="Item Group">
+            <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Print" eid="C2F486AB7A84B1B33707834" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.Download Buttons.Print" type="Button">
+              <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708139:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707834:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708139:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707834:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708139:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707834:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708139:ImportLCDrawing" mappingType="OVERRIDE" original="Print" specifiedBy="C2F486AB7A84B1B33707834:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Download PDF" eid="C2F486AB7A84B1B33707874" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.Download Buttons.Download PDF" type="Button">
+              <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708140:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707874:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708140:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707874:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708140:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707874:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708140:ImportLCDrawing" mappingType="OVERRIDE" original="Download PDF" specifiedBy="C2F486AB7A84B1B33707874:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Download CSV" eid="C2F486AB7A84B1B33707914" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.Download Buttons.Download CSV" type="Button">
+              <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708141:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707914:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708141:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707914:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708141:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707914:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708141:ImportLCDrawing" mappingType="OVERRIDE" original="Download CSV" specifiedBy="C2F486AB7A84B1B33707914:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+          </Container>
+          <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Clear filters" eid="C2F486AB7A84B1B33707767" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.Clear filters" type="Button">
+            <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708137:ImportLCDrawing" mappingType="OVERRIDE" original="Clear filters" specifiedBy="C2F486AB7A84B1B33707767:Button" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708137:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707767:Button" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708137:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707767:Button" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708137:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707767:Button" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708137:ImportLCDrawing" mappingType="OVERRIDE" original="Clear filters" specifiedBy="C2F486AB7A84B1B33707767:Button" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+          </ProcessEntity>
+          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="There are no records to display" eid="C2F486AB7A84B1B33707954" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.There are no records to display" type="Heading">
+            <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708142:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707954:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708142:ImportLCDrawing" mappingType="OVERRIDE" original="There are no records to display" specifiedBy="C2F486AB7A84B1B33707954:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708142:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707954:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708142:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707954:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+          </ProcessEntity>
+          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Loading..." eid="C2F486AB7A84B1B33707955" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.Loading..." type="Heading">
+            <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708143:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707955:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708143:ImportLCDrawing" mappingType="OVERRIDE" original="Loading..." specifiedBy="C2F486AB7A84B1B33707955:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708143:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707955:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708143:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707955:Heading" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+          </ProcessEntity>
+          <ProcessEntity class="com.acquire.intelligentforms.entities.FormTable" displayString="ImportLCDrawingsTable" eid="C2F486AB7A84B1B33707956" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable" type="Table">
+            <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" forPresObjects="C2F486AB7A84B1B33708144:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707956:Table" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="NavigationBackText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" forPresObjects="C2F486AB7A84B1B33708144:ImportLCDrawing" mappingType="OVERRIDE" original="&lt;" specifiedBy="C2F486AB7A84B1B33708144:Rich Presentation Table" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="NavigationForwardText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" forPresObjects="C2F486AB7A84B1B33708144:ImportLCDrawing" mappingType="OVERRIDE" original="&gt;" specifiedBy="C2F486AB7A84B1B33708144:Rich Presentation Table" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="NavigationInformationMessage" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" forPresObjects="C2F486AB7A84B1B33708144:ImportLCDrawing" mappingType="OVERRIDE" original="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" specifiedBy="C2F486AB7A84B1B33708144:Rich Presentation Table" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="NoRecordsMessage" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" forPresObjects="C2F486AB7A84B1B33708144:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707956:Table" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntityAttr default="" name="TableSummary" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" forPresObjects="C2F486AB7A84B1B33708144:ImportLCDrawing" mappingType="OVERRIDE" original="ImportLCDrawingsTable" specifiedBy="C2F486AB7A84B1B33707956:Table" state="NEW" status="NEW" value=""/>
+            </ProcessEntityAttr>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Responsive Icon" eid="C2F486AB7A84B1B33707957" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Responsive Icon" type="Button">
+              <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708145:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707957:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708145:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707957:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708145:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707957:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708145:ImportLCDrawing" mappingType="OVERRIDE" original="Responsive Icon" specifiedBy="C2F486AB7A84B1B33707957:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="LC Reference" eid="C2F486AB7A84B1B33707958" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.LC Reference" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="OVERRIDE" original="LC Reference" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708146:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707958:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="LC Type" eid="C2F486AB7A84B1B33707959" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.LC Type" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="OVERRIDE" original="LC Type" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708147:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707959:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Drawing Reference" eid="C2F486AB7A84B1B33834291" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Drawing Reference" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="OVERRIDE" original="Drawing Reference" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834292:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834291:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Beneficiary" eid="C2F486AB7A84B1B33707960" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Beneficiary" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="OVERRIDE" original="Beneficiary" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708148:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707960:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Document Status" eid="C2F486AB7A84B1B33834294" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Document Status" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="OVERRIDE" original="Document Status" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33834295:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33834294:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Date" eid="C2F486AB7A84B1B33707961" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Date" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="OVERRIDE" original="Date" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708149:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707961:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Currency" eid="C2F486AB7A84B1B33707963" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Currency" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="OVERRIDE" original="Currency" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708151:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707963:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Amount" eid="C2F486AB7A84B1B33707964" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Amount" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="OVERRIDE" original="Amount" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708152:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707964:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Status" eid="C2F486AB7A84B1B33707965" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Status" type="Question">
+              <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="OVERRIDE" original="Status" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="C2F486AB7A84B1B33708153:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707965:Question" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+            <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Details" eid="C2F486AB7A84B1B33707966" path="ImportLCDrawing.ImportLCDrawing.ImportLCDrawingList.ImportLCDrawingsTable.Details" type="Button">
+              <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708154:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707966:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708154:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707966:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708154:ImportLCDrawing" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B33707966:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+              <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+                <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B33708154:ImportLCDrawing" mappingType="OVERRIDE" original="Details" specifiedBy="C2F486AB7A84B1B33707966:Button" state="NEW" status="NEW" value=""/>
+              </ProcessEntityAttr>
+            </ProcessEntity>
+          </ProcessEntity>
+        </Container>
+      </Container>
+    </ProcessEntity>
+  </ProcessEntities>
+  <Designs/>
+  <PresentationOnlyObjects>
+    <PresentationType class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" displayString="ImportLCDrawing" eid="C2F486AB7A84B1B33708117" path="ImportLCDrawing" type="Rich Presentation Type">
+      <Attribute mappingType="OVERRIDE" name="BackButtonText" original="Back" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackConfirmationMessage" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackHelpText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackHintText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DateFormat" original="DD/MM/YYYY" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DecimalSymbol" original="." state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DigitGroupSymbol" original="," state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="EditTheme" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ForwardButtonText" original="Continue" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardConfirmationMessage" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardHelpText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardHintText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="HelpIconHint" original="Help" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidAlphaMessage" original="Please re-enter using letters" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidAlphaNumericMessage" original="Please re-enter using letters and numbers" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDateMessage" original="Please enter a valid date in the form: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDaysInMonthMessage" original="There are not that many days in the specified month" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDecimalMessage" original="Please enter a valid decimal number" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidLeapYearMessage" original="The specified year is not a leap year" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxDateMessage" original="The latest date is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxFileSizeMessage" original="The maximum file size allowed is $$QUESTION_CONSTRAINT$k" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxLengthMessage" original="The maximum length is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxValueMessage" original="The maximum value is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinDateMessage" original="The earliest date is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinLengthMessage" original="The minimum length is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinValueMessage" original="The minimum value is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidNumMessage" original="Please enter a valid number" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidTimeMessage" original="Please enter a valid time in the form: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidUploadTypeMessage" original="The valid file types you are allowed to upload are: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="LayoutDirection" original="ltr" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandMessage" original="Please answer all the required questions marked with a $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptImgAltVal" original="This field is mandatory" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptImgVal" original="mandatory_image.gif" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptTxtVal" original="*" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="QuestionListDefault" original="- Please Select" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ValidationMessage" original="Please enter a valid value" state="NEW" status="NEW" value=""/>
+    </PresentationType>
+  </PresentationOnlyObjects>
+  <Rules>
+    <MasterRules/>
+  </Rules>
+  <Component/>
+  <Lists>
+    <List eid="C2F486AB7A84B1B33704852" listName="YesNo" reset="True">
+      <ListItem eid="C2F486AB7A84B1B33704853" group="" groupState="NEW" key="Y" original="Yes" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33704854" group="" groupState="NEW" key="N" original="No" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="C2F486AB7A84B1B33704858" listName="TypeOfMonth" reset="True">
+      <ListItem eid="C2F486AB7A84B1B33704859" group="" groupState="NEW" key="Numeric" original="Numeric" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33704860" group="" groupState="NEW" key="Text" original="Text" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="C2F486AB7A84B1B33704866" listName="Status" reset="True">
+      <ListItem eid="C2F486AB7A84B1B33704867" group="" groupState="NEW" key="With Customer" original="Pend Auth" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33704868" group="" groupState="NEW" key="With Bank" original="Pend Bank Approval" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33704869" group="" groupState="NEW" key="Approved" original="Approved" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33704870" group="" groupState="NEW" key="Rejected" original="Rejected" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="C2F486AB7A84B1B33748882" listName="DocumentStatus" reset="True">
+      <ListItem eid="C2F486AB7A84B1B33748883" group="" groupState="NEW" key="Clean" original="Clean" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33748884" group="" groupState="NEW" key="Discrepant" original="Discrepant" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33748885" group="" groupState="NEW" key="Paid" original="Paid" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33748886" group="" groupState="NEW" key="Accepted" original="Accepted" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33748887" group="" groupState="NEW" key="Deferred Payment" original="Deferred Payment" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33748888" group="" groupState="NEW" key="Settled" original="Settled" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C2F486AB7A84B1B33748889" group="" groupState="NEW" key="Rejected" original="Rejected" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+  </Lists>
+</LanguageMap>

@@ -1,0 +1,40 @@
+.edgeFeed {
+    list-style: none outside none;
+    background-color: #FFF;
+    border: 1px solid #ddd;;
+    padding: 4px 6px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px !important;
+    overflow: auto;
+    height:100%;
+}
+
+.edgeFeed li {
+    border-bottom: 1px solid #D3CAD7;
+    padding: 5px;
+}
+
+.edgeFeed li:last-child {
+    border-bottom: none;
+}
+
+.entryTitle a {
+    font-weight: bold;
+    color: #4285f4;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.entryTitle a:hover {
+    color: #3266d5;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.entryDate {
+    font-size: 11px;
+    color: #D3CAD4;
+}

@@ -1,0 +1,44 @@
+<script type="text/javascript">
+
+	$(function() {
+		
+		if("$$ITEM.ACTIVE_PHASES$" != "") {
+			var arrayOfStrings = "$$ITEM.ACTIVE_PHASES$".split(",");
+			for (var i=0; i < arrayOfStrings.length; i++){
+				if(arrayOfStrings[i] == "$$PHASE$"){
+					$("#row_$$ITEM.ID()$").addClass("MainMenuSelected");
+				}
+				
+			}
+			
+	    }	
+	
+		
+	});
+</script>
+
+$%IF ITEM.BUTTON_IND == "Y"$
+<button
+$%ELSE$
+<a href="#" 
+$%ENDIF$
+   id="$$ITEM.ID()$" 
+   onclick="onToggle('$$ITEM.ID()$','$$ITEM.SECTION_ID$')" 
+   onblur="onBlurAction('$$ITEM.ID()$','$$ITEM.SECTION_ID$', '$$ITEM.JQ_FOCUS$')" 
+   class="$$ITEM.STYLES().ButtonStyle$" title="$$ITEM.HintText$" >
+        
+        $%IF ITEM.MAIN_TITLE != ""$ 
+
+            <span class="$$ITEM.MAIN_TITLE_STYLE$">$$ITEM.MAIN_TITLE$ <b class="caret"></b></span>
+        $%ELSE$
+            $$ITEM.ActionCommand$
+        $%ENDIF$
+
+    $%IF ITEM.SUB_TITLE != ""$ 
+        <br><span class="$$ITEM.SUB_TITLE_STYLE$">$$ITEM.SUB_TITLE$ </span>
+    $%ENDIF$
+$%IF ITEM.BUTTON_IND == "Y"$
+</button>
+$%ELSE$
+</a>
+$%ENDIF$

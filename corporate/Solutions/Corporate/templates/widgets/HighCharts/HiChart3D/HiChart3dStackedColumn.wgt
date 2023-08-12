@@ -1,0 +1,104 @@
+<div id="$$ITEM.ID()$_stackedchart" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+<script>
+$(function () {
+    Highcharts.name$$ITEM.Theme$ = {
+        colors: ['$$ITEM.Color1$','$$ITEM.Color2$','$$ITEM.Color3$'],
+        lang: {
+            thousandsSep: ',',
+            decimalPoint: '.',
+            },
+        }
+    var stackedchart;
+
+    $(document).ready(function() {
+	
+	var highchartsOptions = Highcharts.setOptions(Highcharts.name$$ITEM.Theme$);
+	var flow="$$ITEM.FlowName$";
+	var series='';
+	if((flow !=undefined || flow !='') && flow == 'Collections'){
+		series = [{
+            name: 'Amount',
+            data: [$%FOR 1 to ITEM.Count ITEM.DataGroup$ $$ITEM.Data2$, $%ENDFOR$],
+            stack: 'female'
+        }];
+		title = {
+            text: 'Type'
+        }
+	}
+	else{
+		series = [ {
+            name: 'Available',
+            data: [$%FOR 1 to ITEM.Count ITEM.DataGroup$ $$ITEM.Data2$, $%ENDFOR$],
+            stack: 'female'
+        }, {
+            name: 'Utilised',
+            data: [$%FOR 1 to ITEM.Count ITEM.DataGroup$ $$ITEM.Data3$, $%ENDFOR$],
+            stack: 'female'
+        },{
+            name: 'Pending',
+            data: [$%FOR 1 to ITEM.Count ITEM.DataGroup$ $$ITEM.Data4$, $%ENDFOR$],
+            stack: 'female'
+        }];
+		title = {
+            text: ' '
+        }
+	
+	}
+
+    stackedchart = new Highcharts.Chart({
+        chart: {
+		    renderTo: '$$ITEM.ID()$_stackedchart',
+            type: 'column',
+			options3d: {
+                enabled: true,
+                beta: 15,
+                viewDistance: 25,
+				plotBackgroundColor: null,
+				backgroundColor: null,
+                depth: 40
+            },
+			marginTop: 80,
+            marginRight: 40			
+        },
+		exporting:{
+		 enabled:false
+		},
+        title: {
+            text: ' '
+        },
+        xAxis: {
+            categories: [$%FOR 1 to ITEM.Count ITEM.DataGroup$ '$$ITEM.Data1$', $%ENDFOR$],  
+			title: title
+        },
+         yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Amount'
+            }
+        },
+        
+	
+        
+		plotOptions: {
+            column: {
+                stacking: 'normal',
+                depth: 40
+            }
+        },
+        tooltip: {
+            enabled: true,
+            headerFormat: '<span class="donutLimitOverview">{point.key}</span>',
+            useHTML: true,
+            percentageDecimals: 2,
+            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y:,.2f}</b><br/>',
+        },
+		credits: {
+		   enabled: false,
+		},
+
+         series: series
+    });
+});
+});
+</script>

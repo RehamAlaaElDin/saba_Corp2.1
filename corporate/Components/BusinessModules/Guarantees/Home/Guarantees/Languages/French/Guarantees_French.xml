@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Guarantees" project="Guarantees" sourcelanguage="en-GB" targetlanguage="fr" updated="26/03/18 14:36" version="1">
+  <Comment/>
+  <ProcessEntities>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="IssuedGuarantees" eid="D5F4265BC4E030BF137943" path="IssuedGuarantees" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="3AA9C541FA00FE466920620:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="AC64D599983788BD3358965:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="AC64D599983788BD3358964:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="AC64D599983788BD3358963:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="AC64D599983788BD3358962:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="3AA9C541FA00FE466939079:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="C252E9743E847B6B3484333:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="3AA9C541FA00FE46221704:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="AC64D599983788BD3358969:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="AC64D599983788BD3358968:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="AC64D599983788BD3358967:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="AC64D599983788BD3358966:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="D5F4265BC4E030BF137967:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="369B73E1008EB4023385060:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="D5F4265BC4E030BF137966:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="D5F4265BC4E030BF137943:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="IssuedGuarantees" eid="D5F4265BC4E030BF137946" type="Phase">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Issued Guarantees" eid="AC64D599983788BD3288905" path="IssuedGuarantees.IssuedGuarantees.Issued Guarantees" type="Button">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3288911:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3288905:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3288911:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3288905:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3288911:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3288905:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3288911:Guarantees" mappingType="OVERRIDE" original="Issued Guarantees" specifiedBy="AC64D599983788BD3288905:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Amendments" eid="AC64D599983788BD3290693" path="IssuedGuarantees.IssuedGuarantees.Amendments" type="Button">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3290699:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3290693:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3290699:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3290693:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3290699:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3290693:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3290699:Guarantees" mappingType="OVERRIDE" original="Amendments" specifiedBy="AC64D599983788BD3290693:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Claims Received" eid="AC64D599983788BD3292644" path="IssuedGuarantees.IssuedGuarantees.Claims Received" type="Button">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3292650:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3292644:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3292650:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3292644:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3292650:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="AC64D599983788BD3292644:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="AC64D599983788BD3292650:Guarantees" mappingType="OVERRIDE" original="Claims Received" specifiedBy="AC64D599983788BD3292644:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+      </Container>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ReceivedGuarantees" eid="9F30F9BD5631B759209228" path="ReceivedGuarantees" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="369B73E1008EB4024145519:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="95B51D598310CD755564458:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="369B73E1008EB4024145518:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="9F30F9BD5631B759209526:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="9F30F9BD5631B759209527:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="369B73E1008EB4024145522:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="369B73E1008EB4024145523:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="369B73E1008EB4024145520:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="369B73E1008EB4024145521:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="95B51D598310CD753890119:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="369B73E1008EB4029680053:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="31DF3BAAA4B6493F773166:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="95B51D598310CD754955242:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="369B73E1008EB4029653754:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209228:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ReceivedGuarantees" eid="9F30F9BD5631B759209376" type="Phase">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Inward Guarantees" eid="369B73E1008EB4024104716" path="ReceivedGuarantees.ReceivedGuarantees.Inward Guarantees" type="Button">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4024104718:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4024104716:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4024104718:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4024104716:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4024104718:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4024104716:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4024104718:Guarantees" mappingType="OVERRIDE" original="Inward Guarantees" specifiedBy="369B73E1008EB4024104716:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Amendments" eid="369B73E1008EB4029648346" path="ReceivedGuarantees.ReceivedGuarantees.Amendments" type="Button">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029648348:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4029648346:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029648348:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4029648346:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029648348:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4029648346:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029648348:Guarantees" mappingType="OVERRIDE" original="Amendments" specifiedBy="369B73E1008EB4029648346:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Claims Initiated" eid="369B73E1008EB4029660379" path="ReceivedGuarantees.ReceivedGuarantees.Claims Initiated" type="Button">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029660381:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4029660379:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029660381:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4029660379:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029660381:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="369B73E1008EB4029660379:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="369B73E1008EB4029660381:Guarantees" mappingType="OVERRIDE" original="Claims Initiated" specifiedBy="369B73E1008EB4029660379:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+      </Container>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="GuaranteeIssuance" eid="9F30F9BD5631B759209834" path="GuaranteeIssuance" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="9F30F9BD5631B759210133:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209834:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="9F30F9BD5631B759210132:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="9F30F9BD5631B759209834:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="GuaranteeAuthorisation" eid="8A162576456D84BD683194" path="GuaranteeAuthorisation" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD726530:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD726531:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD726532:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD726533:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741823:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741867:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD726535:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741824:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD726536:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741865:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741822:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741866:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD726538:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD726539:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741869:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741826:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD726540:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741819:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD726542:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="8A162576456D84BD741812:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741856:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741813:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741857:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="8A162576456D84BD741855:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741816:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="8A162576456D84BD726528:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741817:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD726529:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741814:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741858:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741815:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741859:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD683256:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD683255:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741860:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="8A162576456D84BD683254:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741863:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="8A162576456D84BD741820:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="8A162576456D84BD683195:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="8A162576456D84BD741862:Guarantees" mappingType="PLACEHOLDER" original="" specifiedBy="8A162576456D84BD683194:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+  </ProcessEntities>
+  <Designs/>
+  <PresentationOnlyObjects>
+    <PresentationType class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" displayString="Guarantees" eid="D5F4265BC4E030BF137960" path="Guarantees" type="Rich Presentation Type">
+      <Attribute mappingType="OVERRIDE" name="BackButtonText" original="Back" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackConfirmationMessage" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackHelpText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackHintText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DateFormat" original="DD/MM/YYYY" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DecimalSymbol" original="." state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DigitGroupSymbol" original="," state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="EditTheme" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ForwardButtonText" original="Continue" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardConfirmationMessage" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardHelpText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardHintText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="HelpIconHint" original="Help" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidAlphaMessage" original="Please re-enter using letters" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidAlphaNumericMessage" original="Please re-enter using letters and numbers" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDateMessage" original="Please enter a valid date in the form: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDaysInMonthMessage" original="There are not that many days in the specified month" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDecimalMessage" original="Please enter a valid decimal number" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidLeapYearMessage" original="The specified year is not a leap year" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxDateMessage" original="The latest date is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxFileSizeMessage" original="The maximum file size allowed is $$QUESTION_CONSTRAINT$k" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxLengthMessage" original="The maximum length is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxValueMessage" original="The maximum value is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinDateMessage" original="The earliest date is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinLengthMessage" original="The minimum length is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinValueMessage" original="The minimum value is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidNumMessage" original="Please enter a valid number" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidTimeMessage" original="Please enter a valid time in the form: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidUploadTypeMessage" original="The valid file types you are allowed to upload are: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="LayoutDirection" original="ltr" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandMessage" original="Please answer all the required questions marked with a $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptImgAltVal" original="This field is mandatory" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptImgVal" original="mandatory_image.gif" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptTxtVal" original="*" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="QuestionListDefault" original="- Please Select" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ValidationMessage" original="Please enter a valid value" state="NEW" status="NEW" value=""/>
+      <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="IssuedGuarantees" eid="D5F4265BC4E030BF137966" type="Rich Presentation Process">
+        <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="IssuedGuarantees" eid="D5F4265BC4E030BF137967" type="Rich Presentation Phase">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="AC64D599983788BD3358962" type="Rich Presentation Section">
+            <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Column" eid="AC64D599983788BD3358963" type="Rich Presentation Column">
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="AC64D599983788BD3358964" type="Rich Presentation Section">
+                <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="AC64D599983788BD3358965" type="Rich Presentation Section">
+                  <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="tc-tab-section [Section]" eid="AC64D599983788BD3358966" type="Rich Presentation Section">
+                    <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Issued Guarantees" eid="AC64D599983788BD3358967" path="Guarantees.IssuedGuarantees.IssuedGuarantees.Section.Column.Section.Section.Section.Tab Pane Issued Guarantees" type="Rich Presentation Tab Pane">
+                      <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                      <Attribute mappingType="OVERRIDE" name="TabName" original="Issued Guarantees" state="NEW" status="NEW" value=""/>
+                    </PresentationObject>
+                    <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Amendments" eid="AC64D599983788BD3358968" path="Guarantees.IssuedGuarantees.IssuedGuarantees.Section.Column.Section.Section.Section.Tab Pane Amendments" type="Rich Presentation Tab Pane">
+                      <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                      <Attribute mappingType="OVERRIDE" name="TabName" original="Amendments" state="NEW" status="NEW" value=""/>
+                    </PresentationObject>
+                    <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Claims Received" eid="AC64D599983788BD3358969" path="Guarantees.IssuedGuarantees.IssuedGuarantees.Section.Column.Section.Section.Section.Tab Pane Claims Received" type="Rich Presentation Tab Pane">
+                      <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                      <Attribute mappingType="OVERRIDE" name="TabName" original="Claims Received" state="NEW" status="NEW" value=""/>
+                    </PresentationObject>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="ReceivedGuarantees" eid="9F30F9BD5631B759209526" type="Rich Presentation Process">
+        <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="ReceivedGuarantees" eid="9F30F9BD5631B759209527" type="Rich Presentation Phase">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="369B73E1008EB4024145518" type="Rich Presentation Section">
+            <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Column" eid="369B73E1008EB4024145519" type="Rich Presentation Column">
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="369B73E1008EB4024145520" type="Rich Presentation Section">
+                <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="369B73E1008EB4024145521" type="Rich Presentation Section">
+                  <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="tc-tab-section [Section]" eid="369B73E1008EB4024145522" type="Rich Presentation Section">
+                    <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Inward Guarantees" eid="369B73E1008EB4024145523" path="Guarantees.ReceivedGuarantees.ReceivedGuarantees.Section.Column.Section.Section.Section.Tab Pane Inward Guarantees" type="Rich Presentation Tab Pane">
+                      <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                      <Attribute mappingType="OVERRIDE" name="TabName" original="Inward Guarantees" state="NEW" status="NEW" value=""/>
+                    </PresentationObject>
+                    <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Amendments" eid="369B73E1008EB4029653754" path="Guarantees.ReceivedGuarantees.ReceivedGuarantees.Section.Column.Section.Section.Section.Tab Pane Amendments" type="Rich Presentation Tab Pane">
+                      <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                      <Attribute mappingType="OVERRIDE" name="TabName" original="Amendments" state="NEW" status="NEW" value=""/>
+                    </PresentationObject>
+                    <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Claims Initiated" eid="369B73E1008EB4029680053" path="Guarantees.ReceivedGuarantees.ReceivedGuarantees.Section.Column.Section.Section.Section.Tab Pane Claims Initiated" type="Rich Presentation Tab Pane">
+                      <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                      <Attribute mappingType="OVERRIDE" name="TabName" original="Claims Initiated" state="NEW" status="NEW" value=""/>
+                    </PresentationObject>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+    </PresentationType>
+  </PresentationOnlyObjects>
+  <Rules>
+    <MasterRules/>
+  </Rules>
+  <Component/>
+  <Lists>
+    <List eid="3AA9C541FA00FE46301903" listName="YesNo" reset="True">
+      <ListItem eid="3AA9C541FA00FE46301904" group="" groupState="NEW" key="Y" original="Yes" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="3AA9C541FA00FE46301905" group="" groupState="NEW" key="N" original="No" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+  </Lists>
+</LanguageMap>

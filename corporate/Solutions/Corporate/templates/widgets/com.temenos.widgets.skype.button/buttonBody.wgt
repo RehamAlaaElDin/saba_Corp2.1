@@ -1,0 +1,16 @@
+<div id="SkypeButton_Call_$$ITEM.ID()$">
+  <script type="text/javascript">
+  Skype=new Skype.constructor();
+  var participants="$$ITEM.participants$";
+   participants=participants.split(",");
+    Skype.ui({
+      "name": "$$ITEM.name$",    
+      "participants": participants,
+      $%IF ITEM.imageSize != "16" && ITEM.imageSize != ""$"imageSize":$$ITEM.imageSize$,
+      $%ENDIF$$%IF ITEM.video == "Y"$"video":"true",
+      $%ENDIF$$%IF ITEM.imageColor != "blue"$"imageColor":"$$ITEM.imageColor$",
+      $%ENDIF$$%IF ITEM.topic != ""$"topic":"$$ITEM.topic$",$%ENDIF$
+      "element": "SkypeButton_Call_$$ITEM.ID()$"  
+    });
+  </script>
+</div>

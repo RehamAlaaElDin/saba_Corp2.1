@@ -1,0 +1,26 @@
+<div id="$$ITEM.ID()$_feed" $%IF ITEM.width != "" || ITEM.height != ""$ style="$%IF ITEM.width != ""$width:$$ITEM.width$px;$%ENDIF$$%IF ITEM.height != ""$height:$$ITEM.height$px;$%ENDIF$"$%ENDIF$></div>
+$%IF ITEM.IS_HIDDEN() == "false"$
+<script type="text/javascript">
+function $$ITEM.ID()$_init(){
+    if ($('#$$ITEM.ID()$_feed')) {
+        $('#$$ITEM.ID()$_feed').stories({
+            FeedUrl: '$$ITEM.feedUrl$',
+            $%IF ITEM.maxCount != ""$  MaxCount: $$ITEM.maxCount$,$%ENDIF$
+            $%IF ITEM.showDesc != "Y"$ ShowDesc:false,$%ENDIF$
+            $%IF ITEM.showPubDate != "Y"$ ShowPubDate:false,$%ENDIF$
+            $%IF ITEM.descCharacterLimit != ""$DescCharacterLimit:$$ITEM.descCharacterLimit$,$%ENDIF$
+            $%IF ITEM.titleLinkTarget != ""$ TitleLinkTarget:"$$ITEM.titleLinkTarget$"$%ENDIF$
+        });
+    }
+}
+
+window.com.temenos.widgets.feed.RSS.addEvent('LibrariesLoaded', function (e) {
+$$ITEM.ID()$_init();        
+
+});
+
+if (window.com.temenos.widgets.feed.RSS.feedLibraryIsLoaded==true) {
+     $$ITEM.ID()$_init(); 
+     }
+</script>
+$%ENDIF$

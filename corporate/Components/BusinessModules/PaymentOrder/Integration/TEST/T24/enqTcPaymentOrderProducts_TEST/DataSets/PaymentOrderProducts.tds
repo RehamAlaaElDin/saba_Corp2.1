@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="36">
+  <!--enqTcPaymentOrderProducts-->
+  <enqTcPaymentOrderProduct AllowFutureDate="NO" AllowFx="YES" AllowRequiredCreditValue="NO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[A]" DS_UID="3" Id="ACTRF" PayThroughBeneficiary="NO" PaymentProductGroups="ACTRF">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].Description" DS_UID="2" Description="Account Transfer (Home)"/>
+  </enqTcPaymentOrderProduct>
+  <enqTcPaymentOrderProduct AllowFutureDate="YES" AllowFx="YES" AllowRequiredCreditValue="YES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[A]" DS_UID="11" DefaultChargeOption="SHA" Id="DOMESTIC" PayThroughBeneficiary="YES" PaymentProductGroups="DP">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].Description" DS_UID="10" Description="Domestic Payments"/>
+  </enqTcPaymentOrderProduct>
+  <enqTcPaymentOrderProduct AllowFutureDate="YES" AllowIban="MANDATORY" AllowRequiredCreditValue="YES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[A]" DS_UID="16" DefaultChargeOption="SHA" Id="DSEPA" PayThroughBeneficiary="YES" PaymentProductGroups="DP" Rank="1">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].Description" DS_UID="12" Description="Domestic Sepa Payments"/>
+    <AllowedOrderingCurrency AllowedOrderingCurrency="EUR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].AllowedOrderingCurrency" DS_UID="13"/>
+    <AllowedCountry AllowedCountry="EU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].AllowedCountry" DS_UID="14"/>
+    <AllowedPaymentCcy AllowedPaymentCcy="EUR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].AllowedPaymentCcy" DS_UID="15"/>
+  </enqTcPaymentOrderProduct>
+  <enqTcPaymentOrderProduct AllowFutureDate="YES" AllowFx="YES" AllowRequiredCreditValue="YES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[A]" DS_UID="19" DefaultChargeOption="SHA" Id="INATIONAL" PayThroughBeneficiary="YES" PaymentProductGroups="IP" Rank="1">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].Description" DS_UID="17" Description="International Payments"/>
+    <AllowedPaymentCcy AllowedPaymentCcy="EUR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].AllowedPaymentCcy" DS_UID="18"/>
+  </enqTcPaymentOrderProduct>
+  <enqTcPaymentOrderProduct AllowFutureDate="YES" AllowFx="YES" AllowIban="MANDATORY" AllowRequiredCreditValue="YES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[A]" DS_UID="31" DefaultChargeOption="SHA" Id="ISEPA" PayThroughBeneficiary="YES" PaymentProductGroups="IP">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].Description" DS_UID="28" Description="International Sepa Payments"/>
+    <AllowedOrderingCurrency AllowedOrderingCurrency="EUR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].AllowedOrderingCurrency" DS_UID="29"/>
+    <AllowedCountry AllowedCountry="EU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderProduct[C].AllowedCountry" DS_UID="30"/>
+  </enqTcPaymentOrderProduct>
+</DataSetRoot>

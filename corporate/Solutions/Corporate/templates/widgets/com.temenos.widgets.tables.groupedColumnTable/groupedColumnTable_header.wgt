@@ -1,0 +1,2 @@
+$%COMMENT$ this widgets requires the jQuery library. Comment the next line if you already include it in the project $%ENDCOMMENT$
+<script src="./templates/widgets/com.temenos.widgets.tables.groupedColumnTable/js/jquery-3.5.1.min.js"></script>

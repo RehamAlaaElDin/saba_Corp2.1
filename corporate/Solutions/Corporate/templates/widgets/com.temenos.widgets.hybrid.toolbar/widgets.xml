@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget displayName="Toggle Toolbar Widget" displayString="Toggle Toolbar" isHybridWidget="true" name="ToggleToolbarWidget" type="Button">
+    <template type="source" value="./toggleToolbar.wgt"/>
+  </widget>
+  <widget displayName="Toggle Toolbar Title Widget" displayString="Toggle Toolbar Title" isHybridWidget="true" name="ToggleToolbarTitleWidget" type="Button">
+    <template type="source" value="./toggleToolbarTitle.wgt"/>
+  </widget>
+  <widget displayName="Open Developer Settings Widget" displayString="Open Developer Settings" isHybridWidget="true" name="OpenDeveloperSettingsWidget" type="Button">
+    <template type="source" value="./openDeveloperSettings.wgt"/>
+  </widget>
+</widgets>

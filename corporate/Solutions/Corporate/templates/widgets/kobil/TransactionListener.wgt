@@ -1,0 +1,29 @@
+<input type="button" value="CONFIRM" onclick="onDeviceReady()" style="background-color: #00589c;
+   color: #fff;
+   width: 100%;
+   padding: .75rem 1.25rem;
+   border-radius: 4px;
+   font-size: 12px;
+   border: 1px solid #00589c;">
+<script type="text/javascript" charset="utf-8">
+    function onDeviceReady() {
+        var timer = 0;
+        cordova.plugins.KobilPlugin.onTransactionListener(function (success) {
+            console.log("success");
+            if (success.from == "onTransactionBlockBegin") {
+                timer = success.timeout;
+            }
+            else if (success.from == "onTransactionBegin") {
+                $('input[id*="_2FAMSG"]').val(success.displayData);
+                $('input[id*="_2FATIMEOUT"]').val(timer);
+                setTimeout(function () {
+                    $('button[id*="_SHOW2FA"]').click();
+                }, 500);
+            }
+        }, function (e) {
+            console.log(e);
+        });
+    }
+    document.addEventListener('deviceready', onDeviceReady, true);
+
+</script>

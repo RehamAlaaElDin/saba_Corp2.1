@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-temenoswebview"
+    version="2.0.0">
+    <name>Cordova Temenos WKWebView Plugin</name>
+    <description>This plugin includes the Ionic WKWebView plugin and resolves XHR Cross-Origin Resource Sharing (CORS) constraints.</description> 
+    <keywords>temenos,cordova,wkwebview,webview</keywords>
+
+    <engines>
+      <engine name="cordova-ios" version=">=4.0.0" />
+      <engine name="apple-ios" version=">=9.0" />
+    </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+	
+	 <js-module src="src/www/ios/ios-wkwebview-exec.js" name="ios-wkwebview-exec">
+            <clobbers target="cordova.exec" />
+        </js-module>
+
+        <js-module src="src/www/ios/ios-wkwebview.js" name="ios-wkwebview">
+            <clobbers target="window.WkWebView" />
+        </js-module>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVWKWebViewEngine">
+                <param name="ios-package" value="CDVWKWebViewEngine" />
+            </feature>
+            <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+        </config-file>
+
+        <framework src="WebKit.framework" weak="true" />
+
+        <header-file src="src/ios/CDVWKWebViewEngine.h" />
+        <source-file src="src/ios/CDVWKWebViewEngine.m" />
+        <header-file src="src/ios/CDVWKWebViewUIDelegate.h" />
+        <source-file src="src/ios/CDVWKWebViewUIDelegate.m" />
+        <header-file src="src/ios/CDVWKProcessPoolFactory.h" />
+        <source-file src="src/ios/CDVWKProcessPoolFactory.m" />
+	
+		<!--CORS PlyFill-->
+        <js-module src="src/www/ios/formdata-polyfill.js" name="formdata-polyfill">
+            <runs/>
+        </js-module>
+        <js-module src="src/www/ios/xhr-polyfill.js" name="xhr-polyfill">
+            <runs/>
+        </js-module>
+        <js-module src="src/www/ios/fetch-bootstrap.js" name="fetch-bootstrap">
+            <runs/>
+        </js-module>
+        <js-module src="src/www/ios/whatwg-fetch-2.0.3.js" name="fetch-polyfill">
+            <runs/>
+        </js-module>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVWKWebViewFileXhr">
+                <param name="ios-package" value="CDVWKWebViewFileXhr" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <framework src="WebKit.framework" weak="true" />
+
+        <header-file src="src/ios/CDVWKWebViewFileXhr.h" />
+        <source-file src="src/ios/CDVWKWebViewFileXhr.m" />
+
+    </platform>
+
+</plugin>

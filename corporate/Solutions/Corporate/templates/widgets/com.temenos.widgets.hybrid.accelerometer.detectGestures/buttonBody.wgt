@@ -1,0 +1,25 @@
+$%COMMENT$ $Revision: 1.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.button_body == "Y" $$$ITEM.EC_GENERATE()$$%ENDIF$ 
+$%IF ITEM.NotApplicableAppearance != "Disable" && ITEM.NotApplicableAppearance != "Hide" || ITEM.HideField != "Y" $
+ <script type = "text/javascript" charset="utf-8">
+      function initButton_$$ITEM.ID()$() {    
+          if (!window.com.temenos.widgets.hybrid.accelerometer.detectGestures.started)
+          window.com.temenos.widgets.hybrid.accelerometer.detectGestures.startWatch();
+      }
+      document.addEventListener("deviceready", initButton_$$ITEM.ID()$, false);
+      window.addEventListener("beforeunload", function( event ) {
+         if (window.com.temenos.widgets.hybrid.accelerometer.detectGestures.started)
+            window.com.temenos.widgets.hybrid.accelerometer.detectGestures.stopWatch();
+      });
+$%IF ITEM.ShakeOpt == "Y" $
+     window.com.temenos.widgets.hybrid.accelerometer.detectGestures.addEvent('shakeDetected', function (e) {
+     $$ITEM.NAVIGATION()$
+     });
+$%ENDIF$ 
+$%IF ITEM.UpSideDown == "Y" $
+    window.com.temenos.widgets.hybrid.accelerometer.detectGestures.addEvent('faceDownDetected', function (e) {
+    $$ITEM.NAVIGATION()$
+           });
+$%ENDIF$ 
+</script>
+$%ENDIF$

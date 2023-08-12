@@ -1,0 +1,6 @@
+This is only a skeleton sample component project. It only outlines a simplified project that can login to an application using LuxTrust-provided services.
+To be complete, this component would require specialized custom Rules which are exemplified by empty Container Rules.
+This project is a hybrid one and includes a hybrid plugin. The plugin is designed to open a WKWebView (for IOS) which is capable of interacting with another app on the same device, via a specialized URL (in this case provided by the LuxTrust's Orely server). The plugin may have to be included in the Solution project, but its inclusion is exemplified here. The default Android WebView is by default capable of using the URL provided by Orely.
+
+The plugin is used via the javascript included in the SPPiframe.tpl file. In the case of IOS, it only opens a WKWebView which is better and supports more functionality than the current UIWebView but currently not included in Cordova. In the case of Android, the flow doesn't change up until the Cronto Image is tapped.
+The WKWebView is closed via some javascript that is inserted into the response HTML by the Servlet Filter in luxTrustSPServletFilter.jar 

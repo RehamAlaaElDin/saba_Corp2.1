@@ -1,0 +1,15 @@
+$$ITEM.EC_GENERATE()$    
+$%IF ITEM.itemkey != ""$            
+<script type = "text/javascript" charset="utf-8">
+function $$ITEM.ID()$onDeviceReady() {
+var storage = window.edge.widgets.cordova.Storage; 
+var storageType=$%IF ITEM.storageType == "PERMANENT"$0$%ELSE$1$%ENDIF$;
+storage.setSource(storageType);
+var current_value = storage.getItem("$$ITEM.itemkey$"); 
+var input_value = "$$ITEM.DATAITEM().DISPLAY_VALUE()$";  
+if (current_value!=input_value && input_value!="") storage.setItem("$$ITEM.itemkey$",input_value);
+if (input_value==="") document.getElementById("$$ITEM.ID()$").value=current_value;
+}
+ document.addEventListener("deviceready", $$ITEM.ID()$onDeviceReady, false);
+</script>
+$%ENDIF$

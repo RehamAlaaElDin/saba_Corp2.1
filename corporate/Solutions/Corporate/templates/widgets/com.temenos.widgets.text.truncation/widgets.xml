@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget icon="images/Truncate_logo.png" name="Truncation" type="Section">
+    <template type="source" value="truncate_body.wgt"/>
+    <custom>
+      <item help="Number of characters until text truncation" includeInDesign="Always" layout="-1" mand="false" name="CharNr" prompt="Number of Characters" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="...More" help="Text for the &quot;see more&quot; function" includeInDesign="Always" layout="-1" mand="false" name="More" prompt="More Text" type="javax.swing.JTextField" usage="7"/>
+      <item help="Style for the &quot;More&quot; attribute" includeInDesign="Always" layout="-1" mand="false" name="Style" prompt="Style" type="com.acquire.intelligentforms.ide.themeseditor.StyleChooser" typeValue="Style Chooser|-1|false|true|com.acquire.intelligentforms.entities.theme.Style|false|-1|true" usage="7"/>
+    </custom>
+    <template type="header" value="truncate_head.wgt"/>
+  </widget>
+</widgets>

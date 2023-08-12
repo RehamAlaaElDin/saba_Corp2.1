@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget displayName="Piwik" icon="/images/piwik.jpeg" name="Piwik" type="Item:">
+    <template type="header" value="piwik_header.wgt"/>
+    <custom>
+      <item help="Enter the tracked website id (you can get the site id from the Piwik's platform)" includeInDesign="Always" layout="-1" mand="true" name="SiteID" prompt="Website Id" type="javax.swing.JTextField" usage="7"/>
+      <item help="Enter the PIWIK application's URL." includeInDesign="Always" layout="-1" mand="true" name="FolderPath" prompt="Application URL" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

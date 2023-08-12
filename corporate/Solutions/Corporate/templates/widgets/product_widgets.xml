@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+    <widget helpFile="17_presentation/display_items/image_display_item_in_presentation.htm" icon="/images/PresentationText_Image.gif" name="Image" type="Item:Image">
+            <template type="source" value="./templates/widgets/simpleImage.wgt"/>
+            <custom>
+                <item mand="true" name="IMG_SRC" prompt="Path To Image" help="This needs to be accessible by the web browser at runtime, so &#10;consider using $$LIBRARY_CONTEXTPATH$ for component-only images" tab="Details" type="javax.swing.JFileChooser|MULTI_RICH_VALUES" typeValue="Image Choose|FILES_ONLY|*|Image File|Open|Project dir"/>
+                <item mappable="true" name="IMG_ALT_TEXT" prompt="Alt Text" tab="Details" type="javax.swing.JTextField" help="Alternative text should present the content and function of the image and be succinct. For decorative images, leave blank."/>
+                <item name="IMG_STYLE" prompt="Style" tab="Image" type="javax.swing.JTextField"/>
+                <item name="IMG_CLASS" prompt="Class" tab="Image" type="javax.swing.JTextField"/>
+                <item name="IMG_HEIGHT" prompt="Height (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+                <item name="IMG_WIDTH" prompt="Width (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+                <item name="IMG_LONGDESC" prompt="Long Desc" tab="Image" type="javax.swing.JTextField"/>
+                <item name="IMG_TITLE" mappable="true" prompt="Title" tab="Image" type="javax.swing.JTextField"/>
+                <item name="IMG_USEMAP" prompt="Use Map" tab="Advanced" type="javax.swing.JTextField"/>
+                <item name="IMG_DIR" prompt="Direction (rtl or ltr)" tab="Advanced" type="javax.swing.JComboBox" typeValue="ltr|rtl"/>
+                <item name="IMG_LANGUAGE" prompt="Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+                <item name="IMG_XMLLANGAUGE" prompt="XML Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+            </custom>
+    </widget>
+    <widget helpFile="17_presentation/display_items/video_in_presentation.htm" icon="/images/PresentationText_Video.gif" name="Video" type="Item:Video" isWCAGCompliant="false">
+            <template type="source" value="./templates/widgets/simpleVideo.wgt"/>
+            <custom>
+                <item mand="true" name="VIDEO_SRC" prompt="Path To Video" tab="Details" type="javax.swing.JFileChooser" typeValue="Video Choose|FILES_ONLY|*|Video File|Open|Project dir"/>
+                <item mand="true" name="VIDEO_TYPE" prompt="Video Type" tab="Details" type="javax.swing.JComboBox" typeValue="Flash|AVI|MOV"/>
+                <item name="VIDEO_WIDTH" prompt="Width (px)" tab="Video" type="javax.swing.JTextField" typeValue="NUMERIC|4"/>
+                <item name="VIDEO_HEIGHT" prompt="Height (px)" tab="Video" type="javax.swing.JTextField" typeValue="NUMERIC|4"/>
+                <item name="AUTOSTART" prompt="Auto Start?" tab="Video" type="javax.swing.JCheckBox"/>
+                <item name="HIDDEN" prompt="Hidden?" tab="Video" type="javax.swing.JCheckBox"/>
+                <item name="LOOP" prompt="Loop?" tab="Video" type="javax.swing.JCheckBox"/>
+                <item name="PLAYCOUNT" prompt="Play Count" tab="Video" type="javax.swing.JTextField" typeValue="REGEXP#-1#^[0-9]{0,2}$|^(100)$#Please enter a value between 0 and 100"/>
+                <item name="VOLUME" prompt="Volume (0 - 100)" tab="Video" type="javax.swing.JTextField" typeValue="REGEXP#-1#^[0-9]{0,2}$|^(100)$#Please enter a value between 0 and 100"/>
+			</custom>
+    </widget>
+
+	<widget icon="/images/widget_rounded.gif" name="Rounded Corners" type="Section">
+		<template type="source" value="./templates/widgets/rounded_corners.wgt"/>
+		<custom>
+			<item defaultValue="Y" name="TL" prompt="Top Left Curved" tab="Rounded Details" type="javax.swing.JCheckBox"/>
+			<item defaultValue="Y" name="TR" prompt="Top Right Curved" tab="Rounded Details" type="javax.swing.JCheckBox"/>
+			<item defaultValue="Y" name="BL" prompt="Bottom Left Curved" tab="Rounded Details" type="javax.swing.JCheckBox"/>
+			<item defaultValue="Y" name="BR" prompt="Bottom Right Curved" tab="Rounded Details" type="javax.swing.JCheckBox"/>
+            <item defaultValue="#EEDDEE" name="INNERCOLOR" prompt="Background Color" tab="Rounded Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item defaultValue="10px" name="PADDING" prompt="Section Padding" tab="Rounded Details" type="javax.swing.JTextField"/>
+		</custom>
+	</widget>
+
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryAccordionSectionDialogHandler" icon="/images/widget_accordion.gif" name="Accordion Section (jquery)" type="Section" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+		<template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+		<template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-accordionSection.wgt"/>
+		<child type="Tab" widget="Accordion (jquery)" force="true"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard (non-jquery) accordion." tab="Appearance" />
+		    <item name="BAR_COLOR" prompt="Bar Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_IMAGE" prompt="Bar Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item name="BAR_HOVER_COLOR" prompt="Bar Hover Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_HOVER_IMAGE" prompt="Bar Hover Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+			<item name="BAR_SELECTED_COLOR" prompt="Bar Selected Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_SELECTED_IMAGE" prompt="Bar Selected Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+			<item defaultValue="Y" name="MAINTAIN_STATE" prompt="Maintain State" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+            <item defaultValue="Y" name="SLIDE_EFFECT" prompt="Slide Effect" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+        </custom>
+	</widget>
+	<widget name="Accordion (jquery)" type="Tab" isWCAGCompliant="false">
+		<template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-accordion.wgt"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard (non-jquery) accordion." tab="Appearance" />
+		</custom>
+	</widget>
+
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.standard.StandardAccordionSectionDialogHandler" icon="/images/widget_accordion.gif" name="Accordion Section (Standard)" type="Section">
+		<template type="header" value="./templates/widgets/standard-accordion-header.wgt"/>
+		<template type="source" value="./templates/widgets/standard-accordion-section.wgt"/>
+		<child type="Tab" widget="Accordion (Standard)" force="true"/>
+		<custom>
+		    <item name="BAR_COLOR" prompt="Bar Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_IMAGE" prompt="Bar Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item name="BAR_HOVER_COLOR" prompt="Bar Hover Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_HOVER_IMAGE" prompt="Bar Hover Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+			<item name="BAR_SELECTED_COLOR" prompt="Bar Selected Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_SELECTED_IMAGE" prompt="Bar Selected Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+			<item defaultValue="Y" name="MAINTAIN_STATE" prompt="Maintain State" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+            <item defaultValue="Y" name="SLIDE_EFFECT" prompt="Slide Effect" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+        </custom>
+	</widget>
+	<widget name="Accordion (Standard)" type="Tab">
+		<template type="source" value="./templates/widgets/standard-accordion.wgt"/>
+	</widget>
+
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryTabSectionDialogHandler" icon="/images/widget_tabbar.gif" name="Tab Section (jquery)" type="Section" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-tabSection.wgt"/>
+        <child type="Tab" widget="Tab Pane (jquery)" force="true"/>
+        <custom>
+        	<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to standard UXP tabs." tab="Appearance" />
+			<item name="TAB_NAV_COLOR" prompt="Tab Nav Bar Colour" tab="Tab Bar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="SELECTED_TAB_COLOR" prompt="Selected Tab Colour" tab="Tab Bar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="UNSELECTED_TAB_COLOR" prompt="Unselected Tab Colour" tab="Tab Bar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item defaultValue="top" mand="true" name="TAB_POSITION" prompt="Tab Position" tab="Tab Bar Details" type="javax.swing.JComboBox" typeValue="top^Top|bottom^Bottom"/>
+            <item defaultValue="Y" name="MAINTAIN_STATE" prompt="Maintain State" tab="Tab Bar Details" type="javax.swing.JCheckBox"/>
+        </custom>
+    </widget>
+	<widget name="Tab Pane (jquery)" type="Tab" isWCAGCompliant="false">
+		<template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-tab.wgt"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP tab." tab="Appearance" />
+		</custom>
+    </widget>
+
+	<widget icon="/images/widget_calendar.gif" name="Calendar (jquery)" type="Date" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-datePicker-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-datePicker.wgt"/>
+		<custom>
+				<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP date picker." tab="Answer" />
+	            <item defaultValue="./images/cal.gif" help="Specify image if you require a date picker icon after date field" mand="false" name="CAL_IMAGE" prompt="Calendar Image" tab="Calendar Details" type="javax.swing.JFileChooser"/>
+				<item defaultValue="1" mand="true" name="MONTHS_TO_SHOW" prompt="Number Of Months To Display" tab="Calendar Details" type="javax.swing.JTextField"/>
+				<item help="You can also use a language map alias" mand="false" name="LOCALE" prompt="Locale (e.g. en-GB or fr) - Leave Blank For Default Locale" tab="Calendar Details" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE"/>
+				<item name="BAR_COLOR" prompt="Date Bar Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+				<item name="VALID_COLOR" prompt="Valid Date Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+				<item name="INVALID_COLOR" prompt="Invalid Date Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+				<item name="SELECTED_COLOR" prompt="Selected Date Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+		</custom>
+	</widget>
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JquerySliderDialogHandler" icon="/images/widget_slider.gif" name="Slider (jquery)" type="Number, Decimal" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-slider.wgt"/>
+        <custom>
+        	<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP slider." tab="Appearance" />
+            <item defaultValue="145" mand="true" name="SLIDER_SIZE" prompt="Size (px)" tab="Slider Details" typeValue="NUMERIC|4"/>
+            <item defaultValue="false" name="ORIENTATION" prompt="Orientation" tab="Slider Details" type="javax.swing.JComboBox" typeValue="horizontal|vertical"/>
+            <item defaultValue="1" mand="true" name="STEP_SIZE" prompt="Step Size" tab="Slider Details"/>
+			<item defaultValue="Y" name="SHOW_VAL" prompt="Display Current Value" tab="Slider Details" type="javax.swing.JCheckBox"/>
+            <item help="Comma separated list.  Markers are not validated, and are distributed equally along the slider." name="MARKERS" prompt="Markers" tab="Slider Details"/>
+			<item name="SELECTED_COLOR" prompt="Selected Range Colour" tab="Slider Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="SLIDER_IMAGE" prompt="Slider Image" tab="Slider Details" type="javax.swing.JFileChooser"/>
+			<item name="SLIDER_IMAGE_REPEAT" prompt="Slider Image Repeat" tab="Slider Details" type="javax.swing.JCheckBox"/>
+			<item name="DRAG_HANDLE_COLOR" prompt="Drag Handle Colour" tab="Slider Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="DRAG_HANDLE_BORDER_COLOR" prompt="Drag Handle Border Colour" tab="Slider Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="DRAG_HANDLE_IMAGE" prompt="Drag Handle Image" tab="Slider Details" type="javax.swing.JFileChooser"/>
+			<item name="DRAG_HANDLE_SIZE" prompt="Drag Handle Width (px)" tab="Slider Details" typeValue="NUMERIC|2"/>
+			<item layout="0" name="DRAG_HANDLE_HEIGHT" prompt="Drag Handle Height (px)" tab="Slider Details" typeValue="NUMERIC|2"/>
+        </custom>
+    </widget>
+
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JquerySliderDialogHandler" icon="/images/widget_slider.gif" name="Slider (Standard)" type="Number, Decimal">
+		<template type="header" value="./templates/widgets/standard/standard-slider-header.wgt"/>
+        <template type="source" value="./templates/widgets/standard/standard-slider.wgt"/>
+        <custom>
+            <item defaultValue="145" mand="true" name="SLIDER_SIZE" prompt="Size (px)" tab="Slider Details" typeValue="NUMERIC|4"/>
+            <item defaultValue="false" name="ORIENTATION" prompt="Orientation" tab="Slider Details" type="javax.swing.JComboBox" typeValue="horizontal|vertical"/>
+            <item defaultValue="1" mand="true" name="STEP_SIZE" prompt="Step Size" tab="Slider Details"/>
+			<item defaultValue="Y" name="SHOW_VAL" prompt="Display Current Value" tab="Slider Details" type="javax.swing.JCheckBox"/>
+            <item help="Comma separated list.  Markers are not validated, and are distributed equally along the slider." name="MARKERS" prompt="Markers" tab="Slider Details"/>
+			<item name="SELECTED_COLOR" prompt="Selected Range Colour" tab="Slider Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="SLIDER_IMAGE" prompt="Slider Image" tab="Slider Details" type="javax.swing.JFileChooser"/>
+			<item name="SLIDER_IMAGE_REPEAT" prompt="Slider Image Repeat" tab="Slider Details" type="javax.swing.JCheckBox"/>
+			<item name="DRAG_HANDLE_COLOR" prompt="Drag Handle Colour" tab="Slider Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="DRAG_HANDLE_BORDER_COLOR" prompt="Drag Handle Border Colour" tab="Slider Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item name="DRAG_HANDLE_IMAGE" prompt="Drag Handle Image" tab="Slider Details" type="javax.swing.JFileChooser"/>
+			<item name="DRAG_HANDLE_SIZE" prompt="Drag Handle Width (px)" tab="Slider Details" typeValue="NUMERIC|2"/>
+			<item layout="0" name="DRAG_HANDLE_HEIGHT" prompt="Drag Handle Height (px)" tab="Slider Details" typeValue="NUMERIC|2"/>
+            <item defaultValue="N" name="SHOW_ACCESSIBILITY_CONTROLS" prompt="Show accessibility controls" tab="Slider Details" type="javax.swing.JCheckBox"/>
+            <item defaultValue="decrease" name="SLIDER_DECREASE_BTN_MSG" prompt="Decrease Button Audio Label" tab="Slider Details"/>
+            <item defaultValue="increase" name="SLIDER_INCREASE_BTN_MSG" prompt="Increase Button Audio Label" tab="Slider Details"/>
+        </custom>
+    </widget>
+
+
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryFloatingWindowDialogHandler" icon="/images/widget_window.gif" name="Floating Window (jquery)" type="Section" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-floatingWindow.wgt"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP section." tab="Appearance" />
+            <item defaultValue="30" mand="true" name="X_POS" prompt="Inital X Offset" tab="Window Details"/>
+            <item defaultValue="40" mand="true" name="Y_POS" prompt="Inital Y Offset" tab="Window Details"/>
+            <item defaultValue="320" mand="true" name="WIDTH" prompt="Inital Width" tab="Window Details"/>
+            <item defaultValue="240" mand="true" name="HEIGHT" prompt="Inital Height" tab="Window Details"/>
+            <item defaultValue="window" mand="true" mappable="true" name="TITLE" prompt="Window Title" tab="Window Details"/>
+			<item mand="false" name="TITLE_BAR_COLOUR" prompt="Window Title Bar Colour" tab="Window Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="DISABLE_CLOSE" prompt="Disable Close" tab="Window Details" type="javax.swing.JCheckBox"/>
+		</custom>
+    </widget>
+
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryRichTextEditorDialogHandler" icon="/images/widget_editor.gif" name="Rich Text Editor (jquery)" type="Text" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+		<template type="header" value="./templates/widgets/jquery/jquery-te/jquery-te-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-te/jquery-te-textEditor.wgt"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP rich text editor." tab="Appearance" />
+			<item defaultValue="500" help="Width in pixels, needs to be greater than 370 if toolbar is shown in one line" mand="true" name="EDITOR_WIDTH" prompt="Width" tab="Text Area Details" typeValue="NUMERIC|4"/>
+			<item defaultValue="100" help="Minimum height of the content pane in pixels" mand="true" name="MIN_CONTENT_HEIGHT" prompt="Minimum Content Height" tab="Text Area Details" typeValue="NUMERIC|4"/>
+			<item defaultValue="400" help="Maximum height of the content pane in pixels before scroll bar is shown" mand="true" name="MAX_CONTENT_HEIGHT" prompt="Maximum Content Height" tab="Text Area Details" typeValue="NUMERIC|4"/>
+			<item mand="false" name="BORDER_COLOUR" prompt="Toolbar Colour" tab="Text Area Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item help="Colour applies to the border around the text style buttons" mand="false" name="BUTTON_BORDER_COLOUR" prompt="Button Border Colour" tab="Text Area Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item help="Colour applies to the background of the selected text style button" mand="false" name="SELECTED_BUTTON_COLOUR" prompt="Selected Button Colour" tab="Text Area Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item help="Colour applies to the background of the text style button the cursor hovers over" mand="false" name="HOVER_BUTTON_COLOUR" prompt="Hover Button Colour" tab="Text Area Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+		</custom>
+	</widget>
+
+	<widget icon="/images/widget_tree.gif" name="Tree (jquery)" type="List,MultiSelectList" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+		<template type="header" value="./templates/widgets/jquery/jstree/jstree-header.wgt"/>S
+        <template type="source" value="./templates/widgets/jquery/jstree/jstree.wgt"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP list." tab="Appearance" />
+			<item mand="false" name="HOVER_COLOUR" prompt="Hover Colour" tab="Tree Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item mand="false" name="SELECTED_COLOUR" prompt="Selected Colour" tab="Tree Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+			<item defaultValue="Y" name="SHOW_TREE_LINES" prompt="Show Tree Lines" tab="Tree Details" type="javax.swing.JCheckBox"/>
+		</custom>
+	</widget>
+
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryDataTableDialogHandler" icon="/images/widget_grid.gif" name="Data Grid (jquery)" type="Table" isWCAGCompliant="false">
+		<template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+		<template type="header" value="./templates/widgets/jquery/dataTable/dataTable-header.wgt"/>S
+        <template type="source" value="./templates/widgets/jquery/dataTable/dataTable.wgt"/>
+		<custom>
+			<item name="l2" type="javax.swing.JLabel" prompt="jQuery widgets are not supported in CSR presentation. CSR presentations will revert to a standard UXP table." tab="Appearance" />
+			<item defaultValue="0" dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryDataTableDialogHandler" mand="true" name="PAGE_SIZE" prompt="Results Per Page (Use 0 To Show All)" tab="Data Table Options" typeValue="NUMERIC|4"/>
+			<item name="PAGE_MENU" prompt="Paging Options" tab="Data Table Options" applicableCondition="PAGE_SIZE>0" help="The paging options to display in a dropdown menu, this should be used in combination with the 'Results per page' field"/>
+            <item name="SHOW_FILTER" prompt="Show Filter" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+            <item name="SHOW_SORT" prompt="Show Sorting" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+			<item name="SHOW_INFO" prompt="Show Footer Info" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+            <item name="SAVE_STATE" prompt="Save State" tab="Data Table Options" type="javax.swing.JCheckBox" help="Preserve table state information (current page, sort order) between page submits and reloads"/>
+			<item defaultValue="Filter" mappable="true" name="SEARCH_TEXT" prompt="Search Filter Label" tab="Data Table Text"/>
+            <item defaultValue="_MENU_ records per page" mappable="true" name="PAGE_SIZE_TEXT" prompt="Records Per Page Text" tab="Data Table Text"/>
+            <item defaultValue="No records found" mappable="true" name="ZERO_RECORDS_TEXT" prompt="Zero Records Text" tab="Data Table Text"/>
+            <item defaultValue="Showing _START_ to _END_ of _TOTAL_" mappable="true" name="INFO_TEXT" prompt="Information Text" tab="Data Table Text"/>
+            <item defaultValue="Showing 0 to 0 of 0 records" mappable="true" name="INFO_EMPTY_TEXT" prompt="Information Empty Text" tab="Data Table Text"/>
+            <item defaultValue="(filtered from _MAX_ total records)" mappable="true" name="INFO_FILTERED_TEXT" prompt="Information Filtered Text" tab="Data Table Text"/>
+			<!-- pagination button labels -->
+			<item name="Pagination" prompt="Pagination Buttons"  type="com.acquire.util.ui.Legend" typeValue="4|N" tab="Data Table Text"/>
+            <item defaultValue="First" mappable="true" name="PAGINATE_FIRST_TEXT" prompt="First Text" tab="Data Table Text"/>
+            <item defaultValue="Last" mappable="true" name="PAGINATE_LAST_TEXT" prompt="Last Text" tab="Data Table Text"/>
+            <item defaultValue="Next" mappable="true" name="PAGINATE_NEXT_TEXT" prompt="Next Text" tab="Data Table Text"/>
+            <item defaultValue="Previous" mappable="true" name="PAGINATE_PREVIOUS_TEXT" prompt="Previous Text" tab="Data Table Text"/>
+			<!-- ARIA hints -->
+			<item name="Sorting" prompt="Sorting ARIA labels"  type="com.acquire.util.ui.Legend" typeValue="2|N" tab="Data Table Text"/>
+            <item defaultValue=": activate to sort column ascending" mappable="true" name="ARIA_SORT_ASCENDING_TEXT" prompt="Sort Ascending Text" tab="Data Table Text"/>
+            <item defaultValue=": activate to sort column descending" mappable="true" name="ARIA_SORT_DESCENDING_TEXT" prompt="Sort Descending Text" tab="Data Table Text"/>
+
+            <item defaultValue="Loading..." mappable="true" name="LOADING_RECORDS_TEXT" prompt="Loading Records Text" tab="Data Table Text"/>
+            <item defaultValue="Processing..." mappable="true" name="PROCESSING_TEXT" prompt="Processing Text" tab="Data Table Text"/>
+		</custom>
+	</widget>
+
+    <widget helpFile="17_presentation/display_items/chart_display_item_in_presentation_jfreechart.htm" icon="/images/PresentationChart.gif" jars="jfreechart-1.0.13,jcommon-1.0.16.jar" name="JFreeChart" service="com.acquire.intelligentforms.presentation.chart.jfreechart.JFreeChartService" type="Chart">
+    </widget>
+
+	<widget icon="/images/html5_icon.png" name="Input (HTML5)" type="Text">
+		<template type="source" value="./templates/widgets/html5/inputtype_text.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget icon="/images/html5_icon.png" name="Password (HTML5)" type="Text">
+		<template type="source" value="./templates/widgets/html5/inputtype_password.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputNumberDialogHandler" icon="/images/html5_icon.png" name="Number (HTML5)" type="Number,Decimal" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_number.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5RangeDialogHandler" icon="/images/html5_icon.png" name="Range (HTML5)" type="Number,Decimal" isWCAGCompliant="false">
+		<template type="source" value="./templates/widgets/html5/inputtype_range.wgt"/>
+	<custom>
+      <item help="This is Step scale factor of the slider" layout="-1" mand="false" name="Step" prompt="Step" tab="Answer.Control" type="javax.swing.JTextField" typeValue="DECIMAL|4" usage="7"/>
+    </custom>
+  </widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5ProgressDialogHandler" icon="/images/html5_icon.png" name="Progress (HTML5)" type="Number">
+		<template type="source" value="./templates/widgets/html5/progress.wgt"/>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5MeterDialogHandler" icon="/images/html5_icon.png" name="Meter (HTML5)" type="Number">
+		<template type="source" value="./templates/widgets/html5/meter.wgt"/>
+        <custom>
+            <item defaultValue="" mand="false" name="LOW" prompt="Low meter value" tab="Meter Options" typeValue="NUMERIC|4"/>
+            <item defaultValue="" mand="false" name="HIGH" prompt="High meter value" tab="Meter Options" typeValue="NUMERIC|4"/>
+            <item defaultValue="" mand="false" name="OPTIMUM" prompt="Optimum meter value" tab="Meter Options" typeValue="NUMERIC|4"/>
+        </custom>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputDateDialogHandler" icon="/images/html5_icon.png" name="Date (HTML5)" type="Date" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_date.wgt"/>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputDateTimeDialogHandler" icon="/images/html5_icon.png" name="Date Time (HTML5)" type="Date" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_datetime.wgt"/>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputDateTimeDialogHandler" icon="/images/html5_icon.png" name="Date Time Local (HTML5)" type="Date" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_datetimelocal.wgt"/>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputTimeDialogHandler" icon="/images/html5_icon.png" name="Time (HTML5)" type="Date" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_time.wgt"/>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputMonthDialogHandler" icon="/images/html5_icon.png" name="Month (HTML5)" type="Date" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_month.wgt"/>
+	</widget>
+	<widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputWeekDialogHandler" icon="/images/html5_icon.png" name="Week (HTML5)" type="Date" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_week.wgt"/>
+	</widget>
+	<widget icon="/images/html5_icon.png" name="Email (HTML5)" type="Text" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_email.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget icon="/images/html5_icon.png" name="Telephone (HTML5)" type="Text" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_tel.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget icon="/images/html5_icon.png" name="URL (HTML5)" type="Text" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_url.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget icon="/images/html5_icon.png" name="Search (HTML5)" type="Text" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_search.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS" mappable="true"/>
+        </custom>
+	</widget>
+	<widget displayString="$$ITEM.StructuralType$ (HTML5)" icon="/images/html5_icon.png" name="Structural Element (HTML5)" rootType="ITEM.EC_GENERATE()" type="Section,Column">
+		<template type="source" value="./templates/widgets/html5/structural_element.wgt"/>
+        <custom>
+            <item help="What HTML 5 structural element do you want?" mand="true" name="StructuralType" prompt="Structural Type" tab="Appearance" type="javax.swing.JComboBox" typeValue="address^Address|article^Article|aside^Aside|details^Details|summary^Summary|header^Header|footer^Footer|hgroup^Heading Group|nav^Navigation|section^Section"/>
+        </custom>
+	</widget>
+	<widget icon="/images/html5_icon.png" name="Details with Summary (HTML5)" rootType="ITEM.EC_GENERATE()" type="Section">
+        <template type="header" value="./templates/widgets/html5/details_summary_header.wgt"/>
+		<template type="source" value="./templates/widgets/html5/details_summary.wgt"/>
+        <custom>
+            <item help="What text would you like to display for the summary?" mand="true" name="SummaryText" prompt="Summary Text" tab="Appearance" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS"/>
+            <item help="What style would you like to apply to the summary?" mand="false" name="SummaryStyle" prompt="Summary Style" tab="Appearance" type="com.acquire.intelligentforms.ide.themeseditor.StyleChooser"/>
+        </custom>
+	</widget>
+    <widget icon="/images/html5_icon.png" name="Colour (HTML5)" type="Text" validationOnBlur="true">
+		<template type="source" value="./templates/widgets/html5/inputtype_colour.wgt"/>
+	</widget>
+
+  <widget callback="false" displayName="Add Contact Button (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.contacts.addContact" type="Button">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.contacts.addContact/addContactButton.wgt"/>
+    <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.contacts.addContact/addContactButtonHeader.wgt"/>
+    <custom>
+		<item name="RunButtonRules" prompt="Run Button Rules" type="com.acquire.util.FocusCheckbox"/>
+		<item name="DI_NAME"     prompt="Data Item With Name of Contact:" mand="true" type="PropertyChooser" />
+		<item name="MultiValues" prompt="Multi-Values"  type="com.acquire.util.ui.Legend" typeValue="4|N" />
+		<item name="l2" type="javax.swing.JLabel" prompt="These data items can hold multiple values as a comma separated list.  The position of the value in the list corresponds to a type - 'home', 'mobile', 'work', 'other'" />
+		<item name="DI_NUMBERS"  prompt="Data Item With Number(s) of Contact:" help="Comma separated list" type="PropertyChooser" />
+		<item name="DI_EMAILS"   prompt="Data Item With Email(s) of Contact:" help="Comma separated list" type="PropertyChooser" />
+		<item name="DI_URLS"     prompt="Data Item With URL(s) of Contact:" help="Comma separated list" type="PropertyChooser" />
+		<item name="DI_NOTE"     prompt="Data Item With Notes of Contact:" type="PropertyChooser" />
+		<item name="Messages" prompt="Messages"  type="com.acquire.util.ui.Legend" typeValue="2|N" />
+		<item name="SuccessMessage" prompt="Success Message" help="Leave empty for no success notification" mappable="true" />
+		<item name="ErrorMessage"   prompt="Error Message"   help="Leave empty for no error notification" mappable="true"/>
+	</custom>
+  </widget>
+
+  <widget callback="false" displayName="Contacts Table (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.contacts.getContacts" type="Table">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.contacts.getContacts/getContactsTable.wgt"/>
+    <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.contacts.getContacts/getContactsTableHeader.wgt"/>
+    <custom>
+        <item name="GEN_TABLE"          prompt="Generate table content" type="com.acquire.util.FocusCheckbox" />
+		<item name="DI_NAME"			prompt="Name Data Item:"		mand="true" type="PropertyChooser" />
+		<item name="Numbers" prompt="Numbers"  type="com.acquire.util.ui.Legend" typeValue="3|N" />
+		<item name="l2" type="javax.swing.JLabel" prompt="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." />
+		<item name="DI_NUMBERS"			prompt="Number Data Item:"		help="Must be used as question in nested table in contacts table" type="PropertyChooser" />
+		<item name="DI_NUMBERS_TYPE"	prompt="Number Type Data Item:" help="Must be used as question in nested table in contacts table" type="PropertyChooser" layout="1" />
+		<item name="Emails" prompt="Emails"  type="com.acquire.util.ui.Legend" typeValue="3|N" />
+		<item name="l3" type="javax.swing.JLabel" prompt="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." />
+		<item name="DI_EMAILS"			prompt="Email Data Item:"		help="Must be used as question in nested table in contacts table" type="PropertyChooser" />
+		<item name="DI_EMAILS_TYPE"		prompt="Email Type Data Item:"	help="Must be used as question in nested table in contacts table" type="PropertyChooser" layout="1" />
+		<item name="Urls" prompt="Urls"  type="com.acquire.util.ui.Legend" typeValue="3|N" />
+		<item name="l4" type="javax.swing.JLabel" prompt="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." />
+		<item name="DI_URLS"			prompt="URL Data Item:"			help="Must be used as question in nested table in contacts table" type="PropertyChooser" />
+		<item name="DI_URLS_TYPE"		prompt="URL Type Data Item:"	help="Must be used as question in nested table in contacts table" type="PropertyChooser" layout="1" />
+		<item name="DI_NOTE"			prompt="Notes Data Item:"		type="PropertyChooser" />
+	</custom>
+  </widget>
+
+  <widget callback="false" displayName="Back Button (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.events.backbutton" type="Button">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.events.backbutton/backButton.wgt"/>
+    <custom>
+      <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
+    </custom>
+  </widget>
+
+  <widget callback="false" displayName="Gestures Button (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.accelerometer.detectGestures" type="Button">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.accelerometer.detectGestures/buttonBody.wgt"/>
+    <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.accelerometer.detectGestures/buttonHeader.wgt"/>
+    <custom>
+      <item help="Gestures to be detected" includeInDesign="true" layout="-1" mand="false" name="gesture" prompt="Gestures" type="com.acquire.util.ui.Legend" typeValue="2|N" usage="7"/>
+      <item defaultValue="true" help="Detect shake gesture" layout="-1" mand="true" name="ShakeOpt" prompt="Shake" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="false" help="Detect face down gesture" layout="-1" mand="true" name="UpSideDown" prompt="Face down" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="1000" help="How often to retrieve the Acceleration in milliseconds." includeInDesign="true" layout="-1" mand="true" name="Frequency" prompt="Frequency" type="javax.swing.JTextField" usage="7"/>
+      <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
+    </custom>
+  </widget>
+
+  <widget helpFile="17_presentation/display_items/notify_cordova_hybrid_display_item_in_presentation.htm" callback="false" displayName="Notify (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.notifications.notify" type="Item:">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.notifications.notify/notify.wgt"/>
+    <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.notifications.notify/notifyHeader.wgt"/>
+    <custom>
+      <item dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.widgets.dialoghandlers.NotificationsDialogHandler" name="Action" type="javax.swing.ButtonGroup" typeValue="beep|vibrate|alert"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="title" prompt="Title" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="message" prompt="Message" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="times" prompt="Number of Repeats" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="time" prompt="Duration" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="delay" prompt="Delay" type="javax.swing.JTextField" usage="7"/>
+      <item name="delayLabel" prompt="Vibration will be blocked if the user has not interacted with the frame yet. The delay will allow time for interaction." type="javax.swing.JLabel" usage="16"/>
+    </custom>
+  </widget>
+
+  <widget callback="false" displayName="Geolocation Button (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.geolocation.deviceLocation" type="Button">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.geolocation.deviceLocation/geolocation.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="latitude" prompt="Latitude Variable Name" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="longitude" prompt="Longitude Variable Name" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="altitude" prompt="Altitude Variable Name" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="accuracy" prompt="Accuracy Variable Name" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="timeStamp" prompt="TimeStamp Variable Name" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+
+    <widget callback="false" displayName="Camera Button (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.camera.addImage" type="Button">
+        <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.camera.addImage/addImageButton.wgt"/>
+        <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.camera.addImage/addImageButtonHeader.wgt"/>
+        <custom>
+            <item name="RunButtonRules" prompt="Run Button Rules" type="com.acquire.util.FocusCheckbox"/>
+
+            <item mand="true" name="DI_NAME" prompt="Data Item for Image Content:" type="PropertyChooser"/>
+
+            <item name="ImageOptions" prompt="Image options" type="com.acquire.util.ui.Legend" typeValue="6|N"/>
+            <item help="Image source, camera or one of the phone albums" defaultValue="pictureSource.CAMERA" layout="-1" mand="true" name="Source" type="javax.swing.JComboBox" typeValue="pictureSource.SAVEDPHOTOALBUM^Photo Album|pictureSource.CAMERA^Camera" usage="7"/>
+            <!-- destinationType.FILE_URI is not yet supported, requires an additional servlet for the file upload -->
+            <item defaultValue="destinationType.DATA_URL" layout="-1" mand="true" name="DestinationType" type="javax.swing.JComboBox" typeValue="destinationType.DATA_URL^Base64 Text" usage="7"/><!-- |destinationType.FILE_URI^File upload -->
+            <item defaultValue="20" layout="-1" mand="true" name="Quality" type="javax.swing.JComboBox" typeValue="10|20|30|40|50|60|70|80|90|100" usage="7"/>
+            <!-- allowEdit -->
+            <item help="Allow the editing of the image prior to upload. Not all phones support it." layout="-1" name="AllowEdit" prompt="Allow edit?" type="javax.swing.JCheckBox"/>
+            <!-- encodingType -->
+            <!-- targetWidth, targetHeight -->
+            <item help="Width in pixels to scale image. Must be used with Target Height. Aspect ratio remains constant. (Number)" name="TargetWidth" prompt="Target Width (px)" type="javax.swing.JTextField" typeValue="NUMERIC|4"/>
+            <item help="Height in pixels to scale image. Must be used with Target Width. Aspect ratio remains constant. (Number)" name="TargetHeight" prompt="Target Height (px)" type="javax.swing.JTextField" typeValue="NUMERIC|4"/>
+            <!-- not yet implemented: mediaType, correctOrientation, saveToPhotoAlbum, popoverOptions (iOS), cameraDirection -->
+
+            <!-- destinationType.FILE_URI is not yet supported, requires an additional servlet for the file upload -->
+            <!-- <item help="The server URL is relevant only when the type is File Upload" layout="-1" mand="false" name="ServerUrl" prompt="Server upload URL" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/> -->
+
+            <item name="Messages" prompt="Messages" type="com.acquire.util.ui.Legend" typeValue="4|N"/>
+            <item help="Leave empty for no success notification" mappable="true" name="SuccessMessage" prompt="Success Message"/>
+            <item help="Leave empty for no error notification" mappable="true" name="ErrorMessage" prompt="Error Message"/>
+            <item help="Leave empty when there is no error or success notification set" mappable="true" name="NotificationTitle" prompt="Notification Title"/>
+            <item help="Leave empty when there is no error or success notification set" mappable="true" name="NotificationCloseText" prompt="Notification Close Text"/>
+        </custom>
+    </widget>
+
+
+    <widget callback="false" displayName="View PDF Android (Cordova Hybrid)" icon="/images/cordova_16.png" isHybridWidget="true" name="com.temenos.widgets.hybrid.viewPDFAndroid" type="Button">
+        <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.viewPDFAndroid/viewPDFAndroidBody.wgt"/>
+        <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.viewPDFAndroid/viewPDFAndroidHeader.wgt"/>
+        <custom>
+          <item name="l1" type="javax.swing.JLabel" prompt="This widget requires the custom Cordova plugin openFileInExternalViewer." />
+          <item name="l2" type="javax.swing.JLabel" prompt="The plugin is embedded in the product widget, at the location" />
+          <item name="l3" type="javax.swing.JLabel" prompt="IDE/widgets/com.temenos.widgets.hybrid.viewPDFAndroid/cordovaPlugin/openFileInExternalViewer." />
+          <item name="l4" type="javax.swing.JLabel" prompt="You can also copy the plugin into your project, for example into $$PROJECT_HOME$/cordovaPlugins, and import it from there." />
+          <item name="l5" type="javax.swing.JLabel" prompt="The Cordova plugins are configured from Developer IDE, menu Project-&gt;Properties, tab &quot;Additional Cordova Plugins&quot;." />
+          <item includeInDesign="Never" layout="-1" mand="true" name="URL" prompt="The URL of the PDF file" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/>
+          <item includeInDesign="Never" layout="-1" mand="false" name="FileName" prompt="The name of the PDF File" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/>
+        </custom>
+    </widget>
+</widgets>

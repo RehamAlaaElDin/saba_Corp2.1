@@ -1,0 +1,27 @@
+$%IF ITEM.format != "full profile"$
+<script type="IN/MemberProfile" 
+$%IF ITEM.id != ""$data-id="$$ITEM.id$"
+$%ENDIF$$%IF ITEM.format != ""$data-format="$$ITEM.format$"
+$%ENDIF$$%IF ITEM.related != "Y"$data-related="false"
+$%ENDIF$$%IF ITEM.text != ""$data-text="$$ITEM.text$"
+$%ENDIF$$%IF ITEM.width != ""$data-width="$$ITEM.width$"$%ENDIF$></script>
+$%ELSE$
+<script>
+function $$ITEM.ID()$_render() {
+    window.Linkedin.getProfile("url=$$ITEM.id$",["id"],function(result){
+     var el=document.getElementById("$$ITEM.ID()$_profile");
+     el.innerHTML='<script type="IN/FullMemberProfile" data-id="' + result.values[0].id + '" $%IF ITEM.width != ""$data-width="$$ITEM.width$"$%ENDIF$><\/script>';
+     IN.parse(el);    
+    });
+	
+}
+window.Linkedin.addEvent('LinkedinApiLoaded', function(e) {    
+window.Linkedin.ApiLoaded=true;
+ $$ITEM.ID()$_render();
+    });
+	if (window.Linkedin.ApiLoaded) { $$ITEM.ID()$_render(); }
+</script>
+<div id="$$ITEM.ID()$_profile"></div>
+$%ENDIF$
+
+$%INCLUDE widgets/com.temenos.widgets.social.linkedin/inc_linkedinRegisterWidget.wgt$$%ENDINCLUDE$

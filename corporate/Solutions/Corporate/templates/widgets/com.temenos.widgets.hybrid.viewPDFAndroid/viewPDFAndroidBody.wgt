@@ -1,0 +1,24 @@
+$%COMMENT$ $Revision: 1.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$$ITEM.EC_GENERATE()$
+$%IF ITEM.NotApplicableAppearance != "Disable" && ITEM.NotApplicableAppearance != "Hide" || ITEM.HideField != "Y" $
+ <script type = "text/javascript" charset="utf-8">
+//<![CDATA[ 
+    document.getElementById("$$ITEM.ID()$").onclick = null;           $%COMMENT$  remove the button onclick $%ENDCOMMENT$
+    $%IF DEVICE_INFO.platform == "Android"$
+    document.addEventListener('deviceready', function () {
+        document.getElementById('$$ITEM.ID()$').addEventListener('click', 
+            function (e) {
+                com.temenos.widgets.hybrid.viewPDFAndroid.viewPDF('$$ITEM.URL$', '$$ITEM.FileName$');
+            }
+            , false);
+    });
+    $%ELSE$
+    document.getElementById('$$ITEM.ID()$').addEventListener('click', 
+    function () {
+        window.open('$$ITEM.URL$', '_blank', 'location=no');
+    }
+    , false);
+    $%ENDIF$
+//]]>
+</script>
+$%ENDIF$

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+		 version="2.4">
+
+
+    <!-- <display-name>The application name</display-name> -->	
+
+    <!-- this filter should be called before any other logic that requires tenant-related information ->
+    <filter>
+        <filter-name>TenantFilter</filter-name>
+        <filter-class>com.acquire.intelligentforms.multitenant.TenantFilter</filter-class>
+        <init-param>
+            <param-name>exclude</param-name>
+            <!- regex list of context paths that will not be processed as tenant-specific assets ->
+            <param-value>/index.html,/Login,/login.html,/servletcontroller,/ajaxservletcontroller</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>TenantFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    -->
+
+    <!-- Config for the UXP library loader. Allows the pre-loading of library component projects.
+         You can use your own processor with the LIBRARY_PROCESSOR_CLASS param by implementing the ILibraryProcessor interface
+		 The options for the processor can be defined in here or within a separate config file 
+		 You can use a combination of options, with '|' separator for multiple values
+		 LIBRARY_EXCLUSION_LIST, LIBRARY_INCLUSION_LIST, LIBRARY_EXCLUSION_FILTER and LIBRARY_INCLUSION_FILTER. 
+		 The exclusion list and exclusion filter settings take precedence over the inclusion list and inclusion filter. -->
+	<!--	  
+    <context-param>
+        <!- The name of your processor class, to implement your own implement the ILibraryProcessor interface ->
+        <param-name>LIBRARY_PROCESSOR_CLASS</param-name>
+        <param-value>com.temenos.connect.libraryloader.LibraryProcessor</param-value>
+    </context-param>
+    <context-param>
+        <!- A '|' separated list of library names to load before others ->
+        <param-name>LIBRARY_LOAD_FIRST</param-name>
+        <param-value>IRISUtils</param-value>
+    </context-param>
+    <context-param>
+        <!- A '|' separated list of library names to not load ->
+        <param-name>LIBRARY_EXCLUSION_LIST</param-name>
+        <param-value>Categories_TEST|Dashboard_TEST</param-value>
+    </context-param>
+    <context-param>
+        <!- A '|' separated list of library names to specifically load ->
+        <param-name>LIBRARY_INCLUSION_LIST</param-name>
+        <param-value>Cards|CardsTxn</param-value>
+    </context-param>
+    <context-param>
+        <!- A regular expression for excluding libraries, uses java regular expressions, see https://www.w3schools.com/java/java_regex.asp ->
+        <param-name>LIBRARY_EXCLUSION_FILTER</param-name>
+        <param-value>.*_TEST</param-value>
+    </context-param>
+    <context-param>
+        <!- A regular expression for including libraries, uses java regular expressions, see https://www.w3schools.com/java/java_regex.asp ->
+        <param-name>LIBRARY_INCLUSION_FILTER</param-name>
+        <param-value>^Account</param-value>
+    </context-param>
+    <context-param>
+        <!- An alternative config file that drives the same options as above but names are on separate rows and separators begin with a # ->
+        <param-name>LIBRARY_PROCESSOR_CONFIG_FILE</param-name>
+        <param-value>WEB-INF/processor_config.txt</param-value>
+    </context-param>
+    <context-param>
+        <!- Optionally run any project startup rules when loading the libraries ->
+        <param-name>LIBRARY_LOADER_RUN_STARTUP_RULES</param-name>
+        <param-value>Y</param-value>
+    </context-param>
+    <listener>
+        <listener-class>com.temenos.connect.libraryloader.LibraryLoaderContextListener</listener-class>
+    </listener>
+    -->
+
+	<servlet>
+		<servlet-name>servletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.ServletController</servlet-class>
+		<init-param>
+			<!--modifying this parameter only works, if it's updated correspondingly in the urlrewrite.xml-->
+			<param-name>bookmarkablePhasePrefix</param-name>
+			<param-value>page</param-value>
+		</init-param>
+		<!--modifying this parameter only works, if it's updated correspondingly in the urlrewrite.xml
+		Only one character is permitted.-->
+		<init-param>
+			<param-name>bookmarkablePhasePrefixSeparator</param-name>
+			<param-value>-</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>ajaxservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.AjaxServletController</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>dataservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.json.servlets.DataStoreServletController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>viewservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.json.servlets.ViewServletController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>jsonajaxservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.json.servlets.JsonAjaxServletController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>helpservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.HelpServletController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>spellcheck_entry</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.SpellCheckEntryController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>spellcheck_results</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.SpellCheckResultsController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SOAPController</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.webservice.SOAPController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>chartservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.ChartServletController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>portletservletcontroller</servlet-name>
+		<servlet-class>com.acquire.intelligentforms.presentation.PortletServletController</servlet-class>
+	</servlet>
+  <servlet-mapping>
+		<servlet-name>servletcontroller</servlet-name>
+		<url-pattern>/servletcontroller</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ajaxservletcontroller</servlet-name>
+		<url-pattern>/ajaxservletcontroller</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>dataservletcontroller</servlet-name>
+		<url-pattern>/getData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>viewservletcontroller</servlet-name>
+		<url-pattern>/getView</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>jsonajaxservletcontroller</servlet-name>
+		<url-pattern>/doAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>servletcontroller</servlet-name>
+		<url-pattern>/page/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>helpservletcontroller</servlet-name>
+		<url-pattern>/helpservletcontroller</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>spellcheck_entry</servlet-name>
+		<url-pattern>/spellcheck_entry</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>spellcheck_results</servlet-name>
+		<url-pattern>/spellcheck_results</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SOAPController</servlet-name>
+		<url-pattern>/SOAPController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>chartservletcontroller</servlet-name>
+		<url-pattern>/chartServletController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>portletservletcontroller</servlet-name>
+		<url-pattern>/portletServletController</url-pattern>
+	</servlet-mapping>
+
+    <!--  ->
+    <servlet>
+        <servlet-name>assetcontroller</servlet-name>
+        <servlet-class>com.acquire.intelligentforms.multitenant.AssetController</servlet-class>
+        <init-param>
+            <param-name>external</param-name>
+            <!- regex list of context paths that will be passed to the file handler without any modifications, as they are external to the war, and meant to be processed separately ->
+            <param-value>.*/BrandingResource/.*</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>assetcontroller</servlet-name>
+        <url-pattern>/assetcontroller</url-pattern>
+    </servlet-mapping>
+    -->
+
+	<filter>
+	    <filter-name>UrlRewriteFilter</filter-name>
+	    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>UrlRewriteFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	
+    <filter>
+        <filter-name>GZip</filter-name>
+        <filter-class>org.tuckey.web.filters.urlrewrite.gzip.GzipFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GZip</filter-name>
+        <url-pattern>*.js</url-pattern>
+ 	    <url-pattern>*.css</url-pattern>
+ 		<url-pattern>*.woff</url-pattern>
+    </filter-mapping>
+
+	
+
+</web-app>

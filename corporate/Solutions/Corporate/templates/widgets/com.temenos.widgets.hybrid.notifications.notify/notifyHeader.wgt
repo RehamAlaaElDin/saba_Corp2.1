@@ -1,0 +1,101 @@
+$%COMMENT$ $Revision: 1.8 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<script type="text/javascript" charset="utf-8">
+
+window.com=window.com||{};
+window.com.temenos=window.com.temenos||{};
+window.com.temenos.widgets=window.com.temenos.widgets||{};
+window.com.temenos.widgets.hybrid=window.com.temenos.widgets.hybrid||{};
+window.com.temenos.widgets.hybrid.notifications=window.com.temenos.widgets.hybrid.notifications||{};
+
+window.com.temenos.widgets.hybrid.notifications.notify = (function () {
+    var notifyAPI = {deviceReady:false}
+    
+    
+        // alert dialog dismissed
+    function alertDismissed() {
+        // do something
+    }
+
+    function onConfirm(buttonIndex) {
+       // alert('You selected button ' + buttonIndex);
+    }
+
+    // process the promp dialog results
+    function onPrompt(results) {
+        //alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
+    }
+
+    
+    notifyAPI.alert = function(message, alertCallback ,title, buttonName) {
+        if ( typeof (alertCallback) !== "function")
+            alertCallback = alertDismissed;
+        navigator.notification.alert(message, alertCallback, title, buttonName);
+
+    };
+
+    notifyAPI.confirm = function(message, title, buttonLabels, callback) {
+        if ( typeof (callback) !== "function")
+            callback = onConfirm;
+        navigator.notification.confirm(message, callback, title, buttonLabels);
+
+    };
+
+    notifyAPI.prompt = function(message, title, buttonLabels, defaultText, callback) {
+        if ( typeof (callback) !== "function")
+            callback = onPrompt;
+        navigator.notification.prompt(message, callback, title, buttonLabels, defaultText);
+
+    };
+
+    notifyAPI.beep = function(times) {
+        navigator.notification.beep(times);
+    };
+
+    notifyAPI.vibrate = function(milliseconds) {
+        navigator.vibrate(milliseconds);
+    };
+
+    notifyAPI.postProcessResponses = function(ns, ajaxCaller, result) {   
+ 
+    //notifyAPI.triggerEvent('showNotification');
+    }
+
+    notifyAPI.triggerEvent=function (eventName) {
+    if(document.createEvent) {
+        var event = document.createEvent('Event');
+        event.initEvent(eventName, true, true);
+        document.dispatchEvent(event);
+    } else {
+        document.documentElement[eventName]++;
+    }
+    }
+    notifyAPI.addEvent= function (eventName, callback) {
+    if(document.addEventListener) {
+        document.addEventListener(eventName, callback, false);
+    } else {    
+        document.documentElement.attachEvent('onpropertychange', function (e) {
+            if(e.propertyName  == eventName) {
+                callback();
+            }            
+        });
+    }
+    }
+
+    notifyAPI.removeEvent = function (eventName, callback) {
+    if (document.removeEventListener) {
+      document.removeEventListener(eventName, callback, false);
+    } else {
+      document.documentElement.detachEvent('onpropertychange', callback);
+    }
+    }
+
+    return notifyAPI;
+})();   
+   
+   document.addEventListener("deviceready", function(){
+       window.com.temenos.widgets.hybrid.notifications.notify.deviceReady=true;
+        //addWidget("com.temenos.widgets.hybrid.notifications.notify", "$$!NAMESPACE$", "");    
+       }, false);
+    
+   
+</script>

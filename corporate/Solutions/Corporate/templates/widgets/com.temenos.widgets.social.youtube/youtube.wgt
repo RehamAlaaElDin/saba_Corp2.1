@@ -1,0 +1,9 @@
+<iframe 
+id="player_$$ITEM.ID()$" 
+type="text/html" 
+width="$$ITEM.Width$" 
+height="$$ITEM.Height$" 
+src="http://www.youtube.com/embed/$$ITEM.VideoID$?autoplay=$%IF ITEM.Autoplay == "Y"$1$%ELSE$0$%ENDIF$&fs=$%IF ITEM.Fullscreen == "Y"$1$%ELSE$0$%ENDIF$&controls=$%IF ITEM.Controls == "Y"$1$%ELSE$0$%ENDIF$&rel=$%IF ITEM.RelatedVideos == "Y"$1$%ELSE$0$%ENDIF$&theme=$$ITEM.Theme$&showinfo=$%IF ITEM.Showinfo == "Y"$1$%ELSE$0$%ENDIF$" 
+allowfullscreen
+frameborder="0" 
+></iframe>

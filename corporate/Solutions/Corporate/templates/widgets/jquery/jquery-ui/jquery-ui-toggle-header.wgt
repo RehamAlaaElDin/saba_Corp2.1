@@ -1,0 +1,40 @@
+<script>
+// run the currently selected effect
+		function runEffect(toggleID) {
+			
+			var options = {};
+			// run the effect
+			/*
+			if(compToggleID!= null){
+				$( "#"+compToggleID ).hide();
+			}
+			*/
+			
+			$%IF ITEM.JQ_EFFECT = "Y"$
+				$( "#"+toggleID ).toggle("blind", options, "fast");
+			$%ELSE$
+				$( "#"+toggleID ).toggle();
+			$%ENDIF$
+		};
+		
+		
+		function onToggle(parentDivId, ToggleDivId){
+			
+			runEffect(ToggleDivId);	
+			$("#" + parentDivId).focus();			
+			return false;
+		}
+		
+		
+		function onBlurAction(parentDivId, ToggleDivId, addBlurBehaviour){
+		
+			if("y" === addBlurBehaviour.toLowerCase()){
+				setTimeout(function() { 
+                                         $( "#" + ToggleDivId).hide();
+                             },200);             //this line sets a time out on blur so that the onclick event can be caught in submenu.		
+				return;
+			}
+		
+		}
+		
+</script>

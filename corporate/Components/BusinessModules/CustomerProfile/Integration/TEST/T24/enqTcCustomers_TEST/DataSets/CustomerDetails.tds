@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="11">
+  <!---->
+<enqTcCustomer CustomerCode="100336" CustomerNo="100336" CustomerStatus="3" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[A]" DS_UID="10" DateOfBirth="19700723" Id="" PrimaryKey="" StatusDescription="Ret.Client HNW">
+    <OffPhone DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].OffPhone" DS_UID="0" OffPhone="49-89-649-42561"/>
+    <Fax1 DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Fax1" DS_UID="1" Fax1=""/>
+    <TownCountry DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].TownCountry" DS_UID="2" TownCountry="Musterstadt"/>
+    <Phone1 DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Phone1" DS_UID="3" Email1="rgerling@yahoo.com" Phone1="49-89-636-48018" Sms1="+447700900200"/>
+    <Address DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Address" DS_UID="5">
+      <Address Address="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Address[C].Address" DS_UID="4"/>
+    </Address>
+    <PostCode DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].PostCode" DS_UID="6" PostCode="01234"/>
+    <Street DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Street" DS_UID="7" Street="Haupt Street 18"/>
+    <Name1 DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Name1" DS_UID="8" Name="Rolf Gerling"/>
+    <Country Country="Germany" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCustomer[C].Country" DS_UID="9"/>
+  </enqTcCustomer>
+</DataSetRoot>

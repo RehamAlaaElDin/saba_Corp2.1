@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+	<widget name="ExchangeCalendarView" type="Item:">
+		<template type="header" value="exchangeCalendar-header.wgt" />
+		<template type="source" value="exchangeCalendar.wgt" />
+        <custom>
+            <item name="l1" includeInDesign="false" type="javax.swing.JLabel" prompt="The Exchange Calendar API expects the dates in yyyy-MM-dd format. &#10; This can be achieved in multiple ways:" usage="21" /><!-- usage=21 means use in Dialog and Properties, but do not store the label in the IFP-->
+            <item name="l2" includeInDesign="false" type="javax.swing.JLabel" prompt=" - Use a Date type item and the expression $$mydate.format(&quot;yyyy-MM-dd&quot;)$" usage="21" />
+            <item name="l3" includeInDesign="false" type="javax.swing.JLabel" prompt=" - Use a Date type item and the expression $$mydate.year()$-$$mydate.month()$-$$mydate.day()$" usage="21" />
+            <item name="l4" includeInDesign="false" type="javax.swing.JLabel" prompt=" - Use any other items and compose them with the '-' separator $$yearitem$-$$monthitem$-$$dayitem$  etc." usage="21" />
+            <item name="INITDATE" prompt="Initial Date" help="The date to use for initializing the calendar" includeInDesign="false" layout="-1" mand="true" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" typeValue="ALL_CHARS" defaultValue="$$SYSYEAR$-$$SYSMONTH$-$$SYSDAY$"/> 
+        </custom>
+	</widget>
+</widgets>

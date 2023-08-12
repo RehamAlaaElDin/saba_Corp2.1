@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="0">
+  <!--enqTcDates-->
+  <enqTcDates DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDates[A]" DS_UID="0" Id="GB0010001" LastWorkingDay="2016-04-15" NextWorkingDay="2016-04-25" Today="2016-04-22"/>
+</DataSetRoot>

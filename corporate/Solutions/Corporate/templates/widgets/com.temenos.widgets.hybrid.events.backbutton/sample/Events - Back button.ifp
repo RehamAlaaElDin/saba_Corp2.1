@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" Connect="version 5.3.1__17" HybridFlag="Y" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root" Name="Events - Back button" ProjectExtension=".ifp" ProjectFolder="C:/Users/ivladu/edgeConnectV5.3/RTE/Projects/Events - Back button" ProjectType="N" eid="C4CF9D102AF5525C1273">
+  <Types Name="Types Root" eid="C4CF9D102AF5525C1274">
+    <Lists Name="Lists" eid="C4CF9D102AF5525C1014"/>
+    <DataTypes Name="Data Types" eid="C4CF9D102AF5525C1018">
+      <DataType Name="Text" eid="C4CF9D102AF5525C1315"/>
+      <DataType Name="Number" Type="Number" eid="C4CF9D102AF5525C1316"/>
+      <DataType Name="Decimal" Type="Decimal" eid="C4CF9D102AF5525C1317"/>
+      <DataType Name="Date" Type="Date" eid="C4CF9D102AF5525C1318"/>
+      <DataType Name="File" Type="File" eid="C4CF9D102AF5525C1319"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="C4CF9D102AF5525C1320"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="C4CF9D102AF5525C1025"/>
+  </Types>
+  <Dictionary Name="C4CF9D102AF5525C DataDictionary 1" eid="C4CF9D102AF5525C1275">
+    <PropertyGroup Name="Data Store Root" eid="C4CF9D102AF5525C1277">
+      <Property Name="button status" eid="87C4E3B3471FEC5E1083"/>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="C4CF9D102AF5525C1279">
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="C4CF9D102AF5525C1324"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="C4CF9D102AF5525C1325"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="C4CF9D102AF5525C1326"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="C4CF9D102AF5525C1327"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="C4CF9D102AF5525C1278"/>
+  <Products Name="Processes Root" eid="C4CF9D102AF5525C1280">
+    <Product ErrorPhase="start process.ErrorPhase" Name="start process" eid="C4CF9D102AF5525C1613">
+      <Phase Name="first phase" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="C4CF9D102AF5525C1629">
+        <Button ActionCommand="Forward" ButtonType="Forward" Name="C4CF9D102AF5525C FormButton 2" eid="C4CF9D102AF5525C1631"/>
+        <Button ActionCommand="Back Button  Cordova" CheckMandatoryFields="N" DependencyType="Previous questions in phase" Name="87C4E3B3471FEC5E FormButton 7" eid="87C4E3B3471FEC5E1077">
+          <Rule BreakPointEnabled="Y" FromType="Value" FromValue="$$button status$ +1" Name="Set Value" PropertyName="button status" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" Trim="N" Type="Data Item" eid="87C4E3B3471FEC5E1088"/>
+          <Rule Name="Goto Phase" OperationType="Go Forward to a Named Phase" Phase="start process.test phase" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" eid="7D79FF0021A95A43972"/>
+        </Button>
+      </Phase>
+      <Phase Name="offline phase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="C4CF9D102AF5525C1642">
+        <Heading HeaderText="h2 offline phase" Name="C4CF9D102AF5525C Heading 1" eid="C4CF9D102AF5525C1651"/>
+        <Button ActionCommand="Back" ButtonType="Back" Name="C4CF9D102AF5525C FormButton 3" eid="C4CF9D102AF5525C1643"/>
+        <Button ActionCommand="Forward" ButtonType="Forward" Name="C4CF9D102AF5525C FormButton 4" eid="C4CF9D102AF5525C1644"/>
+      </Phase>
+      <Phase Name="ErrorPhase" eid="C4CF9D102AF5525C3817">
+        <Heading HeaderText="An error has occurred, please try again later." Name="C4CF9D102AF5525C Heading 2" eid="C4CF9D102AF5525C3818"/>
+      </Phase>
+      <Phase Name="test phase" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="C4CF9D102AF5525C3836">
+        <Button ActionCommand="Back" ButtonType="Back" Name="C4CF9D102AF5525C FormButton 5" eid="C4CF9D102AF5525C3837"/>
+        <Button ActionCommand="Forward" ButtonType="Forward" Name="C4CF9D102AF5525C FormButton 6" eid="C4CF9D102AF5525C3838"/>
+        <Heading HeaderText="test phase" Name="C4CF9D102AF5525C Heading 3" eid="C4CF9D102AF5525C3844"/>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="C4CF9D102AF5525C1281">
+    <PresentationType ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" EditTheme="N" EntityEID="C4CF9D102AF5525C1280" MessagesOrder="Errors, Warnings, Info" MessagesSeparator="&lt;br/&gt;" Name="presentation" PresentationDefinitionClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationDefinition" QuestionListDefault="- Please Select" UseOptimised="N" UseTracking="N" eid="C4CF9D102AF5525C1617">
+      <PresentationProduct ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" EntityClassType="com.acquire.intelligentforms.entities.Product" EntityEID="C4CF9D102AF5525C1613" Name="C4CF9D102AF5525C RichHTMLPresentationProduct 3" RuntimeId="C4CF9D102AF5525C1623" TabPaneStyle="Use Default" eid="C4CF9D102AF5525C1623">
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="C4CF9D102AF5525C1629" Name="C4CF9D102AF5525C RichHTMLPresentationPhase 4" RuntimeId="C4CF9D102AF5525C1632" eid="C4CF9D102AF5525C1632">
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="C4CF9D102AF5525C1631" HideField="Y" Name="C4CF9D102AF5525C RichHTMLPresentationButton 6" NotApplicableAppearance="Disable" RuntimeId="BUT_C4CF9D102AF5525C1634" eid="C4CF9D102AF5525C1634"/>
+          <PresentationButton ButtonStyle="Color1 RightAlignedImage ActionArrow" ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" DesignToUse="Custom" DisplayType="GANObject:com.acquire.intelligentforms.ide.presentationeditor.widgets.WidgetDialog|com.temenos.widgets.hybrid.events.backbutton" DisplayTypebutton_body="N" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="87C4E3B3471FEC5E1077" Name="87C4E3B3471FEC5E RichHTMLPresentationButton 19" RuntimeId="BUT_87C4E3B3471FEC5E1078" eid="87C4E3B3471FEC5E1078"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="C4CF9D102AF5525C1642" Name="C4CF9D102AF5525C RichHTMLPresentationPhase 8" RuntimeId="C4CF9D102AF5525C1645" eid="C4CF9D102AF5525C1645">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="C4CF9D102AF5525C1651" FieldSize="15" Name="C4CF9D102AF5525C RichHTMLPresentationQuestion 11" NumberOfRows="5" RuntimeId="HEAD_C4CF9D102AF5525C1652" eid="C4CF9D102AF5525C1652"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="C4CF9D102AF5525C1643" Name="C4CF9D102AF5525C RichHTMLPresentationButton 9" RuntimeId="BUT_C4CF9D102AF5525C1646" eid="C4CF9D102AF5525C1646"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="C4CF9D102AF5525C1644" Name="C4CF9D102AF5525C RichHTMLPresentationButton 10" RuntimeId="BUT_C4CF9D102AF5525C1647" eid="C4CF9D102AF5525C1647"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="C4CF9D102AF5525C3817" Name="C4CF9D102AF5525C RichHTMLPresentationPhase 12" RuntimeId="C4CF9D102AF5525C3819" eid="C4CF9D102AF5525C3819">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="C4CF9D102AF5525C3818" FieldSize="15" Name="C4CF9D102AF5525C RichHTMLPresentationQuestion 13" NumberOfRows="5" RuntimeId="HEAD_C4CF9D102AF5525C3820" eid="C4CF9D102AF5525C3820"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="C4CF9D102AF5525C3836" Name="C4CF9D102AF5525C RichHTMLPresentationPhase 14" RuntimeId="C4CF9D102AF5525C3839" eid="C4CF9D102AF5525C3839">
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="C4CF9D102AF5525C3837" Name="C4CF9D102AF5525C RichHTMLPresentationButton 15" RuntimeId="BUT_C4CF9D102AF5525C3840" eid="C4CF9D102AF5525C3840"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="C4CF9D102AF5525C3838" Name="C4CF9D102AF5525C RichHTMLPresentationButton 16" RuntimeId="BUT_C4CF9D102AF5525C3841" eid="C4CF9D102AF5525C3841"/>
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="C4CF9D102AF5525C3844" FieldSize="15" Name="C4CF9D102AF5525C RichHTMLPresentationQuestion 17" NumberOfRows="5" RuntimeId="HEAD_C4CF9D102AF5525C3845" eid="C4CF9D102AF5525C3845"/>
+        </PresentationPhase>
+      </PresentationProduct>
+    </PresentationType>
+  </PresentationTypes>
+  <EVANotes Name="Notes Root" eid="C4CF9D102AF5525C1282">
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="C4CF9D102AF5525C1321"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="C4CF9D102AF5525C1322"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="C4CF9D102AF5525C1323"/>
+  </EVANotes>
+</Project>

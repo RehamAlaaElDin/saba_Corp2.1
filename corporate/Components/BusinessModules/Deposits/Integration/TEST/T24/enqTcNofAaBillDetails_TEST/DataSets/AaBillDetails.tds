@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="33">
+  <!---->
+  <enqTcNofAaBillDetailss DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1]" DS_UID="-1"/>
+<enqTcNofAaBillDetailss DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1]" DS_UID="6">
+    <Filter DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Filter" DS_UID="0" FilterString="ArrId eq 'AA18107WM6RY' and SimRef eq 'AASIMR18107QVKWHMM'"/>
+    <Results DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results" DS_UID="5" count="">
+      <enqTcNofAaBillDetails ArrId="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails" DS_UID="4" Id="" PrimaryKey="" SimRef="" TotalAmount="1">
+        <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].Links" DS_UID="1" href="enqTcNofAaBillDetailss('%7BPrimaryKey%7D')" rel="self" title="enqTcNofAaBillDetails"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="2" PropertyDescription="Account"/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="3" PropertyAmount="1"/>
+      </enqTcNofAaBillDetails>
+    </Results>
+  </enqTcNofAaBillDetailss>
+<enqTcNofAaBillDetailss DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1]" DS_UID="13">
+    <Filter DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Filter" DS_UID="7" FilterString="ArrId eq 'AA18088331DC' and SimRef eq 'AASIMR18107QVKX57C'"/>
+    <Results DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results" DS_UID="12" count="">
+      <enqTcNofAaBillDetails ArrId="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails" DS_UID="11" Id="" PrimaryKey="" SimRef="" TotalAmount="">
+        <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].Links" DS_UID="8" href="enqTcNofAaBillDetailss('%7BPrimaryKey%7D')" rel="self" title="enqTcNofAaBillDetails"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="9" PropertyDescription=""/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="10" PropertyAmount=""/>
+      </enqTcNofAaBillDetails>
+    </Results>
+  </enqTcNofAaBillDetailss>
+<enqTcNofAaBillDetailss DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1]" DS_UID="32">
+    <Filter DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Filter" DS_UID="14" FilterString="ArrId eq 'AA18088331DC' and SimRef eq 'AASIMR18107QVKX9Q1'"/>
+    <Results DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results" DS_UID="31" count="">
+      <enqTcNofAaBillDetails ArrId="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails" DS_UID="18" Id="" PrimaryKey="" SimRef="" TotalAmount="">
+        <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].Links" DS_UID="15" href="enqTcNofAaBillDetailss('%7BPrimaryKey%7D')" rel="self" title="enqTcNofAaBillDetails"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="16" PropertyDescription="Early Redemption Fee"/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="17" PropertyAmount="-100"/>
+      </enqTcNofAaBillDetails>
+      <enqTcNofAaBillDetails ArrId="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails" DS_UID="26" Id="" PrimaryKey="" SimRef="" TotalAmount="">
+        <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].Links" DS_UID="19" href="enqTcNofAaBillDetailss('%7BPrimaryKey%7D')" rel="self" title="enqTcNofAaBillDetails"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="20" PropertyDescription="Account"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="21" PropertyDescription="Deposit Interest"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="22" PropertyDescription="Tax"/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="23" PropertyAmount="15000"/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="24" PropertyAmount="7.83"/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="25" PropertyAmount="-0.78"/>
+      </enqTcNofAaBillDetails>
+      <enqTcNofAaBillDetails ArrId="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails" DS_UID="30" Id="" PrimaryKey="" SimRef="" TotalAmount="14907.05">
+        <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].Links" DS_UID="27" href="enqTcNofAaBillDetailss('%7BPrimaryKey%7D')" rel="self" title="enqTcNofAaBillDetails"/>
+        <PropertyDescription DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyDescription" DS_UID="28" PropertyDescription=""/>
+        <PropertyAmount DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaBillDetailss[1].Results[1].enqTcNofAaBillDetails[C].PropertyAmount" DS_UID="29" PropertyAmount=""/>
+      </enqTcNofAaBillDetails>
+    </Results>
+  </enqTcNofAaBillDetailss>
+</DataSetRoot>

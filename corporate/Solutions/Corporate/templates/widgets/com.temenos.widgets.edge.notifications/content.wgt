@@ -1,0 +1,51 @@
+
+<script type="text/javascript">
+
+function $$ITEM.ID()$_init(){
+       
+		var el=document.getElementById("$$ITEM.ID()$"); 
+        var elpar=document.getElementById("$$ITEM.PARENT().ID()$");		
+		if (el.style.display !="none" && elpar.style.display != "none") {
+$.growl({
+    $%IF ITEM.icon != ""$icon: '$$ITEM.icon$',$%ENDIF$
+    title: ' <strong>$$ITEM.title$</strong> ',
+    message: '$$ITEM.message$',
+    url: '$$ITEM.url$'
+},{
+    element: 'body',
+     $%IF ITEM.type != ""$type: "$$ITEM.type$",$%ENDIF$
+     $%IF ITEM.allow_dismiss != "Y"$allow_dismiss: false,$%ENDIF$
+     placement: {
+     $%IF ITEM.from != ""$from: "$$ITEM.from$",$%ENDIF$
+     $%IF ITEM.align != ""$align: "$$ITEM.align$",$%ENDIF$
+    },
+     $%IF ITEM.offset_x != "" || ITEM.offset_y != ""$
+    offset: {
+         $%IF ITEM.offset_x != ""$x: $$ITEM.offset_x$,$%ENDIF$
+        $%IF ITEM.offset_y != ""$y: $$ITEM.offset_y$,$%ENDIF$      
+    },$%ENDIF$  
+    $%IF ITEM.spacing != ""$spacing: $$ITEM.spacing$,$%ENDIF$
+    $%IF ITEM.z_index != ""$z_index: $$ITEM.z_index$,$%ENDIF$
+    $%IF ITEM.delay != ""$delay: $$ITEM.delay$,$%ENDIF$
+    $%IF ITEM.timer != ""$timer: $$ITEM.timer$,$%ENDIF$
+    url_target: '_blank',
+    $%IF ITEM.mouse_over == "Y"$mouse_over: 'pause',$%ENDIF$
+    $%IF ITEM.icon_type != ""$icon_type: '$$ITEM.icon_type$',$%ENDIF$
+    animate: {
+        enter: 'animated $$ITEM.animate_enter$',
+        exit: 'animated $$ITEM.animate_exit$'
+    }
+});
+}
+}
+window.com.temenos.widgets.edge.notifications.removeEvent('growlRender',renderGrowl_$$ITEM.ID()$);    
+
+var renderGrowl_$$ITEM.ID()$=function (e) {
+$$ITEM.ID()$_init();        
+}
+window.com.temenos.widgets.edge.notifications.addEvent('growlRender',renderGrowl_$$ITEM.ID()$);
+
+
+	 
+addWidget("window.com.temenos.widgets.edge.notifications", "$$!NAMESPACE$", "");
+</script>

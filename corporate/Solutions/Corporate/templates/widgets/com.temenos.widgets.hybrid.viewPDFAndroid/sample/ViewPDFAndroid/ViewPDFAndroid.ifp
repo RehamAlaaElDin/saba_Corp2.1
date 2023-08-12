@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" CmsFlag="N" Connect="version 6.1.1__1" CordovaPluginAddBtn="N" CordovaPluginDeleteBtn="N" CordovaPluginUpdateBtn="N" HybridFlag="Y" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root 1" Name="ViewPDFAndroid" ProjectExtension=".ifp" ProjectFolder="D:/java/ide/eclipseNeon/workspaceCMSGit/temenos-uxp/RTE/Projects/ViewPdfAndroid" ProjectType="N" ShowJSONMappings="N" eid="B7FD95CB2D8D60A21048">
+  <Types Name="Types Root" eid="B7FD95CB2D8D60A21049">
+    <Lists Name="Lists" eid="B7FD95CB2D8D60A21050"/>
+    <DataTypes Name="Data Types" eid="B7FD95CB2D8D60A21051">
+      <DataType Name="Text" eid="B7FD95CB2D8D60A21297"/>
+      <DataType Name="Number" Type="Number" eid="B7FD95CB2D8D60A21298"/>
+      <DataType Name="Decimal" Type="Decimal" eid="B7FD95CB2D8D60A21299"/>
+      <DataType Name="Date" Type="Date" eid="B7FD95CB2D8D60A21300"/>
+      <DataType Name="File" Type="File" eid="B7FD95CB2D8D60A21301"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="B7FD95CB2D8D60A21302"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="B7FD95CB2D8D60A21058"/>
+  </Types>
+  <Dictionary Name="B7FD95CB2D8D60A2 DataDictionary 1" eid="B7FD95CB2D8D60A21059">
+    <PropertyGroup Name="Data Store Root" eid="B7FD95CB2D8D60A21061"/>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="B7FD95CB2D8D60A21063">
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="B7FD95CB2D8D60A21306"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="B7FD95CB2D8D60A21307"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="B7FD95CB2D8D60A21308"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="B7FD95CB2D8D60A21309"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="B7FD95CB2D8D60A21062"/>
+  <Products Name="Processes Root" eid="B7FD95CB2D8D60A21068">
+    <Product ErrorPhase="Process.Session Timeout Error" InitialPhase="Process.View PDF Android" Name="Process" eid="B7FD95CB2D8D60A21623">
+      <Phase Name="View PDF Android" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="FFA2B7591266D20B3998">
+        <Rule Name="View PDF Prephase" RuleClassName="com.acquire.intelligentforms.rules.ContainerRule" RuleDisabled="N" RuleType="PrePhase" eid="7DD9639323D8213D4465">
+          <Rule ConversionType="PDF" InputTemplateFileName="$$PROJECTHOME$/templates/generatePDF.tpl" Name="Generate Document" OutputFileName="$$PROJECTHOME$/samplePDF.pdf" OutputType="File" RuleClassName="com.acquire.intelligentforms.rules.GenerateDocumentRule" RuleDisabled="N" RuleType="True" eid="7DD9639323D8213D4470"/>
+        </Rule>
+        <Heading HeaderText="View PDF Android" Name="FFA2B7591266D20B Heading 14" eid="FFA2B7591266D20B4013"/>
+        <Button ActionCommand="View PDF" CheckMandatoryFields="N" DependencyType="Previous questions in phase" Name="FFA2B7591266D20B FormButton 31" eid="FFA2B7591266D20B3999"/>
+      </Phase>
+      <Phase BaseType="com.acquire.intelligentforms.entities.Phase" Name="Offline Error Phase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="FA53B7D663B61B0F1768">
+        <Heading HeaderText="Offline Phase" Name="066394104B998DC6 Heading 2" eid="FA53B7D663B61B0F1769"/>
+        <Button ActionCommand="Go back online" CheckMandatoryFields="N" DependencyType="Previous questions in phase" Name="7EDDAF676A2F0E20 FormButton 42" eid="7EDDAF676A2F0E201628">
+          <Rule Name="Goto Phase" OperationType="Go Back to Last Phase" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" eid="7EDDAF676A2F0E201632"/>
+        </Button>
+      </Phase>
+      <Phase BaseType="com.acquire.intelligentforms.entities.Phase" Bookmarkable="N" Name="Force Update Error Phase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="7EDDAF676A2F0E201621">
+        <Heading HeaderText="Force Update Phase" Name="7EDDAF676A2F0E20 Heading 11" eid="7EDDAF676A2F0E201622"/>
+      </Phase>
+      <Phase BaseType="com.acquire.intelligentforms.entities.Phase" Bookmarkable="N" Name="Jailbreak Error Phase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="E60C7997450AC2F51768">
+        <Heading HeaderText="For security reasons, the application is not allowed to function on rooted devices." Name="E60C7997450AC2F5 Heading 12" eid="E60C7997450AC2F51769"/>
+      </Phase>
+      <Phase BaseType="com.acquire.intelligentforms.entities.Phase" Name="SSL Error Phase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="FA53B7D663B61B0F1772">
+        <Heading HeaderText="The server's SSL certificate is invalid" Name="066394104B998DC6 Heading 3" eid="FA53B7D663B61B0F1773"/>
+      </Phase>
+      <Phase Name="Session Timeout Error" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="240DAD61BF93CDDE1533">
+        <Heading HeaderText="Ups. Session Timeout" Name="240DAD61BF93CDDE Heading 13" eid="240DAD61BF93CDDE1545"/>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="B7FD95CB2D8D60A21095">
+    <PresentationType ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" EditTheme="N" EntityEID="B7FD95CB2D8D60A21068" MessagesOrder="Errors, Warnings, Info" MessagesSeparator="&lt;br/&gt;" Name="Rich" PresentationDefinitionClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationDefinition" QuestionListDefault="- Please Select" Template="hybrid branded.tpl" UseOptimised="N" UseTracking="N" eid="B7FD95CB2D8D60A21653">
+      <PresentationProduct ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" EntityClassType="com.acquire.intelligentforms.entities.Product" EntityEID="B7FD95CB2D8D60A21623" Name="B7FD95CB2D8D60A2 RichHTMLPresentationProduct 3" RuntimeId="B7FD95CB2D8D60A21659" TabPaneStyle="Use Default" eid="B7FD95CB2D8D60A21659">
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="FFA2B7591266D20B3998" Name="FFA2B7591266D20B RichHTMLPresentationPhase 115" RuntimeId="1A74C7907524F7BD1498" eid="FFA2B7591266D20B4002">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="FFA2B7591266D20B4013" FieldSize="15" Name="FFA2B7591266D20B RichHTMLPresentationQuestion 117" NumberOfRows="5" RuntimeId="HEAD_FFA2B7591266D20B4014" eid="FFA2B7591266D20B4014"/>
+          <PresentationButton ButtonStyle="Color1 RightAlignedImage ActionArrow" ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" DesignToUse="Custom" DisplayType="GANObject:com.acquire.intelligentforms.ide.presentationeditor.widgets.WidgetDialog|com.temenos.widgets.hybrid.viewPDFAndroid" DisplayTypeFileName="myPdf.pdf" DisplayTypeIsAbsoluteURL="Y" DisplayTypeURL="$$CONTEXTPATH$/samplePDF.pdf" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="FFA2B7591266D20B3999" Name="FFA2B7591266D20B RichHTMLPresentationButton 116" RuntimeId="BUT_FFA2B7591266D20B4003" eid="FFA2B7591266D20B4003"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="FA53B7D663B61B0F1768" Name="5EF630C616EB43D5 RichHTMLPresentationPhase 104" RuntimeId="5EF630C616EB43D53360" eid="5EF630C616EB43D53360">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="FA53B7D663B61B0F1769" FieldSize="15" Name="5EF630C616EB43D5 RichHTMLPresentationQuestion 105" NumberOfRows="5" RuntimeId="HEAD_5EF630C616EB43D53362" eid="5EF630C616EB43D53362"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="7EDDAF676A2F0E201628" Name="5EF630C616EB43D5 RichHTMLPresentationButton 106" RuntimeId="BUT_5EF630C616EB43D53364" eid="5EF630C616EB43D53364"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="7EDDAF676A2F0E201621" Name="5EF630C616EB43D5 RichHTMLPresentationPhase 107" RuntimeId="5EF630C616EB43D53366" eid="5EF630C616EB43D53366">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="7EDDAF676A2F0E201622" FieldSize="15" Name="5EF630C616EB43D5 RichHTMLPresentationQuestion 108" NumberOfRows="5" RuntimeId="HEAD_5EF630C616EB43D53368" eid="5EF630C616EB43D53368"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="E60C7997450AC2F51768" Name="5EF630C616EB43D5 RichHTMLPresentationPhase 109" RuntimeId="5EF630C616EB43D53370" eid="5EF630C616EB43D53370">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="E60C7997450AC2F51769" FieldSize="15" Name="5EF630C616EB43D5 RichHTMLPresentationQuestion 110" NumberOfRows="5" RuntimeId="HEAD_5EF630C616EB43D53372" eid="5EF630C616EB43D53372"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="FA53B7D663B61B0F1772" Name="5EF630C616EB43D5 RichHTMLPresentationPhase 111" RuntimeId="5EF630C616EB43D53374" eid="5EF630C616EB43D53374">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="FA53B7D663B61B0F1773" FieldSize="15" Name="5EF630C616EB43D5 RichHTMLPresentationQuestion 112" NumberOfRows="5" RuntimeId="HEAD_5EF630C616EB43D53376" eid="5EF630C616EB43D53376"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="240DAD61BF93CDDE1533" Name="240DAD61BF93CDDE RichHTMLPresentationPhase 113" RuntimeId="240DAD61BF93CDDE1536" eid="240DAD61BF93CDDE1536">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="240DAD61BF93CDDE1545" FieldSize="15" Name="240DAD61BF93CDDE RichHTMLPresentationQuestion 116" NumberOfRows="5" RuntimeId="HEAD_240DAD61BF93CDDE1546" eid="240DAD61BF93CDDE1546"/>
+        </PresentationPhase>
+      </PresentationProduct>
+    </PresentationType>
+  </PresentationTypes>
+  <EVANotes Name="Notes Root" eid="B7FD95CB2D8D60A21109">
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="B7FD95CB2D8D60A21303"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="B7FD95CB2D8D60A21304"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="B7FD95CB2D8D60A21305"/>
+  </EVANotes>
+  <LanguageMapDefinitionsRoot Name="Languages Root" eid="8FED355C2298F6481070"/>
+  <CordovaPluginsRoot Name="CordovaPlugins Root" eid="8FED355C2298F6481071">
+    <CordovaPluginRecord Disabled="N" IdType="Path" Name="openFileInExternalViewerPlugin" eid="8CD13E8D32BDF20C1591" idOrPath="$$PROJECTHOME$/cordovaPlugins/openFileInExternalViewer"/>
+  </CordovaPluginsRoot>
+</Project>

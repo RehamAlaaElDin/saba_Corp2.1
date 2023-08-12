@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="16">
+  <!--enqTcEbLookup-->
+<enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="1" Frequency="LastDayOfTheMonth" Id="FREQUENCY*LastDayOfTheMonth">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="0" Description="Last Day Of The Month"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="3" Frequency="Daily" Id="FREQUENCY*Daily">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="2" Description="Daily"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="5" Frequency="Weekly" Id="FREQUENCY*Weekly">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="4" Description="Weekly"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="7" Frequency="Fortnightly" Id="FREQUENCY*Fortnightly">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="6" Description="Fortnightly"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="9" Frequency="Monthly" Id="FREQUENCY*Monthly">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="8" Description="Monthly"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="11" Frequency="Quarterly" Id="FREQUENCY*Quarterly">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="10" Description="Quarterly"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="13" Frequency="Semiannual" Id="FREQUENCY*Semiannual">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="12" Description="Semiannual"/>
+  </enqTcEbLookup>
+  <enqTcEbLookup DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[A]" DS_UID="15" Frequency="Annually" Id="FREQUENCY*Annually">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcEbLookup[C].Description" DS_UID="14" Description="Annually"/>
+  </enqTcEbLookup>
+</DataSetRoot>

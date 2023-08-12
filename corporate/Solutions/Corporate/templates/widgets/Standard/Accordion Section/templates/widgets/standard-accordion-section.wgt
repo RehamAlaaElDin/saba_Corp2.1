@@ -1,0 +1,91 @@
+$%COMMENT$ $Revision: 1.20 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<style type="text/css">
+	#$$ITEM.ID()$.accordion {
+		$%IF ITEM.BAR_COLOR != ""$
+			border: 1px solid $$ITEM.BAR_COLOR$;
+		$%ENDIF$
+	}
+	#$$ITEM.ID()$ dt button {
+		$%IF ITEM.BAR_COLOR != ""$
+			background-color: $$ITEM.BAR_COLOR$;
+			background-image: none;
+		$%ENDIF$
+
+		$%IF ITEM.BAR_IMAGE != ""$
+			background-image: url("$$ITEM.BAR_IMAGE$");
+		$%ENDIF$
+	}
+	#$$ITEM.ID()$ dt button:hover {
+		$%IF ITEM.BAR_HOVER_COLOR != ""$
+			background-color: $$ITEM.BAR_HOVER_COLOR$;
+		$%ENDIF$
+
+		$%IF ITEM.BAR_HOVER_IMAGE != ""$
+			background-image: url("$$ITEM.BAR_HOVER_IMAGE$");
+		$%ENDIF$
+	}
+
+	#$$ITEM.ID()$ button[aria-expanded="true"] {
+		$%IF ITEM.BAR_SELECTED_COLOR != ""$
+			background-color: $$ITEM.BAR_SELECTED_COLOR$;
+		$%ENDIF$
+
+		$%IF ITEM.BAR_SELECTED_IMAGE != ""$
+			background-image: url("$$ITEM.BAR_SELECTED_IMAGE$");
+		$%ENDIF$
+	}
+
+	$%IF ITEM.BAR_SELECTED_COLOR != ""$
+		#$$ITEM.ID()$ dd {
+			border: 2px solid $$ITEM.BAR_SELECTED_COLOR$;
+			border-top: none;
+		}
+	$%ENDIF$
+</style>
+
+$%IF ITEM.SpacerText != ""$
+	<div id="p1_$$ITEM.ID()$" style="width: 100%; $%IF ITEM.IS_HIDDEN() == "true"$display: none$%ENDIF$">
+		$$ITEM.SpacerText$
+	</div>
+$%ENDIF$
+
+
+<dl id="$$ITEM.ID()$" role="presentation" class="accordion" data-allow-toggle
+	style="$$ITEM.INLINE_STYLES().SectionStyle$
+			$%IF ITEM.IS_HIDDEN() == "true"$; display: none;$%ENDIF$
+			$%IF ITEM.SectionLayout != "Auto"$width: 100%;$%ENDIF$
+			$%IF ITEM.SectionLayout == "Specify in pixels (px)"$
+				overflow-y:auto;
+				$%IF ITEM.Top != ""$margin-top: $$ITEM.Top$px;$%ENDIF$
+				$%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$px;$%ENDIF$
+				$%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$px;$%ENDIF$
+				$%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$px;$%ENDIF$
+			$%ENDIF$
+			$%IF ITEM.SectionLayout == "Specify as percentage (%)"$
+				overflow-y :auto;
+				$%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$%;$%ENDIF$
+				$%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$%;$%ENDIF$
+				$%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$%;$%ENDIF$
+			$%ENDIF$
+	"
+	>
+
+	<input style="display:none" value="$$CONNECT_ACTIVE_TAB$" id="CAN_$$ITEM.ID()$" name="$$ITEM.COMPONENT_PREFIX()$CONNECT_ACTIVE_TAB" aria-label="$$CONNECT_ACTIVE_TAB$"/>
+	$$FORMCONTENT$
+</dl>
+
+<pre></pre>
+
+<script type="text/javascript">
+	addWidget("ACCORDION_CONTAINER$$ITEM.ID()$", "$$!NAMESPACE$", "$$ITEM.ID()$");
+
+	var params$$ITEM.ID()$ = {
+		accordionId: '$$ITEM.ID()$',
+		activeTabId: 'trigger_$$CONNECT_ACTIVE_TAB$',
+		hasSlideEffect: '$$ITEM.SLIDE_EFFECT$',
+		maintainState: '$$ITEM.MAINTAIN_STATE$'
+	}
+
+	var  acc_$$ITEM.ID()$ = new StandardAccordion( params$$ITEM.ID()$ );
+	acc_$$ITEM.ID()$.init();
+</script>

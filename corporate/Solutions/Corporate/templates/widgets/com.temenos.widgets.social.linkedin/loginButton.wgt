@@ -1,0 +1,52 @@
+<input type="hidden" name="_V_$$ITEM.var_name$" value="">
+$%SCRIPT$
+function GenerateButton() {
+    var ecCode = "$$ITEM.EC_GENERATE().ESCAPEFORJS()$";
+    var navigation = "$$ITEM.NAVIGATION()$";
+    var insertIndex = ecCode.indexOf(navigation);
+    var functionCall = "return Linkedin.onLinkedInCustomButtonClick($$ITEM.ID()$);";
+    ecCode = ecCode.substring(0, insertIndex) + functionCall + ecCode.substring(insertIndex + navigation.length);
+    return ecCode
+};
+GenerateButton();
+$%ENDSCRIPT$
+<script>
+window.Linkedin.logout_text="$$ITEM.logout_text$";
+window.linkedINDataStoreGroup = "$$:ITEM.data_store_group$";
+window.Linkedin.autoLogin=$%IF ITEM.autoLogin != "Y"$false$%ELSE$true$%ENDIF$;
+
+window.Linkedin.addEvent('LinkedinApiLoaded', function(e) {
+    var el = document.getElementById("$$ITEM.ID()$");
+    if (IN.User.isAuthorized()) {
+        window.Linkedin.renderButton(el,window.Linkedin.logout_text );
+        Linkedin.setInputValue("_V_$$ITEM.var_name$","logged");
+    }
+    IN.Event.on(IN, "auth", function() {
+        var callbackClosures = function() {
+            Linkedin.onAuthCallback(el);
+            Linkedin.getProfile("me", null, function(result) {
+                var userdata = result.values[0];
+                Linkedin.setInputsValue(linkedINDataStoreGroup, userdata);
+                Linkedin.setInputValue("_V_$$ITEM.var_name$","logged");
+                if (window.Linkedin.isCustomButtonClick || window.Linkedin.autoLogin) {
+                    $$ITEM.NAVIGATION()$
+                }
+              window.Linkedin.isCustomButtonClick = false;
+            });
+        }
+        return callbackClosures();
+    });
+    IN.Event.on(IN, "logout", function() {
+        var callbackClosures = function() {
+            Linkedin.onLogoutCallback(el);
+            Linkedin.setInputValue("_V_$$ITEM.var_name$","logout");
+            if (window.Linkedin.isCustomButtonClick) {
+                $$ITEM.NAVIGATION()$
+            }
+            window.Linkedin.isCustomButtonClick = false;
+        }
+        return callbackClosures();
+    });
+
+});
+</script>

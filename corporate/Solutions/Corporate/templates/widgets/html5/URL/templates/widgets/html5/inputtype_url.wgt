@@ -1,0 +1,10 @@
+$%COMMENT$ $Revision: 1.4 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.IS_READONLY() == "true" && ITEM.READONLYSTYLE() != "Disabled Answer"$
+$$ITEM.EC_GENERATE()$
+$%ELSE$
+$%SCRIPT$
+var newType = $%IF BROWSER_FEATURES == "" || BROWSER_FEATURES.inputtypes.url == "Y"$"type=\"url\""$%ELSE$""$%ENDIF$
+$%INCLUDE widgets/html5/inputtype.wgt$$%ENDINCLUDE$
+genHTML5Input(newType, "", false);
+$%ENDSCRIPT$
+$%ENDIF$

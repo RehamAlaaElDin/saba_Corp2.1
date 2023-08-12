@@ -1,0 +1,119 @@
+<!--   <script src="./html/js/bootstrap.js"></script>-->
+<link href="./templates/widgets/com.temenos.widgets.feed.RSS/css/EdgeFeed.css" rel="stylesheet">
+<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+<script type="text/javascript">
+window.com=window.com || {};
+window.com.temenos = window.com.temenos || {};
+window.com.temenos.widgets = window.com.temenos.widgets|| {};
+window.com.temenos.widgets.feed = window.com.temenos.widgets.feed|| {};
+window.com.temenos.widgets.feed.RSS = window.com.temenos.widgets.feed.RSS|| {};
+window.com.temenos.widgets.feed.RSS.feedLibraryIsLoaded=false;
+window.com.temenos.widgets.feed.RSS.jqueryIsLoaded=false;
+
+window.com.temenos.widgets.feed.RSS.triggerEvent=function (eventName) {
+    if(document.createEvent) {
+        var event = document.createEvent('Event');
+        event.initEvent(eventName, true, true);
+        document.dispatchEvent(event);
+    } else {
+        document.documentElement[eventName]++;
+    }
+}
+window.com.temenos.widgets.feed.RSS.addEvent = function (eventName, callback) {
+    if(document.addEventListener) {
+        document.addEventListener(eventName, callback, false);
+    } else {    
+        document.documentElement.attachEvent('onpropertychange', function (e) {
+            if(e.propertyName  == eventName) {
+                callback();
+            }            
+        });
+    }
+}
+
+window.com.temenos.widgets.feed.RSS.removeEvent = function (eventName, callback) {
+    if (document.removeEventListener) {
+      document.removeEventListener(eventName, callback, false);
+    } else {
+      document.documentElement.detachEvent('onpropertychange', callback);
+    }
+}
+
+
+
+window.com.temenos.widgets.feed.RSS.getScript=function(url, success) {
+
+    var script = document.createElement('script');
+    script.src = url;
+    var head = document.getElementsByTagName('head')[0], done = false;
+
+    // Attach handlers for all browsers
+    script.onload = script.onreadystatechange = function() {
+
+        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+
+            done = true;
+            // callback function provided as param
+            success();
+
+            script.onload = script.onreadystatechange = null;
+            head.removeChild(script);
+
+        };
+
+    };
+    head.appendChild(script);
+};
+
+
+if (typeof jQuery == 'undefined') {
+        
+thisPageUsingOtherJSLibrary=false;
+    if (typeof $ == 'function') {
+        // warning, global var
+        thisPageUsingOtherJSLibrary = true;
+    }
+    
+   
+    
+    
+    window.com.temenos.widgets.feed.RSS.getScript('http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js', function() {
+    
+        if (typeof jQuery=='undefined') {        
+            // Super failsafe - still somehow failed...
+        
+        } else {        
+
+     
+            if (!thisPageUsingOtherJSLibrary) {
+
+                // Run your jQuery Code
+
+            } else {
+
+                // Use .noConflict(), then run your jQuery Code
+                $.noConflict();
+            }
+            window.com.temenos.widgets.feed.RSS.jqueryIsLoaded=true;
+            
+              window.com.temenos.widgets.feed.RSS.getScript('./templates/widgets/com.temenos.widgets.feed.RSS/js/EdgeFeed.js', function() {
+                  window.com.temenos.widgets.feed.RSS.feedLibraryIsLoaded=true;
+                  window.com.temenos.widgets.feed.RSS.triggerEvent('LibrariesLoaded');     
+                 });
+         
+            
+        }
+    
+    });
+    
+} 
+else {
+            window.com.temenos.widgets.feed.RSS.jqueryIsLoaded=true;
+                
+                  window.com.temenos.widgets.feed.RSS.getScript('./templates/widgets/com.temenos.widgets.feed.RSS/js/EdgeFeed.js', function() {
+                  window.com.temenos.widgets.feed.RSS.feedLibraryIsLoaded=true;
+                  window.com.temenos.widgets.feed.RSS.triggerEvent('LibrariesLoaded');     
+                 });
+    
+}
+</script>

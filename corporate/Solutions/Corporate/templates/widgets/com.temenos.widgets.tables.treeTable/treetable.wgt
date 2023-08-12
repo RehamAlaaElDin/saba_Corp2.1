@@ -1,0 +1,38 @@
+$%COMMENT$ the table is initially hidden and shown after it's transformed to a tree table $%ENDCOMMENT$
+$%COMMENT$ wrap table with div.tableContainer to set css overflow = auto (so that page does not get a horizontal slider when many columns, table is slideable now) $%ENDCOMMENT$
+<div id="tableContainer$$ITEM.ID()$" class="tableContainer NotDisplayed">
+$$ITEM.EC_GENERATE()$
+</div>
+<script type="text/javascript">
+$%COMMENT$ $(function) is not executed on AJAX, so we are defining this javascript code inline $%ENDCOMMENT$
+    var idInfo = [ $%FOREACH TABLE_ROW IN TABLE$ {id: "$$ITEM.id_dataitem$", parentId: "$$ITEM.parent_id_dataitem$"}, $%ENDFOREACH$ ]
+	
+    $("#$$ITEM.ID()$ > tbody > tr").each(function(i, o) {
+        var $row = $(o);
+        var rowId = idInfo[i].id;
+        $row.attr("data-tt-id", rowId);
+        var parentId = idInfo[i].parentId;
+        if (parentId != "") {
+            $row.attr("data-tt-parent-id", parentId);
+        }
+    });
+    $("#$$ITEM.ID()$").treetable("destroy");
+    $("#$$ITEM.ID()$").treetable({ expandable: true, initialState: "expanded"});
+	$("#tableContainer$$ITEM.ID()$").removeClass("NotDisplayed");
+	
+	$%IF "##ITEM.DATAITEM().VALUE()#" != "" $
+        $("#$$ITEM.ID()$").treetable( "reveal","$$ITEM.DATAITEM().VALUE()$");
+    $%ENDIF$
+
+    addWidget("treeTable", "$$!NAMESPACE$", "");
+	window.treeTable=window.treeTable || {};
+	window.treeTable.postProcessResponses = function(ns, ajaxCaller, result) {
+	if (result != true) {
+		return;
+		} else {
+			 $("#$$ITEM.ID()$").treetable("destroy");
+			 $("#$$ITEM.ID()$ .indenter").remove();	 
+			 $("#$$ITEM.ID()$").treetable({ expandable: true, initialState: "expanded"});
+		}
+	}	
+</script>

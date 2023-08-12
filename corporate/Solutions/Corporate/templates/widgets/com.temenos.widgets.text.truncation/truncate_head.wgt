@@ -1,0 +1,46 @@
+<script>
+window.com=window.com || {};
+window.com.temenos = window.com.temenos || {};
+window.com.temenos.widgets = window.com.temenos.widgets|| {};
+window.com.temenos.widgets.truncateText = {
+	showHide : 		function(item) {
+					var container = item.currentTarget.parentElement;
+					var spans = container.getElementsByTagName("span");
+					trunc = spans[0];
+					more = spans[1];
+					container.innerHTML = trunc.innerHTML + more.innerHTML;
+	},
+	excerptMethod : function(element,charNr,more,className) {
+					var node = element.childNodes;
+					if (element && node ){
+								for (var i = 0; i < node.length; i++) {
+									  if (node[i].nodeType == 3 && element.textContent != String.fromCharCode(160)){
+											  fullText = element.textContent;
+											  truncText = fullText.substring(0,charNr);
+											  restText = fullText.substring(charNr,fullText.length);
+											  element.innerHTML = "";
+											  var spanWithTruncText = document.createElement("span");
+											  spanWithTruncText.textContent = truncText;
+											  element.appendChild(spanWithTruncText);
+											 
+											  var spanWithRestText = document.createElement("span");
+											  spanWithRestText.textContent = restText;
+											  spanWithRestText.style.display = "none";
+											  element.appendChild(spanWithRestText);
+											  
+											  var anchor = document.createElement('a');
+											  anchor.textContent = more;
+											  anchor.className = className;
+											  anchor.addEventListener("click",this.showHide);
+											  element.appendChild(anchor);
+											  
+											  break;
+									  }
+									  if (node[i].childNodes) {
+										this.excerptMethod(node[i],charNr,more,className);
+									  }
+								}
+					}
+	}
+}
+</script>

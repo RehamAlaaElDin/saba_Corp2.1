@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-temenoswebview",
+  "version": "2.0.0",
+  "description": "Cordova Temenos WKWebView plugin",
+  "cordova": {
+    "id": "cordova-plugin-temenoswebview",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+	"temenoswebview",
+    "wkwebview",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
+  },
+  "author": "temenos",
+  "license": "UPL-1.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
+}

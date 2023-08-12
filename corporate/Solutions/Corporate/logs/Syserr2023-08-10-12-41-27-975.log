@@ -1,0 +1,7 @@
+[2023-08-10 11:59:00.656] [2023-08-10 11:59:00.656]  [2023-08-10 11:59:00.656] log4j:ERROR A "org.apache.log4j.ConsoleAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-08-10 11:59:00.657] [2023-08-10 11:59:00.657]  [2023-08-10 11:59:00.657] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-08-10 11:59:00.657] [2023-08-10 11:59:00.657]  [2023-08-10 11:59:00.657] log4j:ERROR [java.net.URLClassLoader@ee4ca9d] whereas object of type 
+[2023-08-10 11:59:00.657] [2023-08-10 11:59:00.657]  [2023-08-10 11:59:00.657] log4j:ERROR "org.apache.log4j.ConsoleAppender" was loaded by [WebAppClassLoader{545109865}@207db769].
+[2023-08-10 11:59:00.657] [2023-08-10 11:59:00.657]  [2023-08-10 11:59:00.657] log4j:ERROR Could not instantiate appender named "console".
+[2023-08-10 11:59:00.658] [2023-08-10 11:59:00.658]  [2023-08-10 11:59:00.658] log4j:WARN No appenders could be found for logger (com.temenos.commons.logging.LoggerFactory).
+[2023-08-10 11:59:00.658] [2023-08-10 11:59:00.658]  [2023-08-10 11:59:00.658] log4j:WARN Please initialize the log4j system properly.

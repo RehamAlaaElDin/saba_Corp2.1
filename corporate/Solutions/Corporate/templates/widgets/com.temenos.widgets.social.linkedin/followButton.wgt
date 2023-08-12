@@ -1,0 +1,26 @@
+<script type="IN/FollowCompany" data-id="$$ITEM.id$" data-counter="$$ITEM.count$"></script>
+<script>
+window.Linkedin.refreshLanguage = function (){
+window.IN=null;
+var header=(document.getElementsByTagName("head"))[0];
+var hd=header.children;
+for(var i=0;i<hd.length;i++) {
+var el=hd.item(i);
+if (el.src!=undefined && el.src.indexOf("linkedin.com")>-1) {
+el.parentNode.removeChild(el);
+i=i-1;
+}
+}
+var script = document.createElement('script');
+script.src ="http://platform.linkedin.com/in.js";
+script.type="text/javascript";
+script.innerHTML =  
+   "api_key: $$ITEM.apikey$\n"+
+  "onLoad:  Linkedin.init\n"+
+  "authorize: true$%IF ITEM.language != ""$\n"+
+  "lang:$$ITEM.language$$%ENDIF$  "  
+header.appendChild(script);
+return;
+}
+</script>
+$%INCLUDE widgets/com.temenos.widgets.social.linkedin/inc_linkedinRegisterWidget.wgt$$%ENDINCLUDE$

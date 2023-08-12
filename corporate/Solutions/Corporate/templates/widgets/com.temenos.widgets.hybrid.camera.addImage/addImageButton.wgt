@@ -1,0 +1,117 @@
+$%COMMENT$ $Revision: 1.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$$ITEM.EC_GENERATE()$
+
+$%IF ITEM.DestinationType == 'destinationType.FILE_URI'$<div id="$$ITEM.ID()$status"></div><div class="loading" id="$$ITEM.ID()$loading"></div>$%ENDIF$
+
+<script type="text/javascript">
+//<![CDATA[
+    $%COMMENT$ TODO change to unique names to avoid widget conflicts? $%ENDCOMMENT$
+    var pictureSource;
+    var destinationType; // sets the format of returned value
+    // Cordova is ready to be used!
+    function onDeviceReadyCamera$$ITEM.ID()$()
+    {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+		$%COMMENT$ Android needs a nudge http://stackoverflow.com/questions/19809164/navigator-camera-getpicture-callback-doesnt-execute-until-2nd-call $%ENDCOMMENT$
+		if (device.platform === 'Android') {
+			checkMessageInterval = setInterval(function () {
+				cordova.exec(null, null, '', '', [])
+			}, 200);
+		}		
+    }
+	
+	function onWindowsPhotoDataSuccess$$ITEM.ID()$(argOfSuccessFunction){
+				
+		window.com.temenos.widgets.hybrid.camera.addImage.onPhotoDataSuccess(argOfSuccessFunction, '$$:ITEM.DI_NAME$',
+            function() {                                            $%COMMENT$  successful save callback $%ENDCOMMENT$
+                $%IF ITEM.SuccessMessage != ""$             $%COMMENT$  alert successful message if one has been defined $%ENDCOMMENT$
+                    //navigator.notification.alert("$$ITEM.SuccessMessage$", function(){}, "$$ITEM.NotificationTitle$", "$$ITEM.NotificationCloseText$");
+                $%ENDIF$
+                $%IF ITEM.RunButtonRules == "Y"$
+                    $$ITEM.ONCLICK()$                       $%COMMENT$  the button javascript - executed if tick box to run selected $%ENDCOMMENT$
+                $%ELSE$
+					e.stopPropagation;
+					return false;
+                $%ENDIF$
+        });
+	}
+	
+    // Wait for Cordova to connect with the device
+    document.addEventListener("deviceready",onDeviceReadyCamera$$ITEM.ID()$,false);
+
+    document.getElementById("$$ITEM.ID()$").onclick = null;             $%COMMENT$  remove the button onclick $%ENDCOMMENT$
+
+    document.getElementById("$$ITEM.ID()$")
+            .addEventListener('click', function(e) {                    $%COMMENT$  listen to click event $%ENDCOMMENT$
+			
+			
+			$%COMMENT$ identifying windows platfrom seperatly as it is not supporting cordova at the moment $%ENDCOMMENT$
+			$%IF DEVICE_INFO.platform == "windows8" || DEVICE_INFO.platform == "windows"$
+			if ((typeof(window.external) !=='undefined') && ('notify' in window.external)) {
+				var camOptions = "$$ITEM.Source$:$$ITEM.DestinationType$:$$ITEM.Quality$:" + 
+					$%COMMENT$ according to Cordova documentation, none or both target w/h parameters need to be specified in order to be usable $%ENDCOMMENT$
+					$%IF ITEM.TargetWidth != '' && ITEM.TargetHeight != ''$ "$$ITEM.TargetWidth$:$$ITEM.TargetHeight$:" $%ELSE$ "-1:-1:" $%ENDIF$ +
+					$%IF ITEM.AllowEdit == 'Y'$ "true" $%ELSE$ "false" $%ENDIF$ + ":$$ITEM.ID()$";
+				window.external.notify("WINDOWS_CAMERA_NOTIFY" + camOptions );
+				return;
+			}
+			$%ENDIF$
+			
+			
+            var cameraOptions = { sourceType: $$ITEM.Source$, destinationType: $$ITEM.DestinationType$, quality: $$ITEM.Quality$ 
+                $%COMMENT$ according to Cordova documentation, none or both target w/h parameters need to be specified in order to be usable $%ENDCOMMENT$
+                $%IF ITEM.TargetWidth != '' && ITEM.TargetHeight != ''$, targetWidth: $$ITEM.TargetWidth$, targetHeight: $$ITEM.TargetHeight$$%ENDIF$
+                $%IF ITEM.AllowEdit == 'Y'$, allowEdit: true$%ENDIF$
+            };
+
+            $%IF ITEM.DestinationType == 'destinationType.DATA_URL'$
+            // Retrieve image data from specified source 
+            navigator.camera.getPicture(                                    $%COMMENT$  get image and save it as Base64 $%ENDCOMMENT$
+                function(argOfSuccessFunction) {
+                    window.com.temenos.widgets.hybrid.camera.addImage.onPhotoDataSuccess(argOfSuccessFunction, '$$:ITEM.DI_NAME$',
+                    function() {                                            $%COMMENT$  successful save callback $%ENDCOMMENT$
+                    $%IF ITEM.SuccessMessage != ""$             $%COMMENT$  alert successful message if one has been defined $%ENDCOMMENT$
+                        navigator.notification.alert("$$ITEM.SuccessMessage$", function(){}, "$$ITEM.NotificationTitle$", "$$ITEM.NotificationCloseText$");
+                    $%ENDIF$
+                    $%IF ITEM.RunButtonRules == "Y"$
+                        $$ITEM.ONCLICK()$                       $%COMMENT$  the button javascript - executed if tick box to run selected $%ENDCOMMENT$
+                    $%ELSE$
+                        e.stopPropagation;
+                        return false;
+                    $%ENDIF$
+                    });
+                },
+                function(message){                                         $%COMMENT$  error during image capture $%ENDCOMMENT$
+//                        alert("$$ITEM.ErrorMessage$")                   $%COMMENT$  alert error message if one has been defined $%ENDCOMMENT$
+                    $%IF ITEM.ErrorMessage != ""$                   $%COMMENT$  alert error message if one has been defined $%ENDCOMMENT$
+                        navigator.notification.alert("$$ITEM.ErrorMessage$", function(){}, "$$ITEM.NotificationTitle$", "$$ITEM.NotificationCloseText$");
+                    $%ENDIF$
+                }, 
+                cameraOptions);
+            $%ELSE$
+            // Upload image file from specified source 
+            navigator.camera.getPicture(                                    $%COMMENT$  get image and upload it $%ENDCOMMENT$
+                function(argOfSuccessFunction) {                            $%COMMENT$  successful get image callback $$ITEM.ServerUrl$ $%ENDCOMMENT$
+                    window.com.temenos.widgets.hybrid.camera.addImage.onPhotoURISuccess(
+                        argOfSuccessFunction, '$$ITEM.ServerUrl$',
+                        '$$:ITEM.DI_NAME$', document.querySelector('#$$ITEM.ID()$status'), document.querySelector('#$$ITEM.ID()$loading'),
+                        function() {                                            $%COMMENT$  successful upload callback $%ENDCOMMENT$
+                        $%IF ITEM.SuccessMessage != ""$             $%COMMENT$  alert successful message if one has been defined $%ENDCOMMENT$
+                            navigator.notification.alert("$$ITEM.SuccessMessage$", function(){}, "$$ITEM.NotificationTitle$", "$$ITEM.NotificationCloseText$");
+                        $%ENDIF$
+                        $%IF ITEM.RunButtonRules == "Y"$
+                            $$ITEM.ONCLICK()$                       $%COMMENT$  the button javascript - executed if tick box to run selected $%ENDCOMMENT$
+                        $%ELSE$
+                            e.stopPropagation;
+                            return false;
+                        $%ENDIF$
+                    });
+                },
+                window.com.temenos.widgets.hybrid.camera.addImage.onFail,
+                cameraOptions);
+            $%ENDIF$
+
+            }, false);
+  //]]>
+</script>

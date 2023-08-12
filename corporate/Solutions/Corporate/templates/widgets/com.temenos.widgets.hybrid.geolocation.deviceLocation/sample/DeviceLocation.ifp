@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" Connect="version 5.3.1__17" HybridFlag="Y" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root" Name="DeviceLocation" ProjectExtension=".ifp" ProjectFolder="D:/work/Projects/Widgets/com.temenos.widgets.hybrid.deviceLocation/sample" ProjectType="N" eid="BA0BAFE1CE5846C51272">
+  <Types Name="Types Root" eid="BA0BAFE1CE5846C51273">
+    <Lists Name="Lists" eid="BA0BAFE1CE5846C51058"/>
+    <DataTypes Name="Data Types" eid="BA0BAFE1CE5846C51060">
+      <DataType Name="Text" eid="BA0BAFE1CE5846C51314"/>
+      <DataType Name="Number" Type="Number" eid="BA0BAFE1CE5846C51315"/>
+      <DataType Name="Decimal" Type="Decimal" eid="BA0BAFE1CE5846C51316"/>
+      <DataType Name="Date" Type="Date" eid="BA0BAFE1CE5846C51317"/>
+      <DataType Name="File" Type="File" eid="BA0BAFE1CE5846C51318"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="BA0BAFE1CE5846C51319"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="BA0BAFE1CE5846C51067"/>
+  </Types>
+  <Dictionary Name="BA0BAFE1CE5846C5 DataDictionary 1" eid="BA0BAFE1CE5846C51274">
+    <PropertyGroup Name="Data Store Root" eid="BA0BAFE1CE5846C51276">
+      <Property Name="altitude" eid="AC4D927583F6F55E1245"/>
+      <Property Name="latitudine" eid="965A9A00CEA14910939"/>
+      <Property Name="longitude" eid="08193E55B85F1D961166"/>
+      <Property Name="timeStamp" eid="08193E55B85F1D961174"/>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="BA0BAFE1CE5846C51278">
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="BA0BAFE1CE5846C51323"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="BA0BAFE1CE5846C51324"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="BA0BAFE1CE5846C51325"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="BA0BAFE1CE5846C51326"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="BA0BAFE1CE5846C51277"/>
+  <Products Name="Processes Root" eid="BA0BAFE1CE5846C51279">
+    <Product ErrorPhase="ProcName.ErrorSSLPhase" InitialPhase="ProcName.Phase1" Name="ProcName" eid="29CFDB2CC6A144BD870">
+      <Phase Name="Phase1" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="29CFDB2CC6A144BD873">
+        <Button ActionCommand="Geolocation" CheckMandatoryFields="N" DependencyType="All questions in phase" Name="6FF9B08DCE787195 FormButton 1" eid="6FF9B08DCE787195938">
+          <Rule FromType="Variable" FromVariableName="latitude" Name="SetLatitude" PropertyName="latitudine" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" Trim="N" Type="Data Item" eid="965A9A00CEA14910943"/>
+          <Rule FromType="Variable" FromValue="longitude" FromVariableName="longitude" Name="SetLong" PropertyName="longitude" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" Trim="N" Type="Data Item" eid="AC4D927583F6F55E1225"/>
+          <Rule FromType="Variable" FromValue="latitude" FromVariableName="timestamp" Name="ZZZ" PropertyName="timeStamp" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" Trim="N" Type="Data Item" eid="AC4D927583F6F55E1232"/>
+          <Rule FromType="Variable" FromVariableName="altitude" Name="setAltitude" PropertyName="altitude" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" Trim="N" Type="Data Item" eid="AC4D927583F6F55E1246"/>
+          <Rule BreakPoint="Y" BreakPointEnabled="Y" Name="Container" RuleClassName="com.acquire.intelligentforms.rules.ContainerRule" RuleDisabled="N" eid="6FF9B08DCE7871957397"/>
+        </Button>
+      </Phase>
+      <Phase Name="ErrorSSLPhase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="29CFDB2CC6A144BD883">
+        <Heading HeaderText="Error SSL" Name="29CFDB2CC6A144BD Heading 2" eid="29CFDB2CC6A144BD888"/>
+      </Phase>
+      <Phase Name="OfflinePhase" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="6FF9B08DCE787195915">
+        <Heading HeaderText="Offline phase" Name="6FF9B08DCE787195 Heading 3" eid="6FF9B08DCE787195926"/>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="BA0BAFE1CE5846C51280">
+    <PresentationType ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" EditTheme="N" EntityEID="BA0BAFE1CE5846C51279" MessagesOrder="Errors, Warnings, Info" MessagesSeparator="&lt;br/&gt;" Name="Pres" PresentationDefinitionClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationDefinition" QuestionListDefault="- Please Select" UseOptimised="N" UseTracking="N" eid="AC4D927583F6F55E3893">
+      <PresentationProduct ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" EntityClassType="com.acquire.intelligentforms.entities.Product" EntityEID="29CFDB2CC6A144BD870" Name="AC4D927583F6F55E RichHTMLPresentationProduct 4" RuntimeId="AC4D927583F6F55E3899" TabPaneStyle="Use Default" eid="AC4D927583F6F55E3899">
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="29CFDB2CC6A144BD873" Name="AC4D927583F6F55E RichHTMLPresentationPhase 5" RuntimeId="AC4D927583F6F55E3900" eid="AC4D927583F6F55E3900">
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="6FF9B08DCE787195938" Name="AC4D927583F6F55E RichHTMLPresentationButton 6" RuntimeId="BUT_AC4D927583F6F55E3901" eid="AC4D927583F6F55E3901"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="29CFDB2CC6A144BD883" Name="AC4D927583F6F55E RichHTMLPresentationPhase 7" RuntimeId="AC4D927583F6F55E3902" eid="AC4D927583F6F55E3902">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="29CFDB2CC6A144BD888" FieldSize="15" Name="AC4D927583F6F55E RichHTMLPresentationQuestion 8" NumberOfRows="5" RuntimeId="HEAD_AC4D927583F6F55E3903" eid="AC4D927583F6F55E3903"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="6FF9B08DCE787195915" Name="AC4D927583F6F55E RichHTMLPresentationPhase 9" RuntimeId="AC4D927583F6F55E3904" eid="AC4D927583F6F55E3904">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="6FF9B08DCE787195926" FieldSize="15" Name="AC4D927583F6F55E RichHTMLPresentationQuestion 10" NumberOfRows="5" RuntimeId="HEAD_AC4D927583F6F55E3905" eid="AC4D927583F6F55E3905"/>
+        </PresentationPhase>
+      </PresentationProduct>
+    </PresentationType>
+  </PresentationTypes>
+  <EVANotes Name="Notes Root" eid="BA0BAFE1CE5846C51281">
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="BA0BAFE1CE5846C51320"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="BA0BAFE1CE5846C51321"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="BA0BAFE1CE5846C51322"/>
+  </EVANotes>
+</Project>

@@ -1,0 +1,14 @@
+{
+  "name": "openfileinexternalviewer",
+  "version": "1.0.0",
+  "description": "Document viewer cordova plugin for Android",
+  "main": "openFileInExternalViewer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf viewer android"
+  ],
+  "author": "Temenos",
+  "license": "UNLICENSED"
+}

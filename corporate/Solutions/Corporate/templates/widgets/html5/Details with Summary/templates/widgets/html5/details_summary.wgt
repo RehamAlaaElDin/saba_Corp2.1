@@ -1,0 +1,29 @@
+$%COMMENT$ $Revision: 1.7 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%SCRIPT$
+var ecCode = "$$ITEM.EC_GENERATE().ESCAPEFORJS()$";
+$%COMMENT$
+// Strip off the beginning <div and end div>, if this doesn't start with a div then just surround it with the structural element
+$%ENDCOMMENT$
+$%IF BROWSER_FEATURES == "" || BROWSER_FEATURES.details == "Y"$
+var innerContent = "";
+if ( ecCode.indexOf("<div") == 0 ) {
+  innerContent = ecCode.substring(4, ecCode.length - 4);
+} else {
+  innerContent = ">" + ecCode + "</";
+}
+ecCode = "<details" + innerContent + "details>";
+$%ENDIF$
+$%COMMENT$
+// Now we need to add in the summary tag at the end of the details
+$%ENDCOMMENT$
+var insertIndex = ecCode.indexOf(">");
+if ( insertIndex > -1 ) {
+  ecCode = ecCode.substring(0, insertIndex + 1) + "<summary style=\"$$ITEM.INLINE_STYLES().SummaryStyle$\" class=\"$$ITEM.STYLES().SummaryStyle$\">$$ITEM.SummaryText$</summary>" + ecCode.substring(insertIndex + 1);
+}
+ecCode;
+$%ENDSCRIPT$
+<script>
+  var DS_element_$$ITEM.ID()$  = document.getElementById('$$ITEM.ID()$');
+  var DS_$$ITEM.ID()$ = new DetailsSummary( DS_element_$$ITEM.ID()$ );
+  DS_$$ITEM.ID()$.init();
+</script>

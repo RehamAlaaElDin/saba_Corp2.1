@@ -1,0 +1,3 @@
+<button onclick='EdgeJavascriptInterface.openDeveloperSettings()'>
+		$$ITEM.DISPLAY_TEXT()$
+</button>

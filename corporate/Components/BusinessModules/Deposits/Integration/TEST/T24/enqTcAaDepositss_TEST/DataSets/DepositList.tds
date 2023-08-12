@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="283">
+ <enqTcAaDeposits Amount="30,000.00" Arrangement="AA16082610PK" Currency="USD" CurrencyPrefix="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaDeposits[C]" DS_UID="288" DepositSeeRights="YES" DepositTransRights="YES" ExtPrfDeposit="NO" ExtPrfDepositLabel="" ExtPrfDepositPos="" Id="" ProductGroup="DEPOSITS" ProductLine="DEPOSITS">
+    <LinkedAppl Account="80117" AcctName="9 Month Term Deposit" Category="6608" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaDeposits[C].LinkedAppl" DS_UID="285" OpeningDate="2016-03-22" ShortTitle="Rolf Gerling"/>
+    <Product DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaDeposits[C].Product" DS_UID="286" Product="DEPOSIT.09M"/>
+    <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaDeposits[C].Links" DS_UID="287" href="enqTcAaDepositss('AA16082610PK')" rel="self" title="enqTcAaDeposits"/>
+  </enqTcAaDeposits>
+  
+ 
+</DataSetRoot>

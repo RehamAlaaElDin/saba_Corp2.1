@@ -1,0 +1,243 @@
+$%COMMENT$ $Revision: 1.15 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%SET jqteReadOnlyStyle =$$%IF ITEM.IS_READONLY() == true$$$ITEM.READONLYSTYLE()$$%ELSE$other$%ENDIF$$%ENDSET$
+$%IF !jqteReadOnlyStyle == Text || !jqteReadOnlyStyle == 'Text (allow markup)'$
+	<span  id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$ $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$"  class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$">$%IF !jqteReadOnlyStyle == Text$$$ITEM.DATAITEM().VALUE().escapeForHTML()$$%ELSE$$$ITEM.DATAITEM().VALUE()$$%ENDIF$</span>
+$%ELSE$
+	<style type="text/css">
+
+		$%IF ITEM.BORDER_COLOUR == ""$
+			$%SET var_border_color = transparent$ $%ENDSET$
+		$%ELSE$
+			$%SET var_border_color := ITEM.BORDER_COLOUR$ $%ENDSET$
+		$%ENDIF$
+		$%IF ITEM.BUTTON_BORDER_COLOUR == ""$
+			$%SET var_button_border_color = transparent$ $%ENDSET$
+		$%ELSE$
+			$%SET var_button_border_color := ITEM.BUTTON_BORDER_COLOUR$ $%ENDSET$
+		$%ENDIF$
+		$%IF ITEM.SELECTED_BUTTON_COLOUR == ""$
+			$%SET var_sel_color = transparent$ $%ENDSET$
+		$%ELSE$
+			$%SET var_sel_color := ITEM.SELECTED_BUTTON_COLOUR$ $%ENDSET$
+		$%ENDIF$
+		$%IF ITEM.HOVER_BUTTON_COLOUR == ""$
+			$%SET var_hover_color = transparent$ $%ENDSET$
+		$%ELSE$
+			$%SET var_hover_color := ITEM.HOVER_BUTTON_COLOUR$ $%ENDSET$
+		$%ENDIF$
+
+		$%SET var_width := ITEM.EDITOR_WIDTH$ $%ENDSET$
+		$%SET var_min_height := ITEM.MIN_CONTENT_HEIGHT$ $%ENDSET$
+		$%SET var_max_height := ITEM.MAX_CONTENT_HEIGHT$ $%ENDSET$
+
+		.$$ITEM.ID()$ {
+			font-family: inherit;
+			padding: 1px;
+			border: 1px solid $$!var_border_color$;
+			border-radius: 0px;
+		}
+		.$$ITEM.ID()$_tool:hover{
+			background-color: $$!var_hover_color$;
+		}
+		.$$ITEM.ID()$_focused {
+			box-shadow: 0 0 10px $$!var_sel_color$;
+			-webkit-box-shadow: 0 0 10px #00BDFF;
+			-moz-box-shadow: 0 0 10px #00BDFF;
+		}
+
+		.$$ITEM.ID()$_tool_icon { border:1px solid $$!var_button_border_color$; display: block; width: 19px; height: 19px;  text-align:center; cursor:pointer; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; background:url(templates/widgets/jquery/jquery-te/css/jquery-te.png) no-repeat; }
+		.$$ITEM.ID()$ { width:$$!var_width$px; -webkit-border-radius:5px; -moz-border-radius:5px; overflow:hidden; box-shadow:0 0 3px #999; -moz-box-shadow:0 0 3px #999; webkit-box-shadow:0 0 3px #999; margin:0; }
+		.$$ITEM.ID()$ * { font-family:inherit; font-size:14px; color:#333; }
+		.$$ITEM.ID()$_toolbar { padding:3px 4px; background: $$!var_border_color$; border: none; overflow: auto;}
+		.$$ITEM.ID()$_tool { float: left; margin: 0;	padding: 0; cursor: pointer;	}
+		.$$ITEM.ID()$_tool,.$$ITEM.ID()$_tool_icon,.$$ITEM.ID()$_tool_label { 	border-radius: 3px; -webkit-border-radius: 3px;	-moz-border-radius: 3px; }
+		.$$ITEM.ID()$_editor { padding:10px; min-height:$$!var_min_height$px; max-height:$$!var_max_height$px; overflow-y:auto; outline:none; word-wrap:break-word; -ms-word-wrap:break-word; }
+		.$$ITEM.ID()$_editor div, .$$ITEM.ID()$_editor p { margin:0 0 7px; z-index:100000;}
+		.$$ITEM.ID()$_editor blockquote { margin-top:0; margin-bottom:7px; }
+		.$$ITEM.ID()$_hiddenField {	display: none; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_1 .$$ITEM.ID()$_tool_label { display: block;    height: 16px;    overflow: hidden;    padding: 3px;    position: relative;   text-decoration: none !important;   width: 70px; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_1 .$$ITEM.ID()$_tool_text { font: bold 13px Arial, sans-serif; color: #222;	}
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_1 .$$ITEM.ID()$_tool_icon {
+			position: absolute;	top: 10px;	right: 2px;	width: 6px;	height: 4px; background-position: -19px -23px; border: none;	border-radius: none;	-webkit-border-radius: none;	-moz-border-radius: none;
+		}
+		/*toolbar icons position*/
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_1:hover .$$ITEM.ID()$_tool_icon,.$$ITEM.ID()$_tool.jqte_tool_1:active .$$ITEM.ID()$_tool_icon	{ border: none; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_2 .$$ITEM.ID()$_tool_icon { background-position: 0 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_3 .$$ITEM.ID()$_tool_icon { background-position: -18px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_4 .$$ITEM.ID()$_tool_icon { background-position: -36px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_5 .$$ITEM.ID()$_tool_icon { background-position: -54px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_6 .$$ITEM.ID()$_tool_icon { background-position: -72px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_7 .$$ITEM.ID()$_tool_icon { background-position: -90px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_8 .$$ITEM.ID()$_tool_icon { background-position: -108px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_9 .$$ITEM.ID()$_tool_icon { background-position: -126px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_10 .$$ITEM.ID()$_tool_icon { background-position: -144px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_11 .$$ITEM.ID()$_tool_icon { background-position: -162px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_12 .$$ITEM.ID()$_tool_icon { background-position: -180px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_13 .$$ITEM.ID()$_tool_icon { background-position: -198px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_14 .$$ITEM.ID()$_tool_icon { background-position: -216px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_15 .$$ITEM.ID()$_tool_icon { background-position: -234px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_16 .$$ITEM.ID()$_tool_icon { background-position: -252px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_17 .$$ITEM.ID()$_tool_icon { background-position: -270px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_18 .$$ITEM.ID()$_tool_icon { background-position: -288px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_19 .$$ITEM.ID()$_tool_icon { background-position: -306px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_20 .$$ITEM.ID()$_tool_icon { background-position: -324px 0; }
+		.$$ITEM.ID()$_tool.$$ITEM.ID()$_tool_21 .$$ITEM.ID()$_tool_icon { background-position: -342px 0; }
+
+		/* text format menu */
+		.$$ITEM.ID()$_formats {
+			display: none; position: absolute;
+			width: 180px; overflow-x: hidden;
+			overflow-y: auto;	background: #FFF;
+			border: #AAA 1px solid;	box-shadow: 0 0 5px #AAA;
+			-webkit-box-shadow: 0 0 5px #AAA;
+			-moz-box-shadow: 0 0 5px #AAA;	z-index: 100;
+		}
+		.$$ITEM.ID()$_format { display: block; padding: 4px 7px; font-size: 13px; }
+		.$$ITEM.ID()$_format:hover { background: $$!var_hover_color$; }
+		.$$ITEM.ID()$_format_1,.$$ITEM.ID()$_format_2,.$$ITEM.ID()$_format_3,.$$ITEM.ID()$_format_4,.$$ITEM.ID()$_format_5,.$$ITEM.ID()$_format_6 { font-weight: bold; }
+		.$$ITEM.ID()$_format_1 { font-size: 22px; }
+		.$$ITEM.ID()$_format_2 { font-size: 20px; }
+		.$$ITEM.ID()$_format_3 { font-size: 18px; }
+		.$$ITEM.ID()$_format_4 { font-size: 16px; }
+		.$$ITEM.ID()$_format_5 { font-size: 14px; }
+		.$$ITEM.ID()$_format_6 { font-size: 12px; }
+		.$$ITEM.ID()$_format_7 { font-family: "Courier New", Courier, monospace;	}
+
+		/* font size menu */
+		.$$ITEM.ID()$_fontsizes { display: none; position: absolute; width: 180px; height: 198px; overflow-x: hidden;
+			overflow-y: auto; background: #FFF; border: #AAA 1px solid; box-shadow: 0 0 5px #AAA;
+			-webkit-box-shadow: 0 0 5px #AAA; -moz-box-shadow: 0 0 5px #AAA;	}
+		.$$ITEM.ID()$_fontsize { display: block; padding: 3px 7px; }
+		.$$ITEM.ID()$_fontsize:hover { background: $$!var_hover_color$; }
+
+		/* color pallette */
+		.$$ITEM.ID()$_cpalette {
+			display: none;
+			position: absolute;
+			padding: 6px;
+			width: 144px;
+			background: #FFF;
+			border: #AAA 1px solid;
+			box-shadow: 0 0 5px #AAA;
+			-webkit-box-shadow: 0 0 5px #AAA;
+			-moz-box-shadow: 0 0 5px #AAA;
+		}
+		.$$ITEM.ID()$_color {
+			display: block;
+			float: left;
+			width: 16px;
+			height: 16px;
+			border: #FFF 1px solid;
+		}
+		.$$ITEM.ID()$_color:hover { border: 1px solid $$!var_border_color$; }
+
+		/* editor area */
+		.$$ITEM.ID()$_source {
+			padding: 10px;
+			background: #FFF;
+			min-height: 100px;
+			max-height: 900px;
+			overflow: auto;
+			outline: none;
+			word-wrap: break-word;
+			-ms-word-wrap: break-word;
+			resize: vertical;
+		}
+		.$$ITEM.ID()$_editor img {
+			float: left;
+			margin: 0 10px 5px 0;
+		}
+		.$$ITEM.ID()$_editor a[$$ITEM.ID()$-setlink],.$$ITEM.ID()$_editor a[$$ITEM.ID()$-setlink] * {
+			background: #3297FD !important;
+			color: #FFF !important;
+		}
+		.$$ITEM.ID()$_editor h1,.$$ITEM.ID()$_editor h2,.$$ITEM.ID()$_editor h3,.$$ITEM.ID()$_editor h4,.$$ITEM.ID()$_editor h5,.$$ITEM.ID()$_editor h6,.$$ITEM.ID()$_editor pre{
+			display: block;
+			margin: 0 0 3px;
+		}
+		.$$ITEM.ID()$_editor h1,.$$ITEM.ID()$_editor h1 * {	font-size: 26px; }
+		.$$ITEM.ID()$_editor h2,.$$ITEM.ID()$_editor h2 * {	font-size: 24px; }
+		.$$ITEM.ID()$_editor h3,.$$ITEM.ID()$_editor h3 * { font-size: 22px; }
+		.$$ITEM.ID()$_editor h4,.$$ITEM.ID()$_editor h4 * { font-size: 20px; }
+		.$$ITEM.ID()$_editor h5,.$$ITEM.ID()$_editor h5 * { font-size: 18px; }
+		.$$ITEM.ID()$_editor h6,.$$ITEM.ID()$_editor h6 * { font-size: 15px; }
+
+		/* source area */
+		.$$ITEM.ID()$_source,.$$ITEM.ID()$_source textarea {
+			background: #FFF1E8;
+		}
+		.$$ITEM.ID()$_source textarea {
+			margin: 0 !important;
+			padding: 0 !important;
+			display: block !important;
+			width: 100% !important;
+			min-height: 100px;
+			font-family: Courier, Arial, sans-serif !important;
+			font-weight: normal;
+			font-size: 15px;
+			overflow: hidden !important;
+			outline: none;
+			resize: none;
+		}
+		.$$ITEM.ID()$_source textarea,.$$ITEM.ID()$_source textarea:focus {
+			css_shadow: none !important;
+			background: none !important;
+			border: none !important;
+		}
+		.$$ITEM.ID()$_tool_depressed {	background-color: $$!var_sel_color$;	border-color: $$!var_border_color$; }
+		.$$ITEM.ID()$_tool_depressed .$$ITEM.ID()$_tool_icon {	border:1px solid $$!var_border_color$;	}
+		.$$ITEM.ID()$_tool_depressed:hover {	background-color: $$!var_sel_color$;	}
+		.$$ITEM.ID()$_editor {
+			border: 2px solid $$!var_border_color$;
+			border-radius: 0px;
+			font-family: inherit;
+		}
+
+		/* title box */
+		.$$ITEM.ID()$_title {
+			display:none;
+			position:absolute;
+			z-index:9999;
+		}
+		.$$ITEM.ID()$_titleText {
+			padding:5px 7px;
+			margin-top:0;
+			min-width:5px;
+			min-height:1px;
+			max-width:400px;
+			background:#FFFFFF;
+			border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;
+			word-wrap:break-word; -ms-word-wrap:break-word
+			text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
+	      	box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0px;
+		}
+		.$$ITEM.ID()$_titleText, .$$ITEM.ID()$_titleText * {
+			color:#719DAB;
+			font-size:11px
+		}
+	</style>
+	<div class="jqte-container">
+		<div class="textarea">
+			<textarea id="$$ITEM.ID()$" name="$$ITEM.DATAITEM()$" $%IF ITEM.IS_READONLY() == "true"$disabled$%ENDIF$>$$ITEM.DATAITEM().VALUE().escapeForHTML()$</textarea>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$('.$$ITEM.ID()$').remove();
+		$('#$$ITEM.ID()$').jqte({
+		  "css":"$$ITEM.ID()$"
+		});
+
+		$('.$$ITEM.ID()$_editor').blur(function(event){
+			$$ITEM.VALIDATION()$;
+		}).addClass("tetris_ansControl");
+
+		$('.$$ITEM.ID()$').children().click(function(event){
+			 $('.$$ITEM.ID()$_editor').focus();
+		});
+
+	$%IF ITEM.IS_READONLY() == "true"$
+		$('.$$ITEM.ID()$_editor').attr("contenteditable", "false");
+	$%ENDIF$
+	</script>
+	$%ENDIF$

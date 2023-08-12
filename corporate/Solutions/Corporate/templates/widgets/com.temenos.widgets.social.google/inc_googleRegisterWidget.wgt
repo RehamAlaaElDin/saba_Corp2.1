@@ -1,0 +1,6 @@
+<script type="text/javascript">
+    addWidget("edge.widgets.google", "$$!NAMESPACE$", "");
+    if ( getTriggeredReason() == "REPLACE_CHILD" ) {
+        window.edge.widgets.google.setRefreshInd(true);
+    }
+</script>

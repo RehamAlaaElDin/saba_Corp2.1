@@ -1,0 +1,33 @@
+$%COMMENT$ $Revision: 1.5 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.IS_HIDDEN() == "false"$
+<script type = "text/javascript" charset="utf-8">
+
+function $$ITEM.ID()$_func() {     
+	$%IF ITEM.Action == "alert"$ 
+        var message="$$ITEM.message$",title="$$ITEM.title$";     
+        window.com.temenos.widgets.hybrid.notifications.notify.alert(message,null,title)
+    $%ELSE$
+        $%IF ITEM.Action == "beep"$ 
+            var times=isNaN("$$ITEM.times$") ? 1 : "$$ITEM.times$" - 0;
+            window.com.temenos.widgets.hybrid.notifications.notify.beep(times);
+        $%ELSE$
+            $%IF ITEM.Action == "vibrate"$ 
+            var time=isNaN("$$ITEM.time$") ? 3000 : "$$ITEM.time$" - 0;
+			var delay=isNaN("$$ITEM.delay$") ? 3000 : "$$ITEM.delay$" - 0;
+			setTimeout(function(){window.com.temenos.widgets.hybrid.notifications.notify.vibrate(time)}, delay);
+            $%ENDIF$
+        $%ENDIF$
+    $%ENDIF$    
+}
+
+if (window.com.temenos.widgets.hybrid.notifications.notify.deviceReady) {
+    $$ITEM.ID()$_func(); 
+} else {
+    document.addEventListener("deviceready", function() {
+        window.com.temenos.widgets.hybrid.notifications.notify.deviceReady=true;
+        $$ITEM.ID()$_func();  
+    }, false);
+}
+
+</script>
+$%ENDIF$

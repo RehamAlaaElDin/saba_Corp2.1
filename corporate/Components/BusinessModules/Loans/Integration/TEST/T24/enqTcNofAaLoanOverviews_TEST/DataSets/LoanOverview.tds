@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="15">
+  <!---->
+<enqTcNofAaLoanOverview ArrangementId="" Arrangment="AA180803QW81" CoolingDate="2018-03-28" Currency="USD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[A]" DS_UID="14" DateFrom="" DateTo="" DueSchdCount="0" FutrSchdCount="72" Id="" LastPaymentDate="2021-03-20" MaturesIn="2 Years 11 Months 4 Days" MaturityDate="2021-03-21" NextPayAmount="-0.01" NextPayDate="2018-04-20" PaidSchdCount="3" PayoffRequest="Y" PrimaryKey="" StartDate="2018-03-21" Term="3 Years" VirtualBalance="YES">
+    <TierType DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].TierType" DS_UID="0" TierType="SINGLE|SINGLE"/>
+    <EffectiveRate DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].EffectiveRate" DS_UID="1" EffectiveRate="5|10.5"/>
+    <RateType DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].RateType" DS_UID="2" RateType="Periodic|Variable"/>
+    <InterestProperty DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].InterestProperty" DS_UID="3" InterestProperty="PRINCIPALINT|PENALTYINT"/>
+    <CompoundType CompoundType="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].CompoundType" DS_UID="4"/>
+    <IntPropertyDesc DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].IntPropertyDesc" DS_UID="5" IntPropertyDesc="Principal Interest|Penalty Interest"/>
+    <BalanceAmount BalanceAmount="-100|-25|-125" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].BalanceAmount" DS_UID="6"/>
+    <InterestRate DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].InterestRate" DS_UID="7" InterestRate="5% (USD Disct Rates + 0.50%)|10.5% (Loan Base Rate + 3.50%)"/>
+    <BalanceTypes BalanceTypes="Payoff Fee (Due)|Principal Dec. Fees (Due)|TOTALDUE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].BalanceTypes" DS_UID="8"/>
+    <SchdPaymentMethod DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].SchdPaymentMethod" DS_UID="9" SchdPaymentMethod="Payment|Due"/>
+    <SchdPaymentFreq DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].SchdPaymentFreq" DS_UID="10" SchdPaymentFreq="on the Start Date |Every 15 days"/>
+    <SchdPaymentType DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].SchdPaymentType" DS_UID="11" SchdPaymentType="Disburse Percentage|Constant Repayment"/>
+    <SchdPaymentAmt DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].SchdPaymentAmt" DS_UID="12" SchdPaymentAmt="100%|1107.43"/>
+    <SchdProperty DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcNofAaLoanOverview[C].SchdProperty" DS_UID="13" SchdProperty="Account|Account Principal Interest"/>
+  </enqTcNofAaLoanOverview>
+</DataSetRoot>

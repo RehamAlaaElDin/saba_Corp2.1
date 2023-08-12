@@ -1,0 +1,7 @@
+<script type="IN/JYMBII" 
+$%IF ITEM.id != ""$data-companyid="$$ITEM.id$"
+$%ENDIF$$%IF ITEM.format != ""$data-format="$$ITEM.format$"
+$%ENDIF$$%IF ITEM.text != ""$data-text="$$ITEM.text$"
+$%ENDIF$$%IF ITEM.width != ""$data-width="$$ITEM.width$"$%ENDIF$></script>
+
+$%INCLUDE widgets/com.temenos.widgets.social.linkedin/inc_linkedinRegisterWidget.wgt$$%ENDINCLUDE$

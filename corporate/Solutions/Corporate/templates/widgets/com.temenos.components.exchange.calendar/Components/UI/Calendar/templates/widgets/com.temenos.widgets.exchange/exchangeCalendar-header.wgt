@@ -1,0 +1,365 @@
+<link href='./components/Calendar/html/css/jquery-ui.min.css' rel='stylesheet' />
+<link href='./components/Calendar/html/css/fullcalendar.css' rel='stylesheet' />
+<link href='./components/Calendar/html/css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='./components/Calendar/html/js/moment.min.js'></script>
+<script src='./components/Calendar/html/js/jquery-3.5.1.min.js'></script>
+<script src='./components/Calendar/html/js/jquery-ui.min.js'></script>
+<script src='./components/Calendar/html/js/fullcalendar.min.js'></script>
+
+<script type="text/javascript">
+
+function postProcessAjaxButtonActionService() {
+    exchangeCalendarAPI.hideWaiting();
+}
+var exchangeCalendarAPI = {
+    locale: "en-GB",
+    renderTimeout: null,
+    mode: "",
+
+    setup: function(id, defaultDate) {
+        moment.locale(exchangeCalendarAPI.locale);
+        var origId = id;
+        id = "fc_" + id;
+        exchangeCalendarAPI.hideWaiting();
+
+        //if ajax response, delete the new empty calendar details div, and close the orig
+        if (getTriggeredReason() == "REPLACE_CHILD") {
+            $("#calendarDetails").remove();
+
+            //the orig
+            if (exchangeCalendarAPI.mode == "update") {
+                $("#calendarDetails").dialog("close");
+                $("[id$=EditAppointmentSection]").dialog("close");
+                exchangeCalendarAPI.mode = "";
+            } else if (exchangeCalendarAPI.mode == "getbody") {
+                var inst = $(".ApptId").val();
+                var events = $('#' + id).fullCalendar('clientEvents');
+                $(".fc-message-body").html( events[parseInt(inst) - 1].body ) 
+                exchangeCalendarAPI.mode = "";
+            }
+            return;
+        } else {
+            $("#" + origId).closest(".fc").before("<div id='" + id + "'></div>");
+            exchangeCalendarAPI.createCalendar(id, defaultDate);
+        }
+        
+
+        //ready-only dialog showing calendar entry details
+        $("#calendarDetails")
+            .dialog({
+                autoOpen: false,
+                closeOnEscape: false,
+                width: 640,
+                height: 430, 
+                open: function(event, ui) {
+                    exchangeCalendarAPI.showMask(true);
+                    $(this).parent().appendTo("#EDGE_CONNECT_PROCESS");
+                    $(".ui-dialog-titlebar-close", $(this).parent() ).hide();
+                },
+                close: function() {
+                    exchangeCalendarAPI.hideWaiting();
+                    exchangeCalendarAPI.showMask(false);
+                    $(this).find(".appt_details").remove();
+                }
+            })
+            .find(".DeleteAppointment").remove().end().append( $(".DeleteAppointment") )
+            .find(".EditAppointment").remove().end().append( $(".EditAppointment") )
+            .find(".ConfirmAppointment").remove().end().append( $(".ConfirmAppointment") )
+            .find(".CancelChange").remove().end().append( $(".CancelChange") )
+            .addClass("fc");
+
+        //edit dialog showing calendar entry details
+        $("[id$=EditAppointmentSection]").dialog( {
+            autoOpen: false,
+            closeOnEscape: false,
+            width: 700,
+            height: 540,
+            open: function(event, ui) {
+                exchangeCalendarAPI.showMask(true);
+                $(this).parent().appendTo("#EDGE_CONNECT_PROCESS");
+                $(".ui-dialog-titlebar-close", $(this).parent() ).hide();
+
+            },
+            close: function() {
+                exchangeCalendarAPI.hideWaiting();
+                exchangeCalendarAPI.showMask(false);
+                $("[id$=CancelPopup]").click();
+            }
+        }).dialog("widget").appendTo("#EDGE_CONNECT_PROCESS");
+
+
+        $(".ui-dialog").attr("onblur", null).on("blur", "input.CalStart", function() {
+            $("input.CalEnd").val( $("input.CalStart").val() );
+        }).on("click", "button[id$=AddToCalendar], .DeleteAppointment,  button[id$=UpdateAppointment], button[id$=Update]", function() {
+            exchangeCalendarAPI.showWaiting(true);
+            exchangeCalendarAPI.mode = "update";
+        }).on("click", ".CalFullDay input, .CalRecur input", function() {
+            $("#FloatCalendarDiv").hide();
+        }).on("click", ".EditAppointment", function() {
+            $("#calendarDetails").dialog("close");
+            $("[id$=EditAppointmentSection]").dialog("option", "title", "Edit Appointment");
+            $("[id$=_AddToCalendar]").hide();
+            $("[id$=_Update]").show();
+            $("[id$=EditAppointmentSection]").dialog("open");
+            
+            var text = $("[id$=EditAppointmentSection]").find('textarea').text();
+            $("[id$=EditAppointmentSection]").find('textarea').val(text.replace(/<br *\/?>/gi, '\n'));
+        }).on("click", ".CancelEdit", function() {
+            $("[id$=EditAppointmentSection]").dialog("close");
+        });
+        $("#EDGE_CONNECT_PROCESS").on("click", ".NewAppointment", function() {
+            $("[id$=EditAppointmentSection]").dialog("option", "title", "New Appointment");
+            $("[id$=_AddToCalendar]").show();
+            $("[id$=_Update]").hide();
+            $("[id$=EditAppointmentSection]").dialog("open");
+        });
+        $(".ApptId_row").hide();
+    }, 
+
+    anyErrors: function() {
+        var mandErrors = getVariable("", "MAND_ERRORS");
+        var formatErrors = getVariable("", "FORMAT_ERRORS");
+        if (mandErrors || formatErrors) {
+            return true;
+        }
+        return false;
+    },
+
+    showWaiting: function(dialogInd) {
+        $(".fc-waiting").remove();
+        if (exchangeCalendarAPI.anyErrors() == true) return;
+
+        var selector = ".fc-left";
+        if (dialogInd == true) {
+            selector = ".ui-dialog-content";
+        }
+        $("body").append("<div class='fc-waiting'></div>");
+        $(selector).after( $(".fc-waiting") );
+        $(".fc-waiting").show();
+    },
+    hideWaiting: function() {
+        $(".fc-waiting").remove();
+    },
+
+    showMask: function(showInd){
+        if ( $("#fc-mask").length == 0) {
+            $("body").append("<div id='fc-mask'></div>");
+        }
+        if(showInd){
+            $("#fc-mask").show();
+        } else {
+            $("#fc-mask").hide();
+        }
+    },
+
+    createCalendar: function(id, defaultDate) {
+		$('#' + id).fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+		    },
+            editable: true,
+            defaultDate: defaultDate,
+            
+            views: {
+                month: {
+                    columnFormat: 'ddd'
+                }, 
+                agendaWeek: {
+                    columnFormat: 'ddd D'
+                },
+                agendaDay: {
+                    columnFormat: 'dddd'
+                }
+            },
+            dayClick: function(date, jsEvent, view) {
+                date.locale(exchangeCalendarAPI.locale);
+                var currentView = $('#' + id).fullCalendar( 'getView' );
+                
+                if ( currentView.name == "month") {
+                    $('#' + id).fullCalendar( 'gotoDate', date )
+                    $('#' + id).fullCalendar( 'changeView', 'agendaDay'  )
+                } else {
+                    if (date.hour() == 0) {
+                        $("input.CalStartAllDay").val(date.format('L'));
+                        if ( !$(".CalFullDay input").is(':checked') ) {
+                            $(".CalFullDay input").click();
+                        }
+                    } else {
+                        $("input.CalStart").val(date.format('L'));
+                        $("select.CalStart[id$='HOUROFDAY']").val( date.format("HH"));
+                        $("select.CalStart[id$='MINUTES']").val("00");
+
+                        $("input.CalEnd").val(date.format('L'));
+                        $("select.CalEnd[id$='HOUROFDAY']").val( date.format("HH"));
+                        $("select.CalEnd[id$='MINUTES']").val("30");
+                    }
+
+                    $("button[id$='InsertAppointment']").click();
+                    $("[id$=EditAppointmentSection]").dialog("option", "title", "New Appointment");
+                    $("[id$=EditAppointmentSection]").dialog("open");
+                }
+            },
+            viewRender: function (view, element) {
+                if ( $(element).is("div.fc-view.fc-month-view.fc-basic-view") ) {
+                    exchangeCalendarAPI.showWaiting();
+
+                    //only call this after a small delay, in case the user is clicking fast...
+                    if (exchangeCalendarAPI.renderTimeout) {
+                        clearTimeout(exchangeCalendarAPI.renderTimeout);
+                    }
+                    exchangeCalendarAPI.renderTimeout = setTimeout( function()  {
+                        var b = $('#' + id).fullCalendar('getDate');
+                        b.locale(exchangeCalendarAPI.locale);
+                        $(".CalSearchStart").val(b.format('L'));
+                        $(".CalSearch").click();
+                    }, 1000);
+                }
+            },
+			
+            eventRender: function(event, element) { 
+                element.find('.fc-title').css("font-weight", "bold"); 
+                if (event.status == "OOF") {
+                    element.css("background", "#B3008F");
+                } else if (event.status == "Free") {
+                    element.css("background", "#00AE05");
+                } else if (event.status == "Tentative") {
+                    element.css("background", "#F6B31A");
+                }
+            }, 
+
+            eventClick: function(event) {
+                $(".ApptId").val(event.id);
+                exchangeCalendarAPI.mode = "getbody";
+                $(".GetBody").trigger("click");
+                
+                var timeDetails = "";
+                if (event.allDay) {
+                    timeDetails = "All day<br/><p>";
+                }
+                else {
+                    event.start.locale(exchangeCalendarAPI.locale);
+                    event.end.locale(exchangeCalendarAPI.locale);
+                    timeDetails = (event.start == null ? "" : event.start.format('LLLL')) + "<br/>" + 
+                                  (event.end   == null ? "" : event.end.format('LLLL'))   + "<br/><p>";
+
+                }
+
+
+                $( "#calendarDetails" )
+                    .prepend("<div class='appt_details'>" +
+                              timeDetails + 
+                             ("<div class='fc-message-body'>" + event.body + "</div>") + 
+                              "</div>")
+                    .find(".EditAppointment").show().end()
+                    .find(".ConfirmAppointment").hide().end()
+                    .find(".CancelChange").show().on("click", function() {
+                            $( "#calendarDetails" ).dialog("close");
+                    }).end()
+                    .dialog( "option", "title", event.title )
+                    .dialog("open");
+            },
+
+            eventResize    : exchangeCalendarAPI.handleChange,
+            eventDrop      : exchangeCalendarAPI.handleChange
+        });
+    },
+
+
+    handleChange: function( event, delta, revertFunc, jsEvent, ui, view ) {
+        $(".ApptId").val(event.id);
+        exchangeCalendarAPI.mode = "getbody";
+        $(".GetBody").trigger("click");
+
+        $( "#calendarDetails" )
+                .find(".appt_details").remove().end()
+                .prepend("<div class='appt_details'>" +
+                         (event.start == null ? "" : event.start.format('LLLL')) + "<br/>" + 
+                         (event.end   == null ? "" : event.end.format('LLLL'))   + "<br/><p>" + 
+                         ("<div class='fc-message-body'>" + event.body + "</div>") + 
+                          "</div>")
+                .find(".EditAppointment").hide().end()
+                .find(".ConfirmAppointment").show().removeAttr("onclick").on("click", function() {
+                    exchangeCalendarAPI.confirmChange(event);
+                }).end()
+                .find(".CancelChange").show().on("click", function() {
+                    exchangeCalendarAPI.cancelChange.apply(this, [event, revertFunc]);
+                }).end()
+                .dialog( "option", "title", "Move " + event.title )
+                .dialog("open");            
+    },
+
+    cancelChange: function(event, revertFunc) {
+        $( "#calendarDetails" ).dialog("close");
+        if (revertFunc) {
+            revertFunc.call();
+        }
+    },
+
+
+    confirmChange: function(event) {
+        $(".ApptId").val(event.id);
+
+        event.start.locale(exchangeCalendarAPI.locale);
+        $("input.CalStart").val(event.start.format('L'));
+        $("input.CalFullDay").attr("checked", event.allDay);
+
+        if (event.allDay) {
+            $("input.CalStartAllDay").val(event.start.format('L'));
+        } else {
+            event.end.locale(exchangeCalendarAPI.locale);
+
+            $("select.CalStart[id$='HOUROFDAY']").val( event.start.format("HH"));
+            $("select.CalStart[id$='MINUTES']").val( event.start.format("mm") );
+
+            $("input.CalEnd").val(event.end.format('L'));
+            $("select.CalEnd[id$='HOUROFDAY']").val( event.end.format("HH"));
+            $("select.CalEnd[id$='MINUTES']").val( event.end.format("mm"));
+        }
+        exchangeCalendarAPI.showWaiting(true);
+        exchangeCalendarAPI.mode = "update";
+        $("button[id$='UpdateAppointment']").click();
+    },
+
+    setEvents: function(id, events) {
+        $('#fc_' + id).fullCalendar('removeEvents');
+        $('#fc_' + id).fullCalendar('addEventSource', events );	
+
+    }
+}
+</script>
+<style type="text/css">
+.CalDesc {
+    width: 320px;
+    height: 135px;
+}
+.fc-content:hover {
+    cursor: pointer;
+}
+
+.fc-message-body {
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #efefef;
+}
+
+.fc fieldset {
+    display: inline-block;
+}
+
+#fc-mask{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.3);
+    top:0;
+    left:0;
+    display:none;
+    z-index: 99;
+}
+
+</style>
+

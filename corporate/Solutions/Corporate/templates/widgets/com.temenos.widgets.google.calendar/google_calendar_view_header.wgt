@@ -1,0 +1,61 @@
+	<link href='./templates/widgets/com.temenos.widgets.google.calendar/css/fullcalendar.css' rel='stylesheet' />
+	<script type='application/javascript' src='./templates/widgets/com.temenos.widgets.google.calendar/lib/jquery-3.5.1.min.js'></script>
+	<script type='application/javascript' src='./templates/widgets/com.temenos.widgets.google.calendar/lib/moment.min.js'></script>
+	$%IF !__EC_IS_DESIGNER != 'Y' $
+		<script src='./templates/widgets/com.temenos.widgets.google.calendar/lib/jquery-ui.min.js'></script>
+	$%ENDIF$
+	<script type='text/javascript' src='./templates/widgets/com.temenos.widgets.google.calendar/js/fullcalendar.js'></script>
+	<script type='text/javascript' src='./templates/widgets/com.temenos.widgets.google.calendar/js/gcal.js'></script>
+	<script type='text/javascript' src='./templates/widgets/com.temenos.widgets.google.calendar/js/lang-all.js'></script>
+	<script src='https://apis.google.com/js/client.js'></script>
+	<script type='text/javascript'>
+    function auth_gv(GCV) {
+      var config = {
+        'client_id': GCV.ClientID,
+        'scope': 'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar'
+      };
+      gapi.auth.authorize(config, function() {
+        console.log('login complete');
+        console.log(gapi.auth.getToken);
+		document.getElementById(GCV.BtnId).style.display = "none";
+        gapi.client.load('calendar', 'v3').then(function() {
+          var request = gapi.client.calendar.events.list({
+            'calendarId': 'primary'
+          });
+          request.execute(function(resp) {
+            console.log(resp);
+            var eventList = [];
+
+            for (var i = 0, len = resp.items.length; i < len; i++) {
+              var gcEvent = resp.items[i];
+              var event = {
+                id: gcEvent.id,
+                title: gcEvent.summary,
+                start: gcEvent.start.dateTime || gcEvent.start.date
+              };
+              (gcEvent.end.dateTime) && (event.end = gcEvent.end.dateTime || gcEvent.end.date);
+              (gcEvent.description) && (event.description = gcEvent.description);
+
+              eventList[eventList.length] = event;
+            }
+
+            console.log(eventList);
+            $('#'+GCV.CId).fullCalendar({
+              events: eventList,
+			  lang: GCV.Language,
+			  header: {
+					left:   'title',
+					center: 'month,agendaWeek,agendaDay',
+					right:  'today prev,next'
+				},
+			  defaultView: GCV.DefaultView,
+			  eventBackgroundColor: GCV.BackgroundColour,
+			  eventBorderColor: GCV.BorderColor,
+			  eventTextColor: GCV.TextColour
+            });
+			console.log(GCV.CId);
+          });
+        });
+      });
+    }
+  </script>

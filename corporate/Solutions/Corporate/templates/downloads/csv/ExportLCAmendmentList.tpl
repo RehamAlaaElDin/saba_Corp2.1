@@ -1,0 +1,5 @@
+Export LC Amendment
+
+LC Reference,Transaction Reference,Type,Issuing Bank,Applicant,New Expiry Date,Currency,Change in Amount,Status,Amendment Status
+$%for 1 to ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].lastInstance() $$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].IssBankRef$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].TransRef$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].LcType$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].IssuingBank$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].Applicant$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].AmdDate$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].Currency$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].Amount$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].StatusForDisplay$,$$ListingForDisplay[1].ExportLetterOfCreditAmendmentsList[C].AmendStatus$
+$%endfor$

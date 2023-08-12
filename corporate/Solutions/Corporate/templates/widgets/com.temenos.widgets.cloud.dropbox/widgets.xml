@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+  <widget callback="false" icon="images/dropbox.jpg" name="Dropbox Saver" type="Item:">
+    <template type="source" value="dbSaver.wgt"/>
+    <template alwaysAddHeader="false" type="header" value="dbHeader.wgt"/>
+  <custom>
+    <item help="The Dropbox app ID which you use to initiate the [Dropbox JavaScript]. Example : m0inwezext0cz5s This ID have to be same for all instances of the widgets within same Edge phase ." includeInDesign="true" layout="-1" mand="true" name="APP_KEY" prompt="App ID" tab="Dropbox Setup" type="javax.swing.JTextField" usage="7"/>
+    <item help="URL of the file the Saver should add to the user's Dropbox. The Saver supports HTTP and HTTPS URIs." includeInDesign="true" layout="-1" mand="true" name="SAVER_URL" prompt="File URL" tab="Dropbox Setup" type="javax.swing.JTextField" usage="7"/>
+    <item help="User-friendly name of the file that should be saved to the user's Dropbox can be included if desired." includeInDesign="true" layout="-1" mand="false" name="FILE_NAME" prompt="Alternative File Name" tab="Dropbox Setup" type="javax.swing.JTextField" usage="7"/>
+  </custom>
+  </widget>
+  
+  <widget icon="images/dropbox.jpg" name="Dropbox Chooser" type="Item:">
+    <template type="source" value="dbChooser.wgt"/>
+    <template alwaysAddHeader="false" type="header" value="dbHeader.wgt"/>
+  <custom>
+  	<item help="The Dropbox app ID which you use to initiate the [Dropbox JavaScript]. Example : m0inwezext0cz5s This ID have to be same for all instances of the widgets within same Edge phase ." includeInDesign="true" layout="-1" mand="true" name="APP_KEY" prompt="App ID" tab="Dropbox Setup" type="javax.swing.JTextField" usage="7"/>
+  </custom>
+  </widget>
+</widgets>

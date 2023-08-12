@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget displayName="Google Calendar" icon="images/google_calendar_icon.jpg" name="Google_Calendar" type="Button">
+    <template type="header" value="google_calendar_header.wgt" alwaysAddHeader="false"/>
+    <template type="source" value="google_calendar.wgt"/>
+    <custom>
+	  <item help="The application's Client ID from https://console.developers.google.com/project (please check the documentation for more details)" includeInDesign="true" layout="-1" mand="false" name="AppCId" prompt="Application's Client ID" type="javax.swing.JTextField" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain the name of the event." includeInDesign="true" layout="-1" mand="false" name="EventName" prompt="Event name" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain description of the event." includeInDesign="true" layout="-1" mand="false" name="Description" prompt="Event description" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain starting date of the event." includeInDesign="true" layout="-1" mand="true" name="StartDate" prompt="Event's starting date" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain starting time of the event." includeInDesign="true" layout="-1" mand="true" name="StartTime" prompt="Event's starting time" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain ending date of the event." includeInDesign="true" layout="-1" mand="false" name="EndDate" prompt="Event's ending date" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain ending time of the event." includeInDesign="true" layout="-1" mand="false" name="EndTime" prompt="Event's ending time:" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain the occurrances frequency of the event." includeInDesign="Always" layout="-1" mand="false" name="Frequency" prompt="Frequency" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain the date until the event will repeat itself." includeInDesign="Always" layout="-1" mand="false" name="UntilDate" prompt="Until Date" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item help="The list-item that will contain the time until the event will repeat itself." includeInDesign="Always" layout="-1" mand="false" name="UntilTime" prompt="Until Time" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+    </custom>
+  </widget>
+  <widget displayName="Google Calendar View" icon="images/google_calendar_view_icon.jpg" name="GoogleCalendarView" type="Item:">
+    <template type="header" value="google_calendar_view_header.wgt"/>
+    <template type="source" value="google_calendar_view_body.wgt"/>
+    <custom>
+      <item help="The application's Client ID from https://console.developers.google.com/project (please check the documentation for more details)" includeInDesign="Always" layout="-1" mand="true" name="ClientID" prompt="Application's Client ID" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="en-gb" help="Please select the language used in the calendar widget" includeInDesign="Always" layout="-1" mand="true" name="Language" prompt="Language" type="javax.swing.JComboBox" typeValue="ar|ar-ma|ar-sa|ar-n|bg|ca|cs|da|de|de-at|el|en-au|en-ca|en-gb|es|fa|fi|fr|fr-ca|he|hi|hr|hu|id|is|it|ja|ko|lt|lv|nb|nl|pt|pt-br|ro|ru|sk|sl|sr|sr-cyl|sv|th|tr|uk|vi|zh-cn|zh-tw" usage="7"/>
+      <item defaultValue="month" help="Choose the default view that is seen when the calendar is loaded." includeInDesign="Always" layout="-1" mand="true" name="DefaultView" prompt="Default View" type="javax.swing.JComboBox" typeValue="month|basicWeek|basicDay|agendaWeek|agendaDay" usage="7"/>
+      <item defaultValue="#6633CC" help="Select the event's background colour." includeInDesign="Always" layout="-1" mand="true" name="BackgroundColour" prompt="Background Colour" type="com.acquire.util.ui.StyleSheetColorChooser" typeValue="standard" usage="7"/>
+      <item defaultValue="#6666FF" help="Select the event's border colour." includeInDesign="Always" layout="-1" mand="true" name="BorderColour" prompt="Border Colour" type="com.acquire.util.ui.StyleSheetColorChooser" typeValue="standard" usage="7"/>
+      <item defaultValue="#FFFFFF" help="Select the event's text colour." includeInDesign="Always" layout="-1" mand="true" name="TextColour" prompt="Text Colour" type="com.acquire.util.ui.StyleSheetColorChooser" typeValue="standard" usage="7"/>
+      <item help="Enter the button css class name." includeInDesign="Always" layout="-1" mand="true" name="ButtonClass" prompt="Button CSS Class" type="com.acquire.intelligentforms.ide.themeseditor.StyleChooser" typeValue="Style Chooser|-1|false|true|com.acquire.intelligentforms.entities.theme.Style|false|-1|true" usage="7"/>
+      <item help="Enter the button text." includeInDesign="Always" layout="-1" mand="true" name="ButtonText" prompt="Button Text" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

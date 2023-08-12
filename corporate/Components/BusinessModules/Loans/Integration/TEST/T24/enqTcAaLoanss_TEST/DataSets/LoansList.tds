@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="2">
+  <!---->
+
+  
+  
+  <enqTcAaLoans AmountOutstanding="53,570.76" AmountPaidout="75,000.00" ApprovedAmount="75,000.00" ArrStatus="CURRENT" ArrangementId="AA160821QT58" Currency="USD" CurrencyPrefix="" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaLoans[C]" DS_UID="5" ExtPrfLoan="NO" ExtPrfLoanLabel="" ExtPrfLoanPos="" LoanSeeRights="YES" LoanTransRights="NO" ProductGroup="MORTGAGES" ProductLine="LENDING">
+    <LinkedAppl AccountOpenDate="2016-03-22" AccountTite="Mortgage Loan" Category="3103" CategoryDescription="AA Mortgage" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaLoans[C].LinkedAppl" DS_UID="2" LinkedApplId="78921" ShortTitle="Mortgage Loan"/>
+    <Product DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaLoans[C].Product" DS_UID="3" Product="MORTGAGE"/>
+    <Links DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcAaLoans[C].Links" DS_UID="4" href="enqTcAaLoanss('AA160821QT58')" rel="self" title="enqTcAaLoans"/>
+  </enqTcAaLoans>
+  
+  
+</DataSetRoot>

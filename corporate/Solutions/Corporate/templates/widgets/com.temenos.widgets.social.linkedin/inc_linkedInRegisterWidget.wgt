@@ -1,0 +1,6 @@
+<script type="text/javascript">
+    addWidget("Linkedin", "$$!NAMESPACE$", "");
+    if ( getTriggeredReason() == "REPLACE_CHILD" ) {
+        window.Linkedin.setRefreshInd(true);
+    }
+</script>

@@ -1,0 +1,2787 @@
+td[id*='Selector'],th[id*='Selector'] {display:none;}
+td[id*='Responsive_Icon'] a,th[id*='Responsive_Icon'] a {display:none !important;}
+table.dataTable td[id*='Responsive_Icon'],
+table.dataTable th[id*='Responsive_Icon'] {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* table.dataTable tr td:first-child,
+table.dataTable tr th:first-child {
+	width: 0px;
+} */
+table.dataTable th {
+	width: auto !important;
+}
+.tc-right-align {text-align:right;}
+.tc-table-icon a:focus {
+    box-shadow: none;
+    outline: 0;
+}
+.ext-text-align-center {
+	text-align: center;
+}
+.ext-vertical-align-top {
+	vertical-align: top;
+}
+.ext-vertical-align-middle {
+	vertical-align: middle;
+}
+.ext-pad-left36 {
+    padding-left: 36px;
+}
+.ext-pad-left38 {
+    padding-left: 38px;
+}
+.ext-gutter {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.ext-pad-10-5 {
+	padding: .31rem .62rem;
+}
+.ext-center-align-all,
+.ext-center-align-all * {
+    text-align: center!important;
+    font-family: "Arial";
+    color: #666;
+}
+.ext-no-right-margin {
+    margin-right: 0;
+}
+.ext-align-middle {
+    vertical-align: middle;
+}
+.ext-text-align-left {
+    text-align: left;
+}
+.ext-postfix-part .tc-postfix-part {
+    display: block;
+    margin-top: .8rem;
+}
+.ext-postfix-part fieldset {
+    width: 100%;
+}
+.ext-postfix-part fieldset fieldset {
+    float: left;
+    width: auto;
+}
+.ext-postfix-part fieldset > div {
+    width: 100%
+}
+
+.tc-question-part label {
+	pointer-events: none;
+}
+
+.ext-male-user-xl-icon .tc-icon,
+.ext-male-user-xl-icon.tc-icon {
+	padding-left: 0;
+	padding-right: 0;
+	width: auto;
+	height: auto;
+	pointer-events: none;
+}
+
+.ext-male-user-xl-icon .tc-icon > span::before,
+.ext-male-user-xl-icon.tc-icon > span::before  {
+	position: static;
+	margin-left: 0;
+	font-size: 5.71rem;
+}
+
+
+
+
+/* CUSTOM COLORS */
+.ext-white-color,
+.tc-card .tc-icon.ext-white-color  {
+	color: #fff;
+}
+.ext-white-color:hover,
+.tc-card .tc-icon.ext-white-color:hover {
+	color: #333333;
+}
+
+
+.ext-margin-left-1rem {
+    margin-left: 1rem;
+}
+.ext-two-answers fieldset > div  {
+    width: 80px;
+    position: relative;
+}
+.tc-med .ext-two-answers fieldset > div  {
+    width: 100px;
+    position: relative;
+}
+.tc-big .ext-two-answers fieldset > div  {
+    width: 120px;
+    position: relative;
+}
+.ext-two-answers fieldset .tc-prefix-part {
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ext-two-answers .ext-text-align-center {
+    margin-left: -1rem;
+}
+.ext-display-flex-md-lg-xl {
+    display: flex;
+}
+.ext-padding-left-25-md-lg-xl {
+    padding-left: 25px;
+}
+.ext-flex-center {
+    display: -webkit-flex;		
+    display: -ms-flexbox;		
+    display: flex;
+    align-items: center;
+}
+
+.ext-align-right {
+	text-align: right;
+}
+
+.ext-page-title-xl {
+	padding: 0 2.5rem;
+	line-height: 1.4;
+}
+@media all and (max-width: 767px) {
+   .ext-display-flex-md-lg-xl {
+        display: block;
+    } 
+    .ext-display-flex-md-lg-xl .ext-padding-left-25-md-lg-xl {
+        border: 0;
+        padding-left: 10px;
+    }
+}
+/* Disable the X on floating modal windows*/ 
+div[aria-describedby*="DDE4CAEDE0881EDB1684398"] .ui-dialog-titlebar,
+div[aria-describedby*="0F4AC637E01D0854262296"] .ui-dialog-titlebar,
+.ui-dialog-titlebar-close {
+    display:none;
+}
+
+.ext-auto-width {
+	width: auto;
+}
+.ext-force-auto-width {
+	width: auto !important;
+}
+.ext-auto-height {
+	height: auto;
+}
+.ext-force-display-block {
+	display: block !important;
+}
+
+.ext-background-color-orange{
+	background-color:#f39c12;
+	color:#ffffff;
+}
+.ext-max-width-full {
+	max-width: 100%;
+}
+.ext-card-body-max-width-md{
+	max-height: 300px;
+    overflow: auto;
+}
+.ext-max-height-full {
+	max-height: 100%;
+}
+.ext-sticky-accounts-sidebar {
+	height:232px;
+	min-height:232px;
+}
+.ext-image-portrait {
+	border-radius: .3rem;
+}
+
+.ext-advert-image {
+	border-radius: .3rem;
+	width:100%;
+}
+.ext-display-inline {
+	display: inline !important;
+}
+.ext-overlay-xl-button-section {
+	position: relative;
+}
+.ext-force-static-icon-position > span:before {
+	position: static;
+}
+.ext-tc-info-tile {
+	margin-right:0;
+	display:flex;
+}
+.ui-widget-content .ext-custom-red-btn,
+.tc-card .ext-custom-red-btn,
+.ext-custom-red-btn {
+	color: #C0392B;
+}
+.ext-no-checkbox-margin .tc-checkbox {
+	max-width: 2rem;
+	min-width: auto;
+}
+.ext-no-checkbox-margin .tc-checkbox input[type=checkbox]+label {
+	margin-right: 0;
+}
+.ext-no-checkbox-margin fieldset,
+.ext-no-checkbox-margin .tc-postfix-part {
+	vertical-align: middle;
+}
+.ext-no-checkbox-margin .tc-postfix-part {
+	word-break: break-all;
+}
+.ext-no-checkbox-margin fieldset {
+	width: 10%;
+}
+.ext-no-checkbox-margin .tc-postfix-part {
+	width: 78%;
+}
+/* .ui-widget-content a.tc-corporate-color {
+	color: #a39161;
+} */
+
+.ext-custom-Link-Button {
+    background: none;
+    border: none;
+    display: inline-block;
+	color: #a39161;
+	width: auto;
+	font-size: 1rem;
+	cursor: pointer;
+	font-family: "Arial";
+	
+}
+.ext-custom-Link-Button:hover {
+	color: #0c4374;
+}
+.ext-inline-block {
+	display: inline-block;
+}
+
+.ext-tc-badge-header {
+    position: absolute;
+    display: block;
+    top: -30px;
+    line-height: 10px;
+    padding: 3px 4px;
+    right: -7px;
+    font-size: 11px;
+	background: #23c162;
+    color: white;
+}
+
+.ext-tc-bullet {
+	position: relative;
+    display: block;
+    top: 0px;
+    line-height: 10px;
+    padding: 3px 4px;
+    right: -5px;
+    font-size: 11px;
+    background: #a39161;
+    width: 10px;
+    height: 10px;
+    border-radius: 180px;
+    color: white;
+}
+
+.ext-picture-frame {
+	border-radius: 180px;
+	border: 1px solid #ddd;
+	padding: 2px;
+	max-height: 60px;
+}
+
+.ext-card-spacing-1 {
+	height: 1rem;
+}
+
+/* START - Used for showing unread messages within Messages Business Module */
+.ext-tc-bold {
+	font-weight:bold;
+}
+/* END */ 
+
+.ext-overlay-xl-button {
+	position: absolute;
+	top: 2.3rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+.ext-overlay-xl-button>span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%); 
+	color: #ffffff;
+	background-color: #a39161;
+	border-radius: 50%;
+	padding: 2rem;
+}
+.ext-overlay-xl-button>span:before {
+	color: inherit;
+	font-size: 34px;
+}
+
+.ext-no-top-padding {
+	padding-top: 0 !important;
+}
+
+.ext-no-bottom-padding {
+	padding-bottom: 0 !important;
+}
+.ext-no-left-padding {
+	padding-left: 0 !important;
+}
+
+.ext-no-right-padding  {
+	padding-right: 0 !important;
+}
+
+.ext-auto-min-width {
+	min-width: auto !important;
+}
+.ext-auto-min-height {
+	min-height: auto !important;
+}
+.ext-padding-top-12 {
+	padding-top: 12px;
+}
+.ext-padding-bottom-5 {
+	padding-bottom: 5px;
+}
+.ext-center-align-block {
+	margin: 0 auto;
+}
+.ext-no-word-break {
+	word-break: normal !important;
+}
+.ext-overflow-hidden {
+	overflow: hidden;
+}
+.ext-card-color {
+    color: #a39161;
+}
+.ext-pie-chart-section {
+	text-align: center;
+}
+.ext-pie-chart-section>div  {
+	display: inline-block;
+}
+
+.ext-form-control-disabled-text {
+	background-color: #eeeeee !important;
+    border: 1px solid #eeeeee !important;
+    color: #666666;
+    opacity: 1;
+}
+
+.ext-oversized-icon {
+	height: auto !important;
+}
+.ext-border-right {
+	border-right: 1px solid #dddddd;
+}
+
+
+span.tc-prefix-part+span.tc-form-control {
+	display: inline-block;
+	width: auto !important;
+}	
+
+.ext-confirmation-color {
+	color: #23c162;
+}
+
+.ext-warning-color {
+	color: #efa26f;
+}
+.ext-future-bar-color {
+	color: #6088AD;
+}
+.ext-future-background-bar-color {
+	background: #A1C0DB;
+}
+.ext-error-color {
+	color: #ef5350;
+}
+
+.ext-confirmation-box {
+	margin-top: 2.85rem;
+}
+.ext-confirmation-box-text-amount {
+	font-size: 1.4rem;
+}
+.ext-confirmation-box-text-amount  > div {
+	text-align: left;
+	display: inline-block;
+}
+.ext-confirmation-box-text-color {
+	color: #FFFFFF;
+}
+
+span.ext-form-control {
+    padding-top: 5px;
+	word-break: break-all;
+}
+span.ext-break-word {
+	word-break: break-word;
+}
+.ext-answer-part-detail-section span.ext-form-control {
+	padding-top: 0; 	
+}
+.ext-card-expander-bar-top-border{
+	background:none;
+	border-top:1px solid #dddddd;
+}
+
+.ext-answer-left .hasDatepicker {
+	margin-right: 0;
+}
+.ext-answer-left .ui-datepicker-trigger {
+	margin-left: -2rem;
+}	
+
+.ui-widget-content .tc-button-color {
+	color: #ffffff;
+}
+
+.ext-full-width-button-section input {
+	display: block;
+	border-radius: .3rem;
+}
+.ext-hidden-responsive-btn {
+	display: none;
+}
+.ext-reverse-align-heading > div {
+	text-align: right;
+}
+span.ext-input-style-textarea {
+	min-width: 5rem;
+    width: 50%;
+	background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    color: #666666;
+    -webkit-text-fill-color: #666666;
+    opacity: 1;
+	padding: 5px;
+}
+
+
+/* FOOTER STYLES */
+
+.ext-footer-column {
+	vertical-align: middle;
+}
+.ext-social-icon-footer {
+	width: auto;
+	height: auto;
+	min-height: 0;
+	min-width: 0;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	opacity: 0.9;
+	transition: all 0.4s;
+    
+}
+.ext-footer-link {
+	padding: 0.5rem 1rem;
+	display: inline-block;
+}
+
+.ext-footer-link:focus {
+	box-shadow: none;
+}
+/* .ext-social-icon-footer:hover {
+	opacity: 1;
+}
+.ext-social-icon-footer {
+	display: inline-block;
+}
+.ext-social-icon-footer {
+	font-size: 0;
+}
+.ext-social-icon-footer:before {
+	font-size: 2.3rem;
+	line-height: 2.3rem;
+	display: block;
+	font-family: 'bluemagic';
+} */
+
+.tc-footer-bottom .ext-auto-width {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+/* .ext-icon-facebook:before {
+	content: "\196";
+}
+.ext-icon-google:before {
+	content: "\199";
+}
+.ext-icon-twitter:before {
+	content: "\202";
+}
+.ext-icon-linkedin:before {
+	content: "\198";
+} */
+
+/* END FOOTER STYLES */
+
+
+
+/* TABLES */
+.ext-left-sort-icon .DataTables_sort_icon {
+	float: none !important;
+    display: inline-block;
+    vertical-align: middle;
+	position: static;
+}
+.ext-left-sort-icon .DataTables_sort_wrapper span {
+		display: inline-block;
+}
+table thead th .DataTables_sort_wrapper {
+	margin-left: 5px;
+}
+table thead th:first-child .DataTables_sort_wrapper {
+	margin-left: 1px;
+}
+.dataTables_paginate a.fg-button {
+	font-weight: normal;
+}
+.dataTables_info,
+.dataTables_paginate {
+	float: none;
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	
+}
+.fg-toolbar {
+	text-align: right;
+}
+.tc-card-toolbar {
+    min-height: 2.5em;
+}
+.dataTables_info {
+	max-width: 24.5%;
+	padding: 15px 10px 10px 0px;
+}
+.dataTables_paginate {
+	max-width: 75%;
+	padding: 15px 0px 10px 10px;
+}
+/* table tr {
+	cursor: default !important;
+} */
+
+/* .dataTable tr th:first-child,
+.dataTable tr td:first-child {
+	display: none;
+	padding-left: 20px !important;
+} */
+/* .ext-responsive-sort-table tr th:first-child, 
+.ext-responsive-sort-table tr td:first-child {
+	display: table-cell;
+} */
+
+/*Fix for non sortable table to hide the sort icon*/
+
+.ext-non-sortable .DataTables_sort_icon {
+    width: 0;
+    height: 0;
+}
+
+table.dataTable thead tr.ext-non-sortable th {
+    cursor: default;
+    outline: unset;
+}
+
+/* Responsive Tables - fix for pagination - default jquery plugin behaviur puts fixed height on pagination, causing vertical scrollbar */
+div.paging_full_numbers {
+	height: auto;
+}
+
+
+.ext-responsive-sort-table tr.group > td:first-child:before {
+	display: none !important;
+}
+.tc-plain-table th,
+.ext-custom-table-heading-hx h4,
+.dataTable th a {
+	color: #a39161;
+	opacity: 1;
+}
+.dataTable th a:hover {
+	color: #a39161;
+	opacity: 1;
+}
+.ext-custom-table-heading-hx h4 {
+	font-family: "TC-light";
+    font-weight: bold;
+}
+.tc-plain-table .tc-form-control {
+	margin-right: 0;
+}
+table.dataTable thead th.sorting_disabled {
+	cursor: default;
+	pointer-events: none;
+}
+/* .tc-table td:first-child {
+	padding-left: 0;
+} */
+.ext-search-visible {
+	display: block;
+}
+.ext-search-hidden {
+	display: none;
+}
+.ext-no-first-cell-padding td:first-child {
+	padding-left: 0;
+}
+.tc-card-expander .ext-more-less-btn {
+	text-transform: uppercase;
+}
+
+.tc-detail-section .ext-row-part {
+	display: block;
+}
+.ext-answer-part-detail-section .tc-prefix-part {
+	padding-left: 0.5rem;
+	padding-right: 0;
+}
+.ext-confirmation-box {
+	height: 7.36rem;
+	position: relative;
+	padding-right: 1.8rem;
+	padding: 17px 0;
+}
+.ext-confirmation-box .tc-row-part {
+	display: block;
+}
+.ext-confirmation-box-text-small-center {
+	margin-top: -0.7rem;
+	
+}
+.ext-confirmation-box-text-small-center,
+.ext-confirmation-box-text-amount {
+	padding-left: 0;
+	padding-right: 0;
+	display: block;
+}
+.ext-confirmation-box-text-amount .tc-prefix-part {
+	padding-right: 5px;
+	float: none;
+}
+.ext-confirmation-box-text-amount .tc-default-input {
+	float: none;
+	padding: 0;
+	width: auto;
+}
+.ext-confirmation-box-text-small-center span.tc-form-control {
+	background-color: transparent !important;
+	border: none !important;
+	width: 100% !important;
+	color: #FFFFFF;
+	padding: 0;
+	font-size: 0.85rem;
+	display: block;
+	max-height: 2.29rem;
+	overflow: hidden;
+	min-width: 1px;
+	display: block;
+	max-width: none;
+}
+
+.ext-confirmation-box:after {
+    content: "";
+    display: block;
+    height: 7.36rem;
+    width: 1.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: inherit;
+    border-left: 1.8rem solid transparent;
+    border-top: 3.6rem solid white;
+    border-bottom: 3.6rem solid white;
+}
+
+
+
+
+
+
+/* POPUP default overrides */
+div[aria-describedby*="3D9553B453DFC429216314"] .ui-dialog-titlebar, .ui-dialog-titlebar-close {
+    display: none;
+}
+.ui-dialog {
+	position: fixed !important;
+	top: 10px !important;
+	max-height: 97%;
+	max-width: 95%;
+	overflow-y: auto !important;
+}
+.ui-dialog .tc-answer-part span.tc-form-control {
+	min-height: auto;
+	padding: 0;
+}
+.ui-resizable-handle {
+    display: none !important;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: default;
+}
+
+.ext-tc-select-padding{
+	 min-width: 14.3rem;
+}
+
+.ext-padding-left{
+	padding-left:1rem;
+}
+
+.ext-background-transparent .ui-corner-bl.fg-toolbar{
+	padding:0 !important; 	
+}
+.ext-background-transparent .ui-corner-bl.fg-toolbar .dataTables_paginate{ 
+	max-width: 100%;	
+}
+
+.ext-background-transparent .ui-corner-bl.fg-toolbar .fg-button{
+	height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.3rem;
+}
+
+.ext-terms_condition{
+	height: 3.5rem;
+    line-height: 3rem;
+}
+div.tc-checkbox.ext-checkbox-terms{
+	width: 2rem;
+    min-width: 2rem;
+    height: 3rem;
+    line-height: 1.3rem;
+}
+.ext-margin-left-paym.responsive-row{
+	margin-left: 27px;
+}
+
+.ext-margin-left-paym h3{
+	margin-left: 7px;
+}
+.ext-top-alignment.dataTable>tbody>tr.child span.dtr-title{
+	vertical-align: top;
+    margin-top: 15px;
+}
+
+.ext-icon-text{
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	padding-top:0;
+	margin-left: -10px;
+}
+	
+.ext-button-right-xs-left{
+	padding-top: 9px;
+}
+
+.ext-align-table-cell{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.ui-widget-content .tc-popup-dialog a:focus {
+    box-shadow: none!important;
+}
+.ui-widget-content .tc-popup-dialog a:active {
+    box-shadow: 0 1px 4px #dddddd !important;
+}
+
+/*cards ok btn align*/
+.ext-popup-button {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial;
+}
+ .ext-btn-same-height-field{
+	margin-top: 5px;
+    line-height: 23px;
+    padding: 5px 20px;
+    min-height: auto;
+}
+.tc-small .ext-btn-same-height-field{ 
+    line-height: 17px; 
+    padding: 5px 20px;
+}
+.tc-big .ext-btn-same-height-field{ 
+    padding: 8px 20px;
+	margin-right: 0;
+}
+
+/*blue section*/
+html.tc-touch-device .tc-card .tc-detail-section.ext-detail-section-blue:hover,
+.tc-card .tc-detail-section.ext-detail-section-blue{
+	background-color:#a39161;
+	color:#fff;
+    padding: 1rem;
+}
+.tc-card .tc-detail-section.ext-detail-section-blue h2, .ext-detail-section-blue .tc-corporate-color{	
+	color:#fff;
+}
+
+.tc-card .tc-detail-section.ext-detail-section-blue .ext-form-control-disabled-text,  .ext-detail-section-blue .ext-form-control{
+	background:transparent !important;
+	border:none !important;
+	color: #fff !important;
+	-webkit-text-fill-color: #fff !important;
+	
+}
+@media all and (max-width: 567px) {
+    .tc-card .tc-detail-section.ext-detail-section-blue .ext-full-xs div {
+        width: 100%;
+    }
+}
+
+/*end blue*/
+
+/*yellow star*/
+
+
+.ext-yellow-star, .ext-unfilled-star{
+    height: 33px;
+}
+.ext-yellow-star span{
+	color:#EDD41E;
+}
+
+.ext-yellow-star.icon-star-filled>span::before,  .ext-unfilled-star.icon-star-empty>span::before {
+    font-size: 26px;
+}
+.ext-select-prod.tc-checkbox input[type=checkbox]+label{
+	margin-right:0px;
+	min-width:20px;
+	width:20px;
+}
+.ext-select-prod.tc-checkbox { 
+	min-width:20px !important; 
+}
+.ui-draggable .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle{
+	display:none;
+} 
+/*payee btn*/
+
+	.ext-btn-circle-payee > span{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: #a39161;
+    border-radius: 50%;
+    padding: 2rem;
+	}
+	.tc-header-icon.tc-icon-font-size-xl.ext-btn-circle-payee {
+		height: 100px;
+	}
+	.ext-btn-circle-payee>span:before {
+	color: inherit;
+	font-size: 34px;
+	}
+	.ext-btn-circle-payee.tc-icon-position-before>span::before {
+    margin-left: -1.2rem;
+	}
+/**/
+
+/* XS & SM Breakpoint - Be carefull if you want to change behaviour for just one breakpoint this is not the place to do it! */
+@media screen and (max-width: 767px) {
+	.ext-oversized-text .tc-form-control,
+	.ext-oversized-prefix	{
+		font-size: 1.7rem;
+	}
+	.ext-row-part {
+		display: block;
+	}
+	.ext-question-part, .ext-alt-question-part {
+		padding-bottom: .5rem;
+		padding-top: .5rem;
+	}
+	.ext-answer-part-detail-section fieldset > div {
+		vertical-align: top;
+	}	
+	.ext-padding-left{
+		padding-left:0;
+	}
+	
+	.ext-button-right-xs-left{
+	text-align:left;
+}
+
+}
+/* MD & LG & XL Breakpoint - Be carefull if you want to change behaviour for just one breakpoint this is not the place to do it! */
+@media screen and (min-width: 768px) {
+	.ext-custom-cursor .ext-left-sort-icon tbody tr{
+		  pointer-events: none;
+	}
+	
+}
+/* Headings */
+.ext-card-title-w-button h2 {
+	font-size: 1.2rem;
+}
+.ext-card-title-w-button h4 {
+	font-size: 1rem;
+}
+
+/*THEME OVERIDE FOR HEADING TITLES AND SHOW OPTIONS ICON IN ACCOUNTS, LOANS, DEPOSITS*/
+
+.ext-transactionTitleAccountsLoansDeposits{
+	border-bottom: 0;
+}
+
+.ext-transactionTitleAccountsLoansDeposits h2 {
+	padding-top: 0 !important;
+}
+
+.ext-transactionTitleAccountsLoansDeposits > div > div > div > div > div > div > a > span:before {
+	top:-10px;
+}
+.ext-transactionTitleAccountsLoansDeposits > div > div {
+	min-height: 2.5rem;
+	top:0;
+}
+
+/*END - OVERIDE FOR HEADING TITLES AND SHOW OPTIONS ICON IN ACCOUNTS, LOANS, DEPOSITS*/
+
+/* DATA TABLES OVERRIDE */
+
+/* Adjust/remove this if it breakes */
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+	top: 40%;
+}
+@media (max-width: 1280px) {
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 33%!important;
+    }
+}
+@media (max-width: 767px) {
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 40%!important;
+    }
+}
+@media (max-width: 530px) {
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 33%!important;
+    }
+    div table.dataTable.dtr-inline.collapsed td:first-child, 
+    div table.dataTable.dtr-inline.collapsed th:first-child {
+        padding-left: 25px;
+    }
+}
+table.dataTable.dtr-inline .group td {
+		padding-left: 1.1rem;
+}
+
+.dtr-details {
+	pointer-events:none;
+}
+
+.ext-background-transparent .fg-toolbar{
+	background:transparent;
+}
+
+.ext-background-transparent .ui-corner-tl.fg-toolbar{
+	display:none;
+}
+.ext-tc-icon-bckgrd-white{
+    background: #fff;
+    border-radius: 50%;
+	margin-right: 5px;
+	margin-bottom:10px;
+}
+.ext-tc-icon-bckgrd-white.ext-tc-icon-bckgrd-white{
+	min-width: 40px;
+    min-height: 40px;
+}
+.ext-background-transparent .tc-card-header-icon{
+	display:inline;
+}
+.ext-messages-table-question .tc-prefix-part,
+.ext-messages-table-question .tc-form-control {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.ext-messages-table-question .tc-prefix-part {
+	max-width: 6%;
+	padding: 0.93rem 0 0.93rem 0;
+	min-height: 2.37rem;
+}
+.ext-messages-table-question .tc-prefix-part .ext-tc-bullet {
+	
+}
+.ext-messages-table-question .tc-form-control {
+	max-width: 90%;
+	word-break: normal;
+}
+.ext-tc-bullet {
+	right: 0;
+}
+
+/*check btn manage payees*/
+
+
+ .ext-col-btn-align-right fieldset div:first-of-type{
+	    width: 50% ;
+		margin-right:10px;
+}
+
+.ext-col-btn-align-right fieldset, .ext-col-btn-align-right fieldset input {
+	    width: 100%;
+}
+.ext-col-btn-align-right a{
+    margin-top: 10px;
+    height: 32px;
+    line-height: 26px;
+    font-size: 11px;
+    padding: 3px 15px;
+    min-height: auto;
+}
+.tc-small .ext-col-btn-align-right a{ 
+    height: 29px;
+    line-height: 15px;
+    padding: 6px 15px;
+}
+
+.tc-big .ext-col-btn-align-right a{ 
+    height: 37px;
+    line-height: 19px;
+    padding: 7px 15px;
+}
+
+.ext-col-btn-align-right h4{
+	position:absolute;
+	top:20px;
+	text-transform:lowercase;
+}
+
+.ext-col-btn-align-right h4:first-letter{
+	text-transform:uppercase;
+}
+ /* end check btn manage payees*/
+ 
+ .ext-tc-checkbox{
+	 line-height: 35px;
+	 margin-left: 10px;
+}
+ .ext-align-right-xs-align-left div.tc-checkbox input[type=checkbox]+label{
+	 margin-right:0;
+ }
+ 
+/* CUSTOM BUTTONS */ 
+ 
+.ext-white-card-button-full-xs {
+	background: #fff; 
+	color: #a39161;
+}	
+/* END CUSTOM BUTTONS*/
+
+/* XS Breakpoint for mortage loan*/
+@media (max-width:400px) {
+   .ext-loan-col.col-1-3 {
+        width: auto;
+    }
+    .ext-loan-col.col-1-3 span.tc-form-control {
+        margin: 0;
+        padding: 0;
+    }
+    .ext-loan-col.col-1-3 .ext-auto-width {
+        padding: 0;
+    }
+    .ext-loan-col.col-1-3 .responsive-row {
+        margin:0;
+    }  
+}
+
+
+
+
+/* XS Breakpoint */
+@media (max-width:567px)  {
+	.tc-card-header div.tc-popup {
+		right: -2rem !important;
+	}
+	.ext-half-answer-full-xs {
+		width: 100% !important;
+	}
+	.ext-col-full-xs {
+		width: 100% !important; 
+	}
+	.col-full-xs.ext-answer-part-detail-section .tc-prefix-part {
+        padding: 0 0 .5rem;
+    }
+	.col-full-xs.tc-answer-part span.ext-form-control {
+        padding: .5rem .5rem 0 .5rem;
+    
+    }
+	.col-full-xs.ext-answer-part-detail-section span.ext-form-control {
+		padding: .5rem .5rem 0 0;
+	}
+	.ext-confirmation-box-text-amount {
+		font-size: 1.5rem;
+	}
+	.ext-confirmation-box:after  {
+		display: none;
+	}
+	.ext-confirmation-box  {
+		padding-right: 0;
+	}
+	.ext-confirmation-box-text-amount,
+	.ext-confirmation-box-text-small-center {
+		text-align: center !important;
+	}
+	
+	.ext-fs-small {
+		font-size: 14px;
+	}
+	.ext-fs-12-sm {
+		font-size: 12px; 
+	}
+	.ext-fs-13-sm {
+		font-size: 13px; 
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 23px;
+	}
+    .ext-display-block-xs {
+        display: block;
+    }
+	/* Mobile - Corporate Mobile styling for XS breakpoint */
+	
+	
+	
+	/* Below class is used to fix the side menu height to be full screen*/
+	html:not(.tc-box-on) .tc-nav-col.tc-overlay-nav-xs { 
+		height: 100%;  
+		border-bottom:none;
+	}
+	/*fix for the 3 tabs to be on the same line - transaction list*/
+	.tc-tab-header {
+		min-width: 90px;
+	}
+	/*fix for 3 dots icon - transaction list*/
+	.tc-tab-pane .tc-card-toolbar .tc-card-header-icon {
+		min-height: auto; 
+	}
+	
+	.ext-form-control.tc-half-answer-width.col-full-xs.tc-radio.tc-radio-horiz{
+		display: block;
+	}
+
+	/* ACCOUNTS, DEPOSITS, SAVINGS, LOANS - Alignment fix for text in the right column next to the account ICON*/
+	.ext-border-right {
+		border-right: none;
+	}
+
+
+	.tc-prefix-part, .tc-postfix-part{
+
+		padding-right: 0;
+	}
+
+	
+	
+	.col-full-xs.tc-answer-part span.tc-form-control{
+		padding: 0;
+	}
+
+	.tc-card-title{
+		padding-left: 5px;
+	}
+
+	.tc-fs-p2{
+		padding-left: 0;
+	}
+
+	.tc-half-answer-width{
+		padding-left: 5px;
+	}
+
+	/*FIX FOR SHOW OPTIONS ICON POSITION IN ACCOUNTS, LOANS, DEPOSITS*/
+
+	.ext-transactionTitleAccountsLoansDeposits > div > div > div > div > div > div > a > span:before {
+		top:0;
+	}
+
+	/*TRANSFERS ALIGNMENT FIXES*/
+
+	.tc-info-tile{
+		margin-bottom: 0;
+	}
+
+
+	span.tc-select-padding{
+		min-width: 100%;
+	}
+
+	.ext-confirmation-box{
+		margin-top: 0.90rem;
+	}
+	.tc-half-answer-width{
+		min-width: 2rem;
+	}
+
+	.ext-confirmation-box-text-amount {
+		padding-top: 0;
+	}
+	.ext-col-full-xs {width:100%;}
+	.dataTable tr th:first-child,
+	.dataTable tr td:first-child {
+		display: table-cell;	
+	}
+	div.ext-tc-nav-col {
+		pointer-events: none !important;
+	}
+	.ext-tc-accordion-menu ul > li > a > span{
+		z-index: 6000 !important;
+		pointer-events: all !important;
+        position: relative;
+        width: 100%!important;
+	} 
+	div.dataTables_info,
+	div.dataTables_paginate {
+		float: none;
+		padding: 10px 0;
+		text-align: center;
+		margin-right: 0;
+	}
+	.ext-no-left-right-padding-sm {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.ext-auto-min-height-sm {
+		min-height: auto !important;
+	}
+	table.dataTable.dtr-inline.collapsed td:first-child, 
+	table.dataTable.dtr-inline.collapsed th:first-child{
+		padding-left: 18px; 
+	}
+	table.dataTable.dtr-inline.collapsed .group td {
+		padding-left: .5rem;
+	}
+	.ext-vert-align-col{
+		padding-left: 20px;
+	}
+	.fg-toolbar {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.dataTables_info {
+		max-width: 100%;
+		padding: 15px 10px 10px 0px;
+	}
+	.dataTables_paginate {
+		max-width: 100%;
+		padding: 15px 0px 10px 10px;
+	}
+	
+	/* TABLES PAGINATION */
+	.dataTables_wrapper .ui-toolbar .dataTables_paginate span .fg-button.ui-button.ui-state-default.ui-state-disabled {
+		
+	}
+	.dataTables_wrapper .ui-toolbar .dataTables_paginate .fg-button {
+		height: 2.5rem;
+		width: 2.5rem;
+		line-height: 2.3rem;
+	}
+    .tc-table-nav-item {
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+    }
+    
+	/* POPUP OVERIDES */ 
+	.ui-dialog {
+		width: 95% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	.tc-prefix-part.ext-tc-prefix-part-padding-right{
+		padding-right:.5em;
+	}
+	a.ext-2-in-1-table-button {
+		background: none;
+		padding: 0 0 0 2.5rem;
+		transition: color .5s;
+		margin: 0;
+	}
+	a.ext-2-in-1-table-button span {
+		font-size: 0;
+		color: transparent;
+		top: 3px;
+		position: relative;
+		min-width: 2rem;
+		height: 42px;
+		line-height: 44px;
+	}
+	.ext-2-in-1-table-button span:before {
+		color: #777777;
+		font-size: 1.5rem;
+		text-align: right;
+		padding: 0;
+	}
+	.ext-2-in-1-table-button span:hover:before {
+		color: #333333;
+	}
+	.tc-half-answer-width {
+		max-width: 100%;
+	}
+	.ext-break-word-sm {
+		word-break: break-all;
+	}
+	.ext-col-btn-align-right fieldset div:first-of-type{
+	    width: 100% ;
+		margin-right:0px;
+	}
+	.ext-col-btn-align-right h4{
+		position:static;
+	}
+	
+	.ext-align-right-xs-align-left{
+		text-align:left;
+	}
+	.ext-mar-bottom-5-xs-sm {
+		margin-bottom: .31rem;
+	}
+	.ext-button-answer-coll-full-xs .col-hidden + div {
+		width: 100%;
+	}
+	.ext-align-left-xs {
+		text-align: left;
+	}
+}
+/* SM Breakpoint */
+
+@media (min-width:568px) and (max-width:767px)  {
+	.ext-col-full-sm {
+		width: 100% !important; 
+	}
+	.col-full-xs.tc-answer-part span.ext-form-control {
+        padding: .5rem .5rem 0 .5rem;
+    }
+	.col-full-xs.ext-answer-part-detail-section span.ext-form-control {
+		padding: .5rem .5rem 0 0;
+	}
+	.col-full-xs.ext-answer-part-detail-section .tc-prefix-part {
+        padding: .5rem 0;
+    }
+	.ext-fs-small {
+		font-size: 14px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 23px;
+	}
+	.ext-border-right {
+		border-right: none;
+	}
+	.dataTable tr th:first-child,
+	.dataTable tr td:first-child {
+		display: table-cell;	
+	}
+	div.ext-tc-nav-col {
+		pointer-events: none !important;
+	}
+    .ext-tc-accordion-menu ul > li > a > span{
+		z-index: 6000 !important;
+		pointer-events: all !important;
+        position: relative;
+        width: 100%!important;
+	}
+	div.dataTables_info,
+	div.dataTables_paginate {
+		float: none;
+		padding: 10px 0;
+		text-align: center;
+	}
+	.ext-vert-align-col{
+		padding-left: 20px;
+	}
+	.ui-dialog {
+		width: 80% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	a.ext-2-in-1-table-button {
+		background: none;
+		padding: 0 0 0 2.5rem;
+		transition: color .5s;
+		margin: 0;
+	}
+	a.ext-2-in-1-table-button span {
+		font-size: 0;
+		color: transparent;
+		top: 3px;
+		position: relative;
+		min-width: 2rem;
+		height: 42px;
+		line-height: 44px;
+	}
+	.ext-2-in-1-table-button span:before {
+		color: #777777;
+		font-size: 1.5rem;
+		text-align: right;
+		padding: 0;
+	}
+	.ext-2-in-1-table-button span:hover:before {
+		color: #333333;
+	}
+	
+	.ext-col-btn-align-right fieldset div:first-of-type {
+	    width: 100% ;
+		margin-right:0px;
+	}
+	.ext-col-btn-align-right h4{
+		position:static;
+	}
+	.ext-align-right-xs-align-left{
+		text-align:left;
+	}
+	.ext-mar-bottom-5-xs-sm {
+		margin-bottom: .31rem;
+	}
+	.ext-button-answer-coll-full-sm .col-hidden + div {
+		width: 100%;
+	}
+	.ext-align-left-sm {
+		text-align: left;
+	}
+}
+
+/* MD Breakpoint */
+
+@media (min-width:768px) and (max-width:1023px)  {
+	.ext-col-full-md {
+		width: 100% !important; 
+	}
+	.ext-fs-small {
+		font-size: 13px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 22px;
+	}
+	.ui-dialog {
+		width: 70% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	.ext-2-in-1-table-button span:before {
+		display: none;
+	}
+	
+	.ext-col-btn-align-right fieldset div:first-of-type {
+	    width: 100% ;
+		margin-right:0px;
+	}
+	
+	
+}
+
+/* LG Breakpoint */
+
+@media (min-width:1024px) and (max-width:1279px)  {
+	.ext-col-full-lg {
+		width: 100% !important; 
+	}
+	.ext-col-6-12-lg {
+		width: 50% !important;
+	}
+	
+	.ext-fs-small {
+		font-size: 13px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 22px;
+	}
+	.ui-dialog {
+		width: 60% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+
+		/*Accounts table left*/
+	.ext-left-sidebar .fg-toolbar {
+		text-align: center;
+		padding:0!important;
+	}
+	.ext-left-sidebar .dataTables_paginate {
+		max-width: 100%;
+	}
+
+	.ext-left-sidebar .dataTables_wrapper .ui-toolbar .dataTables_paginate .fg-button {
+		height: 2.5rem;
+		width: 2.5rem;
+		line-height: 2.3rem;
+	}
+	.ext-2-in-1-table-button span:before {
+		display: none;
+	} 
+	.ext-col-btn-align-right a{
+		margin-top: 0px;
+	}
+	
+}
+
+/* XL Breakpoint */
+
+@media (min-width:1280px) {
+	.ext-col-full-xl {
+		width: 100% !important; 
+	}
+	.ext-col-6-12-xl {
+		width: 50% !important;
+	}
+	.ext-fs-small {
+		font-size: 12px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix {
+		font-size: 21px;
+	}
+	.ext-oversized-icon span:before {
+		font-size: 55px;
+	}
+	.ext-vert-align-col{
+		padding: 104px 20px;
+
+	}
+	.ui-dialog {
+		width: 40% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	/*Accounts table left*/
+	.ext-left-sidebar .fg-toolbar {
+		text-align: center;
+	}
+	.ext-left-sidebar .dataTables_paginate {
+		max-width: 100%;
+	}
+
+	.ext-left-sidebar .dataTables_wrapper .ui-toolbar .dataTables_paginate .fg-button {
+		height: 2.5rem;
+		width: 2.5rem;
+		line-height: 2.3rem;
+	}
+	.ext-2-in-1-table-button span:before {
+		display: none;
+	}
+	 
+	.ext-col-btn-align-right a{
+		margin-top: 0px;
+	}
+
+	.ext-padding-left-3rem-xl {
+		padding-left: 3rem;
+	}
+	
+}
+
+
+/* THEME Overrides */
+
+.tc-mand-part {
+    padding-left: 0;
+}
+
+.tc-error-color select option {
+	color: #bd0008;
+}
+
+.tc-footer-container .tc-uppercase {
+	text-transform: none;
+}
+
+.tc-radio input[type=radio]+label:before{
+	color:#cccccc;
+}
+
+div.tc-error-row div.tc-radio label:before {
+	color: #C0392B !important;
+}
+div.tc-error-row div.tc-radio label {
+	color: #666666 !important;
+}
+.ext-tc-breadcrumb-med {
+	font-size: 1rem;
+}
+
+
+/* This is needed to prevent the "ALT" text of the images to not break and display on a single row. In some cases the text is not entirely displayed when the image is not loaded. */
+
+.ext-picture-frame {
+	white-space: normal;
+	font-size: 13px;
+}
+
+
+
+
+
+
+/* jQuery UI pop-up overrides for Android & iOS */
+
+.ui-dialog .ui-dialog-titlebar button.ui-dialog-titlebar-close {
+	margin: -10px 0 0 0;
+}
+.ui-dialog .ui-dialog-titlebar button.ui-dialog-titlebar-close span.ui-icon {
+	position: static;
+	
+}
+.ui-dialog .ui-dialog-title {
+	white-space: normal;
+	margin-right: 0;
+	width: 100%;
+}
+.ui-dialog .ui-dialog-titlebar + .ui-widget-content {
+	height: auto !important;
+}
+.ui-dialog .ui-dialog-titlebar + .ui-widget-content .tc-button-container {
+	left: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.ext-tc-header-icon-before{
+	align-items: flex-start !important;
+}
+
+.ext-tc-header-icon-before>span::before{
+	position: relative;
+	top: 0;
+}
+
+div.tc-radio.tc-error-color-border input[type=radio]:focus+label:before,
+div.tc-radio.tc-error-color-border input[type=radio]+label:hover:before{box-shadow:0 1px 6px #C0392B;}
+
+.tc-radio input[type=radio]:focus+label:before{
+	box-shadow: 0 0 0 1px !important;
+}
+
+.ext-tc-radio-input input[type=radio]:focus+label:before{
+	box-shadow: 0 1px 6px #999999 !important;
+}
+.ext-tc-row-select{
+	background-color: #a39161 !important;
+	color: #ffffff !important;
+}
+.ext-tc-row-select .tc-icon{
+	color: #ffffff !important;
+	box-shadow: none !important;
+}
+.ext-cursor-default{
+    cursor: default !important;
+}
+.ui-accordion .ui-accordion-header a {
+	padding: 10px 0 10px 0;
+}
+.tc-card div.tc-accordion h3 a {
+    max-width: calc(100% - 1rem);
+}
+.ext-word-break{
+	word-break: break-word;
+}
+
+.ext-show-more div{
+	vertical-align: top !important;
+}
+
+/* SESSION TIMEOUT POPUP */
+
+.session-timeout-container {
+	top: 50% !important;
+    left: 50%!important;
+    width: 50%;
+    transform: translate(-50%, -50%);
+	font-family: "Arial" !important;
+}
+.session-timeout-container .ui-dialog-titlebar span {
+	font-size: 14px;
+	
+}
+.session-timeout-container .ui-dialog-titlebar {
+	padding: 10px !important;
+}
+.session-timeout-container .ui-dialog-titlebar span {
+    font-size: 14px;
+}
+.session-timeout-container .ui-dialog-content {
+	margin: 10px !important;
+    overflow: hidden; 
+}
+@media all and (max-width: 800px) {
+   .session-timeout-container {
+        width: 80%!important;
+    } 
+}
+/*Forecast Bubble Landing page*/
+.ext-grey-bubble {
+	text-align:center;
+	background:#f5f5f5;
+	border-radius:20px;
+	padding: 8px 0 0 0;
+	cursor:pointer;
+	margin-bottom: 5px;
+}
+
+.ext-grey-bubble:hover {
+	background:#eaf5f7;
+}
+
+.ext-grey-bubble-big-text{
+	font-size:20px;
+	font-family:TC-light;
+}
+
+/*fix for core tab margin */
+.tc-tab-pane {
+	    margin: 0 -1rem;
+}
+
+/* fix for table overflow in 6.1.1. Might impact functionality. Check*/
+.tc-table-wrapper {
+    overflow: hidden;
+}
+
+/*background transparent accordion table*/
+.tc-card div.tc-accordion .tc-accordion-pane {
+	background: transparent;	
+}
+
+/*white background popup */
+.tc-ui-dialog.ui-dialog{
+	background: #fff;		
+} 
+
+.ext-heading3-icon>span::before{
+	font-size:12px;
+}
+
+/*Styling of Language flags*/
+
+.ext-header-flag-icon {
+    display: block;
+    height: 60px;
+    margin-right: 1px;
+    opacity: .9;
+    font-size: 0;
+    padding: 14px 5px 14px 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.ext-header-flag-icon:hover,.ext-header-flag-icon:active,.ext-header-flag-icon:focus, .ext-header-flag-icon-active {
+    background-color: #387dba;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    font-weight: normal;
+    color: #3C3C3C;
+}
+
+.ext-visibility {
+	visibility: initial !important;
+}
+
+div .ext-count-bubble-small {
+    background-color: #0c4374;
+    padding: 3px;
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 10px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+@media (max-width: 800px) {
+    div .ext-count-bubble-small {
+        line-height: 13px;
+    }   
+}
+.ext-padding-left-10{
+	padding-left:10px;
+}
+/*icons customer profile*/
+.tc-small .ext-tc-table-icon-profile .tc-table-icon{
+    line-height: 37px;
+}
+
+.tc-med .ext-tc-table-icon-profile .tc-table-icon{
+	line-height: 40px;
+}
+
+
+.tc-big .ext-tc-table-icon-profile .tc-table-icon{
+	line-height: 46px;
+}
+/*end icons customer profile*/
+
+/*align at the edge the text and sign*/
+.ext-info-tile-edge-align .tc-info-tile div:first-child{
+	display:block;
+}
+
+.ext-info-tile-edge-align {
+	font-size:12px;
+}
+/*end align at the edge the text and sign*/
+
+@media (max-width: 567px) {
+    .tc-right-neg1rem.ext-right-neg-xs {
+        right: 0;
+    }
+}
+
+/*Data grid table with no group rows - Messages page*/
+.ext-datagrid-nogroup .group {
+    display: none;
+}
+.ext-datagrid-nogroup th[id*="3DFC65EE714BA7F1434007"] {
+    pointer-events: none;
+}
+.ext-datagrid-nogroup .ext-datagrid-nogroup-header span {
+    background: none;
+}
+.ext-datagrid-nogroup .ext-messages-table-question {
+    width: 50%!important;
+}
+.ext-datagrid-nogroup .DataTables_sort_icon {
+    right: 10px;
+}
+@media (max-width: 567px) {
+    .ext-datagrid-nogroup .ext-messages-table-question {
+        width: 60%!important;
+    }
+}
+/*Tabs with right button which opens a popup*/
+.tc-card-header+.tc-card-body>.tc-tab-section.ext-tab-section {
+    z-index: initial;
+}
+.ext-popup-button-up {
+    margin-top: -4.2rem;
+	float:right;
+}
+.ext-popup-button-up a {
+    background: #fff;
+    min-height: 30px;
+}
+.ext-popup-button-up + .icon-chevron-left + .icon-chevron-right {
+    right: 40px;
+}
+.ext-your-accounts-toolbar .ext-popup-hide-search-label div.tc-popup {
+    min-width: 16rem;
+    padding: 15px 0 0 15px;
+}
+.ext-popup-button-up div.tc-popup {
+    min-width: 16rem;
+    padding: 10px 0 0 15px;
+}
+.ext-your-accounts-toolbar div.tc-popup {
+    min-width: 16rem;
+}
+/* .ext-icon-before-title {
+    height: 18px!important;
+    padding: 0!important;  
+    cursor: default;
+} */
+.ext-icon-before-title > *,
+.ext-icon-before-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tc-small .ext-icon-before-title{
+    line-height: 22px;
+}
+
+.tc-med .ext-icon-before-title{
+	line-height: 24px;
+}
+.tc-big .ext-icon-before-title{
+	line-height: 28px;
+}
+.ext-icon-before-title-row   {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ext-title-after-icon-row {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -10px;
+    position: relative;
+}
+.ext-tc-table-icon-profile.ext-icon-before-title .tc-table-icon {
+    line-height: normal;
+    min-height: auto;
+    height: auto;
+}
+.ext-icon-before-title span:before {
+    font-size: 18px;
+}
+.ext-icon-before-title.tc-header-icon>span {
+    position: static;
+}
+.ext-table-with-fixed-height {
+    max-height: 130px;
+    overflow: auto;
+/*    display: block;*/
+    padding-left: 4px;
+}
+.ext-popup-hide-search-label .dataTables_wrapper .ui-toolbar {
+    padding: 6px 16px 6px 6px!important;
+}
+.ext-popup-hide-search-label .dataTables_wrapper .ui-toolbar{
+    padding: 0 16px 10px 0!important;
+}
+.ext-table-with-fixed-height + .ui-toolbar.fg-toolbar {
+    padding: 0!important;
+}
+/*Removed label + icon to search input*/
+.ext-popup-hide-search-label .dataTables_filter label {
+    font-size: 0;
+}
+.ext-popup-hide-search-label .dataTables_filter label input {
+    font-size: 14px;
+    border-radius: .3rem;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 5px;
+    width:100%;
+}
+.ext-popup-hide-search-label table.dataTable td {
+   padding: 0 10px; 
+}
+@media (max-width: 567px) {
+    .scrollbars div.tc-popup {
+        width: calc(100vw - 58px);
+    }  
+}
+/*Your accounts toolbar*/
+
+.ext-your-accounts-toolbar {
+    background: #eee;
+    padding: 10px;
+	position:relative;
+	border-radius: 4px;
+}
+.ext-your-accounts-toolbar > div > div {
+   vertical-align: middle; 
+}
+.ext-your-accounts-toolbar .tc-card-header-with-popout {
+    position: relative;
+}
+.ext-your-accounts-toolbar .tc-card-header-popout-general {
+    right: auto!important;
+    left: 0!important;
+    -webkit-transform-origin: top right;
+    transform-origin: top left;
+}
+.ext-your-accounts-toolbar .tc-normal-icon-with-text.icon-filter {
+    min-height: 0;
+}
+@media all and (max-width: 1023px) {
+   .ext-your-accounts-toolbar > div > div {
+       vertical-align: bottom; 
+    } 
+    .ext-your-accounts-toolbar div > .ext-auto-width:first-child {
+        width: 100%;
+    }
+    .ext-your-accounts-toolbar div > .ext-auto-width + .ext-auto-width {
+        margin-top: 10px;
+    }
+}
+@media all and (max-width: 567px) {
+    .ext-your-accounts-toolbar div > .ext-auto-width + .ext-auto-width {
+        display: block;
+    }
+    .ext-your-accounts-toolbar .tc-postfix-part, .ext-your-accounts-toolbar .tc-prefix-part {
+        padding-right: 0.5rem;
+    }
+    .ext-your-accounts-toolbar .tc-card-header-popout-general {
+        width: 100%;
+    }
+}
+.ext-your-accounts-toolbar > div:not(.ext-btn-filter) {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;  
+}
+.ext-your-accounts-toolbar .tc-tab-highlight > div:first-child {
+    display: none;
+}
+.ext-your-accounts-toolbar .tc-button-tertiary {
+    background: #fff;   
+}
+.ext-your-accounts-toolbar .tc-normal-icon-with-text.ext-meniu-btn {
+    min-height: 38px;
+    margin: 0;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+}
+
+.ext-your-accounts-toolbar span.tc-form-control.ext-form-control-toolbar {
+    min-width: 0;
+    background-color: #666666;
+    border: 1px solid #dddddd;
+    padding: 0.8rem;
+    color: #fff;
+    border-radius: .3rem;
+    margin: 0 10px 0 0;
+}
+
+.ext-simple-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 9999;
+	background: #fff;
+	padding: 1.5rem 2rem;
+}
+.ext-force-screen-mask {
+	position: fixed !important;
+	top: 0;
+	bottom: 0;
+	display: block !important;
+}
+.ext-simple-popup-close-btn {
+	position: absolute;
+	top: 0;
+	right: -0.5rem;
+}
+.quick-filter{
+	margin:0;
+	color:#000;
+	width:250px;
+	
+}
+table tr.ministatementrow {
+	height: auto;
+
+}
+table tr.ministatementrow td {
+
+	padding: 0;
+}
+table tr.ministatementrow td > div {
+	 padding: 3px 10px;
+}
+.ext-hide-table-row {
+	text-align: right;
+}
+/*Payments - detail section - vertical align items*/
+.tc-detail-section .ext-row-part > div {
+    vertical-align: middle;
+}
+.tc-detail-section .ext-row-part > div span.ext-form-control {
+    padding-top: 7px;
+}
+/*Trade finance*/
+.ext-dashboard-card .tc-icon-font-size-lg span {
+    display: block;
+    color: #fab51e;
+}
+.ext-dashboard-card .tc-icon-font-size-lg span:before {
+    margin-left: -18px;
+}
+.ext-dashboard-card, .ext-dashboard-card > div {
+    text-align: center;
+    padding: 5px 10px;
+}
+.col-full.ext-dashboard-card, .col-full.ext-dashboard-card > div, .col-full.ext-dashboard-card > div > div {
+    text-align: left;
+    padding: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.ext-dashboard-card > div h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.tc-card.ext-dashboard-card > div h2 {
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+}
+.ext-expander-group-transparent {
+	text-align: center;
+}
+
+.ext-expander-group-transparent .tc-expanding-section > .responsive-row.tc-row-part {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: .31rem;
+	
+}
+
+.ext-expander-group-transparent .tc-card-expander {
+	background: none transparent;
+	display: inline-block;
+}
+
+
+/*Trade finance pie*/
+div[id*="_LimitOverview"] .highcharts-data-labels.highcharts-series-0 {
+  position: absolute!important;
+  left: 50%!important;
+  top: 50%!important;
+  transform: translate(-50%, -50%)!important;
+}
+div[id*="_LimitOverview"] .highcharts-data-labels.highcharts-series-0 > div,
+div[id*="_LimitOverview"] .highcharts-data-labels.highcharts-series-0 > div * {
+    top: 0!important;
+    left: 0!important;
+    position: static!important;;
+}
+
+div[id*="_LimitOverview"] .highcharts-tooltip > span {
+    background-color:white;
+    opacity:1;
+    z-index:9999!important;
+    font-size: 16px;
+    box-shadow: 0 0 0 7px white;
+    font-family: "Arial";
+    visibility: hidden;
+}
+div[id*="_LimitOverview"] .highcharts-tooltip .donutLimitOverview {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Arial";
+    display: block;
+    text-align: left!important;
+}
+/*Trade finance bar chart*/
+.ext-bar-chart {
+    display: block;
+}
+.ext-bar-chart > div {
+    padding: 0 10px!important;
+}
+.ext-bar-chart .tc-error-bg-color {
+    background: #f73146;
+}
+div[id*="_LimitUtilization"] div[id*="TBL_612AC4E539F4D67E239334_R"] + div[id*="TBL_612AC4E539F4D67E239334_R"] {
+    margin-top: 20px;
+}
+div[id*="_LimitUtilization"] .progress .bar {
+    font-size: 16px;
+    line-height: 26px; 
+}
+@media all and (max-width: 420px) {
+    div[id*="_LimitUtilization"] .progress .bar {
+        font-size: 14px;
+    }   
+}
+@media all and (max-width: 374px) {
+    div[id*="_LimitUtilization"] .progress .bar {
+        font-size: 12px;
+    }   
+}
+.ext-limit-utilization .tc-answer-part {
+    text-align: right;
+}
+@media all and (max-width: 1279px) {
+    .ext-limit-utilization .tc-answer-part {
+        text-align: left;
+    }   
+}
+
+/* Background images */
+.ext-bkg-image {
+	position: fixed;
+    z-index: -9;
+    left: 0;
+    top: 0;
+	background-position: 50 50;
+	background-size: cover;
+	
+}
+
+.ext-bkg-image.ext-bkg-image-light {
+	opacity: 0.6;
+}
+.ext-bkg-image img { 
+	width: 0;
+	height: 0;
+}
+.tc-breadcrumb a,
+.tc-breadcrumb .tc-breadcrumb-sep,
+.tc-breadcrumb .tc-breadcrumb-current span {
+	color: #ffffff;
+	text-shadow: 1px 2px 4px #000;
+}
+/*Advanced filter alignment*/
+.ext-select-width {
+    width: 19.9rem;
+}
+.tc-med .ext-select-width {
+    width: 19.6rem;
+}
+.tc-big .ext-select-width {
+    width: 19.5rem;
+}
+.ext-prefix-part-before {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    transform: translateX(-100%);
+    padding: 0;
+}
+@media all and (max-width: 767px) {
+    .ext-select-width {
+        width: 100%!important;
+    }
+    .ext-prefix-part-before {
+        position: static;
+        padding-right: .5rem;
+        transform: none;
+        line-height: 2rem;
+        width: auto;
+        text-align: left;
+    } 
+    .ext-prefix-part-before + input {
+        width: auto;
+        float: none;
+        margin-right: .5rem;
+    }
+} 
+
+/* ON DISABLED TABLE ELEMENTS, MOVE OPACITY TO CONTENTS, NOT TD */
+
+td.edgeConnectDisabled {
+	opacity: 1;
+}
+td.edgeConnectDisabled > * {
+	opacity: .5;
+}
+
+
+/* LOGIN PRODUCT CHOOSER */
+
+.ext-product-chooser > span {
+	display: block;
+}
+.ext-product-chooser > span:first-child {
+	font-family: "Arial"; 
+	color: #a39161;
+	font-size: ;
+}
+.ext-hide-disabled-button.edgeConnectDisabled {
+	opacity: 0;
+}
+
+
+/* Active / Inactive status */
+.ext-user-status {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+}
+.ext-user-status-ACTIVE {
+	background: #7fad5e;
+}
+.ext-user-status-INACTIVE {
+	background: #b30505;
+}
+.ext-user-status-INITIATED {
+	background: #e3d636;
+}
+.ext-user-status-BARRED {
+	background: #cd583a;
+}
+
+
+/* ON DISABLED TABLE ELEMENTS, MOVE OPACITY TO CONTENTS, NOT TD */
+
+td.edgeConnectDisabled {
+	opacity: 1;
+}
+td.edgeConnectDisabled > * {
+	opacity: .5;
+}
+
+
+/* LOGIN PRODUCT CHOOSER */
+
+.ext-product-chooser > span {
+	display: block;
+}
+.ext-product-chooser > span:first-child {
+	font-family: "Arial"; 
+	color: #a39161;
+	font-size: ;
+}
+.ext-hide-disabled-button.edgeConnectDisabled {
+	opacity: 0;
+}
+
+a.ext-hidden-link-button  {
+	pointer-events: none;
+	display: none;
+}
+a.ext-hidden-link-button + span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	position: relative;
+}
+a.ext-hidden-link-button + span a {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	left: 0;
+}
+ .ext-product-chooser-table tr td {
+	border-bottom: none;
+}
+ .ext-product-chooser-table .ext-dim-field td {
+	opacity: .5;
+}
+
+
+
+
+/* The following CARD STYLES will be enabled after AMR 2018 */
+/*
+.tc-card-bg {
+	background-color: rgba(255, 255, 255, 0.95);
+}
+
+.tc-card-bg .tc-card-bg,
+.tc-card-bg .tc-tab-section,
+.tc-card-bg .tc-card-header+.tc-card-body>.tc-tab-section,
+.tc-card-bg .ui-widget-header,
+.tc-card-bg span.tc-form-control,
+.tc-card-bg div.tc-checkbox.tc-form-control,
+.tc-card-bg .tc-card-toolbar .tc-card-header-icon {
+	background-color: transparent;
+}
+.tc-card-bg .tc-tab-header {
+	border-color: transparent;
+}
+.tc-card-bg div.tc-tab-header-selected {
+	border-color: #a39161;
+}
+.tc-card-bg .ext-your-accounts-toolbar div.tc-checkbox input[type=checkbox]+label:before,
+.tc-card-bg .tc-form-control,
+.tc-card-bg div.tc-checkbox input[type=checkbox]+label:before {
+	background-color: rgba(255, 255, 255, 0.95);
+} 
+.tc-card-bg .tc-form-control.tc-radio {
+	background-color: transparent;
+}
+.tc-card {
+    box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+}
+.tc-card .tc-tab-pane .tc-tab-header-selected {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+}
+*/
+/* END CARD STYLES */
+
+
+.tc-footer-column-title {
+	line-height: 1.5rem;
+}
+
+.ext-social-icon {
+	padding-top: 0;
+	padding-bottom: 0;
+	height: auto;
+	min-height: 0;
+	line-height: 1;
+}
+.ext-social-icon span:before {
+	font-size: 30px;
+}
+.ext-messages-profile-icon span:before {
+	font-size: 45px;
+}
+
+
+/*checkbox no top padding*/
+
+.ext-no-top-margin {
+	margin-top: 0 !important;
+}
+.ext-col-btn-align-center {
+	position: absolute;
+	bottom: 50%;
+	left: 67%;
+}
+
+/* FOOTER FIX */
+
+body > form#form1 {
+    height: 100%;
+}
+#EDGE_CONNECT_PROCESS {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.tc-subtoolbar {
+    flex: 1 0 auto;
+}
+.tc-subtoolbar + div   {
+    flex-shrink: 0;
+} 
+/* corporate theme upgrade  */
+.tc-button {
+    justify-content: center;
+}
+
+.growl .growl-close {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+}
+.growl .growl-title {
+	padding-right: 15px;
+	padding-bottom: 10px;
+    line-height: 1.5rem;
+}
+.ext-yellow-star, .ext-unfilled-star {
+	height: auto;
+}
+   .tc-icon-position-before>span::before, .tc-icon-position-after>span::before {
+	position: static;
+}  
+
+/* FIX FOR OVERLAY OVER MODAL WINDOW */
+.ui-widget-overlay.ui-front {
+    z-index: 1030;
+}
+
+.ui-dialog.ui-front {
+    z-index: 1060;
+}
+
+.ui-dialog.tc-modal.ui-front {
+    z-index: 1070;
+} 
+
+/* Product name */
+.ext-product-name {
+	background: none transparent;
+	border: none;
+	border-left: 2px solid #ffffff;
+	color: #ffffff;
+	pointer-events: none;
+	cursor: text;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    
+}
+
+@media (max-width: 1500px) and (min-width: 1024px){
+	html:not(.tc-box-on) .tc-nav-col.tc-overlay-nav-lg {
+		top: 60px;
+		height: auto;
+		border-bottom: 1px solid #dddddd;
+		box-shadow: 2px 8px 16px rgba(0,0,0,0.2);
+	}
+}
+@media (max-width: 1500px) and (min-width: 1024px){
+	.tc-show-sidebar .tc-header, .tc-show-sidebar .tc-subtoolbar, .tc-show-sidebar .tc-content-area {
+		padding-left: 0;
+	}
+}
+
+
+/*theme overwrite */
+.tc-card-expander:not(.ext-card-expander-bar-top-border) a{
+	color:#fff;
+}
+
+/* ### Data Tables modifications ###*/
+
+/* remove "first page" option if we are on page 1 or the last page */
+#EDGE_CONNECT_PROCESS .dataTables_wrapper .ui-toolbar .dataTables_paginate > a.ui-state-disabled.fg-button {
+	display: none;
+}
+
+
+/*Login Page*/
+
+.ext-login-form {
+    padding: 0 40px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+.ext-product-chooser-card {
+	position: relative;
+	top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+	max-width: 600px;
+}
+.ext-product-chooser-card > .tc-card {
+	margin-top: 0;
+} 
+.tc-full-button-xs {
+    display: block;
+}
+
+.ext-login-form .tc-card-header {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.ext-login-form .tc-full-button-xs {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+}
+
+.tc-key-nav #EDGE_CONNECT_PROCESS .ext-login-form input.tc-form-control:active,
+.tc-key-nav #EDGE_CONNECT_PROCESS .ext-login-form input.tc-form-control:focus,
+.ext-login-form input.tc-form-control {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5)!important;
+    border: 0;
+    width: 100%;
+    line-height: 22px;
+    color: #fff;
+    box-shadow: initial;
+}
+
+.tc-error-color *:placeholder-shown,
+.ext-login-form .tc-error-color {
+    color: #fff;
+}
+
+
+
+/************************** FOR MOBILE APP *************************/
+
+#form1,
+#form1 [id*="EDGE_CONNECT_PHASE"],
+#form1 [id*="EDGE_CONNECT_PROCESS"],
+#form1 #EDGE_CONNECT_PHASE > div, 
+#form1 #EDGE_CONNECT_PHASE > div > div, 
+#form1 #EDGE_CONNECT_PHASE > div > div > div, 
+#form1 #C2__EDGE_CONNECT_PHASE {
+    height: 100%;
+}
+
+div .onoffswitch-switch {
+    box-shadow: none;
+}
+
+.ext-height-0 {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.ext-white-header-xl, .ext-white-header-xl * {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: normal;
+}
+
+
+ .tc-form-control[disabled] {
+     border-color: #f5f5f5;
+ }
+ 
+
+ *:placeholder-shown,
+ input::-webkit-input-placeholder {
+     /* font-style: normal; */
+     color: #949494;
+ }
+
+ .ext-login-form input.tc-form-control::-webkit-input-placeholder,
+ .ext-login-form input.tc-form-control::-moz-placeholder,
+ .ext-login-form input.tc-form-control:-ms-input-placeholder,
+ .ext-login-form input.tc-form-control:-moz-placeholder {
+     color: #949494;
+ }
+ 
+ .ext-login-form .tc-card-button-container {
+     padding: 0;
+ }
+ 
+ .ext-login-form .ext-input-postfix {
+     position: relative;
+     padding-left: 32px;
+ }
+ 
+ .ext-login-form .tc-postfix-part {
+     position: absolute;
+     left: -34px;
+     top: 0;
+     width: 42px;
+     height: 42px;
+     color: #949494;
+     font-size: 20px;
+     background: rgba(0, 0, 0, 0.317647058823529);
+     font-family: 'T-Fonticons'!important;
+     speak: none;
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     line-height: normal;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     text-align: center;
+     transition: color 300ms linear;
+     padding-right: 0;
+ }
+ 
+ .ext-login-form input.tc-form-control:active+span+.tc-postfix-part,
+ .ext-login-form input.tc-form-control:active+span+span+.tc-postfix-part,
+ .ext-login-form input.tc-form-control:focus+span+.tc-postfix-part,
+ .ext-login-form input.tc-form-control:focus+span+span+.tc-postfix-part {
+     color: #f3f3f3;
+ }
+ 
+ .ext-login-form .ext-input-has-value,
+ .ext-login-form .ext-input-has-value+span+.tc-postfix-part {
+     color: #fff;
+ }
+ 
+ .ext-login-form .tc-postfix-part:before {
+     display: block;
+     line-height: 42px;
+ }
+ 
+ .ext-login-form .ext-postfix-user:before {
+     content: "\6d";
+ }
+ 
+ .ext-login-form .ext-postfix-pass:before {
+     content: "\2f";
+ }
+ 
+ .ext-login-form .tc-answer-part {
+     padding-right: 0;
+ }
+ 
+ .ext-login-form .tc-button {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.ext-bkg-image {
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #030407;
+}
+
+
+
+/*Loader*/
+
+div.tc-screenMask {
+    z-index: 99999!important;
+    opacity: 1!important;
+    background: rgba(0, 0, 0, 0.4)!important;
+}
+
+.ext-custom-loader,
+#ext-custom-loader {
+    position: fixed;
+    z-index: 99999999;
+    top: 45%;
+    left: -webkit-calc(50% - 18px);
+    left: calc(50% - 12px);
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+.ext-custom-loader img,
+#ext-custom-loader img {
+    width: 40px;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+/*login inputs*/
+.ext-login-form input:-webkit-autofill,
+.ext-login-form input:-webkit-autofill:hover,
+.ext-login-form input:-webkit-autofill:focus,
+.ext-login-form input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+	-webkit-text-fill-color: #fff !important;
+}
+
+.footer-login .tc-footer-top{
+	display:none;
+    
+}
+
+.footer-login .tc-footer-column-title{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+.footer-login .tc-footer-bottom {
+    padding: .3rem 0;
+}
+.footer-login .tc-footer-container {
+	margin-top:-40px;
+}
+

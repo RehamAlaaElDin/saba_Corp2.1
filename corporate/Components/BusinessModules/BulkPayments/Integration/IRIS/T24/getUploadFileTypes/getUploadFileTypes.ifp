@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" Connect="version 7.0.2__1" Imports0_ClassType="com.acquire.intelligentforms.entities.swagger.SwaggerImportRecord" Imports0_Comment="Importing BulkPayments APIs, version:v1.0.0." Imports0_GenAsComponents="N" Imports0_GenIntgr="Y" Imports0_GenLibraryProject="N" Imports0_GenLists="Y" Imports0_GenTypes="Y" Imports0_GetData="Y" Imports0_ImportName="BulkPaymentsUploadFileTypes" Imports0_ListsParent="Lists" Imports0_Name="03AA06354668A032 SwaggerImportRecord 1" Imports0_PublishAsComponent="Y" Imports0_RequiredResources="/bulkPayments/uploads/fileTypes" Imports0_Sources="BulkPaymentsUploadFileTypes" Imports0_SwaggerDocument="http://10.93.42.36:9089/tc-channels-api/api/v1.0.0/meta/apidocs/tc-bulkPayments-service-v1.0.0" Imports0_Timestamp="Fri Sep 27 16:06:42 IST 2019" Imports0_TypesParent="Data Types" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root" ImportsNumChildren="1" Name="getUploadFileTypes" ParentId="12345863" ProjectType="Y" ShowJSONMappings="Y" ShowSolutionTheme="Y" eid="03AA06354668A032184472"><![CDATA[
+  ]]>
+  <Types Name="Types Root" eid="03AA06354668A032184474"><![CDATA[
+    ]]>
+    <Lists Name="Lists" eid="03AA06354668A032184494"/>
+    <DataTypes Name="Data Types" eid="03AA06354668A032184495"><![CDATA[
+      ]]>
+      <DataType Name="Text" eid="03AA06354668A032184496"/>
+      <DataType Name="Number" Type="Number" eid="03AA06354668A032184497"/>
+      <DataType Name="Decimal" Type="Decimal" eid="03AA06354668A032184498"/>
+      <DataType Name="Date" Type="Date" eid="03AA06354668A032184499"/>
+      <DataType Name="File" Type="File" eid="03AA06354668A032184500"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="03AA06354668A032184501"/>
+      <CustomType Name="int32" Type="Number" eid="03AA06354668A032184520"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="03AA06354668A032184502"/>
+  </Types>
+  <Dictionary Name="03AA06354668A032 DataDictionary 2" eid="03AA06354668A032184475"><![CDATA[
+    ]]>
+    <PropertyGroup Name="Data Store Root" eid="03AA06354668A032184477"><![CDATA[
+      ]]>
+      <PropertyGroup Name="ErrorHandling" eid="03AA06354668A032184511"><![CDATA[
+        ]]>
+        <Property Name="ErrorMessage" eid="03AA06354668A032184512"/>
+        <Property Name="ErrorCode" eid="03AA06354668A032184513"/>
+      </PropertyGroup>
+      <PropertyGroup Name="getUploadFileTypes" eid="03AA06354668A032184516"><![CDATA[
+        ]]>
+        <PropertyGroup Name="Request" eid="03AA06354668A032184517"><![CDATA[
+          ]]>
+          <PropertyGroup Name="Query" eid="03AA06354668A032184518"><![CDATA[
+            ]]>
+            <Property JSONName="uploadTypeId" Name="uploadTypeId" ShowJSONMapping="Y" eid="03AA06354668A032184519"/>
+            <Property JSONName="page_size" Name="pageSize" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184521"/>
+            <Property JSONName="page_start" Name="pageStart" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184522"/>
+            <Property JSONName="page_token" Name="pageToken" ShowJSONMapping="Y" eid="03AA06354668A032184523"/>
+          </PropertyGroup>
+        </PropertyGroup>
+        <PropertyGroup Name="Response" eid="03AA06354668A032184524"><![CDATA[
+          ]]>
+          <PropertyGroup JSONCollectionKind="Object" JSONName="UploadFileTypesResponse" Name="UploadFileTypesResponse" ShowJSONMapping="Y" eid="03AA06354668A032184525"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="03AA06354668A032184526"><![CDATA[
+              ]]>
+              <Property JSONName="page_size" Name="pageSize" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184531"/>
+              <Property JSONName="page_start" Name="pageStart" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184532"/>
+              <Property JSONName="total_size" Name="totalSize" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184533"/>
+              <Property JSONName="page_token" Name="pageToken" ShowJSONMapping="Y" eid="03AA06354668A032184534"/>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="03AA06354668A032184527"><![CDATA[
+                ]]>
+                <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184528"/>
+                <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="03AA06354668A032184529"/>
+                <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184530"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="body" MaxInstances="0" Name="body" ShowJSONMapping="Y" eid="03AA06354668A032184535"><![CDATA[
+              ]]>
+              <Property JSONName="uploadTypeId" MaxFieldLength="35" Name="uploadTypeId" ShowJSONMapping="Y" eid="03AA06354668A032184536"/>
+              <Property JSONName="uploadDirectory" MaxFieldLength="50" Name="uploadDirectory" ShowJSONMapping="Y" eid="03AA06354668A032184537"/>
+              <Property JSONName="fileExtension" MaxFieldLength="35" Name="fileExtension" ShowJSONMapping="Y" eid="03AA06354668A032184538"/>
+              <Property JSONName="fileMaximumSize" MaxFieldLength="35" Name="fileMaximumSize" ShowJSONMapping="Y" eid="03AA06354668A032184539"/>
+            </PropertyGroup>
+          </PropertyGroup>
+          <PropertyGroup JSONCollectionKind="Object" JSONName="BusinessQueryErrorResponse" Name="BusinessQueryErrorResponse" ShowJSONMapping="Y" eid="03AA06354668A032184540"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="03AA06354668A032184541"><![CDATA[
+              ]]>
+              <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="03AA06354668A032184542"/>
+              <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="03AA06354668A032184543"/>
+              <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="03AA06354668A032184544"/>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="03AA06354668A032184545"><![CDATA[
+                ]]>
+                <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184546"/>
+                <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="03AA06354668A032184547"/>
+                <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184548"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="03AA06354668A032184549"><![CDATA[
+              ]]>
+              <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="03AA06354668A032184550"/>
+              <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="03AA06354668A032184551"/>
+              <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="03AA06354668A032184552"/>
+            </PropertyGroup>
+          </PropertyGroup>
+          <PropertyGroup JSONCollectionKind="Object" JSONName="SystemQueryErrorResponse" Name="SystemQueryErrorResponse" ShowJSONMapping="Y" eid="03AA06354668A032184553"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="03AA06354668A032184554"><![CDATA[
+              ]]>
+              <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="03AA06354668A032184555"/>
+              <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="03AA06354668A032184556"/>
+              <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="03AA06354668A032184557"/>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="03AA06354668A032184558"><![CDATA[
+                ]]>
+                <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184559"/>
+                <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="03AA06354668A032184560"/>
+                <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184561"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="03AA06354668A032184562"><![CDATA[
+              ]]>
+              <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="03AA06354668A032184563"/>
+              <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="03AA06354668A032184564"/>
+              <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="03AA06354668A032184565"/>
+            </PropertyGroup>
+          </PropertyGroup>
+          <PropertyGroup JSONCollectionKind="Object" JSONName="QueryErrorResponse" Name="QueryErrorResponse" ShowJSONMapping="Y" eid="03AA06354668A032184566"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="03AA06354668A032184567"><![CDATA[
+              ]]>
+              <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="03AA06354668A032184568"/>
+              <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="03AA06354668A032184569"/>
+              <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="03AA06354668A032184570"/>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="03AA06354668A032184571"><![CDATA[
+                ]]>
+                <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184572"/>
+                <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="03AA06354668A032184573"/>
+                <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="03AA06354668A032184574"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="03AA06354668A032184575"><![CDATA[
+              ]]>
+              <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="03AA06354668A032184576"/>
+              <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="03AA06354668A032184577"/>
+              <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="03AA06354668A032184578"/>
+            </PropertyGroup>
+          </PropertyGroup>
+        </PropertyGroup>
+      </PropertyGroup>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="03AA06354668A032184481"><![CDATA[
+    ]]>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="03AA06354668A032184506"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="03AA06354668A032184507"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="03AA06354668A032184508"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="03AA06354668A032184509"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.swagger.SwaggerDataSource" ConnectionAttempts="5" ConnectionTimeout="5000" EndPointURL="$$!IRIS_SERVICE_ROOT_URI$/$$!SERVICE_NAME$/api/v1.0.0" HTTPHeaderNames="credentials,$$!MAINSESSION.HEADER_NAME_REQUEST$,$$!MAINSESSION.AUTH_HEADER_NAME$" HTTPHeaderValues="$$!MAINSESSION.IRIS_USER_NAME$/$$!MAINSESSION.IRIS_PASSWORD$,$$!MAINSESSION.HEADER_VALUE_REQUEST$,$$!MAINSESSION.AUTH_HEADER_VALUE$" Name="BulkPaymentsUploadFileTypes" SocketTimeout="60000" SwaggerDocument="$$!IRIS_SERVICE_ROOT_URI$/$$!SERVICE_NAME$/api/v1.0.0/meta/apidocs/tc-bulkPayments-service-v1.0.0" UseSecurityCertificate="N" eid="03AA06354668A032184828"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="03AA06354668A032184479"/>
+  <Products Name="Processes Root" eid="03AA06354668A032184483"><![CDATA[
+    ]]>
+    <Product InitialPhase="getUploadFileTypes.getUploadFileTypes" Name="getUploadFileTypes" PublishAsComponent="Y" RulesOnly="Y" eid="03AA06354668A032184514" getUploadFileTypes0_0_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_0_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_0_0_0_ExportedProperty="getUploadFileTypes[1].Request[1].Query[1].uploadTypeId" getUploadFileTypes0_0_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Request[1].Query[1].uploadTypeId" getUploadFileTypes0_0_0_0_0_LinkedEntityJSONName="uploadTypeId" getUploadFileTypes0_0_0_0_0_LinkedEntityName="uploadTypeId" getUploadFileTypes0_0_0_0_0_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_0_0_0_OriginalEntityEID="03AA06354668A032184519" getUploadFileTypes0_0_0_0_0_OriginalEntityName="uploadTypeId" getUploadFileTypes0_0_0_0_0_PropertyKey="getUploadFileTypes[1].Request[1].Query[1].uploadTypeId" getUploadFileTypes0_0_0_0_0_PubIn="True" getUploadFileTypes0_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_0_0_DGInst="1" getUploadFileTypes0_0_0_0_ExportedPropertyGroup="getUploadFileTypes[1].Request[1].Query[1]" getUploadFileTypes0_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Request[1].Query" getUploadFileTypes0_0_0_0_LinkedEntityName="Query" getUploadFileTypes0_0_0_0_NumChildren="1" getUploadFileTypes0_0_0_0_OriginalEntityEID="03AA06354668A032184518" getUploadFileTypes0_0_0_0_OriginalEntityName="Query" getUploadFileTypes0_0_0_0_PropertyKey="getUploadFileTypes[1].Request[1].Query" getUploadFileTypes0_0_0_0_PubIn="True" getUploadFileTypes0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_0_DGInst="1" getUploadFileTypes0_0_0_ExportedPropertyGroup="getUploadFileTypes[1].Request[1]" getUploadFileTypes0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Request" getUploadFileTypes0_0_0_LinkedEntityName="Request" getUploadFileTypes0_0_0_NumChildren="1" getUploadFileTypes0_0_0_OriginalEntityEID="03AA06354668A032184517" getUploadFileTypes0_0_0_OriginalEntityName="Request" getUploadFileTypes0_0_0_PropertyKey="getUploadFileTypes[1].Request" getUploadFileTypes0_0_0_PubIn="True" getUploadFileTypes0_0_1_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_0_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_0_0_0_ExportedProperty="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].uploadTypeId" getUploadFileTypes0_0_1_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[1].uploadTypeId" getUploadFileTypes0_0_1_0_0_0_LinkedEntityJSONName="uploadTypeId" getUploadFileTypes0_0_1_0_0_0_LinkedEntityMaxFieldLength="35" getUploadFileTypes0_0_1_0_0_0_LinkedEntityName="uploadTypeId" getUploadFileTypes0_0_1_0_0_0_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_0_0_0_OriginalEntityEID="03AA06354668A032184536" getUploadFileTypes0_0_1_0_0_0_OriginalEntityName="uploadTypeId" getUploadFileTypes0_0_1_0_0_0_PropertyKey="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].uploadTypeId" getUploadFileTypes0_0_1_0_0_0_PubOut="Y" getUploadFileTypes0_0_1_0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_0_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_0_0_1_ExportedProperty="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].uploadDirectory" getUploadFileTypes0_0_1_0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[1].uploadDirectory" getUploadFileTypes0_0_1_0_0_1_LinkedEntityJSONName="uploadDirectory" getUploadFileTypes0_0_1_0_0_1_LinkedEntityMaxFieldLength="50" getUploadFileTypes0_0_1_0_0_1_LinkedEntityName="uploadDirectory" getUploadFileTypes0_0_1_0_0_1_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_0_0_1_OriginalEntityEID="03AA06354668A032184537" getUploadFileTypes0_0_1_0_0_1_OriginalEntityName="uploadDirectory" getUploadFileTypes0_0_1_0_0_1_PropertyKey="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].uploadDirectory" getUploadFileTypes0_0_1_0_0_1_PubOut="Y" getUploadFileTypes0_0_1_0_0_2_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_0_0_2_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_0_0_2_ExportedProperty="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].fileExtension" getUploadFileTypes0_0_1_0_0_2_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[1].fileExtension" getUploadFileTypes0_0_1_0_0_2_LinkedEntityJSONName="fileExtension" getUploadFileTypes0_0_1_0_0_2_LinkedEntityMaxFieldLength="35" getUploadFileTypes0_0_1_0_0_2_LinkedEntityName="fileExtension" getUploadFileTypes0_0_1_0_0_2_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_0_0_2_OriginalEntityEID="03AA06354668A032184538" getUploadFileTypes0_0_1_0_0_2_OriginalEntityName="fileExtension" getUploadFileTypes0_0_1_0_0_2_PropertyKey="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].fileExtension" getUploadFileTypes0_0_1_0_0_2_PubOut="Y" getUploadFileTypes0_0_1_0_0_3_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_0_0_3_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_0_0_3_ExportedProperty="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].fileMaximumSize" getUploadFileTypes0_0_1_0_0_3_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[1].fileMaximumSize" getUploadFileTypes0_0_1_0_0_3_LinkedEntityJSONName="fileMaximumSize" getUploadFileTypes0_0_1_0_0_3_LinkedEntityMaxFieldLength="35" getUploadFileTypes0_0_1_0_0_3_LinkedEntityName="fileMaximumSize" getUploadFileTypes0_0_1_0_0_3_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_0_0_3_OriginalEntityEID="03AA06354668A032184539" getUploadFileTypes0_0_1_0_0_3_OriginalEntityName="fileMaximumSize" getUploadFileTypes0_0_1_0_0_3_PropertyKey="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A].fileMaximumSize" getUploadFileTypes0_0_1_0_0_3_PubOut="Y" getUploadFileTypes0_0_1_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_0_0_DGInst="A" getUploadFileTypes0_0_1_0_0_ExportedPropertyGroup="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body[A]" getUploadFileTypes0_0_1_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body" getUploadFileTypes0_0_1_0_0_LinkedEntityFixedSize="N" getUploadFileTypes0_0_1_0_0_LinkedEntityJSONCollectionKind="ObjectArray" getUploadFileTypes0_0_1_0_0_LinkedEntityJSONName="body" getUploadFileTypes0_0_1_0_0_LinkedEntityMaxInstances="0" getUploadFileTypes0_0_1_0_0_LinkedEntityName="body" getUploadFileTypes0_0_1_0_0_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_0_0_NumChildren="4" getUploadFileTypes0_0_1_0_0_OriginalEntityEID="03AA06354668A032184535" getUploadFileTypes0_0_1_0_0_OriginalEntityName="body" getUploadFileTypes0_0_1_0_0_PropertyKey="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1].body" getUploadFileTypes0_0_1_0_0_PubOut="Y" getUploadFileTypes0_0_1_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_0_DGInst="1" getUploadFileTypes0_0_1_0_ExportedPropertyGroup="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1]" getUploadFileTypes0_0_1_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Response[1].UploadFileTypesResponse" getUploadFileTypes0_0_1_0_LinkedEntityJSONCollectionKind="Object" getUploadFileTypes0_0_1_0_LinkedEntityJSONName="UploadFileTypesResponse" getUploadFileTypes0_0_1_0_LinkedEntityName="UploadFileTypesResponse" getUploadFileTypes0_0_1_0_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_0_NumChildren="1" getUploadFileTypes0_0_1_0_OriginalEntityEID="03AA06354668A032184525" getUploadFileTypes0_0_1_0_OriginalEntityName="UploadFileTypesResponse" getUploadFileTypes0_0_1_0_PropertyKey="getUploadFileTypes[1].Response[1].UploadFileTypesResponse" getUploadFileTypes0_0_1_0_PubOut="Y" getUploadFileTypes0_0_1_1_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_1_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_1_0_0_ExportedProperty="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].code" getUploadFileTypes0_0_1_1_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].code" getUploadFileTypes0_0_1_1_0_0_LinkedEntityJSONName="code" getUploadFileTypes0_0_1_1_0_0_LinkedEntityName="code" getUploadFileTypes0_0_1_1_0_0_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_1_0_0_OriginalEntityEID="03AA06354668A032184550" getUploadFileTypes0_0_1_1_0_0_OriginalEntityName="code" getUploadFileTypes0_0_1_1_0_0_PropertyKey="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].code" getUploadFileTypes0_0_1_1_0_0_PubOut="Y" getUploadFileTypes0_0_1_1_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_1_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_1_0_1_ExportedProperty="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].message" getUploadFileTypes0_0_1_1_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].message" getUploadFileTypes0_0_1_1_0_1_LinkedEntityJSONName="message" getUploadFileTypes0_0_1_1_0_1_LinkedEntityName="message" getUploadFileTypes0_0_1_1_0_1_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_1_0_1_OriginalEntityEID="03AA06354668A032184551" getUploadFileTypes0_0_1_1_0_1_OriginalEntityName="message" getUploadFileTypes0_0_1_1_0_1_PropertyKey="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].message" getUploadFileTypes0_0_1_1_0_1_PubOut="Y" getUploadFileTypes0_0_1_1_0_2_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_1_0_2_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFileTypes0_0_1_1_0_2_ExportedProperty="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].type" getUploadFileTypes0_0_1_1_0_2_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].type" getUploadFileTypes0_0_1_1_0_2_LinkedEntityJSONName="type" getUploadFileTypes0_0_1_1_0_2_LinkedEntityName="type" getUploadFileTypes0_0_1_1_0_2_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_1_0_2_OriginalEntityEID="03AA06354668A032184552" getUploadFileTypes0_0_1_1_0_2_OriginalEntityName="type" getUploadFileTypes0_0_1_1_0_2_PropertyKey="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1].type" getUploadFileTypes0_0_1_1_0_2_PubOut="Y" getUploadFileTypes0_0_1_1_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_1_0_DGInst="1" getUploadFileTypes0_0_1_1_0_ExportedPropertyGroup="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error[1]" getUploadFileTypes0_0_1_1_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error" getUploadFileTypes0_0_1_1_0_LinkedEntityJSONCollectionKind="Object" getUploadFileTypes0_0_1_1_0_LinkedEntityJSONName="error" getUploadFileTypes0_0_1_1_0_LinkedEntityName="error" getUploadFileTypes0_0_1_1_0_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_1_0_NumChildren="3" getUploadFileTypes0_0_1_1_0_OriginalEntityEID="03AA06354668A032184549" getUploadFileTypes0_0_1_1_0_OriginalEntityName="error" getUploadFileTypes0_0_1_1_0_PropertyKey="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1].error" getUploadFileTypes0_0_1_1_0_PubOut="Y" getUploadFileTypes0_0_1_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_1_DGInst="1" getUploadFileTypes0_0_1_1_ExportedPropertyGroup="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1]" getUploadFileTypes0_0_1_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse" getUploadFileTypes0_0_1_1_LinkedEntityJSONCollectionKind="Object" getUploadFileTypes0_0_1_1_LinkedEntityJSONName="BusinessQueryErrorResponse" getUploadFileTypes0_0_1_1_LinkedEntityName="BusinessQueryErrorResponse" getUploadFileTypes0_0_1_1_LinkedEntityShowJSONMapping="Y" getUploadFileTypes0_0_1_1_NumChildren="1" getUploadFileTypes0_0_1_1_OriginalEntityEID="03AA06354668A032184540" getUploadFileTypes0_0_1_1_OriginalEntityName="BusinessQueryErrorResponse" getUploadFileTypes0_0_1_1_PropertyKey="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse" getUploadFileTypes0_0_1_1_PubOut="Y" getUploadFileTypes0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_1_DGInst="1" getUploadFileTypes0_0_1_ExportedPropertyGroup="getUploadFileTypes[1].Response[1]" getUploadFileTypes0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes[1].Response" getUploadFileTypes0_0_1_LinkedEntityName="Response" getUploadFileTypes0_0_1_NumChildren="2" getUploadFileTypes0_0_1_OriginalEntityEID="03AA06354668A032184524" getUploadFileTypes0_0_1_OriginalEntityName="Response" getUploadFileTypes0_0_1_PropertyKey="getUploadFileTypes[1].Response" getUploadFileTypes0_0_1_PubOut="Y" getUploadFileTypes0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_0_DGInst="1" getUploadFileTypes0_0_ExportedPropertyGroup="getUploadFileTypes[1]" getUploadFileTypes0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |getUploadFileTypes" getUploadFileTypes0_0_LinkedEntityName="getUploadFileTypes" getUploadFileTypes0_0_NumChildren="2" getUploadFileTypes0_0_OriginalEntityEID="03AA06354668A032184516" getUploadFileTypes0_0_OriginalEntityName="getUploadFileTypes" getUploadFileTypes0_0_PropertyKey="getUploadFileTypes" getUploadFileTypes0_0_PubIn="True" getUploadFileTypes0_0_PubOut="Y" getUploadFileTypes0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFileTypes0_DGInst="1" getUploadFileTypes0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.DictionaryRoot| |Data Store Root" getUploadFileTypes0_LinkedEntityName="Data Store Root" getUploadFileTypes0_NumChildren="1" getUploadFileTypes0_OriginalEntityEID="03AA06354668A032184477" getUploadFileTypes0_OriginalEntityName="Data Store Root" getUploadFileTypes0_PubIn="Y" getUploadFileTypes0_PubOut="Y" getUploadFileTypesClassType="com.acquire.intelligentforms.entities.component.Component" getUploadFileTypesComponentComment="" getUploadFileTypesNumChildren="1" getUploadFileTypesProjectName="getUploadFileTypes" getUploadFileTypesRulesOnly="Y"><![CDATA[
+      ]]>
+      <Phase Name="getUploadFileTypes" ProcessRulesOnly="Y" eid="03AA06354668A032184515"><![CDATA[
+        ]]>
+        <Rule Name="Process getUploadFileTypes" RuleClassName="com.acquire.intelligentforms.rules.ContainerRule" RuleType="PostPhase" eid="03AA06354668A032184579"><![CDATA[
+          ]]>
+          <Rule AdditionalHTTPCodesToParse="400,500,default" AdditionalHTTPDataGroups="getUploadFileTypes[1].Response[1].BusinessQueryErrorResponse[1],getUploadFileTypes[1].Response[1].SystemQueryErrorResponse[1],getUploadFileTypes[1].Response[1].QueryErrorResponse[1]" DSDataGroup="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1]" DSOperationType="Read" DataSetToUse="Use Default" ErrorCodeDataItem="ErrorHandling[1].ErrorCode" ErrorHandlingType="Pass Up" ErrorMsgDataItem="ErrorHandling[1].ErrorMessage" HTTPMethod="GET" Name="Invoke getUploadFileTypes" Output="getUploadFileTypes[1].Response[1].UploadFileTypesResponse[1]" QueryInputDataGroup="getUploadFileTypes[1].Request[1].Query[1]" ResourcePath="/bulkPayments/uploads/fileTypes" RuleClassName="com.acquire.intelligentforms.rules.SwaggerIntegrationRule" RuleType="True" SourceName="BulkPaymentsUploadFileTypes" eid="03AA06354668A032184580"/>
+        </Rule>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="03AA06354668A032184485"/>
+  <EVANotes Name="Note Root" eid="03AA06354668A032184487"><![CDATA[
+    ]]>
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="03AA06354668A032184503"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="03AA06354668A032184504"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="03AA06354668A032184505"/>
+  </EVANotes>
+  <LanguageMapDefinitionsRoot Name="Languages Root" eid="03AA06354668A032184489"/>
+  <CordovaPluginsRoot Name="CordovaPlugins Root" eid="03AA06354668A032184493"/>
+</Project>

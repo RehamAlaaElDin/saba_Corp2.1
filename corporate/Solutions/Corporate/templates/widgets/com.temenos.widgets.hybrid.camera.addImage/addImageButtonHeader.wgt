@@ -1,0 +1,149 @@
+$%COMMENT$ $Revision: 1.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<script type="text/javascript">
+//<![CDATA[
+window.com=window.com||{};
+window.com.temenos=window.com.temenos||{};
+window.com.temenos.widgets=window.com.temenos.widgets||{};
+window.com.temenos.widgets.hybrid=window.com.temenos.widgets.hybrid||{};
+window.com.temenos.widgets.hybrid.camera=window.com.temenos.widgets.hybrid.camera||{};
+
+window.com.temenos.widgets.hybrid.camera.addImage = (function () {
+    var cameraAPI = {}
+
+    $%COMMENT$ Shamelessly copied from getContacts. Maybe this should be part of a common JS library $%ENDCOMMENT$
+    $%COMMENT$ FIXME does this work from inside a component? $%ENDCOMMENT$
+    //replace [C]s with arg[1] then arg[2] etc...
+    function processName(input)
+    {
+//        console.log("Processing name: " + input);
+        var args = arguments;
+        var argIndex = 1;
+
+        var name = input.toUpperCase();
+        name = name.replace(" ", "");
+        
+        var Cindex = -1;
+        while ( (Cindex = name.indexOf("C]")) > 0) {
+            var instance = argIndex + 1 > args.length ? 1 : args[argIndex++];
+            name = name.substring(0, Cindex) + instance + name.substring(Cindex + 1);
+        }
+//        console.log("Processed name: " + name);
+        return name;
+    };
+
+    function populateOrCreateInput(name, value) {
+        if (!value) return;
+
+        var els = document.getElementsByName(name);
+        var el;
+        if (els == null || els.length == 0) {
+//            console.log("Creating input");
+            el = document.createElement("input");
+            el.type = "text";
+            el.name = name;
+            el.style.display  = "none";
+            document.forms["form1"].appendChild(el);
+        } else {
+//            console.log("Updating input");
+            el = els[0];
+        }
+        
+        el.value = value.trim();
+//        console.log("Value set");
+    };
+
+    cameraAPI.extractValue = function(val, dataItem, instance1, instance2) {
+//        console.log("Extracting value...");
+        if (dataItem && dataItem.length > 0) {
+            var elName = processName(dataItem, instance1, instance2);
+            populateOrCreateInput(elName, val);
+        }
+    };
+
+    // Called when a photo is successfully retrieved and needs to be stored as Base64
+    cameraAPI.onPhotoDataSuccess = function (imageData, photoId, successMethod) {
+        //console.log("Photo data item ID is:" + photoId);
+        cameraAPI.extractValue(imageData, photoId);
+        //console.log("End onPhotoDataSuccess. Photo DI value:" + document.getElementById(photoId).value);
+        if (successMethod != null) {
+            successMethod();
+        }
+    }
+
+    // Called when a photo is successfully retrieved and needs to be uploaded as File
+    cameraAPI.onPhotoURISuccess = function (imageURI, url_server, fileId, statusDom, loading, successMethod) {
+        options = new FileUploadOptions();
+        // parameter name of file:
+        options.fileKey = fileId;
+        // name of the file:
+        options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
+        // mime type:
+        options.mimeType = "text/plain";
+        $%COMMENT$ prepare request parameters for the image upload servlet $%ENDCOMMENT$
+        params = { filename:fileId };
+        options.params = params;
+        ft = new FileTransfer();
+            ft.onprogress = function(progressEvent) {
+              loading.style.display = 'block';
+            if (progressEvent.lengthComputable) {
+                var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+                statusDom.innerHTML = perc + "% loaded...";
+            } else {
+                if(statusDom.innerHTML == "") {
+                    statusDom.innerHTML = "Loading";
+                } else {
+                    statusDom.innerHTML += ".";
+                }
+            }
+        };
+            
+        ft.upload(imageURI,url_server, function(message){uploadSuccess(message, loading, statusDom, successMethod)}, uploadFail, options);
+    }
+
+    function uploadSuccess(message, loading, statusDom, successMethod) {
+    
+        statusDom.innerHTML = "Complete";
+        loading.style.display = 'none';
+        if(message.responseCode == "200") {
+            if (message.response==="{}") {
+                statusDom.innerHTML = "Invalid photo";
+                return;/*if message empty*/ 
+            }
+            var jsonObj = JSON.parse(message.response);
+            if (jsonObj!=null) {
+                alert(message.response);    
+                //console.log(jsonObj);
+            } else {
+                alert('Your photo uploaded successfully.');
+            }
+        } else {
+            statusDom.innerHTML = "Invalid photo";
+        }
+
+        if (successMethod != null) {
+            successMethod();
+        }
+    }
+
+    function uploadFail(message) {
+        console.log("Upload failure message: " + message);
+        if (message != null && message.indexOf("cancelled") > -1) {
+            // assume the user cancelled the action, do nothing
+            statusDom.innerHTML = "Cancelled by the user";
+            loading.style.display = 'none';
+        } else {
+            alert('Upload failed. Please try again.');
+            loading.style.display = 'none';
+            statusDom.innerHTML = "Upload failed";    
+        }
+    }
+
+    function onFail(message) {
+        alert('Failed because: ' + message);
+        statusDom.innerHTML ='Failed because: ' + message;
+    }
+
+    return cameraAPI;
+})();   
+//]]>
+</script>

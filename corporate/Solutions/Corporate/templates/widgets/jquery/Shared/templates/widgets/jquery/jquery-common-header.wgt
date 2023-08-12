@@ -1,0 +1,6 @@
+$%COMMENT$ $Revision: 1.9 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+		<script type='text/javascript'>
+			if (typeof jQuery == 'undefined'){
+				document.write(unescape("%3Cscript src='./templates/widgets/jquery/js/jquery-3.5.1.min.js?$$SESSION_ID$' type='text/javascript'%3E%3C/script%3E"));
+			}
+		</script>

@@ -1,0 +1,26 @@
+$%COMMENT$ $Revision: 1.8 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.IS_MANDATORY() == "true"$
+    $%LOG "Connect DebugLog" 3$Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - Is mandatory and cannot be displayed as a HTML5 meter field$%ENDLOG$
+    $$ITEM.EC_GENERATE()$
+$%ELSE$
+    $%IF ITEM.IS_READONLY() == "true" && ITEM.READONLYSTYLE() != "Disabled Answer"$
+        $%LOG "Connect DebugLog" 3$Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - Is read-only and being displayed as a label so cannot be displayed as a HTML5 meter field$%ENDLOG$
+        $$ITEM.EC_GENERATE()$
+    $%ELSE$
+        <meter
+            id="meter_$$ITEM.ID()$" 
+            min="$$ITEM.MINVALUE()$" 
+            max="$$ITEM.MAXVALUE()$"
+            low="$$ITEM.LOW$" 
+            high="$$ITEM.HIGH$" 
+            optimum="$$ITEM.OPTIMUM$" 
+            value="$$ITEM.DATAITEM().VALUE()$"
+        >
+        </meter>
+    $%ENDIF$
+    $%IF ITEM.MINVALUE() == "" || ITEM.MAXVALUE() == ""$
+        $%LOG "Connect DebugLog" 3$
+        Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - For this HTML5 meter field to work properly it is recommended that you have a min and max value specified on your data item or question. 
+        $%ENDLOG$
+    $%ENDIF$
+$%ENDIF$

@@ -1,0 +1,25 @@
+{
+  "name": "app2app-message-relay-plugin",
+  "version": "1.0.0",
+  "description": "Temenos UXP plugin that provides a way for messages to flow between an UXP-built mobile app and LuxTrust compoments. Please note that the iOS part of this plugin is not a replacement for default UIWebView, but just to open in WKWebView.",
+  "cordova": {
+    "id": "app2app-message-relay-plugin",
+    "platforms": [
+      "ios",
+	  "Android"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phonegap",
+    "iOS",
+    "phone",
+    "WKWebView",
+    "App2App",
+    "LuxTrust"
+  ],
+  "author": "Temenos",
+  "license": "ISC"
+}

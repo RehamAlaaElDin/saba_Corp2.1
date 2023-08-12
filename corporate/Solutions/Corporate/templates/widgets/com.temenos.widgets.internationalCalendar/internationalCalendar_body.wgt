@@ -1,0 +1,102 @@
+$%IF ITEM.IS_READONLY() == true$
+	$%IF ITEM.DATEPARTS_TIME_CHOOSER == 0$
+		$%SET icReadOnlyDate = $$$ITEM.CalendarDateFormat$$%ENDSET$
+	$%ELSE$
+		$%SET icReadOnlyDate = $$$ITEM.CalendarDateFormat$ $$ITEM.CalendarTimeFormat$$%ENDSET$
+	$%ENDIF$
+	$%COMMENT //$ use .allowMarkup() so that the / date separator is not HTML escaped
+	<span class="$$ITEM.STYLES.AnswerControlStyle $$ITEM.STYLES().SpecificAnswerControlStyle$" size="$$ITEM.FieldSize$" data-normalized-format="">$$ITEM.DATAITEM().FORMAT("##!icReadOnlyDate.allowMarkup()#|##!icLanguageCode#||##ITEM.CalendarType#")$</span>
+$%ELSE$
+<script>
+var dateID = "$$ITEM.ID()$";
+var timePicker = (dateID.indexOf("DATETIME") == -1) ? false : true;
+var legalHolidaysCheckmark = '$$ITEM.MarkLegalHolidaysAsReadOnly$' == 'Y' ? true : false;
+var weekDaysCheckmark = '$$ITEM.MarkWeekendDaysAsReadOnly$' == 'Y' ? true : false;
+
+var widgetCalendarSettings = {
+	showTimePart: '$$ITEM.DATEPARTS_TIME_CHOOSER$' == "1" ? true : false,
+	showIcon: '$$ITEM.DATEPARTS_DATE_CHOOSER$',
+	elementId: 'iC_$$ITEM.ID()$',
+	hiddenElementId: dateID.replace('.DATETIME', ''),
+	calendarType: '$$ITEM.CalendarType$',
+	dateFormat: '$$ITEM.CalendarDateFormat$',
+	timeFormat: '$$ITEM.CalendarTimeFormat$',
+	calendarTimePicker: timePicker,
+	weekendDays: '$$ITEM.WeekendDays$',
+	locale: '$$ITEM.Locale$',
+	minDate: window.com.temenos.widgets.internationalCalendar.convertToDate('$$ITEM.MINVALUE()$'),
+	maxDate: window.com.temenos.widgets.internationalCalendar.convertToDate('$$ITEM.MAXVALUE()$'),
+	calendarImage: '$$ITEM.CalendarImage$',
+	legalHolidays: '$$ITEM.LegalHolidays$',
+	legalHolidaysCheckmark: legalHolidaysCheckmark,
+	weekDaysCheckmark: weekDaysCheckmark,
+	preValidHook:'',//pre-validation hook
+	hiddenFieldValueHook:'',//hidden field value
+	serverDateFormat: '$$ITEM.DATEFORMAT()$',
+	serverTimeFormat: '$$ITEM.TIMEFORMAT()$',
+	serverSeparatorFormat: '$$ITEM.DATEPARTS_DATE_TIME_SEPARATOR$',
+	language: window.com.temenos.widgets.internationalCalendar.localizeWeeksAndMonths('$$ITEM.LongWeekNames$', '$$ITEM.ShortWeekNames$', '$$ITEM.LongMonthNames$', '$$ITEM.ShortMonthNames$'),
+$%IF !icLanguageCode != ""$
+	calendarLanguage: '$$!icLanguageCode$'
+$%ENDIF$
+ };
+
+</script>
+<input type="text" name="VISIBLE_DATE" id="iC_$$ITEM.ID()$" class="$$ITEM.STYLES.AnswerControlStyle $$ITEM.STYLES().SpecificAnswerControlStyle$" size="$$ITEM.FieldSize$" data-normalized-format="">
+<div id="$$ITEM.ID()$__REMOVED" style="display:none;">$$ITEM.EC_GENERATE()$</div>
+<script>
+var obj = Object.create(window.com.temenos.widgets.internationalCalendar);
+obj.getCalendar(widgetCalendarSettings);
+</script>
+
+<style>
+$%SET cleanId =$$%SCRIPT$
+var simpleId = "$$ITEM.ID()$";
+var cleanId = simpleId.split(".DATETIME").join("");
+cleanId;
+$%ENDSCRIPT$$%ENDSET$
+
+$%IF ITEM.DateBarColour != ""$
+.$$!cleanId$
+.datepicker--nav {
+	background: $$ITEM.DateBarColour$;
+}
+$%ENDIF$
+
+$%IF ITEM.ValidDateColour != ""$
+.$$!cleanId$
+.datepicker--cell {
+	background: $$ITEM.ValidDateColour$;
+}
+$%ENDIF$
+
+$%IF ITEM.SelectedDateColour != ""$
+.$$!cleanId$
+.datepicker--cell.-selected- {
+	background: $$ITEM.SelectedDateColour$;
+	}
+$%ENDIF$
+
+$%IF ITEM.LegalHolidays != ""$
+	.$$!cleanId$
+	.datepicker--cells-days .-ec-holiday- {
+		background: $%IF ITEM.HolidayColor != ""$ $$ITEM.HolidayColor$ $%ELSE$ #858585$%ENDIF$;
+	}
+$%ENDIF$
+
+$%IF ITEM.WeekendDays != ""$
+	.$$!cleanId$
+	.datepicker--cells-days .-ec-weekend- {
+		background:$%IF ITEM.WeekendColor != ""$ $$ITEM.WeekendColor$ $%ELSE$ #858585$%ENDIF$;
+	}
+$%ENDIF$
+
+$%IF ITEM.InvalidDateColour != ""$
+.$$!cleanId$
+.datepicker--cell.-disabled- {
+	background: $$ITEM.InvalidDateColour$
+	}
+$%ENDIF$
+
+</style>
+$%ENDIF$

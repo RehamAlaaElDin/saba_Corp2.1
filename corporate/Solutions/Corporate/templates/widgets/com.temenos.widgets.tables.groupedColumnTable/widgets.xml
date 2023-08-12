@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget  icon="images/PresentationTable.gif" displayName="Grouped Column Table" name="GroupedColumnTable" type="Table">
+    <template type="header" value="groupedColumnTable_header.wgt"/>
+    <template type="source" value="groupedColumnTable.wgt"/>
+    <custom>
+      <item includeInDesign="Always" layout="-1" mand="false" prompt="Columns to Group (, separated, 1 based)" name="COLS_TO_GROUP" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

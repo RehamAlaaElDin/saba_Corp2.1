@@ -1,0 +1,125 @@
+<script type = 'text/javascript' > //<![CDATA[
+function message(p_sMessage) {
+    if (window.Linkedin.isDebugMode) {
+        console.log(p_sMessage);
+    }
+}
+window.Linkedin = {
+    isDebugMode : false,
+    isCustomButtonClick : false,
+    _refresh : false,
+	ApiLoaded:false,
+    init : function() {
+        message('The Linkedin JS has loaded.');
+        message('You can now login.');
+		window.Linkedin.ApiLoaded=true;
+        window.Linkedin.triggerEvent('LinkedinApiLoaded');
+        message('LinkedinApiLoaded event triggered');
+    },
+    renderButton : function(el, text) {
+        el.innerHTML = text;
+    },
+    onAuthCallback : function(el) {
+        if (el) {
+		if (window.Linkedin.logout_text=="" || window.Linkedin.logout_text == undefined || window.Linkedin.logout_text == null){
+            Linkedin.renderButton(el, "Logout");
+			}
+			else { Linkedin.renderButton(el, window.Linkedin.logout_text);  }
+        }
+        message('You just logged in.');
+    },
+    onLogoutCallback : function(el) {
+        if (el) {
+            Linkedin.renderButton(el, "Login");
+        }
+        message('You just logged out.');
+    },
+    onLinkedInCustomButtonClick : function(el) {
+        window.Linkedin.isCustomButtonClick = true;
+        if (!IN.User.isAuthorized()) {
+            IN.UI.Authorize().place();
+        } else {
+            IN.User.logout();
+        }
+    },
+    triggerEvent : function(eventName) {
+        if (document.createEvent) {
+            var event = document.createEvent('Event');
+            event.initEvent(eventName, true, true);
+            document.dispatchEvent(event);
+        } else {
+            document.documentElement[eventName]++;
+        }
+    },
+    addEvent : function(eventName, callback) {
+        if (document.addEventListener) {
+            document.addEventListener(eventName, callback, false);
+        } else {
+            document.documentElement.attachEvent('onpropertychange', function(e) {
+                if (e.propertyName == eventName) {
+                    callback();
+                }
+            });
+        }
+
+    },
+    removeEvent : function(eventName, callback) {
+        if (document.removeEventListener) {
+            document.removeEventListener(eventName, callback, false);
+        } else {
+            document.documentElement.detachEvent('onpropertychange', callback);
+        }
+    },
+    getProfile : function(ids, fields, callback) {
+        if (fields) {
+            IN.API.Profile(ids).fields(fields).result(callback);
+        } else {
+            IN.API.Profile(ids).result(callback);
+        }
+    },
+    setInputsValue : function(DataStoreGroup, values) {
+        for (var prop in values) {
+            elName = DataStoreGroup.toUpperCase() + "." + prop.toUpperCase();
+            if (document.getElementsByName(elName).length > 0) {
+                document.getElementsByName(elName)[0].value = values[prop];
+            }
+        }
+
+    },
+    setInputValue : function(dataItemName, value) {
+        if (document.getElementsByName(dataItemName).length == 0) {
+            dataItemName = dataItemName.toUpperCase();
+        }
+        if (document.getElementsByName(dataItemName).length > 0) {
+            document.getElementsByName(dataItemName)[0].value = value;
+        }
+    },
+
+    getRefreshInd : function() {
+        return Linkedin._refresh;
+    },
+
+    setRefreshInd : function(state) {
+        Linkedin._refresh = state;
+    },
+
+    postProcessResponses : function(ns, ajaxCaller, result) {
+
+	
+        if ( Linkedin.getRefreshInd() ) {		
+		var isLD = (window["postProcessAjaxTetrisService"])?true:false;
+		if (typeof Linkedin.refreshLanguage=="function" && isLD && ajaxCaller ==="TetrisUpdate") {
+			Linkedin.refreshLanguage();
+			}		
+            IN.parse(document.body);
+            Linkedin.setRefreshInd(false);
+        }
+    }
+};
+</script>
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  api_key: $$ITEM.apikey$
+  onLoad:  Linkedin.init
+  authorize: true$%IF ITEM.language != ""$
+  lang:$$ITEM.language$$%ENDIF$    
+</script>

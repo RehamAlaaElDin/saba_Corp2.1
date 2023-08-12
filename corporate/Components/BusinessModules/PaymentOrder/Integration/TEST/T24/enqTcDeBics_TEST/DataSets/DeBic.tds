@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="317">
+  <!--enqTcDeBic-->
+<enqTcDeBic City="LIMBURG" CountryCode="NL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="2" Id="ABNRNLNL">
+    <Country Country="NETHERLANDS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="0"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="1" Institution="ABN AMRO BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="5" Id="AEIBCHGV">
+    <Country Country="SWITZERLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="3"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="4" Institution="AMERICAN EXPRESS BANK|SWITZERLAND"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="PARIS" CountryCode="FR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="8" Id="AEIBFRPP">
+    <Country Country="FRANCE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="6"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="7" Institution="AMERICAN EXPRESS BANK|FRANCE"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="11" Id="AEIBGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="9"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="10" Institution="AMERICAN EXPRESS BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="LU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="14" Id="AEIBLUBR">
+    <Country Country="LUXEMBOURG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="12"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="13" Institution="AMERICAN EXPRESS BANK|LUXEMBURG"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="AEIBSGSG" CountryCode="SG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="18" Id="AEIBSGSG">
+    <Country Country="SINGAPORE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="15"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="16" Institution="AEIBSGSG"/>
+    <Branch Branch="AEIBSGSG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="17"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="21" Id="AEIBUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="19"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="20" Institution="AMERICAN EXPRESS BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="NG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="23" Id="AFRINGPP">
+    <Country Country="NIGERIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="22"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="26" Id="AIBKGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="24"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="25" Institution="ALLIED IRISH BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="IE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="29" Id="AIBKIEDB">
+    <Country Country="IRELAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="27"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="28" Institution="ALLIED IRISH BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="SG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="32" Id="AIBKSGSG">
+    <Country Country="SINGAPORE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="30"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="31" Institution="ALIIED IRISH BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="SA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="34" Id="ALRASAPP">
+    <Country Country="SAUDI ARABIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="33"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="AU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="37" Id="ANZBAUML">
+    <Country Country="AUSTRALIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="35"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="36" Institution="ANZ GRINDLAYS BANK|AUSTRALIA"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="BARCGB22" CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="41" Id="BARCGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="38"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="39" Institution="BARCGB22"/>
+    <Branch Branch="BARCGB22" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="40"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="MY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="44" Id="BBMIMYKL">
+    <Country Country="MALAYSIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="42"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="43" Institution="BANK BUMIPUTR|MALAYSIA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="IT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="47" Id="BCITIT24">
+    <Country Country="ITALY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="45"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="46" Institution="BANCA COMMERCIALE ITALIAN|ITALY"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="PL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="50" Id="BKHDPL01">
+    <Country Country="POLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="48"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="49" Institution="BANK HANDLOW"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="IN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="53" Id="BKININMM">
+    <Country Country="INDIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="51"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="52" Institution="BANK OF INDIA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="56" Id="BKINUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="54"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="55" Institution="BANK OF INDIA"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="BKNZNZ22" CountryCode="NZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="60" Id="BKNZNZ22">
+    <Country Country="NEW ZEALAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="57"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="58" Institution="BKNZNZ22"/>
+    <Branch Branch="BKNZNZ22" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="59"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="63" Id="BOCAUS66">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="61"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="62" Institution="Bank of California|Bank of California"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="66" Id="BOENGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="64"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="65" Institution="BANK OF ENGLAND"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="69" Id="BOFAUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="67"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="68" Institution="BANK OF AMERICA"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="BOTKJPJT" CountryCode="JP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="73" Id="BOTKJPJT">
+    <Country Country="JAPAN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="70"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="71" Institution="BOTKJPJT"/>
+    <Branch Branch="BOTKJPJT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="72"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="76" Id="BRKIGBPP">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="74"/>
+    <Address Address="75 Fenchurch Street" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Address" DS_UID="75"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="79" Id="BYBLGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="77"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="78" Institution="BYBLOS BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="LB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="82" Id="BYBLLB21">
+    <Country Country="LEBANON" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="80"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="81" Institution="BYBLOS BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="85" Id="CAIBCAML">
+    <Country Country="CANADA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="83"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="84" Institution="CANADIAN IMPERIAL BANK|CANADA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="88" Id="CARGGBUK">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="86"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="87" Institution="CARGILL PLC"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="LU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="91" Id="CEDELULL">
+    <Country Country="LUXEMBOURG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="89"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="90" Institution="CEDEL|LUX'BURG"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="94" Id="CHASUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="92"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="93" Institution="CHASE MANHATTAN BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="97" Id="CITICHZR">
+    <Country Country="SWITZERLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="95"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="96" Institution="CITI BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="100" Id="CITIDEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="98"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="99" Institution="CITI BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="FR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="103" Id="CITIFRPP">
+    <Country Country="FRANCE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="101"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="102" Institution="CITI BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="106" Id="CITIUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="104"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="105" Institution="CITI BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="109" Id="COBADEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="107"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="108" Institution="COMMERZ BANK AG"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="FR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="112" Id="CRELFRPP">
+    <Country Country="FRANCE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="110"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="111" Institution="CREDIT LYONNAIS BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="CRESCHGV" CountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="116" Id="CRESCHGV">
+    <Country Country="SWITZERLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="113"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="114" Institution="Cresit Suisse"/>
+    <Branch Branch="Credit Suisse" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="115"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="119" Id="CRESCHLG">
+    <Country Country="SWITZERLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="117"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="118" Institution="CREDIT SUISSE PRIVATE BANK|SWITZERLAND"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="122" Id="CRESCHZR">
+    <Country Country="SWITZERLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="120"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="121" Institution="CREDIT SUISSE PRIVATE BANK|SWITZERLAND"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="ES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="125" Id="CRESESMD">
+    <Country Country="SPAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="123"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="124" Institution="CREDIT SUISSE PRIVATE BANK|SPAIN"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="SG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="128" Id="CRESSGSG">
+    <Country Country="SINGAPORE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="126"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="127" Institution="CREDIT SUISSE PRIVATE BANK|SINGAPORE"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="DABADKKK" CountryCode="DK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="132" Id="DABADKKK">
+    <Country Country="DENMARK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="129"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="130" Institution="Danske Bank"/>
+    <Branch Branch="DABADKKK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="131"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="135" Id="DEBDDEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="133"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="134" Institution="DEUTSCHE BUNDES BANK|GERMANY"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="138" Id="DEPOGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="136"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="137" Institution="DEPOSITORY 100460"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="141" Id="DEUTDEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="139"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="140" Institution="DEUTSCHE BANK AG|GERMANY"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="PH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="144" Id="DEVBPHML">
+    <Country Country="PHILIPPINES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="142"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="143" Institution="DEVELOPMENT BANK OF PHILIPPINE|MANIL"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="147" Id="DRESDEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="145"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="146" Institution="DRESDNER BANK AG|GERMANY"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="ESSESESS" CountryCode="SE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="151" Id="ESSESESS">
+    <Country Country="SWEDEN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="148"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="149" Institution="ESSESESS"/>
+    <Branch Branch="ESSESESS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="150"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="EURODEEU" CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="155" Id="EURODEEU">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="152"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="153" Institution="EURODEEU"/>
+    <Branch Branch="EURODEEU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="154"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="NL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="158" Id="FINBNL2R">
+    <Country Country="NETHERLANDS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="156"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="157" Institution="ABN AMRO BANK N.V"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="TEL-AVIV" CountryCode="IL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="162" Id="FIRBILIT">
+    <Country Country="ISRAEL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="159"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="160" Institution="FIRST INTERNATIONAL BANK"/>
+    <Branch Branch="TEL-AVIV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="161"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="JP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="165" Id="FUJIJPJT">
+    <Country Country="JAPAN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="163"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="164" Institution="FUJI BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="NL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="168" Id="GRNBNL2R">
+    <Country Country="NETHERLANDS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="166"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="167" Institution="GARANTI BANK (ROTTERDAM)|NETHERLANDS"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="LK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="171" Id="HATTLKCL">
+    <Country Country="SRI LANKA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="169"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="170" Institution="HATTON NATIONAL BANK|SRILANKA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="PL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="174" Id="HLIDPLWA">
+    <Country Country="POLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="172"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="173" Institution="Halemba Industries"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="177" Id="HSBCGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="175"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="176" Institution="HONGKONG AND SHANGHAI BANKING|CORPORATION (HSBC)"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="HSBCHKHK" CountryCode="HK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="181" Id="HSBCHKHK">
+    <Country Country="HONG KONG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="178"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="179" Institution="HSBCHKHK|CORPORATION"/>
+    <Branch Branch="HSBCHKHK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="180"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="SG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="184" Id="HSBCSGSG">
+    <Country Country="SINGAPORE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="182"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="183" Institution="HONGKONG AND SHANGHAI BANKING|CORPORATION(HSBC)"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="187" Id="IRVTUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="185"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="186" Institution="BANK OF NEWYORK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="BS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="190" Id="JEPBBSNA">
+    <Country Country="BAHAMAS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="188"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="189" Institution="JERSEY PRIVATE BANK AND TRUST CO|NASSA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="193" Id="JPMGUSCH">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="191"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="192" Institution="JP MORGAN CHASE"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="LY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="196" Id="LAFBLY22">
+    <Country Country="LIBYAN ARAB JAMAHIRIYA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="194"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="195" Institution="LIBYAN ARAB FOREIGN BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="199" Id="LEHMUSNY">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="197"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="198" Institution="LEHMAN BROTHERS"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="202" Id="LOYDGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="200"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="201" Institution="LLOYDS TSB BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="JE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="205" Id="LOYDJEJE">
+    <Country Country="JERSEY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="203"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="204" Institution="LLOYDS TSB - OFFSHORE PRIVATE BANK|JERSEY"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="AE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="208" Id="MASHAEDB">
+    <Country Country="UNITED ARAB EMIRATES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="206"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="207" Institution="MASHREQ BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="EG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="211" Id="MASHEGCA">
+    <Country Country="EGYPT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="209"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="210" Institution="Mashreqbank (Cairo)|Mashreqbank (Cairo)"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="214" Id="MASHGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="212"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="213" Institution="MASHREQ BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="LK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="217" Id="MASHLKCL">
+    <Country Country="SRI LANKA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="215"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="216" Institution="MASHREQ BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="220" Id="MASHUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="218"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="219" Institution="MASHREQ BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="223" Id="MELFUSNY">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="221"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="222" Institution="MELLON FINANCIAL SERVICES"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="MELYUS33" CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="227" Id="MELYUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="224"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="225" Institution="MELYUS33|NEWYORK"/>
+    <Branch Branch="MELYUS33" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="226"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="JP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="230" Id="MITBJPJT">
+    <Country Country="JAPAN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="228"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="229" Institution="MISUTI BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="233" Id="MSDWUSNY">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="231"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="232" Institution="MORGAN STANLEY"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="236" Id="NATWGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="234"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="235" Institution="NATIONAL WESTMINSTER BANK|UNITED KINGDOM"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="Abudabi" CountryCode="AE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="240" Id="NBADAEAA">
+    <Country Country="UNITED ARAB EMIRATES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="237"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="238" Institution="National Bank of Abudabi"/>
+    <Branch Branch="Abudabi" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="239"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="243" Id="NBGCCAML">
+    <Country Country="CANADA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="241"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="242" Institution="NATIONAL BANK OF GREECE|CANADA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="246" Id="NBGRGRAT">
+    <Country Country="GREECE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="244"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="245" Institution="NATIONAL BANK OF GREECE|GREECE"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="NBPLPLPW" CountryCode="PL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="250" Id="NBPLPLPW">
+    <Country Country="POLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="247"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="248" Institution="NBPLPLPW"/>
+    <Branch Branch="NBPLPLPW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="249"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="HK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="253" Id="NEDCHKHK">
+    <Country Country="HONG KONG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="251"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="252" Institution="NEDCOR (ASIA)"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="NL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="256" Id="NEDCNL2R">
+    <Country Country="NETHERLANDS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="254"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="255" Institution="NEDCO"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="259" Id="NEDCUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="257"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="258" Institution="NEDCO"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="NEDSZAJJ" CountryCode="ZA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="263" Id="NEDSZAJJ">
+    <Country Country="SOUTH AFRICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="260"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="261" Institution="NEDSZAJJ"/>
+    <Branch Branch="NEDSZAJJ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="262"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="JP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="266" Id="NMRSJPJT">
+    <Country Country="JAPAN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="264"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="265" Institution="Nomura Securities Int Ltd|NOMURA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="RE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="268" Id="NOSTRECS">
+    <Country Country="REUNION" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="267"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="GERMANY" CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="271" Id="NOVADEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="269"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="270" Institution="NOVARTIS"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="274" Id="PNCCUS33">
+    <Country Country="UNITED STATES OF AMERICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="272"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="273" Institution="PNC BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="VIENNA" CountryCode="AT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="277" Id="RAFBATVA">
+    <Country Country="AUSTRIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="275"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="276" Institution="RAIFFEISSEN ZENTRAL BANK|AUSTRIA"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="PL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="280" Id="RAFBPLWA">
+    <Country Country="POLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="278"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="279" Institution="RAIFFEISSEN ZENTRAL BANK|POLAND"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="283" Id="RBCDCATO">
+    <Country Country="CANADA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="281"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="282" Institution="RBC DEXIA INVESTOR SERVICES"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="286" Id="RBOSGB3L">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="284"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="285" Institution="ROYAL BANK OF SCOTLAND"/>
+  </enqTcDeBic>
+  <enqTcDeBic City="SBININBB" CountryCode="IN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="290" Id="SBININBB">
+    <Country Country="INDIA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="287"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="288" Institution="SBININBB"/>
+    <Branch Branch="SBININBB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Branch" DS_UID="289"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="FR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="293" Id="SOGEFRPP">
+    <Country Country="FRANCE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="291"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="292" Institution="SOCIETE GENERAL"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="296" Id="STDBGB22">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="294"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="295" Institution="STANDARD BANK (LONDON) LIMTIED|LONDON"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="JE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="299" Id="STDBJEJE">
+    <Country Country="JERSEY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="297"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="298" Institution="STANDARD BANK OFFSHORE LIMITED|(JERSEY)"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="ZA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="302" Id="STDBZAJH">
+    <Country Country="SOUTH AFRICA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="300"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="301" Institution="STANDARD BANK OF SOUTH AFRICA|JOHANNESBURG"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="EC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="304" Id="STKRECON">
+    <Country Country="ECUADOR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="303"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="JP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="307" Id="SUMIJPJT">
+    <Country Country="JAPAN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="305"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="306" Institution="SUMITOMO BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="310" Id="TDWHGBUK">
+    <Country Country="GREAT BRITAIN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="308"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="309" Institution="TD WATERHOUSE"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="313" Id="UBSBCHZR">
+    <Country Country="SWITZERLAND" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="311"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="312" Institution="UBS BANK"/>
+  </enqTcDeBic>
+  <enqTcDeBic CountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[A]" DS_UID="316" Id="WELBDEFF">
+    <Country Country="GERMANY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Country" DS_UID="314"/>
+    <Institution DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDeBic[C].Institution" DS_UID="315" Institution="WESTDEUTSCHE LANDESBANK|GERMANY"/>
+  </enqTcDeBic>
+</DataSetRoot>

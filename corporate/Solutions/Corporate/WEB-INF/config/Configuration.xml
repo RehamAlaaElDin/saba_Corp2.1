@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Actions>
+		<Action>
+			<Key>Login</Key>
+			<Name>Login</Name>
+			<Phase>Login.Login</Phase>
+		</Action>
+		<Action>
+			<Key>HomePage</Key>
+			<Name>Home Page</Name>
+			<Phase>Home.Home</Phase>
+		</Action>	
+		<Action>
+			<Key>ManageConsents</Key>
+			<Name>ManageConsents</Name>
+			<Phase>Home.ManageConsents</Phase>
+		</Action>
+		<Action>
+			<Key>Accounts</Key>
+			<Name>Accounts Home</Name>
+			<Phase>Home.Accounts</Phase>
+		</Action>
+		
+		<Action>
+			<Key>TransactionOverview</Key>
+			<Name>Transaction Overview</Name>
+			<Phase>Home.TransactionOverview</Phase>
+		</Action>
+		
+		<Action>
+			<Key>Messages</Key>
+			<Name>Messages</Name>
+			<Phase>Home.Messages</Phase>
+		</Action>
+
+		<Action>
+			<Key>Loans</Key>
+			<Name>Loans Home</Name>
+			<Phase>Home.Loans</Phase>
+		</Action>
+
+		<Action>
+			<Key>FindATM</Key>
+			<Name>Find ATM</Name>
+			<Phase>Home.FindATM</Phase>
+		</Action>
+
+		<Action>
+			<Key>Deposits</Key>
+			<Name>Deposits Home</Name>
+			<Phase>Home.Deposits</Phase>
+		</Action>
+		
+		<Action>
+			<Key>ManagePayees</Key>
+			<Name>Beneficiary Home</Name>
+			<Phase>Home.ManagePayees</Phase>
+		</Action>
+		
+		<Action>
+			<Key>LogOff</Key>
+			<Name>Log Off</Name>
+			<Phase>Home.LogOff</Phase>
+		</Action>
+		
+		<Action>
+			<Key>Discover</Key>
+			<Name>Discover</Name>
+			<Phase>Home.Discover</Phase>
+		</Action>
+		
+		<Action>
+			<Key>ApplicationSettings</Key>
+			<Name>ApplicationSettings</Name>
+			<Phase>Home.ApplicationSettings</Phase>
+		</Action>
+		
+		<Action>
+			<Key>CustomerProfile</Key>
+			<Name>CustomerProfile</Name>
+			<Phase>Home.CustomerProfile</Phase>
+		</Action>
+		
+		<Action>
+			<Key>ExchangeRates</Key>
+			<Name>Exchange Rates</Name>
+			<Phase>Home.ExchangeRates</Phase>
+		</Action>
+		<Action>
+			<Key>OpportunityDetails</Key>
+			<Name>Opportunity Details</Name>
+			<Phase>Home.OpportunityDetails</Phase>
+		</Action>	
+
+		<Action>
+			<Key>InterstitialPage</Key>
+			<Name>Interstitial Page</Name>
+			<Phase>InterstitialPage.InterstitialPage</Phase>
+		</Action>	
+		
+		<Action>
+			<Key>Understand</Key>
+			<Name>Understand</Name>
+			<Phase>Home.Understand</Phase>
+		</Action>
+		
+		<Action>
+			<Key>Plan</Key>
+			<Name>Plan</Name>
+			<Phase>Home.Plan</Phase>
+		</Action>
+		
+		<Action>
+			<Key>UncategorisedTransactions</Key>
+			<Name>UncategorisedTransactions</Name>
+			<Phase>Home.UncategorisedTransactions</Phase>
+		</Action>
+		<Action>
+			<Key>LoansList</Key>
+			<Name>Loans List</Name>
+			<Phase>Home.LoansList</Phase>
+		</Action>
+		<Action>
+			<Key>DepositsList</Key>
+			<Name>Deposits List</Name>
+			<Phase>Home.DepositsList</Phase>
+		</Action>
+		<Action>
+			<Key>ConsolidatedStatements</Key>
+			<Name>Consolidated Statements</Name>
+			<Phase>Home.ConsolidatedStatements</Phase>
+		</Action>
+		<Action>
+			<Key>PendingTransfers</Key>
+			<Name>Pending Transfers</Name>
+			<Phase>Home.PendingTransfers</Phase>
+		</Action>
+		<Action>
+			<Key>PendingPayments</Key>
+			<Name>Pending Payments</Name>
+			<Phase>Home.PendingPayments</Phase>
+		</Action>
+		<Action>
+			<Key>PendingPayees</Key>
+			<Name>Pending Payees</Name>
+			<Phase>Home.PendingPayees</Phase>
+		</Action>
+		<Action>
+			<Key>PendingStandingOrders</Key>
+			<Name>Pending Standing Orders</Name>
+			<Phase>Home.PendingStandingOrders</Phase>
+		</Action>
+		<Action>
+			<Key>PendingSweeps</Key>
+			<Name>Pending Sweeps</Name>
+			<Phase>Home.PendingSweeps</Phase>
+		</Action>
+			<Action>
+			<Key>PendingCheques</Key>
+			<Name>Pending Cheques</Name>
+			<Phase>Home.PendingCheques</Phase>
+		</Action>
+		<Action>
+			<Key>BulkPayments</Key>
+			<Name>Bulk Payments Home</Name>
+			<Phase>Home.BulkPayments</Phase>
+		</Action>
+		<Action>
+			<Key>PendingBulkPayments</Key>
+			<Name>Pending Bulk Payments Home</Name>
+			<Phase>Home.PendingBulkPayments</Phase>
+		</Action>
+		<Action>
+			<Key>IssuedGuarantees</Key>
+			<Name>Issued Guarantees Home</Name>
+			<Phase>Home.IssuedGuarantees</Phase>
+		</Action>
+		<Action>
+			<Key>GuaranteeIssuance</Key>
+			<Name>Guarantee Issuance Home</Name>
+			<Phase>Home.GuaranteeIssuance</Phase>
+		</Action>
+		<Action>
+			<Key>TradeFinance</Key>
+			<Name>Trade Finance Home</Name>
+			<Phase>Home.Dashboard</Phase>
+		</Action> 
+		<Action>
+			<Key>ImportLC</Key>
+			<Name>Import LC Home</Name>
+			<Phase>Home.ImportLC</Phase>
+		</Action>
+		<Action>
+			<Key>ReceivedGuarantees</Key>
+			<Name>Received Guarantees Home</Name>
+			<Phase>Home.ReceivedGuarantees</Phase>
+		</Action>
+		<Action>
+			<Key>LCIssuance</Key>
+			<Name>LC Issuance Home</Name>
+			<Phase>Home.LCIssuance</Phase>
+		</Action>
+		<Action>
+			<Key>ExportLC</Key>
+			<Name>Export LC Home</Name>
+			<Phase>Home.ExportLC</Phase>
+		</Action>
+		<Action>
+			<Key>InwardCollections</Key>
+			<Name>Inward Collections Home</Name>
+			<Phase>Home.InwardCollections</Phase>
+		</Action>
+		<Action>
+			<Key>OutwardCollections</Key>
+			<Name>Outward Collections Home</Name>
+			<Phase>Home.OutwardCollections</Phase>
+		</Action>
+		<Action>
+			<Key>DocumentsAndConditions</Key>
+			<Name>Documents and Conditions Home</Name>
+			<Phase>Home.DocumentsAndConditions</Phase>
+		</Action>
+		<Action>
+			<Key>OutwardCollectionsRequest</Key>
+			<Name>Outward Collections Request Home</Name>
+			<Phase>Home.OutwardCollectionsRequest</Phase>
+		</Action>
+		<Action>
+			<Key>InwardCollectionsRequest</Key>
+			<Name>Inward Collections Request Home</Name>
+			<Phase>Home.InwardCollectionsRequest</Phase>
+		</Action>
+		<Action>
+			<Key>TCAdministration</Key>
+			<Name>TC User Administation</Name>
+			<Phase>Home.TCAdministration</Phase>
+		</Action>
+	</Actions>
+
+	<Dashboard>
+		<Action>
+			<Key>Import LC</Key>
+			<Phase>ImportLC</Phase>
+		</Action>	
+		<Action>
+			<Key>Letter of Credit</Key>
+			<Phase>ImportLC</Phase>
+		</Action>
+		<Action>
+			<Key>Import LC Amendment</Key>
+			<Phase>ImportLC</Phase>
+		</Action>
+		<Action>
+			<Key>Import LC Drawings</Key>
+			<Phase>ImportLC</Phase>
+		</Action>
+		<Action>
+			<Key>Export LC Drawings</Key>
+			<Phase>ExportLC</Phase>
+		</Action>
+		<Action>
+			<Key>Guarantees</Key>
+			<Phase>IssuedGuarantees</Phase>
+		</Action>
+		<Action>
+			<Key>Amendment to Guarantee</Key>
+			<Phase>IssuedGuarantees</Phase>
+		</Action>
+		<Action>
+			<Key>Claim under Guarantee</Key>
+			<Phase>IssuedGuarantees</Phase>
+		</Action>
+		<Action>
+			<Key>Claim under Received Guarantee</Key>
+			<Phase>ReceivedGuarantees</Phase>
+		</Action>
+		<Action>
+			<Key>Export Drawings</Key>
+			<Phase>ExportLC</Phase>
+		</Action>
+		<Action>
+			<Key>Inward Collections</Key>
+			<Phase>InwardCollections</Phase>
+		</Action>
+		<Action>
+			<Key>Outward Collections</Key>
+			<Phase>OutwardCollections</Phase>
+		</Action>
+		<Action>
+			<Key>Export LC Amendment</Key>
+			<Phase>ExportLC</Phase>
+		</Action>
+		<Action>
+			<Key>Collection</Key>
+			<Phase>OutwardCollections</Phase>
+		</Action>
+	</Dashboard>
+	
+	<LetterOfCredits>
+		<Action>
+			<Key>Import LC</Key>
+			<InputterPhase>LCIssuance.LCIssuance</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ImportLC</AuthoriserPhase>
+		</Action>	
+		<Action>
+			<Key>Letter of Credit</Key>
+			<InputterPhase>LCIssuance.LCIssuance</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ImportLC</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Import LC Amendment</Key>
+			<InputterPhase>ImportLetterOfCredit.ImportLCAmendment</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ImportLCAmendment</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Import LC Drawings</Key>
+			<InputterPhase>ImportLetterOfCredit.ImportLCDrawings</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ImportLCDrawings</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Export LC Drawings</Key>
+			<InputterPhase>ExportLetterOfCredit.ExportLCDrawings</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ExportLCDrawings</AuthoriserPhase>
+		</Action>	
+		<Action>
+			<Key>Export Drawings</Key>
+			<InputterPhase>ExportLetterOfCredit.ExportLCDrawings</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ExportLCDrawings</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Inward Collections</Key>
+			<InputterPhase>InwardCollections.InwardCollectionsRequest</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.InwardCollections</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Outward Collections</Key>
+			<InputterPhase>OutwardCollectionsrequest.OutwardCollections</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.OutwardCollections</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Export LC Amendment</Key>
+			<InputterPhase>ExportLetterOfCredit.ExportLCAmendment</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.ExportLCAmendment</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Collection</Key>
+			<InputterPhase>OutwardCollectionsrequest.OutwardCollections</InputterPhase>
+			<AuthoriserPhase>LetterOfCreditAuthorisation.OutwardCollections</AuthoriserPhase>
+		</Action>
+	</LetterOfCredits>
+	
+	<Guarantees>
+		<Action>
+			<Key>Guarantees</Key>
+			<InputterPhase>GuaranteeIssuance.GuaranteeIssuance</InputterPhase>
+			<AuthoriserPhase>GuaranteeAuthorisation.Issuance</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Amendment to Guarantee</Key>
+			<InputterPhase>IssuedGuarantees.GuaranteeAmendment</InputterPhase>
+			<AuthoriserPhase>GuaranteeAuthorisation.Amendment</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Claim under Guarantee</Key>
+			<InputterPhase>IssuedGuarantees.ClaimsReceived</InputterPhase>
+			<AuthoriserPhase>GuaranteeAuthorisation.ClaimsReceived</AuthoriserPhase>
+		</Action>
+		<Action>
+			<Key>Claim under Received Guarantee</Key>
+			<InputterPhase>ReceivedGuarantees.GuaranteeClaim</InputterPhase>
+			<AuthoriserPhase>GuaranteeAuthorisation.ClaimsInitiated</AuthoriserPhase>
+		</Action>		
+	</Guarantees>
+	
+	<Currencies>
+		<Currency>
+			<Key>USD</Key>
+			<Symbol>&#x24;</Symbol>
+			<Order>1</Order>
+			<BaseCurrency>Y</BaseCurrency>
+		</Currency>
+		<Currency>
+			<Key>GBP</Key>
+			<Symbol>&#xA3;</Symbol>
+			<Order>2</Order>
+		</Currency>
+		<Currency>
+			<Key>EUR</Key>
+			<Symbol>&#x20AC;</Symbol>
+			<Order>3</Order>
+		</Currency>
+		<Currency>
+			<Key>JPY</Key>
+			<Symbol>&#xA5;</Symbol>
+			<Order>4</Order>
+		</Currency>
+		<Currency>
+			<Key>AED</Key>
+			<Symbol>AED</Symbol>
+			<Order>5</Order>
+		</Currency>
+		<Currency>
+			<Key>ARS</Key>
+			<Symbol>ARS</Symbol>
+			<Order>6</Order>
+		</Currency>
+		<Currency>
+			<Key>AUD</Key>
+			<Symbol>AUD</Symbol>
+			<Order>7</Order>
+		</Currency>
+		<Currency>
+			<Key>CAD</Key>
+			<Symbol>CAD</Symbol>
+			<Order>8</Order>
+		</Currency>
+		<Currency>
+			<Key>CHF</Key>
+			<Symbol>CHF</Symbol>
+			<Order>9</Order>
+		</Currency>
+		<Currency>
+			<Key>DKK</Key>
+			<Symbol>DKK</Symbol>
+			<Order>10</Order>
+		</Currency>
+		<Currency>
+			<Key>HKD</Key>
+			<Symbol>HKD</Symbol>
+			<Order>11</Order>
+		</Currency>
+		<Currency>
+			<Key>INR</Key>
+			<Symbol>INR</Symbol>
+			<Order>12</Order>
+		</Currency>
+		<Currency>
+			<Key>KWD</Key>
+			<Symbol>KWD</Symbol>
+			<Order>13</Order>
+		</Currency>
+		<Currency>
+			<Key>LBP</Key>
+			<Symbol>LBP</Symbol>
+			<Order>14</Order>
+		</Currency>
+		<Currency>
+			<Key>LKR</Key>
+			<Symbol>LKR</Symbol>
+			<Order>15</Order>
+		</Currency>
+		<Currency>
+			<Key>NPR</Key>
+			<Symbol>NPR</Symbol>
+			<Order>16</Order>
+		</Currency>
+		<Currency>
+			<Key>NZD</Key>
+			<Symbol>NZD</Symbol>
+			<Order>17</Order>
+		</Currency>
+		<Currency>
+			<Key>PHP</Key>
+			<Symbol>PHP</Symbol>
+			<Order>18</Order>
+		</Currency>
+		<Currency>
+			<Key>PLN</Key>
+			<Symbol>PLN</Symbol>
+			<Order>19</Order>
+		</Currency>
+		<Currency>
+			<Key>SAR</Key>
+			<Symbol>SAR</Symbol>
+			<Order>20</Order>
+		</Currency>
+		<Currency>
+			<Key>SEK</Key>
+			<Symbol>SEK</Symbol>
+			<Order>21</Order>
+		</Currency>
+		<Currency>
+			<Key>SGD</Key>
+			<Symbol>SGD</Symbol>
+			<Order>22</Order>
+		</Currency>
+		<Currency>
+			<Key>THB</Key>
+			<Symbol>THB</Symbol>
+			<Order>23</Order>
+		</Currency>
+		<Currency>
+			<Key>TWD</Key>
+			<Symbol>TWD</Symbol>
+			<Order>24</Order>
+		</Currency>
+		<Currency>
+			<Key>XAG</Key>
+			<Symbol>XAG</Symbol>
+			<Order>25</Order>
+		</Currency>
+		<Currency>
+			<Key>XAU</Key>
+			<Symbol>XAU</Symbol>
+			<Order>26</Order>
+		</Currency>
+		<Currency>
+			<Key>ZAR</Key>
+			<Symbol>ZAR</Symbol>
+			<Order>27</Order>
+		</Currency>
+	</Currencies>
+
+	<Languages>
+		<Language>
+			<Key>1</Key>
+			<Code>en</Code>
+			<Alias>English</Alias>
+			<Name>English</Name>
+			<Default>Y</Default>
+		</Language>
+		<Language>
+			<Key>2</Key>
+			<Code>fr</Code>
+			<Alias>French</Alias>
+			<Name>French</Name>
+			<Default>N</Default>
+		</Language>
+	</Languages>
+
+	<TransactionCodes>
+		<TransactionCode>
+			<Description>Internal Credit</Description>
+			<Code>121</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Internal Debit</Description>
+			<Code>282</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Standing Order Credit</Description>
+			<Code>139</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Standing Order</Description>
+			<Code>214</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Account Transfer Charges</Description>
+			<Code>234</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Outward Cheque - Dr</Description>
+			<Code>201</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Outward Loc Clearing Payment</Description>
+			<Code>212</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Outward Clearing Charges</Description>
+			<Code>232</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Outward Telex Payment</Description>
+			<Code>210</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>Outward Telex-Swift Charges</Description>
+			<Code>230</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>POA credit</Description>
+			<Code>55</Code>
+		</TransactionCode>
+		<TransactionCode>
+			<Description>POA Debit</Description>
+			<Code>1</Code>
+		</TransactionCode>
+	</TransactionCodes>
+	<CardStatusCodes>
+		<CardStatus>
+			<Key>BLOCKED</Key>
+			<Description>Block card usage (until you un-block it)</Description>
+			<Status>ACTIVE</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>LOST</Key>
+			<Description>Report card lost</Description>
+			<Status>ACTIVE</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>STOLEN</Key>
+			<Description>Report card stolen</Description>
+			<Status>ACTIVE</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>DAMAGED</Key>
+			<Description>Report card damaged</Description>
+			<Status>ACTIVE</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>ACTIVE</Key>
+			<Description>Activate card (card received safely)</Description>
+			<Status>CARD.ISSUED</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>LOST</Key>
+			<Description>Report card Lost</Description>
+			<Status>CARD.ISSUED</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>STOLEN</Key>
+			<Description>Report card Stolen</Description>
+			<Status>CARD.ISSUED</Status>
+		</CardStatus>		
+		<CardStatus>
+			<Key>DAMAGED</Key>
+			<Description>Report card damaged</Description>
+			<Status>CARD.ISSUED</Status>
+		</CardStatus>		
+		<CardStatus>
+			<Key>UNBLOCK</Key>
+			<Description>Un-block card (allow card to be used again)</Description>
+			<Status>BLOCKED</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>LOST</Key>
+			<Description>Report card lost</Description>
+			<Status>BLOCKED</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>STOLEN</Key>
+			<Description>Report card stolen</Description>
+			<Status>BLOCKED</Status>
+		</CardStatus>
+		<CardStatus>
+			<Key>ACTIVE</Key>
+			<Description>Activate card (card received safely)</Description>
+			<Status>NOT.ACTIVATED</Status>
+		</CardStatus>		
+		<CardStatus>
+			<Key>DAMAGED</Key>
+			<Description>Report card damaged</Description>
+			<Status>NOT.ACTIVATED</Status>
+		</CardStatus>			
+	</CardStatusCodes>
+	<AcBalanceTypes>
+		<AcBalanceType>
+			<BalanceType>CURBALANCE</BalanceType>
+			<Description>Account Balance</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>ACCCRINTEREST</BalanceType>
+			<Description>Credit Interest (Accrued)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>DUECRINTEREST</BalanceType>
+			<Description>Due balance for CR Interest</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>PAYCRINTEREST</BalanceType>
+			<Description>Credit Interest (Pay)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>ACCDORMANCYFEE</BalanceType>
+			<Description>Dormancy Fee (Accrued)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>DUEDORMANCYFEE</BalanceType>
+			<Description>Dormancy Fee (Due)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>PAYDORMANCYFEE</BalanceType>
+			<Description>Dormancy Fee (Pay Out)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>ACCDRINTEREST</BalanceType>
+			<Description>Debit Interest (Accrued)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>DUEDRINTEREST</BalanceType>
+			<Description>Debit Interest (Due)</Description>
+		</AcBalanceType>
+		<AcBalanceType>
+			<BalanceType>PAYDRINTEREST</BalanceType>
+			<Description>Debit Interest (Pay)</Description>
+		</AcBalanceType>
+	</AcBalanceTypes>
+	<AcSweepTypes>
+		<AcSweepType>
+			<Key>ARMAIN</Key>
+			<SweepType>AR.MAINTAIN</SweepType>
+		</AcSweepType>
+		<AcSweepType>
+			<Key>ARSURP</Key>
+			<SweepType>AR.SURPLUS</SweepType>
+		</AcSweepType>
+		<AcSweepType>
+			<Key>ARTWOWAY</Key>
+			<SweepType>AR.TWOWAY</SweepType>
+		</AcSweepType>
+	</AcSweepTypes>
+	<PSD2Consents>
+		<PSD2Consent>
+            <Key>allPsd2</Key>
+            <Title>Account Information|Balance Details|Transactions History</Title>
+			<Description>Account information for your selected account(s) including; Account Identifiers, Account Name(s), Account Currency, Account Type, Account Status, Additional Account Details.|Balance details of the selected account(s) including a range of available, opening and closed balances. This will include and exclude additional overdrafts or limits linked to you and your accounts.|A list of transactions for your selected account(s). The data will include payer and payee details, amount (including currency), transaction types, references and additional transaction transparency details where applicable.</Description>                                   
+		</PSD2Consent>  
+		<PSD2Consent>
+            <Key>accounts</Key>
+            <Title>Account Information</Title>
+			<Description>Account information for your selected account(s) including; Account Identifiers, Account Name(s), Account Currency, Account Type, Account Status, Additional Account Details.</Description>
+		</PSD2Consent>          
+		<PSD2Consent>
+            <Key>balances</Key>
+            <Title>Balance Details</Title>                  
+			<Description>Balance details of the selected account(s) including a range of available, opening and closed balances. This will include and exclude additional overdrafts or limits linked to you and your accounts.</Description>
+		</PSD2Consent>          
+		<PSD2Consent>
+            <Key>transactions</Key>
+            <Title>Transactions History</Title>
+			<Description>A list of transactions for your selected account(s). The data will include payer and payee details, amount (including currency), transaction types, references and additional transaction transparency details where applicable.</Description>                                   
+		</PSD2Consent>          
+	</PSD2Consents>
+</Configuration>

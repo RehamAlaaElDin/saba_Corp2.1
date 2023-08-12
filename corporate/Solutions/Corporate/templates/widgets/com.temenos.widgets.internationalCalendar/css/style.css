@@ -1,0 +1,17 @@
+.-ec-calendar-image- {
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+    opacity: .8;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+
+.datepicker-inline .datepicker{
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+.datepicker {
+	z-index:1050;
+}

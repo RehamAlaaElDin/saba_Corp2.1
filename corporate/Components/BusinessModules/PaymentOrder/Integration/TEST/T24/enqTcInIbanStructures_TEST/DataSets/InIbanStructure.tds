@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="25">
+  <!--enqTcInIbanStructure-->
+<enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="0" IbanCountryCode="AT" Id="AT"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="1" IbanCountryCode="BE" Id="BE"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="2" IbanCountryCode="BG" Id="BG"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="3" IbanCountryCode="CY" Id="CY"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="4" IbanCountryCode="DE" Id="DE"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="5" IbanCountryCode="DK" Id="DK"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="6" IbanCountryCode="EE" Id="EE"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="7" IbanCountryCode="ES" Id="ES"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="8" IbanCountryCode="FI" Id="FI"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="9" IbanCountryCode="FR" Id="FR"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="10" IbanCountryCode="GB" Id="GB"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="11" IbanCountryCode="GR" Id="GR"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="12" IbanCountryCode="HU" Id="HU"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="13" IbanCountryCode="IE" Id="IE"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="14" IbanCountryCode="LT" Id="LT"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="15" IbanCountryCode="LU" Id="LU"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="16" IbanCountryCode="LV" Id="LV"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="17" IbanCountryCode="MT" Id="MT"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="18" IbanCountryCode="NL" Id="NL"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="19" IbanCountryCode="PL" Id="PL"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="20" IbanCountryCode="PT" Id="PT"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="21" IbanCountryCode="RO" Id="RO"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="22" IbanCountryCode="SE" Id="SE"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="23" IbanCountryCode="SI" Id="SI"/>
+  <enqTcInIbanStructure DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcInIbanStructure[A]" DS_UID="24" IbanCountryCode="SK" Id="SK"/>
+</DataSetRoot>

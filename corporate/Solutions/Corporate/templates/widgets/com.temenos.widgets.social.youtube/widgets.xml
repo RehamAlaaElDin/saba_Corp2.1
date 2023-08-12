@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget icon="images/youtube-icon-small.jpg" name="Youtube" type="Item:">
+    <template type="source" value="youtube.wgt"/>
+    <custom>
+      <item help="You can find this value in the youtube video link, after &quot; /watch?v= &quot;. It can be succeeded by &amp;." includeInDesign="true" layout="-1" mand="true" name="VideoID" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="640" help="The width of the player." includeInDesign="true" layout="-1" mand="false" name="Width" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="390" help="The height of the player." includeInDesign="true" layout="-1" mand="false" name="Height" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="N" help="Autoplay function: 1=yes, 0=no" includeInDesign="true" layout="-1" mand="false" name="Autoplay" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="Y" help="Check the box to see available this option." includeInDesign="true" layout="-1" mand="false" name="Fullscreen" prompt="Allow Full Screen" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="N" help="Check the box to see related videos at the end." includeInDesign="true" layout="-1" mand="false" name="RelatedVideos" prompt="Related Videos" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="Y" help="Check the box to display the player controls." includeInDesign="true" layout="-1" mand="false" name="Controls" prompt="Show Controls" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="dark" help="Select the theme of the control bar." includeInDesign="true" layout="-1" mand="false" name="Theme" type="javax.swing.JComboBox" typeValue="dark|light" usage="7"/>
+      <item defaultValue="N" help="Check the box to see the video title and the uploaders name." includeInDesign="true" layout="-1" mand="false" name="Showinfo" prompt="Show Info" type="com.acquire.util.FocusCheckbox" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

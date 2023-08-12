@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="app2app-message-relay-plugin"
+        version="1.0.0">
+
+    <name>App2AppMessageRelayPlugin</name>
+
+    <description>
+        Temenos UXP plugin that provides a way for messages to flow between an UXP-built mobile app and LuxTrust components. Please note that the IOS part of this plugin is not a replacement for default UIWebView, but just to open in WKWebView.
+    </description>
+    <license>commercial</license>
+
+    <keywords>phonegap,iOS,phone,WKWebView</keywords>
+	
+	<!-- Please provide the url scheme for service provider app, default value is 'SP0024' -->
+    <preference name="CLIENT_URL_SCHEME" default="SP0024" />
+	<!-- Please provide the name of IFRAME used in the app for LuxTrust integration, default value is 'orelyIframe'. Input "NONE" if no iframe integration is required.-->
+	<preference name="IFRAME_NAME" default="orelyIframe" />
+	<!-- Please provide the Orely url, for Testing: 'https://orely.test.luxtrust.com' & for Production: 'https://orely.luxtrust.lu'  -->
+	<preference name="ORELY_URL" default="https://orely.test.luxtrust.com" />
+
+    <!-- ios -->
+    <platform name="ios">	
+        <js-module src="www/inappbrowserwkwebview.js" name="inappbrowserwkwebview">
+            <clobbers target="cordova.InAppBrowserWKWebView.open" />
+            <clobbers target="CLIENT_URL_SCHEMEwindow.open" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="InAppBrowserWKWebView">
+                <param name="ios-package" value="CDVInAppBrowserWKWebView" />
+            </feature>
+        </config-file>
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>$CLIENT_URL_SCHEME</string>
+                    </array>
+                </dict>
+            </array>
+        </config-file>
+
+        <config-file target="*hybridConfig.plist" parent="app2appConfiguration">
+			<dict>
+				<key>clientUrlScheme</key>
+				  <string>$CLIENT_URL_SCHEME</string>
+				<key>iframeName</key>
+				  <string>$IFRAME_NAME</string>
+				<key>orelyUrl</key>
+				  <string>$ORELY_URL</string>
+			</dict>
+		</config-file>
+
+        <header-file src="src/ios/CDVInAppBrowserWKWebViewUIDelegate.h" />
+        <source-file src="src/ios/CDVInAppBrowserWKWebViewUIDelegate.m" />
+        <header-file src="src/ios/CDVInAppBrowserWKWebView.h" />
+        <source-file src="src/ios/CDVInAppBrowserWKWebView.m" />
+
+        <framework src="CoreGraphics.framework" />
+    </platform>
+
+    <platform name="android">
+	
+		<edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='com.temenos.edgehybrid.EdgeActivity']" mode="merge">
+			<activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:launchMode="singleTask" android:name="com.temenos.edgehybrid.EdgeActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+			</activity>
+		</edit-config>
+	
+        <config-file target="AndroidManifest.xml" parent="/manifest/application/activity/intent-filter/action[@android:name='android.intent.action.MAIN']/../..">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="$CLIENT_URL_SCHEME" />
+
+            </intent-filter>
+
+
+        </config-file>
+
+        <config-file target="config.xml" parent="/widget">
+            <preference name="iframeName" value="$IFRAME_NAME" />
+            <preference name="orelyUrl" value="$ORELY_URL" />
+            <feature name="App2AppMessageRelayPlugin">
+                <param name="android-package" value="com.temenos.connect.app2app.App2AppHooks" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/temenos/connect/app2app/App2AppHooks.java" target-dir="src/com/temenos/connect/app2app" />
+    </platform>
+
+</plugin>
+

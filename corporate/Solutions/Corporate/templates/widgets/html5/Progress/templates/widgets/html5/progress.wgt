@@ -1,0 +1,20 @@
+$%COMMENT$ $Revision: 1.8 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.IS_MANDATORY() == "true"$
+    $%LOG "Connect DebugLog" 3$Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - Is mandatory and cannot be displayed as a HTML5 progress field$%ENDLOG$
+    $$ITEM.EC_GENERATE()$
+$%ELSE$
+    $%IF ITEM.IS_READONLY() == "true" && ITEM.READONLYSTYLE() != "Disabled Answer"$
+        $%LOG "Connect DebugLog" 3$Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - Is read-only and being displayed as a label so cannot be displayed as a HTML5 progress field$%ENDLOG$
+        $$ITEM.EC_GENERATE()$
+    $%ELSE$
+        <progress
+            id="progress_$$ITEM.ID()$"
+            max="$$ITEM.MAXVALUE()$"
+            value="$$ITEM.DATAITEM().VALUE()$"
+        >
+        </progress>
+        $%IF ITEM.MAXVALUE() == ""$
+            $%LOG "Connect DebugLog" 3$Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - For this HTML5 progress field to work properly it is recommended that you have a max value specified on your data item or question.$%ENDLOG$
+        $%ENDIF$
+    $%ENDIF$
+$%ENDIF$

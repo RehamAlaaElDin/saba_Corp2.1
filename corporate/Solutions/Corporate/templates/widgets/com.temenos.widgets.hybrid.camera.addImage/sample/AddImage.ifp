@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" Connect="version 5.3.1__18" HybridFlag="Y" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root 1" Name="AddImage" ProjectExtension=".ifp" ProjectFolder="D:/temp/camera/AddImage" ProjectType="N" eid="5FF03A89C2CEB05415255">
+  <Types Name="Types Root" eid="5FF03A89C2CEB05415256">
+    <Lists Name="Lists" eid="5FF03A89C2CEB05415257"/>
+    <DataTypes Name="Data Types" eid="5FF03A89C2CEB05415270">
+      <DataType Name="Text" eid="5FF03A89C2CEB05417142"/>
+      <DataType Name="Number" Type="Number" eid="5FF03A89C2CEB05417143"/>
+      <DataType Name="Decimal" Type="Decimal" eid="5FF03A89C2CEB05417144"/>
+      <DataType Name="Date" Type="Date" eid="5FF03A89C2CEB05417145"/>
+      <DataType Name="File" Type="File" eid="5FF03A89C2CEB05417146"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="5FF03A89C2CEB05417147"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="5FF03A89C2CEB05415277"/>
+  </Types>
+  <Dictionary Name="5FF03A89C2CEB054 DataDictionary 1" eid="5FF03A89C2CEB05415301">
+    <PropertyGroup Name="Data Store Root" eid="5FF03A89C2CEB05415303">
+      <Property ChooseFilePath="File" Name="photofile" PathFile="$$PROJECTHOME$/photos/upload-temp-$$SYSTIMEMILLIS$.jpg" Type="File" eid="5FF03A89C2CEB05417453"/>
+      <Property Name="PhotoBase64" eid="5FF03A89C2CEB05418211">
+        <EVANote Name="438AB2E4A4354B5B EVANote 3" NoteType="5FF03A89C2CEB05417149" NoteTypeName="Specification" eid="438AB2E4A4354B5B4403"><![CDATA[<html>
+  <head>
+    
+  </head>
+
+  <body>
+    This item will hold the picture contents, sent by the phone as a Base64 
+    String
+  </body>
+
+</html>
+
+]]></EVANote>
+      </Property>
+      <Property Name="ServerUrl" eid="5FF03A89C2CEB05418408"/>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="5FF03A89C2CEB05415313">
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="5FF03A89C2CEB05417151"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="5FF03A89C2CEB05417152"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="5FF03A89C2CEB05417153"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="5FF03A89C2CEB05417154"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="5FF03A89C2CEB05415304">
+    <Rule Name="Server context path" RuleClassName="com.acquire.intelligentforms.rules.ContainerRule" eid="5FF03A89C2CEB05415305"/>
+  </Rules>
+  <Products Name="Processes Root" eid="5FF03A89C2CEB05415404">
+    <Product ErrorPhase="Camera.ErrorPhase" InitialPhase="Camera.Add Image" Name="Camera" eid="5FF03A89C2CEB05417441">
+      <Rule EvaluateWhen="Before others" FromType="Value" FromValue="http://10.140.2.92:8181" Name="Set Value" PropertyName="ServerUrl" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="PrePhase" Trim="N" Type="Data Item" eid="5FF03A89C2CEB05418409"/>
+      <Phase Name="Add Image" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="5FF03A89C2CEB05418570">
+        <Rule EvaluateWhen="Before others" ExcludePropertyList="ServerUrl" Name="Reset Session Data" ResetAllStatefulComponents="N" ResetAllStatefulLibraries="N" ResetDictionary="Y" RuleClassName="com.acquire.intelligentforms.rules.ResetDataRule" RuleDisabled="N" RuleType="PrePhase" eid="5FF03A89C2CEB05418571"/>
+        <Heading HeaderText="Add photo" Name="5FF03A89C2CEB054 Heading 2" eid="5FF03A89C2CEB05418656"/>
+        <Question DataType="Text" Name="5FF03A89C2CEB054 Question 3" PropertyKey="PhotoBase64" QuestionText="PhotoBase64" eid="5FF03A89C2CEB05418572"/>
+        <Question DataType="File" Mandatory="N" Name="5FF03A89C2CEB054 Question 4" NotApplicable="Y" PropertyKey="photofile" QuestionText="photofile" eid="5FF03A89C2CEB05418573"/>
+        <Button ActionCommand="Add Image Button" CheckMandatoryFields="N" DependencyType="Previous questions in phase" Name="5FF03A89C2CEB054 FormButton 9" eid="5FF03A89C2CEB05418589">
+          <Rule Name="Goto Phase" OperationType="Go Forward to a Named Phase" Phase="Camera.Upload result" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" eid="5FF03A89C2CEB05418641"/>
+        </Button>
+        <Button ActionCommand="Upload Image Button" CheckMandatoryFields="N" DependencyType="Previous questions in phase" Name="58534782E22CAA98 FormButton 10" NotApplicable="Y" eid="58534782E22CAA981946">
+          <Rule Name="Goto Phase" OperationType="Go Forward to a Named Phase" Phase="Camera.Upload result" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" eid="58534782E22CAA981947"/>
+          <EVANote Name="7B8363A6679B6555 EVANote 4" NoteType="5FF03A89C2CEB05417148" NoteTypeName="ToDo" eid="7B8363A6679B65551015"><![CDATA[<html>
+  <head>
+    
+  </head>
+
+  <body>
+    File upload is not yet implemented
+  </body>
+
+</html>
+
+]]></EVANote>
+        </Button>
+        <Button ActionCommand="Forward" ButtonType="Forward" Name="5FF03A89C2CEB054 FormButton 8" eid="5FF03A89C2CEB05418575"/>
+        <Rule Name="Goto Phase" OperationType="Go Forward to a Named Phase" Phase="Camera.Upload result" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" RuleType="PostPhase" eid="5FF03A89C2CEB05418576"/>
+      </Phase>
+      <Phase Name="Upload result" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="5FF03A89C2CEB05417449">
+        <Question DataType="File" Mandatory="N" Name="58534782E22CAA98 Question 5" NotApplicable="Y" PropertyKey="photofile" QuestionText="photofile" ReadOnly="Y" eid="58534782E22CAA981994"/>
+        <Button ActionCommand="Back" ButtonType="Back" Name="5FF03A89C2CEB054 FormButton 3" eid="5FF03A89C2CEB05417450"/>
+      </Phase>
+      <Phase Name="ErrorPhase" eid="5FF03A89C2CEB05418297">
+        <Heading HeaderText="An error has occurred, please try again later." Name="5FF03A89C2CEB054 Heading 1" eid="5FF03A89C2CEB05418298"/>
+      </Phase>
+      <Button ActionCommand="Start" DependencyType="None" EntityType="PostPhase" Name="5FF03A89C2CEB054 FormButton 6" eid="5FF03A89C2CEB05418366">
+        <Rule Name="Goto Phase" OperationType="Jump out to Named Phase" Phase="Camera.Add Image" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" eid="5FF03A89C2CEB05418369"/>
+      </Button>
+      <Button ActionCommand="Reload" CheckMandatoryFields="N" DependencyType="Previous questions in phase" EntityType="PostPhase" Name="5FF03A89C2CEB054 FormButton 5" eid="5FF03A89C2CEB05418343"/>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="5FF03A89C2CEB05415688">
+    <PresentationType ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" EditTheme="N" EntityEID="5FF03A89C2CEB05415404" MessagesOrder="Errors, Warnings, Info" MessagesSeparator="&lt;br/&gt;" Name="mobile" PresentationDefinitionClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationDefinition" QuestionListDefault="- Please Select" Template="hybrid branded.tpl" UseOptimised="N" UseTracking="N" eid="5FF03A89C2CEB05417461">
+      <PresentationProduct ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" EntityClassType="com.acquire.intelligentforms.entities.Product" EntityEID="5FF03A89C2CEB05417441" Name="5FF03A89C2CEB054 RichHTMLPresentationProduct 3" RuntimeId="5FF03A89C2CEB05417467" TabPaneStyle="Use Default" eid="5FF03A89C2CEB05417467">
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="5FF03A89C2CEB05418570" Name="5FF03A89C2CEB054 RichHTMLPresentationPhase 31" RuntimeId="5FF03A89C2CEB05417468" eid="5FF03A89C2CEB05418579">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="5FF03A89C2CEB05418656" FieldSize="15" Name="5FF03A89C2CEB054 RichHTMLPresentationQuestion 40" NumberOfRows="5" RuntimeId="HEAD_5FF03A89C2CEB05418657" eid="5FF03A89C2CEB05418657"/>
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" DefaultButtonName="Use Default" DesignToUse="Custom" DisplayText="Pick a picture" DisplayType="Text Input Field" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="5FF03A89C2CEB05418572" ErrorRowStyle="ErrorBgColor" ErrorStyle="ErrorColor SmallFont" FieldSize="15" Name="5FF03A89C2CEB054 RichHTMLPresentationQuestion 32" NumberOfRows="5" RowStyle="- Hidden -" RuntimeId="QUE_5FF03A89C2CEB05418580" SpecificAnswerControlStyle="{color: red}" eid="5FF03A89C2CEB05418580">
+            <EVANote Name="438AB2E4A4354B5B EVANote 2" NoteType="5FF03A89C2CEB05417149" NoteTypeName="Specification" eid="438AB2E4A4354B5B3618"><![CDATA[<html>
+  <head>
+    
+  </head>
+
+  <body>
+    the question is required to be present in order not to trigger a Security 
+    Exception. But it can be hidden
+  </body>
+
+</html>
+
+]]></EVANote>
+          </PresentationQuestion>
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="5FF03A89C2CEB05418573" FieldSize="15" Name="5FF03A89C2CEB054 RichHTMLPresentationQuestion 34" NumberOfRows="5" RuntimeId="QUE_5FF03A89C2CEB05418584" eid="5FF03A89C2CEB05418584"/>
+          <PresentationButton ButtonStyle="Color1 RightAlignedImage ActionArrow" ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" DesignToUse="Custom" DisplayType="GANObject:com.acquire.intelligentforms.ide.presentationeditor.widgets.WidgetDialog|com.temenos.widgets.hybrid.camera.addImage" DisplayTypeAllowEdit="N" DisplayTypeDI_NAME="PhotoBase64" DisplayTypeErrorMessage="Something awful has happened, please try again..." DisplayTypeNotificationCloseText="Close" DisplayTypeNotificationTitle="Photo" DisplayTypeRunButtonRules="Y" DisplayTypeServerUrl="$$ServerUrl$$$CONTEXTPATH$/imagecontroller" DisplayTypeSuccessMessage="Image captured!" DisplayTypeTargetHeight="450" DisplayTypeTargetWidth="800" DisplayTypel2="These data items can hold multiple values as a comma separated list.  The position of the value in the list corresponds to a type - 'home', 'mobile', 'work', 'other'" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="5FF03A89C2CEB05418589" Name="5FF03A89C2CEB054 RichHTMLPresentationButton 37" RuntimeId="BUT_5FF03A89C2CEB05418590" eid="5FF03A89C2CEB05418590"/>
+          <PresentationButton ButtonStyle="Color1 RightAlignedImage ActionArrow" ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" DesignToUse="Custom" DisplayType="GANObject:com.acquire.intelligentforms.ide.presentationeditor.widgets.WidgetDialog|com.temenos.widgets.hybrid.camera.addImage" DisplayTypeAllowEdit="N" DisplayTypeDI_NAME="photofile" DisplayTypeDestinationType="destinationType.FILE_URI" DisplayTypeErrorMessage="Crapaciune..." DisplayTypeRunButtonRules="N" DisplayTypeServerUrl="$$ServerUrl$$$CONTEXTPATH$/ftservletcontroller" DisplayTypeSource="pictureSource.SAVEDPHOTOALBUM" DisplayTypeSuccessMessage="click!" DisplayTypeTargetHeight="450" DisplayTypeTargetWidth="800" DisplayTypel2="These data items can hold multiple values as a comma separated list.  The position of the value in the list corresponds to a type - 'home', 'mobile', 'work', 'other'" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="58534782E22CAA981946" Name="58534782E22CAA98 RichHTMLPresentationButton 25" RuntimeId="BUT_58534782E22CAA981949" eid="58534782E22CAA981949"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="5FF03A89C2CEB05418575" Name="5FF03A89C2CEB054 RichHTMLPresentationButton 36" RuntimeId="BUT_5FF03A89C2CEB05418586" eid="5FF03A89C2CEB05418586"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="5FF03A89C2CEB05417449" Name="5FF03A89C2CEB054 RichHTMLPresentationPhase 7" RuntimeId="5FF03A89C2CEB05417471" eid="5FF03A89C2CEB05417471">
+          <PresentationText ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" DisplayType="GANObject:com.acquire.intelligentforms.ide.presentationeditor.widgets.WidgetDialog|Image" DisplayTypeIMG_ALT_TEXT="Uploaded image" DisplayTypeIMG_HEIGHT="60px" DisplayTypeIMG_SRC="data:image/jpeg;base64,$$PhotoBase64$" DisplayTypeIMG_WIDTH="80px" Name="5FF03A89C2CEB054 RichHTMLPresentationText 27" RuntimeId="TXT_5FF03A89C2CEB05418480" eid="5FF03A89C2CEB05418480">
+            <EVANote Name="5FF03A89C2CEB054 EVANote 1" NoteType="5FF03A89C2CEB05417149" NoteTypeName="Specification" eid="5FF03A89C2CEB05418519"><![CDATA[<html>
+  <head>
+    
+  </head>
+
+  <body>
+    <p style="margin-bottom:0px;margin-top:0px;">
+      This is how a Base64 image is rendered: specify the Path to Image&#160;as 
+      data:image/jpeg;base64,$$DataItemContainingBase64ImageRepresentation$
+    </p>
+
+  </body>
+
+</html>
+
+]]></EVANote>
+          </PresentationText>
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="58534782E22CAA981994" FieldSize="15" Name="58534782E22CAA98 RichHTMLPresentationQuestion 26" NumberOfRows="5" RuntimeId="QUE_58534782E22CAA981995" eid="58534782E22CAA981995"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="5FF03A89C2CEB05417450" Name="5FF03A89C2CEB054 RichHTMLPresentationButton 8" RuntimeId="BUT_5FF03A89C2CEB05417472" eid="5FF03A89C2CEB05417472"/>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="5FF03A89C2CEB05418297" Name="5FF03A89C2CEB054 RichHTMLPresentationPhase 15" RuntimeId="5FF03A89C2CEB05418299" eid="5FF03A89C2CEB05418299">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="5FF03A89C2CEB05418298" FieldSize="15" Name="5FF03A89C2CEB054 RichHTMLPresentationQuestion 16" NumberOfRows="5" RuntimeId="HEAD_5FF03A89C2CEB05418300" eid="5FF03A89C2CEB05418300"/>
+        </PresentationPhase>
+        <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="5FF03A89C2CEB05418366" EntityType="PostPhase" Name="5FF03A89C2CEB054 RichHTMLPresentationButton 21" RuntimeId="BUT_5FF03A89C2CEB05418367" eid="5FF03A89C2CEB05418367"/>
+        <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="5FF03A89C2CEB05418343" EntityType="PostPhase" GroupWithPrevious="Y" Name="5FF03A89C2CEB054 RichHTMLPresentationButton 20" RuntimeId="BUT_5FF03A89C2CEB05418344" eid="5FF03A89C2CEB05418344"/>
+      </PresentationProduct>
+    </PresentationType>
+  </PresentationTypes>
+  <EVANotes Name="Notes Root" eid="5FF03A89C2CEB05415975">
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="5FF03A89C2CEB05417148"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="5FF03A89C2CEB05417149"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="5FF03A89C2CEB05417150"/>
+  </EVANotes>
+</Project>

@@ -1,0 +1,6 @@
+<script type="text/javascript" src="./templates/widgets/com.temenos.widgets.internationalCalendar/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="./templates/widgets/com.temenos.widgets.internationalCalendar/js/datepicker.js"></script>
+<script type="text/javascript" src="./templates/widgets/com.temenos.widgets.internationalCalendar/languages/datepicker.en.js"></script>
+<script type="text/javascript" src="./templates/widgets/com.temenos.widgets.internationalCalendar/languages/datepicker.fa.js"></script>
+<script type="text/javascript" src="./templates/widgets/com.temenos.widgets.internationalCalendar/internationalCalendar_functions.js"></script>
+<link rel="stylesheet" href="./templates/widgets/com.temenos.widgets.internationalCalendar/css/datepickerComb.css"/>

@@ -1,0 +1,10 @@
+<a class="dropbox-saver dropbox-dropin-btn dropbox-dropin-default" 
+$%IF ITEM.SAVER_URL != "" && ITEM.SAVER_URL != null$ 
+	href="$$ITEM.SAVER_URL$"
+$%ENDIF$
+$%IF ITEM.FILE_NAME != "" && ITEM.FILE_NAME != null$ 
+	data-filename="$$ITEM.FILE_NAME$"
+$%ENDIF$>
+<span class="dropin-btn-status"></span>
+Save to Dropbox
+</a>

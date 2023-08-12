@@ -1,0 +1,26 @@
+[2023-05-11 15:26:48.165] [2023-05-11 15:26:48.164]  [2023-05-11 15:26:48.165] log4j:ERROR A "org.apache.log4j.ConsoleAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-11 15:26:48.165] [2023-05-11 15:26:48.165]  [2023-05-11 15:26:48.165] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-11 15:26:48.165] [2023-05-11 15:26:48.165]  [2023-05-11 15:26:48.165] log4j:ERROR [java.net.URLClassLoader@2c6ddc22] whereas object of type 
+[2023-05-11 15:26:48.165] [2023-05-11 15:26:48.165]  [2023-05-11 15:26:48.165] log4j:ERROR "org.apache.log4j.ConsoleAppender" was loaded by [WebAppClassLoader{77087117}@498418d].
+[2023-05-11 15:26:48.165] [2023-05-11 15:26:48.165]  [2023-05-11 15:26:48.165] log4j:ERROR Could not instantiate appender named "console".
+[2023-05-11 15:26:48.168] [2023-05-11 15:26:48.168]  [2023-05-11 15:26:48.168] log4j:WARN No appenders could be found for logger (com.temenos.commons.logging.LoggerFactory).
+[2023-05-11 15:26:48.168] [2023-05-11 15:26:48.168]  [2023-05-11 15:26:48.168] log4j:WARN Please initialize the log4j system properly.
+[2023-05-17 11:20:15.116] May 17, 2023 11:20:15 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://192.168.0.28:9083: The target server failed to respond
+[2023-05-17 11:20:15.141] May 17, 2023 11:20:15 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://192.168.0.28:9083
+[2023-05-17 11:21:05.281] May 17, 2023 11:21:05 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://192.168.0.28:9083: The target server failed to respond
+[2023-05-17 11:21:05.284] May 17, 2023 11:21:05 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://192.168.0.28:9083
+[2023-05-17 11:23:37.867] May 17, 2023 11:23:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://192.168.0.28:9083: The target server failed to respond
+[2023-05-17 11:23:37.868] May 17, 2023 11:23:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://192.168.0.28:9083
+[2023-05-17 16:46:10.824] [2023-05-17 16:46:10.824]  [2023-05-17 16:46:10.824] log4j:ERROR A "org.apache.log4j.ConsoleAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-17 16:46:10.824] [2023-05-17 16:46:10.824]  [2023-05-17 16:46:10.824] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-17 16:46:10.824] [2023-05-17 16:46:10.824]  [2023-05-17 16:46:10.824] log4j:ERROR [java.net.URLClassLoader@74ef5787] whereas object of type 
+[2023-05-17 16:46:10.825] [2023-05-17 16:46:10.825]  [2023-05-17 16:46:10.825] log4j:ERROR "org.apache.log4j.ConsoleAppender" was loaded by [WebAppClassLoader{1206299491}@47e6ab63].
+[2023-05-17 16:46:10.825] [2023-05-17 16:46:10.825]  [2023-05-17 16:46:10.825] log4j:ERROR Could not instantiate appender named "console".
+[2023-05-17 16:46:10.827] [2023-05-17 16:46:10.827]  [2023-05-17 16:46:10.827] log4j:WARN No appenders could be found for logger (com.temenos.commons.logging.LoggerFactory).
+[2023-05-17 16:46:10.827] [2023-05-17 16:46:10.827]  [2023-05-17 16:46:10.827] log4j:WARN Please initialize the log4j system properly.

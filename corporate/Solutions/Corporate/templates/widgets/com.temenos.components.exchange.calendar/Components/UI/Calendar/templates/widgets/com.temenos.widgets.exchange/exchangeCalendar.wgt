@@ -1,0 +1,26 @@
+<div id='calendarDetails'></div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+        var events =  [
+            $%FOR 1 TO AppointmentSearch[1].Appointments[C].lastInstance() AppointmentSearch[1].Appointments$
+                {
+                    id:    "$$AppointmentSearch[1].Appointments[C].instance()$",
+                    title: "$$AppointmentSearch[1].Appointments[C].title$",
+                    body:  "$$AppointmentSearch[1].Appointments[C].description.escapeForJs()$",
+                    allDay: $$AppointmentSearch[1].Appointments[C].fullDayInd$,
+                    start: "$$AppointmentSearch[1].Appointments[C].startDateTime.format("yyyy-MM-dd'T'HH:mm:ss")$",
+                    end:   "$$AppointmentSearch[1].Appointments[C].endDateTime.format("yyyy-MM-dd'T'HH:mm:ss")$",
+                    status:"$$AppointmentSearch[1].Appointments[C].status$"
+                },
+            $%ENDFOR$
+        ]
+        exchangeCalendarAPI.setEvents("$$ITEM.ID()$", events);
+    $%IF ITEM.INITDATE != ''$
+        exchangeCalendarAPI.setup("$$ITEM.ID()$", '$$ITEM.INITDATE$');
+    $%ELSE$
+        exchangeCalendarAPI.setup("$$ITEM.ID()$", '$$SYSYEAR$-$$SYSMONTH$-$$SYSDAY$');
+    $%ENDIF$
+
+    });
+</script>

@@ -1,0 +1,92 @@
+$%COMMENT$ $Revision: 1.5 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<style type="text/css">
+$%IF ITEM.AnswerPrefix != ""$
+    #slider_$$ITEM.ID()$ .values.value::before{
+        content: "$$ITEM.AnswerPrefix$";
+    }
+$%ENDIF$
+$%IF ITEM.AnswerPostfix != ""$
+    #slider_$$ITEM.ID()$ .values.value::after{
+        content: "$$ITEM.AnswerPostfix$";
+    }
+$%ENDIF$
+$%IF ITEM.SELECTED_COLOR != ""$
+    #slider_$$ITEM.ID()$ .completed{
+        background: $$ITEM.SELECTED_COLOR$;
+    }
+$%ENDIF$
+$%IF ITEM.DRAG_HANDLE_BORDER_COLOR != ""$
+    #slider_$$ITEM.ID()$ .thumb{
+        border-color: $$ITEM.DRAG_HANDLE_BORDER_COLOR$;
+    }
+$%ENDIF$
+$%IF ITEM.DRAG_HANDLE_COLOR != ""$
+    #slider_$$ITEM.ID()$ .thumb{
+        background: $$ITEM.DRAG_HANDLE_COLOR$;
+    }
+$%ENDIF$
+$%IF ITEM.DRAG_HANDLE_IMAGE != ""$
+    #slider_$$ITEM.ID()$ .thumb{
+        background: url($$ITEM.DRAG_HANDLE_IMAGE$) no-repeat;
+        background-size: cover;
+    }
+$%ENDIF$
+$%IF ITEM.SLIDER_IMAGE != ""$
+    #slider_$$ITEM.ID()$ .rail{
+        background: url($$ITEM.SLIDER_IMAGE$) $%IF ITEM.SLIDER_IMAGE_REPEAT == Y$  $%IF ITEM.ORIENTATION != "vertical"$ repeat-x $%ELSE$repeat-y$%ENDIF$  $%ELSE$ no-repeat $%ENDIF$;
+    }
+$%ENDIF$
+
+</style>
+$%IF ITEM.IS_READONLY() == true && ITEM.READONLYSTYLE() == Text$
+    <span  id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$ $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$"  class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$">$$ITEM.DATAITEM().VALUE()$</span>
+$%ELSE$
+    <style type="text/css">
+    #$$ITEM.ID()${
+        display: none;
+    }
+    </style>
+    <div id="slider_$$ITEM.ID()$" class="standard-slider">
+        <div class="slider-acc-controls">
+            <button aria-label="$$ITEM.SLIDER_DECREASE_BTN_MSG$" class="value-control decrease-btn">-</button>
+            <input aria-labelledby="$$ITEM.ID()$" class="slider-input-value" aria-live="polite" type="number"/>
+            <button aria-label="$$ITEM.SLIDER_INCREASE_BTN_MSG$" class="value-control increase-btn">+</button>
+        </div>
+        <div class="rail">
+            <div aria-hidden="true" class="values value-min">0</div>
+            <div aria-hidden="true" class="values value-max">100</div>
+            <div class="fill-lower"></div>
+            <div role="slider"
+                class="thumb"
+                aria-valuemin="0"
+                aria-valuenow="50"
+                aria-valuemax="100"
+                aria-labelledby="$$ITEM.ID()$">
+                <div class="values value">50</div>
+            </div>
+        </div>
+    </div>
+    $$ITEM.EC_GENERATE()$
+
+    <script type="text/javascript">
+        var slider_el_$$ITEM.ID()$ = document.getElementById('slider_$$ITEM.ID()$');
+        var slider_$$ITEM.ID()$ = new StandardRangeSlider;
+        var params_$$ITEM.ID()$ = {
+            relatedInput: document.getElementById('$$ITEM.ID()$'),
+            $%IF ITEM.MINVALUE() != ""$valueMin: $$ITEM.MINVALUE()$,$%ENDIF$
+            $%IF ITEM.MAXVALUE() != ""$valueMax: $$ITEM.MAXVALUE()$,$%ENDIF$
+            $%IF ITEM.DATAITEM().VALUE() != ""$valueNow: $$ITEM.DATAITEM().VALUE()$,$%ENDIF$
+            $%IF ITEM.ORIENTATION != ""$orientation: "$$ITEM.ORIENTATION$",$%ENDIF$
+            step: $$ITEM.STEP_SIZE$,
+            railSize: $$ITEM.SLIDER_SIZE$,
+            $%IF ITEM.DRAG_HANDLE_SIZE != ""$thumbWidth: $$ITEM.DRAG_HANDLE_SIZE$,$%ENDIF$
+            $%IF ITEM.DRAG_HANDLE_HEIGHT != ""$thumbHeight: $$ITEM.DRAG_HANDLE_HEIGHT$,$%ENDIF$
+            $%IF ITEM.SHOW_VAL != ""$showValue: "$$ITEM.SHOW_VAL$",$%ENDIF$
+            $%IF ITEM.IS_READONLY() == true$isDisabled: true,$%ENDIF$
+            qlr: function(){ $$ITEM.QLR()$ },
+            readOnly: $$ITEM.IS_READONLY()$,
+            showAccControls: "$$ITEM.SHOW_ACCESSIBILITY_CONTROLS$"
+        }
+        slider_$$ITEM.ID()$.init(slider_el_$$ITEM.ID()$, params_$$ITEM.ID()$);
+    </script>
+$%ENDIF$

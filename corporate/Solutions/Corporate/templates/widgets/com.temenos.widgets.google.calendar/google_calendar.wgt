@@ -1,0 +1,134 @@
+<button onclick="GCk()" id="$$ITEM.ID()$">$$ITEM.DISPLAY_TEXT()$</button>
+<script>
+function GCk(){
+window.valck = 0;
+var GCbtn = document.getElementById("$$ITEM.ID()$");
+    var cksdatepick = document.getElementsByName("$$::ITEM.StartDate$")[0];
+	var ckstarttime = document.getElementsByName("$$::ITEM.StartTime$")[0];
+	if (cksdatepick.value === "") {alert("Please enter a starting date."); cksdatepick.focus();}
+	if (ckstarttime.selectedIndex === 0) {alert("Please enter a starting time."); ckstarttime.focus();}
+	if (cksdatepick.value !== "" && ckstarttime.selectedIndex !== 0) {
+		window.valck = 1; 
+		$$ITEM.NAVIGATION()$
+}
+else{
+	window.valck =0; 
+}
+}
+	addWidget("googleWidget", "$$!NAMESPACE$", "");
+function formatDate(date){
+	var df = "$$ITEM.DATEFORMAT()$";
+	var separator = df.match(/[^dmy]/);
+	var dsplit = df.split(separator[0]);
+	var datesplit = date.split(separator[0]);
+	var day = datesplit[dsplit.indexOf("dd")];
+	var month = datesplit[dsplit.indexOf("mm")];
+	var year = datesplit[dsplit.indexOf("yyyy")];
+	var d = new Date(year,month,day);
+	return d;
+}
+function formatTime(time) {
+	hour = time.split(':');
+	if (parseInt(hour[0]) < 10) {
+	time = '0'+time;
+	}
+	return time;
+}
+function pad(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+function untilDate(date,seconds) {
+	redate = formatDate(date);
+	resec = seconds.split(":");
+	resectotal = parseInt(resec[0])*3600+parseInt(resec[1])*60;
+	untcomb = redate.getFullYear()+pad(redate.getMonth(),2)+pad(redate.getDate(),2)+"T"+pad(resectotal,6)+"Z";
+	return untcomb;
+}
+function insertEvent(defaulttimeZone) {
+var summary = document.getElementsByName("$$::ITEM.EventName$")[0].value;
+var description = document.getElementsByName("$$::ITEM.Description$")[0].value;
+var sdatepick = document.getElementsByName("$$::ITEM.StartDate$")[0].value;
+var stimevalue = document.getElementsByName("$$::ITEM.StartTime$")[0];
+var stimepick = stimevalue.options[stimevalue.selectedIndex].innerHTML;
+var sdatef = formatDate(sdatepick);
+var startdate = sdatef.getFullYear()+'-'+pad(sdatef.getMonth(),2)+'-'+pad(sdatef.getDate(),2)+'T'+formatTime(stimepick)+':00.000';
+var edatepick = document.getElementsByName("$$::ITEM.EndDate$")[0].value;
+var freq = document.getElementsByName("$$::ITEM.Frequency$")[0];
+var freqpick = freq.options[freq.selectedIndex].innerHTML;
+var untildate = document.getElementsByName("$$::ITEM.UntilDate$")[0].value;
+var untiltime = document.getElementsByName("$$::ITEM.UntilTime$")[0];
+var untiltpick = untiltime.options[untiltime.selectedIndex].innerHTML;
+if (edatepick=="") {
+    edatepick = sdatepick;
+}
+var etimevalue = document.getElementsByName("$$::ITEM.EndTime$")[0];
+var etimepick = etimevalue.options[etimevalue.selectedIndex].innerHTML;
+if (etimevalue.selectedIndex == 0) {
+    timesplit = stimepick.split(":");
+	etimepick = parseInt(timesplit[0])+1;
+	if (etimepick == 24) {
+		etimepick = "0";
+	}
+	etimepick = etimepick + ":" + timesplit[1];
+	etimepick = formatTime(etimepick);
+	if (parseInt(timesplit[0])>=23) {
+		datesplit = sdatepick.split(separator[0]);
+		dateconvert = new Date (datesplit[0],datesplit[1]-1,datesplit[2]);
+		var numofdays = 1;
+		dateconvert.setDate(dateconvert.getDate() + numofdays);
+		var dd = dateconvert.getDate();
+		var mm = dateconvert.getMonth() + 1;
+		var y = dateconvert.getFullYear();
+		var edatepick = y + '-'+ mm + '-'+ dd;
+	}
+}
+var edatef = formatDate(edatepick);
+var enddate = edatef.getFullYear()+'-'+pad(edatef.getMonth(),2)+'-'+pad(edatef.getDate(),2)+'T'+etimepick+':00.000';
+var resource = {
+  "summary": summary,
+  "description": description,
+  "start": {
+	"dateTime": startdate,
+	"timeZone": defaulttimeZone
+  },
+  "end": {
+	"dateTime": enddate,
+	"timeZone": defaulttimeZone
+	},
+  };
+  if (freq.selectedIndex != 0 && untildate && untiltime.selectedIndex != 0) { resource.recurrence= ["RRULE:FREQ="+freqpick+";UNTIL="+untilDate(untildate,untiltpick)+""];}
+  console.log(resource);
+var request = gapi.client.calendar.events.insert({
+  'calendarId': 'primary',
+  'resource': resource
+});
+request.execute(function(resp) {
+	if (typeof resp.error ===  "undefined") {alert("Event was successfully inserted into your google calendar!");}
+}
+);
+}
+function auth() {
+var config = {
+  'client_id': '$$ITEM.AppCId$',
+  'scope': 'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar'
+};
+gapi.auth.authorize(config, function() {
+  console.log('login complete');
+  console.log(gapi.auth.getToken);
+  gapi.client.load('calendar', 'v3').then(function(){
+  
+  var request = gapi.client.calendar.calendarList.get({
+  'calendarId': 'primary',
+  'fields':'timeZone'
+});
+	request.execute(function(resp) {
+	
+	console.log(resp);
+	insertEvent(resp.timeZone);	
+});
+  });
+});
+}
+</script>

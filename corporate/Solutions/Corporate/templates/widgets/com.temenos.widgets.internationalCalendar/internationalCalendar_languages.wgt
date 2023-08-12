@@ -1,0 +1,16 @@
+$%COMMENT //$ We will not use for now the country parameter from the locale or languages ISO code
+$%SET icLanguageCode =$$%SCRIPT$
+var langCode;
+if ('$$ITEM.Locale$' == '') {
+	langCode = '$$LANGUAGE_MAP_CODE$';
+	if (langCode != '') {
+		lCode = langCode.split('-');
+		langCode = lCode[0];
+	}
+} else {
+	langCode = '$$ITEM.Locale$';
+}				
+$%ENDSCRIPT$$%ENDSET$
+$%IF !icLanguageCode != ""$
+<script type="text/javascript" src="./templates/widgets/com.temenos.widgets.internationalCalendar/languages/datepicker.$$!icLanguageCode$.js"></script>
+$%ENDIF$

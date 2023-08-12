@@ -1,0 +1,18 @@
+<!-- $Revision: 1.91 $ -->
+<div id="$$ITEM.ID()$">
+<dt role="heading" aria-level="1">
+	<button aria-expanded="false" class="accordion-trigger" aria-controls="info_set_$$ITEM.ID()$" id="trigger_$$ITEM.ID()$" type="button">
+		<span class="accordion-title">
+			$$ITEM.TabName$
+		</span>
+		<span class="accordion-icon"></span>
+	</button>
+</dt>
+<dd id="info_set_$$ITEM.ID()$" role="region" aria-labelledby="trigger_$$ITEM.ID()$" class="accordion-panel">
+	<div>
+		<fieldset>
+			$$FORMCONTENT$
+		</fieldset>
+	</div>
+</dd>
+</div>

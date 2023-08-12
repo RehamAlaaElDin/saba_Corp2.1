@@ -1,0 +1,41 @@
+{
+  "description" : "This is a dummy file; please see the readme.txt file for how to get a real one!",
+  "project_info": {
+    "project_number": "123123123123",
+    "firebase_url": "https://your-unique-firebase-project-id.firebaseio.com",
+    "project_id": "your-unique-firebase-project-id",
+    "storage_bucket": "your-unique-firebase-project-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123123123123:android:c123123123123123",
+        "android_client_info": {
+          "package_name": "your.app.package.name"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123123123123-yourUniqueClientIdPart.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "yourUniqueCurrentKey-4d-ojoNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123123123123-uniqueClientIdPart.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

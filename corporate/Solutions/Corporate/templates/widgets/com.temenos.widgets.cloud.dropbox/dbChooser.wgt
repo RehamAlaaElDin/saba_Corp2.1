@@ -1,0 +1,27 @@
+<div id="dropbox-container-$$ITEM.ID()$"
+	style="display: block; clear: left;">
+	<a id="dropbox-url-$$ITEM.ID()$" style="float: left;"></a>
+</div>
+<script>
+	var dropboxContainer = document
+			.getElementById("dropbox-container-$$ITEM.ID()$");
+	// after refresh from live designer, without this condition 2 buttons of Choose from dropbox will be created
+	if (dropboxContainer.children.length < 2) {
+		var button = Dropbox
+				.createChooseButton({
+					success : function(files) {
+						// the button on which I want to have the link to the file I selected. this can also be only a div with the download link as text.
+						var linkTag = document
+								.getElementById("dropbox-url-$$ITEM.ID()$");
+						linkTag.textContent = "Download selected file";
+						linkTag.href = files[0].link;
+						linkTag.download = "choose_filename";
+						linkTag.className = "dropbox-dropin-btn dropbox-dropin-success";
+
+					},
+					linkType : 'direct'
+				});
+		document.getElementById('dropbox-container-$$ITEM.ID()$').appendChild(
+				button);
+	}
+</script>

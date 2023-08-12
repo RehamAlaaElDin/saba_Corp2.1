@@ -1,0 +1,234 @@
+$%COMMENT$ $Revision: 1.17 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.SpacerText != ""$
+	$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$<tr><td colspan="4">
+	$%ELSE$<div style="width: 100%">
+	$%ENDIF$
+		$$ITEM.SpacerText$
+	$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$</td></tr>
+	$%ELSE$</div>
+	$%ENDIF$
+$%ENDIF$
+
+$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$<tr><td colspan="4">$%ENDIF$
+
+<style type="text/css">
+
+	#$$ITEM.ID()$.ui-tabs {
+		padding: 1px;
+		$%IF ITEM.TAB_NAV_COLOR != ""$
+			border: 1px solid $$ITEM.TAB_NAV_COLOR$;
+		$%ENDIF$
+	}
+	
+	#$$ITEM.ID()$.ui-widget {
+		font-family: inherit;
+	}
+	
+	#$$ITEM.ID()$.ui-tabs .ui-tabs-panel {
+		$%IF ITEM.TAB_NAV_COLOR != ""$
+			border: 2px solid $$ITEM.TAB_NAV_COLOR$;
+		$%ELSE$
+			border: none !important;
+		$%ENDIF$	
+		
+		border-top: none;
+	}
+	
+	#$$ITEM.ID()$ .ui-tabs-nav {
+		$%IF ITEM.TAB_NAV_COLOR != ""$
+			background-color: $$ITEM.TAB_NAV_COLOR$; 
+			border-color: $$ITEM.TAB_NAV_COLOR$; 
+			background-image: none; 
+			border-bottom-color: $$ITEM.TAB_NAV_COLOR$; 
+		$%ENDIF$
+	}
+	
+	#$$ITEM.ID()$ .ui-state-default {
+		$%IF ITEM.UNSELECTED_TAB_COLOR != ""$
+			background-color: $$ITEM.UNSELECTED_TAB_COLOR$; 
+			background-image: none; 
+		$%ENDIF$
+		$%IF ITEM.TAB_NAV_COLOR != ""$
+			border-color: $$ITEM.TAB_NAV_COLOR$;
+		$%ENDIF$
+		font-weight: normal;
+	}
+	
+	#$$ITEM.ID()$ .ui-state-active {
+		$%IF ITEM.SELECTED_TAB_COLOR != ""$
+			border-color: $$ITEM.SELECTED_TAB_COLOR$;
+			background-color: $$ITEM.SELECTED_TAB_COLOR$; 
+			background-image: none; 
+		$%ENDIF$
+		font-weight: bold;
+	}
+
+	$%IF ITEM.TAB_POSITION == "bottom"$
+		.tabs-bottom { position: relative; } 
+		.tabs-bottom .ui-tabs-panel { height: 140px; overflow: auto; } 
+		.tabs-bottom .ui-tabs-nav { position: absolute !important; left: 0; bottom: 0; right:0; padding: 0 0.2em 0.2em 0; } 
+		.tabs-bottom .ui-tabs-nav li { margin-top: -2px !important; margin-bottom: 1px !important; border-top: none; border-bottom-width: 1px; }
+		.ui-tabs-selected { margin-top: -3px !important; }
+	$%ENDIF$
+
+</style>
+
+
+<div id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().SectionStyle$
+							  $%IF ITEM.IS_HIDDEN() == "true"$; display: none;$%ENDIF$	
+                              $%IF ITEM.SectionLayout != "Auto"$width: 100%;$%ENDIF$
+                              $%IF ITEM.SectionLayout == "Specify in pixels (px)"$  
+                                    $%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$px;$%ENDIF$
+                                    $%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$px;$%ENDIF$
+                                    $%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$px;$%ENDIF$
+                              $%ENDIF$
+                              $%IF ITEM.SectionLayout == "Specify as percentage (%)"$  
+                                    $%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$%;$%ENDIF$
+                                    $%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$%;$%ENDIF$
+                                    $%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$%;$%ENDIF$
+                              $%ENDIF$
+							  " 
+                        class="ecTabSection 
+                                $%IF ITEM.STYLES().SectionStyle != ""$ $$ITEM.STYLES().SectionStyle$ $%ENDIF$
+                                $%IF ITEM.TAB_POSITION == "bottom"$ tabs-bottom $%ENDIF$
+                              "
+>
+
+	<input style="display:none" value="$$CONNECT_ACTIVE_TAB$" id="CAN_$$ITEM.ID()$" name="$$ITEM.COMPONENT_PREFIX()$CONNECT_ACTIVE_TAB" />
+
+	<ul>
+	$%FOREACH ITEM IN SECTION$
+		<li id="$$ITEM.ID()$" $%IF ITEM.IS_ITEM_HIDDEN() == "true"$style="display: none"$%ENDIF$ $%IF ITEM.HintText != ""$title="$$ITEM.HintText$"$%ENDIF$ class="tetris_tabHeader">
+			<a href="#$$ITEM.ID()$Header">$$ITEM.TabName$</a>
+		</li>
+	$%ENDFOREACH$
+	</ul>
+
+		$$FORMCONTENT$
+		
+</div>
+
+$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$</td></tr>$%ENDIF$
+
+<script type="text/javascript">
+	addWidget("TAB_CONTAINER", "$$!NAMESPACE$", "$$ITEM.ID()$");
+
+	function beforeChangeTabTAB_CONTAINER$$ITEM.ID()$(ns, p_tabName) {
+	    try{
+            var $tab = $("#" + p_tabName);
+            if ($tab.length == 1) {
+                var tabSection = $tab.closest(".ecTabSection");
+                if (tabSection.length == 1 && tabSection[0].id == "$$ITEM.ID()$") {
+                    var index = $("#$$ITEM.ID()$ li").index( $tab );
+                    $("#$$ITEM.ID()$").tabs("option", "active", index);
+                    return false;
+                }
+            }
+		} catch(e) {
+            throw new Error("Error in beforeChangeTabTAB_CONTAINER$$ITEM.ID()$("+ns+", "+p_tabName+") cause: " + e.message);
+        }
+		return true;
+	}
+
+    function getWidgetActiveTab(p_startingTab){
+        var activeTab;
+        try {
+            var tabSectionId = $(p_startingTab).closest(".ecTabSection").attr("id");
+            activeTab = $("#CAN_" + tabSectionId)[0];
+        } catch(e) {
+            throw new Error("Error in TAB_CONTAINER$$ITEM.ID()$.getWidgetActiveTab("+p_startingTab+") cause: " + e.message);
+        }        
+        return activeTab
+    }
+
+	function afterShowTabTAB_CONTAINER$$ITEM.ID()$(p_namespace, tabPane){
+	    try {
+		    while (tabPane && ( tabPane.id == null || stripPrefix(p_namespace, tabPane.id).indexOf("TAB_") != 0 ) ) {
+			    tabPane = tabPane.parentNode;
+		    }
+		    if (tabPane && tabPane.id) {
+			    var tabSection = $(tabPane).closest(".ecTabSection");
+			    /*is tab part of current tab section? if not, ignore it. */
+			    if (tabSection.attr("id") == "$$ITEM.ID()$") {
+				    var tabIndex = $(tabPane).index() - 2; /*take off two, as there is a ul with the headers and a hidden input in pos 0 and 1 respectively. */
+				    var tabSection = $("#$$ITEM.ID()$");
+				    tabSection.tabs("option", "active", tabIndex);
+			    }
+		    }
+		} catch(e) {
+            throw new Error("Error in afterShowTabTAB_CONTAINER$$ITEM.ID()$("+p_namespace+", "+tabPane+") cause: " + e.message);
+        }
+		
+	}
+
+	
+	$%COMMENT$
+	// Next function is required to ensure if this tab section is being used outside of a linear table controlling tabs within that table
+	// that we 
+	$%ENDCOMMENT$
+	function getTable(comp) {
+	    var table;
+	    try {
+	        if ( comp != null && comp.nodeName == "LI" ) {
+			    var tabSection = comp.parentNode.parentNode;
+			    if ( tabSection != null ) {
+				    var tabPane = document.getElementById( comp.id + "Pane" );
+				    if ( tabPane != null ) {
+				        comp = tabPane;
+				    }
+			    }
+		    }
+		    table = findTable(comp);
+		} catch(e) {
+            throw new Error("Error in TAB_CONTAINER#$$ITEM.ID()$.getTable("+comp+") cause: " + e.message);
+        }
+		
+		return findTable(comp);
+	}
+	
+$(function() {
+    try {
+        var currentSelTab = "$$CONNECT_ACTIVE_TAB$";
+	    var selTabs = currentSelTab.split("|");
+	    var currentTabs = $("#$$ITEM.ID()$").find(">ul>li");
+        var index = 0;
+
+	    for (var i = 0; i < currentTabs.length; i++) {
+		    var accordId = currentTabs[i].id;
+		    for (var j = 0; j < selTabs.length; j++) {
+			    if (accordId == selTabs[j]) {
+				    index = i;
+				    break;
+			    }
+		    }
+	    }
+
+	    $("#$$ITEM.ID()$").tabs({ 
+						$%IF ITEM.MAINTAIN_STATE == "Y"$
+							active: index,
+						$%ENDIF$
+			
+						activate: function(event, ui) {
+							$%IF ITEM.MAINTAIN_STATE == "Y"$
+								$("#CAN_$$ITEM.ID()$").val(ui.newTab.attr("id"));
+							$%ENDIF$
+							$%IF ITEM.CHILD[0].TYPE() == "FormTable"$
+								var tabRow = ui.newTab[0];
+								var rowNum = getRowPart(tabRow.id);
+								rowClicked(tabRow, rowNum, '$$ITEM.CHILD[0].DATAITEM()$', '$$!NAMESPACE$');
+							$%ENDIF$
+							setFocusToFirst("", null, ui.newPanel.attr("id"));
+						}
+				    });
+
+	    $%IF ITEM.TAB_POSITION == "bottom"$
+	    $( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
+				.removeClass( "ui-corner-all ui-corner-top" )
+				.addClass( "ui-corner-bottom" );
+	    $%ENDIF$
+    } catch(e) {
+        throw new Error("Error in TAB_CONTAINER#$$ITEM.ID()$ constructor cause: " + e.message);
+    }
+	
+});
+</script>

@@ -1,0 +1,248 @@
+$%COMMENT$ $Revision: 1.18 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.IS_READONLY() == true && ITEM.READONLYSTYLE() == Text$
+    <span  id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$ $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$"  class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$">$$ITEM.DATAITEM().VALUE()$</span>
+$%ELSE$
+
+    <style type="text/css">
+        #marker_$$ITEM.ID()$ .tick {
+            z-index: 2;
+            position: absolute;
+            text-align: center;
+            $%IF ITEM.ORIENTATION == "vertical"$
+            	right: 0px;
+            $%ENDIF$
+        }
+        #$$ITEM.ID()$ {
+            display: none !important;
+        }
+
+        #p3_$$ITEM.ID()$>div, #p5_$$ITEM.ID()$>div, .Postfix {
+            display: none;
+        }
+
+        #$$ITEM.ID()$.ui-widget {
+            font-family: inherit;
+        }
+
+        #$$ITEM.ID()$_slider.ui-slider a {
+            outline:none;
+        }
+        #$$ITEM.ID()$_slider.ui-state-disabled {
+            opacity: 0.5;
+            filter: alpha(opacity = 50);
+        }
+
+        #$$ITEM.ID()$_slider.ui-slider {
+            $%IF ITEM.SLIDER_IMAGE != ""$
+                background: url($$ITEM.SLIDER_IMAGE$) $%IF ITEM.SLIDER_IMAGE_REPEAT == Y$  $%IF ITEM.ORIENTATION != "vertical"$ repeat-x $%ELSE$repeat-y$%ENDIF$  $%ELSE$ no-repeat $%ENDIF$;
+                border: none;
+            $%ENDIF$
+        }
+
+        #$$ITEM.ID()$_slider.ui-widget-content .ui-state-default{
+            $%IF ITEM.DRAG_HANDLE_COLOR != ""$
+                background-color: $$ITEM.DRAG_HANDLE_COLOR$;
+                background-image: none;
+            $%ENDIF$
+            $%IF ITEM.DRAG_HANDLE_BORDER_COLOR != ""$
+                border-color: $$ITEM.DRAG_HANDLE_BORDER_COLOR$;
+            $%ENDIF$
+            font-weight: normal;
+        }
+
+        #$$ITEM.ID()$_slider .ui-slider-handle {
+            height: 0.7em;
+            border-radius: 4px;
+        }
+
+        #$$ITEM.ID()$_slider.ui-slider .ui-slider-handle{
+            $%IF ITEM.DRAG_HANDLE_IMAGE != ""$
+                background:url($$ITEM.DRAG_HANDLE_IMAGE$) no-repeat;
+                border-style:none;
+            $%ENDIF$
+            $%IF ITEM.DRAG_HANDLE_SIZE != ""$
+                width: $$ITEM.DRAG_HANDLE_SIZE$px;
+                height: $$ITEM.DRAG_HANDLE_HEIGHT$px;
+                $%IF ITEM.ORIENTATION != "vertical"$
+                    top: -8px;
+                    margin-left: -$%WRITE ##ITEM.DRAG_HANDLE_SIZE#/2$$%ENDWRITE$px;
+                $%ELSE$
+                    padding: 5px;
+                    margin-left: -2px;
+                $%ENDIF$
+            $%ENDIF$
+        }
+
+        #$$ITEM.ID()$_slider .ui-widget-header {
+            $%IF ITEM.SELECTED_COLOR != ""$
+                background-color: $$ITEM.SELECTED_COLOR$;
+                background-image: none;
+            $%ENDIF$
+            $%IF ITEM.DRAG_HANDLE_BORDER_COLOR != ""$
+                border-color: $$ITEM.DRAG_HANDLE_BORDER_COLOR$;
+            $%ENDIF$
+        }
+    </style>
+
+<!-- BEGIN .jq-slider-container -->
+<div class="jq-slider-container" style="float: left">
+
+$%IF ITEM.SHOW_VAL == "Y" && ITEM.ORIENTATION != "vertical"$
+    $%IF ITEM.DRAG_HANDLE_SIZE != ""$
+        <div id="$$ITEM.ID()$_marker" class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$; $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$; text-align: center; width: $$ITEM.DRAG_HANDLE_SIZE$px; "></div>
+    $%ELSE$
+        <div id="$$ITEM.ID()$_marker" class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$; $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$; display: inline-block"></div>
+    $%ENDIF$
+$%ENDIF$
+
+    <div>
+        <input type="text"
+            id="$$ITEM.ID()$"
+            name="$$ITEM.DATAITEM()$"
+            $%IF ITEM.IS_READONLY() = true$
+                disabled="disabled"
+            $%ENDIF$
+            size="$$ITEM.FieldSize$"
+            onchange="$$ITEM.VALIDATION()$"
+            value="$$ITEM.DATAITEM().VALUE()$"
+            class="$$ITEM.AnswerControlStyle$ $$ITEM.SpecificAnswerControlStyle$" />
+    </div>
+
+
+
+$%if ITEM.ORIENTATION == "vertical"$
+    <div id="marker_$$ITEM.ID()$" style="position: relative; height: $$ITEM.SLIDER_SIZE$px; width: 10px; float:left; margin-top: 6px; margin-right: 20px">
+    </div>
+$%ENDIF$
+    <div id="$$ITEM.ID()$_slider" style="$%IF ITEM.ORIENTATION == "vertical"$float: left; height:$%ELSE$width:$%ENDIF$ $$ITEM.SLIDER_SIZE$px;
+                                         $%IF ITEM.DRAG_HANDLE_SIZE != ""$
+                                             $%IF ITEM.ORIENTATION == "vertical"$
+                                                width: $$ITEM.DRAG_HANDLE_SIZE$px
+                                             $%ELSE$
+                                                height: $$ITEM.DRAG_HANDLE_HEIGHT$px
+                                             $%ENDIF$
+                                         $%ENDIF$">
+    </div>
+$%if ITEM.ORIENTATION != "vertical"$
+    <div id="marker_$$ITEM.ID()$" style="position: relative; padding: 7px 0; margin-left:-0.2em; width: $$ITEM.SLIDER_SIZE$px">
+    </div>
+$%ENDIF$
+
+$%IF ITEM.SHOW_VAL == "Y" && ITEM.ORIENTATION == "vertical"$
+    $%IF ITEM.DRAG_HANDLE_SIZE != ""$
+        <div id="$$ITEM.ID()$_marker" class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$; $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$; height: 1em; float: left; width: $$ITEM.DRAG_HANDLE_SIZE$px; "></div>
+    $%ELSE$
+        <div id="$$ITEM.ID()$_marker" class="$$ITEM.STYLES().AnswerControlStyle$ $$ITEM.STYLES().SpecificAnswerControlStyle$" style="$$ITEM.INLINE_STYLES().AnswerControlStyle$; $$ITEM.INLINE_STYLES().SpecificAnswerControlStyle$; height: 1em; float: left;"></div>
+    $%ENDIF$
+$%ENDIF$
+
+
+    <script type="text/javascript">
+        var markers = "$$ITEM.MARKERS$".split(",");
+        var markerWidth = $%if ITEM.SLIDER_SIZE == ""$ 200 $%ELSE$ $$ITEM.SLIDER_SIZE$ $%ENDIF$ / (markers.length - 1);
+        var markerText = "";
+        var markerWidth = 100/(markers.length - 1);
+        for (var i = 0; i < markers.length; i++)
+        {
+            $%if ITEM.ORIENTATION == "vertical"$
+                markerText +=('<div class="tick" style="bottom:' + i * markerWidth + '%">' + markers[i] + '</div>');
+            $%ELSE$
+                markerText +=('<div class="tick" style="left: '  + i * markerWidth + '%">' + markers[i] + '</div>');
+            $%ENDIF$
+        }
+        markerText += ('<div style="clear: both"></div>');
+        $("#marker_$$ITEM.ID()$").html(markerText);
+
+
+        $(function() {
+            $( "#$$ITEM.ID()$_slider" ).slider({
+                orientation: "$$ITEM.ORIENTATION$",
+                range: "min",
+                $%IF ITEM.SHOW_VAL == "Y"$
+                  slide: function(event, ui) {
+                    var delay = function() {
+                        $("#$$ITEM.ID()$_marker").css("visibility", "visible");
+                        $("#$$ITEM.ID()$_marker").html("$$ITEM.AnswerPrefix$" + ui.value + "$$ITEM.AnswerPostfix$")
+                                                 .offset({ top:  $(ui.handle).offset().top  $%IF ITEM.ORIENTATION != "vertical"$ - 20 $%ENDIF$,
+                                                           left: $(ui.handle).offset().left + $(ui.handle).outerWidth()/4  $%IF ITEM.ORIENTATION == "vertical"$ + 40 $%ENDIF$
+                        });
+                    };
+                    setTimeout(delay, 5);
+                  },
+                $%ENDIF$
+                $%IF ITEM.MAXVALUE() != ""$max: $$ITEM.MAXVALUE()$,$%ENDIF$
+                $%IF ITEM.MINVALUE() != ""$min: $$ITEM.MINVALUE()$,$%ENDIF$
+                $%IF ITEM.STEP_SIZE != ""$step: $$ITEM.STEP_SIZE$,$%ENDIF$
+                $%IF ITEM.DATAITEM().VALUE() != ""$value: $$ITEM.DATAITEM().VALUE()$,$%ENDIF$
+                stop: function( event, ui ) {
+                    doOnFocus("$$!NAMESPACE$", ui.handle.id, "");
+                    $( "#$$ITEM.ID()$" ).val(ui.value );
+                    $$ITEM.CHECKHIDDEN()$  $$ITEM.QLR()$
+                }
+            });
+            $%COMMENT$ give the handle an id, so we can focus on it after qlr $%ENDCOMMENT$
+            $("#$$ITEM.ID()$_slider .ui-slider-handle").attr("id", "$$ITEM.ID()$_handle");
+
+            $%IF ITEM.IS_READONLY() == true$
+                $( "#$$ITEM.ID()$_slider" ).slider('disable');
+                $%COMMENT$ Fix for http://bugs.jqueryui.com/ticket/9323 $%ENDCOMMENT$
+				$( "#$$ITEM.ID()$_slider .ui-slider-handle:first").get(0).tabIndex=-1;
+			$%ENDIF$
+
+            $%IF ITEM.SHOW_VAL == "Y"$
+				if ($("#p4_$$ITEM.ID()$").css("display") == "none")
+				{
+					/*offset settings are 0 for hidden items, so let's calculate roughly where the value needs to be displayed
+					  depending on the current value and the length of the slider */
+					var positions = getSliderHandleLeftAndTop();
+					$("#$$ITEM.ID()$_marker").html("$$ITEM.AnswerPrefix$ $$ITEM.DATAITEM().VALUE()$&nbsp;$$ITEM.AnswerPostfix$")
+											 .offset({ top: positions.top,
+													   left: positions.left
+					});
+				}
+				else
+				{
+					$("#$$ITEM.ID()$_marker").html("$$ITEM.AnswerPrefix$ $$ITEM.DATAITEM().VALUE()$&nbsp;$$ITEM.AnswerPostfix$")
+											 .offset({ top:  $("#$$ITEM.ID()$_slider .ui-slider-handle" ).offset().top  $%IF ITEM.ORIENTATION != "vertical"$ - 20 $%ENDIF$ ,
+													   left: $("#$$ITEM.ID()$_slider .ui-slider-handle" ).offset().left + $("#$$ITEM.ID()$_slider .ui-slider-handle" ).outerWidth()/4  $%IF ITEM.ORIENTATION == "vertical"$ + 40 $%ENDIF$
+					});
+				}
+
+                $%COMMENT$ hide if no value $%ENDCOMMENT$
+                $("#$$ITEM.ID()$_marker").css("visibility", "$$ITEM.DATAITEM().VALUE()$" == "" ? "hidden" : "visible");
+            $%ENDIF$
+        });
+
+		function getSliderHandleLeftAndTop()
+		{
+			var leftAndTop = new Object();
+			var slHeight = $("#$$ITEM.ID()$_slider").css("height");
+			slHeight = slHeight.substring(0, slHeight.length-2);
+			var slWidth = $("#$$ITEM.ID()$_slider").css("width");
+			slWidth = slWidth.substring(0, slWidth.length-2);
+			var min = $%IF ITEM.MINVALUE() != ""$$$ITEM.MINVALUE()$$%ELSE$0$%ENDIF$;
+			var max = $%IF ITEM.MAXVALUE() != ""$$$ITEM.MAXVALUE()$$%ELSE$100$%ENDIF$;
+			var value = $%IF ITEM.DATAITEM().VALUE() != ""$$$ITEM.DATAITEM().VALUE()$$%ELSE$min$%ENDIF$
+			var markerLeft = $%IF ITEM.ORIENTATION != "vertical"$ ((value-min)/(max - min)) * slWidth$%ELSE$ 35 - slWidth$%ENDIF$;
+			var markerTop = $%IF ITEM.ORIENTATION = "vertical"$ ((max-value)/(max - min)) * slHeight$%ELSE$0$%ENDIF$;
+			var handleWidth = $("#QUE_238AD4128451F57F1292_slider .ui-slider-handle").outerWidth()/4;
+			var handleHeight = $("#QUE_238AD4128451F57F1292_slider .ui-slider-handle").outerHeight();
+			leftAndTop.left = markerLeft$%IF ITEM.ORIENTATION = "vertical"$+handleWidth$%ENDIF$;
+			leftAndTop.top = markerTop$%IF ITEM.ORIENTATION = "vertical"$-handleHeight$%ENDIF$;
+			return leftAndTop;
+		}
+
+    </script>
+</div>
+<!-- END .jq-slider-container -->
+$%ENDIF$
+$%IF ITEM.DATAITEM().VALUE() == "" $
+  $%LOG "Connect DebugLog" 4$
+    Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - For this jquery Slider field to work properly it is recommended that you have a value specified on your data item.
+  $%ENDLOG$
+$%ENDIF$
+$%IF ITEM.MINVALUE() == "" || ITEM.MAXVALUE() == ""$
+  $%LOG "Connect DebugLog" 3$
+    Question: $$ITEM.RTID()$ (Data Item: $$ITEM.DATAITEM()$) - For this jquery Slider field to work properly it is recommended that you have a min and max value specified on your data item or question.
+  $%ENDLOG$
+$%ENDIF$

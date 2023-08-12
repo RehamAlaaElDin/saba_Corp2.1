@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget callback="false" icon="images/skype.png" name="Skype Button" type="Item:">
+    <template type="header" value="buttonHeader.wgt"/>
+    <template type="source" value="buttonBody.wgt"/>
+  <custom>
+      <item help="call – Place an audio or video call. chat – Initiate/restart a chat. dropdown – Dynamically choose whether to place a call or initiate/restart a chat." includeInDesign="true" layout="-1" mand="false" name="name" prompt="Button Type" type="javax.swing.JComboBox" typeValue="call|chat|dropdown" usage="7"/>
+      <item help="A skype name(phone number) or a list of  Skype Names (or phone numbers) formatted as a comma-separated list." includeInDesign="true" layout="-1" mand="false" name="participants" prompt="Participants" type="javax.swing.JTextField" usage="7"/>
+      <item help="The optional topic string for a conference call, group video chat, or multichat.Ignored if there are fewer than two participants." includeInDesign="true" layout="-1" mand="false" name="topic" prompt="Topic" type="javax.swing.JTextField" usage="7"/>
+      <item help="Which text color variant of the image asset to use, depending on your webpage’s background." includeInDesign="true" layout="-1" mand="false" name="imageColor" prompt="Image Color" type="javax.swing.JComboBox" typeValue="blue|white" usage="7"/>
+    <item help="Which size of the image asset to use" includeInDesign="true" layout="-1" mand="false" name="imageSize" prompt="imageSize" type="javax.swing.JComboBox" typeValue="10|12|14|16|24|32" usage="7"/>
+      <item help="Whether this is a video call.Ignored if this Skype button type is not an explicit call or dropdown;" includeInDesign="true" layout="-1" mand="false" name="video" prompt="video Call" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      
+    </custom>
+  </widget>
+</widgets>

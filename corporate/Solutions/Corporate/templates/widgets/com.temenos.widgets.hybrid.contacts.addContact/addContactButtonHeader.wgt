@@ -1,0 +1,29 @@
+$%COMMENT$ $Revision: 1.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<script type="text/javascript" charset="utf-8">
+
+window.com=window.com||{};
+window.com.temenos=window.com.temenos||{};
+window.com.temenos.widgets=window.com.temenos.widgets||{};
+window.com.temenos.widgets.hybrid=window.com.temenos.widgets.hybrid||{};
+window.com.temenos.widgets.hybrid.contacts=window.com.temenos.widgets.hybrid.contacts||{};
+
+window.com.temenos.widgets.hybrid.contacts.addContact = (function () {
+    var contactsAPI = {}
+
+    contactsAPI.makeContactArray = function(input)
+    {
+        var tIndex = 0;
+        var types = ["home", "mobile", "work", "other"];
+        var arr = [];
+        var tmpArr = input.split(",");
+        for (var i = 0;  i < tmpArr.length; i++) {
+            tIndex = ( i > (types.length - 1)) ? types.length - 1 : i ;
+            arr[i] = new ContactField( types[tIndex], tmpArr[i].trim(), i == 0 ? true : false)
+        }
+        return arr;
+    };
+
+    return contactsAPI;
+})();   
+   
+</script>

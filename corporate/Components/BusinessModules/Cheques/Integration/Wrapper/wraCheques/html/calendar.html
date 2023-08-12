@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--
+ * $RCSfile$
+ * $Author$
+ * $Revision$
+ * $Date$
+-->
+<!--
+Title: Tigra Calendar
+URL: http://www.softcomplex.com/products/tigra_calendar/
+Version: 3.2
+Date: 10/14/2002 (mm/dd/yyyy)
+Feedback: feedback@softcomplex.com (specify product title in the subject)
+Note: Permission given to use this script in ANY kind of applications if
+   header lines are left unchanged.
+Note: Script consists of two files: calendar?.js and calendar.html
+About us: Our company provides offshore IT consulting services.
+    Contact us at sales@softcomplex.com if you have any programming task you
+    want to be handled by professionals. Our typical hourly rate is $20.
+-->
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>date picker</title>
+	<style type="text/css">
+		td {font-family: Tahoma, Verdana, sans-serif; font-size: 12px;}
+		.clsOTable a:focus{ outline: 2px dotted red; }
+		.clsOTable>tbody>tr>td {
+		    background-color: #2c5172 !important;
+		}
+
+		#mainCalendarContent>tbody>tr:first-child+tr>td {
+			background-color: #427AA9 !important;
+		}
+	</style>
+	<script type="text/javascript">
+	//<![CDATA[
+			// months as they appear in the calendar's title
+			var ARR_MONTHS = ["January", "February", "March", "April", "May", "June",
+					"July", "August", "September", "October", "November", "December"];
+			// week day titles as they appear on the calendar
+			var ARR_WEEKDAYS = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+			var ARR_WEEKDAYS_FULL_NAME = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+			// day week starts from (normally 0-Su or 1-Mo)
+			var NUM_WEEKSTART = 1;
+			// path to the directory where calendar images are stored. trailing slash req.
+			var STR_ICONPATH = '../images/';
+
+			var u = "" + window.location;
+			// For some reason, offline in ie6 (not ie7) is escaping the url ..
+			if	( u.indexOf("%26") > -1 )
+			{
+				u = unescape(u);
+			}
+			var re_url = new RegExp('datetime=(\\-?\\d+)');
+			var dt_current = (re_url.exec(String(u))
+				? new Date(new Number(RegExp.$1)) : new Date());
+			var re_id = new RegExp('id=(\\d+)');
+			var num_id = (re_id.exec(String(u))
+				? new Number(RegExp.$1) : 0);
+			var re_namespace = new RegExp('namespace=([^&]*)');
+			var namespace = (re_namespace.exec(String(u))
+				? RegExp.$1 : '');
+
+			var parentWindow=  window.opener? window.opener : parent.window;
+			var obj_caller = parentWindow[namespace + "calendars"][num_id];
+
+			if	( obj_caller )
+			{
+				STR_ICONPATH = obj_caller.getImageDirPath(namespace);
+			}
+
+			if (obj_caller && obj_caller.year_scroll) {
+				// get same date in the previous year
+				var dt_prev_year = new Date(dt_current);
+				dt_prev_year.setFullYear(dt_prev_year.getFullYear() - 1);
+				if (dt_prev_year.getDate() != dt_current.getDate())
+					dt_prev_year.setDate(0);
+
+				// get same date in the next year
+				var dt_next_year = new Date(dt_current);
+				dt_next_year.setFullYear(dt_next_year.getFullYear() + 1);
+				if (dt_next_year.getDate() != dt_current.getDate())
+					dt_next_year.setDate(0);
+			}
+
+			// get same date in the previous month
+			var dt_prev_month = new Date(dt_current);
+			dt_prev_month.setMonth(dt_prev_month.getMonth() - 1);
+			if (dt_prev_month.getDate() != dt_current.getDate())
+				dt_prev_month.setDate(0);
+
+			// get same date in the next month
+			var dt_next_month = new Date(dt_current);
+			dt_next_month.setMonth(dt_next_month.getMonth() + 1);
+			if (dt_next_month.getDate() != dt_current.getDate())
+				dt_next_month.setDate(0);
+
+			// get first day to display in the grid for current month
+			var dt_firstday = new Date(dt_current);
+			dt_firstday.setDate(1);
+			dt_firstday.setDate(1 - (7 + dt_firstday.getDay() - NUM_WEEKSTART) % 7);
+
+			// function passing selected date to calling window
+			function set_datetime(namespace, n_datetime, b_close) {
+				if (!obj_caller) return;
+
+				if (parentWindow.buttonsEnabled && !parentWindow.buttonsEnabled(namespace))
+				{
+				closeWindow();
+					return;
+				}
+				var dt_datetime = obj_caller.prs_time(
+					(document.cal ? document.cal.time.value : ''),
+					new Date(n_datetime)
+				);
+
+				if (!dt_datetime) return;
+				if (b_close) {
+
+					var targetObj = obj_caller.get_target(namespace);
+					if (targetObj != null)
+					{
+						var curValue = targetObj.value;
+						// did we have a time part before
+						var arr_datetime = curValue.split(obj_caller.dateTimeSeparator);
+						var newValue = (document.cal ? obj_caller.gen_tsmp(dt_datetime) : obj_caller.gen_date(dt_datetime));
+						if (arr_datetime.length == 2) newValue = newValue + obj_caller.dateTimeSeparator + arr_datetime[1];
+						targetObj.value = newValue;
+						var ok = true;
+						if ( parentWindow.getVariable(namespace, "clientSideValidation", true) ) // Client side validation - run synchronously
+						{
+							ok = parentWindow.execute(targetObj, "onchange", parentWindow.CALENDAR_PICKER_TRIGGER);
+						}
+						else if	( targetObj.onchange && parentWindow.execute ) // Server side validation - run asynchronously
+						{
+							parentWindow.execute(targetObj, "onchange", parentWindow.CALENDAR_PICKER_TRIGGER);
+							ok = true; // Could be asynchronus ajax test, so don't wait for result ..
+						}
+						if	(ok)
+						{
+							  //setTimeout(function(){window.focus()}, 200);
+							  closeWindow();
+						}
+						else
+						{
+							targetObj.value = ( curValue ) ? curValue : targetObj.value = "";
+							//setTimeout(function(){window.focus()}, 200);
+						}
+						window.parent.document.getElementById( window.parent.CALENDAR_PICKER_TRIGGER ).focus();
+					}
+				}
+				else obj_caller.popup(namespace, null, dt_datetime.valueOf());
+			}
+
+			function closeWindow()
+			{
+				if (window.opener)
+				{
+				  window.close();
+				}
+				else
+				{
+					var floatDiv = parentWindow.document.getElementById(namespace + "FloatCalendarDiv");
+					floatDiv.style.display = 'none';
+				}
+			}
+
+			function buildMonthYearNavigationBar(){
+				var prevYearHtml = '<th>' + (obj_caller && obj_caller.year_scroll ?
+							'<a id="goToPrevYearBtn" aria-label="Previous Year" href="javascript:set_datetime(\'' + namespace + '\',' + dt_prev_year.valueOf() + ')"><img src="' + STR_ICONPATH + 'prev_year.gif" width="16" height="16" border="0" alt=""></a>&nbsp;' : "") + '</th>';
+		
+				var prevMonthHtml = '<th>' + '<a id="goToPrevMonthBtn" aria-label="Previous Month" href="javascript:set_datetime(\'' + namespace + '\',' + dt_prev_month.valueOf() + ')"><img src="' + STR_ICONPATH + 'prev_month.gif" width="16" height="16" border="0" alt=""></a>' + '</th>';
+
+				var yearMonthHtml = '<th  colspan="3" align="center"><font color="#ffffff">' + ARR_MONTHS[dt_current.getMonth()]+' '+dt_current.getFullYear() + '</font>' + '</th>';
+
+				var nextMonthHtml = '<th>' + '<a id="goToNextMonthBtn" aria-label="Next Month" href="javascript:set_datetime(\''+namespace+'\','+dt_next_month.valueOf()+')"><img src="' + STR_ICONPATH + 'next_month.gif" width="16" height="16" border="0" alt=""></a>' + '</th>';
+
+				var nextYearHtml = '<th>' + (obj_caller && obj_caller.year_scroll ? 
+							'&nbsp;<a id="goToNextYearBtn" aria-label="Next Year" href="javascript:set_datetime(\'' + namespace + '\',' + dt_next_year.valueOf() + ')"><img src="' + STR_ICONPATH + 'next_year.gif" width="16" height="16" border="0" alt=""></a>' : '') + '</th>';
+
+				return prevYearHtml + prevMonthHtml + yearMonthHtml + nextMonthHtml + nextYearHtml;
+			}
+
+			function buildWeekDayBar(){
+				var barString = "";
+				for (var n = 0; n < 7; n++) {
+					barString += '<th bgcolor="#87cefa" align="center"><span tabindex=0 aria-label="' + ARR_WEEKDAYS_FULL_NAME[(NUM_WEEKSTART+n)%7] + '"><font color="#ffffff">' + ARR_WEEKDAYS[(NUM_WEEKSTART+n)%7] + '</font></span></th>';
+				}
+				return barString;
+			}
+	//]]>
+	</script>
+</head>
+<body style="margin:0px">
+
+<div style="background: #FFFFFF; margin: 0px">
+<table tabindex="0" class="clsOTable" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td style="background-color: #4682B4">
+			<table cellspacing="1" id="mainCalendarContent" cellpadding="3" border="0" width="100%">
+				<tr id="topNavRow"></tr>
+				<tr id="weekDayRow" style="line-height:14px"></tr>
+					<script type="text/javascript">
+						document.getElementById('topNavRow').innerHTML  = buildMonthYearNavigationBar();
+						document.getElementById('weekDayRow').innerHTML = buildWeekDayBar();
+						// print calendar table
+						var dt_current_day = new Date(dt_firstday);
+						var rowCount = 0;
+						while (dt_current_day.getMonth() == dt_current.getMonth() ||
+							dt_current_day.getMonth() == dt_firstday.getMonth()) {
+							// print row heder
+							document.write('<tr style="line-height:14px">');
+							rowCount++;
+							for (var n_current_wday=0; n_current_wday<7; n_current_wday++) {
+								if (dt_current_day.getDate() == dt_current.getDate() &&
+									dt_current_day.getMonth() == dt_current.getMonth())
+									// print current date
+									document.write('<td bgcolor="#ffb6c1" id="datepickerCurrentDay" align="center" width="14%">');
+								else if (dt_current_day.getDay() == 0 || dt_current_day.getDay() == 6)
+									// weekend days
+									document.write('<td bgcolor="#dbeaf5" align="center" width="14%">');
+								else
+									// print working days of current month
+									document.write('<td bgcolor="#ffffff" align="center" width="14%">');
+
+								document.write('<a tabindex="0" aria-label="' + ARR_MONTHS[dt_current_day.getMonth()] + ' ' + dt_current_day.getDate() + ' ' + dt_current.getFullYear() + '" href="javascript:set_datetime(\''+namespace+'\','+dt_current_day.valueOf() +',true);">');
+
+								if (dt_current_day.getMonth() == this.dt_current.getMonth())
+									// print days of current month
+									document.write('<font color="#000000">');
+								else
+									// print days of other months
+									document.write('<font color="#606060">');
+
+								document.write(dt_current_day.getDate()+'</font></a></td>');
+								dt_current_day.setDate(dt_current_day.getDate()+1);
+							}
+							// print row footer
+							document.write('</tr>');
+						}
+						if (obj_caller && obj_caller.time_comp)
+							document.write('<form onsubmit="javascript:set_datetime(\''+namespace+'\','+dt_current.valueOf()+',true)" name="cal"><tr><td colspan="7" bgcolor="#87CEFA"><font color="White" face="tahoma, verdana" size="2">Time: <input type="text" name="time" value="'+obj_caller.gen_time(this.dt_current)+'" size="8" maxlength="8"></font></td></tr></form>');
+
+						var floatDiv = parentWindow.document.getElementById(namespace + "FloatCalendarDiv");
+						if (rowCount == 4) floatDiv.style.height = "145px";
+						else if (rowCount == 5) floatDiv.style.height = "167px";
+						else if (rowCount == 6) floatDiv.style.height = "190px";
+					</script>
+					<td style="display: none"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<script type="text/javascript">
+
+	/**
+	 | Standard Calendar accesibility and usability extention
+	 | @usage: var 	cn = new calendarNavigation(element)
+	 |				cn.init();
+	 | @param element == DomObj
+	*/
+	var calendarNavigation = function( element ){
+		this.calendarEl = element; //main calendar dom element
+
+		//month navigation triggers
+		this.nextMonthBtn 	= document.getElementById('goToNextMonthBtn');
+		this.prevMonthBtn 	= document.getElementById('goToPrevMonthBtn');
+		this.prevYearBtn 	= document.getElementById('goToPrevYearBtn');
+		this.nextYearBtn 	= document.getElementById('goToNextYearBtn');
+
+		this.tabElementsNavigation = []; //array with all elements we use for tab navigation
+		this.CALENDAR_PICKER_TRIGGER = null; // CALENDAR_PICKER_TRIGGER retrieved from parent window at init
+
+		//we may have 4 or 5 active rows, so we need dinamic value
+        this.activeRowsLength   = null;
+       
+        //indexes coords for focus on current date
+        this.currentDateRowIndex  = 0;
+        this.currentDateCellIndex = 0;
+
+		this.tabNavigationElActiveIndex = 0;
+
+		//readable keyCodes
+		this.keyCode = Object.freeze({
+			'left':     37,
+			'up':       38,
+			'right':    39,
+			'down':     40,
+			'pageUp':   33,
+			'pageDown': 34,
+			'end':      35,
+			'home':     36,
+			'esc': 		27,
+			'tab': 		9
+		});
+	}
+
+	//extend module definition
+	calendarNavigation.prototype = {
+		//start module
+		init: function(){
+            this.setDataAttributes();
+
+			this.firstDateInSet = this.calendarEl.querySelectorAll('[data-rowindex="0"]')[0].cells[0].querySelector('a');
+			this.tabElementsNavigation = [
+				this.prevYearBtn,
+				this.prevMonthBtn,
+				this.nextMonthBtn,
+				this.nextYearBtn,
+				this.firstDateInSet
+			];
+
+			this.calendarEl.addEventListener('keydown', this.handleKeyDown.bind(this));
+
+			this.navigateTo(this.currentDateCellIndex, this.currentDateRowIndex);
+			this.CALENDAR_PICKER_TRIGGER = window.parent.document.getElementById( window.parent.CALENDAR_PICKER_TRIGGER );
+		},
+
+		//focus first selectable date
+		focusFirstDateInSet: function(){
+			this.calendarEl.querySelectorAll('[data-rowindex="0"]')[0].cells[0].querySelector('a').focus();
+		},
+
+		//focus last selectable date
+		focusLastDateInSet: function () {
+			this.calendarEl.querySelectorAll('[data-rowindex="' + (this.activeRowsLength - 1) + '"]')[0].cells[6].querySelector('a').focus();
+		},
+
+		//close popup
+		closeCalendarPopup: function(){
+			//need to go one level up from the iframe
+			window.parent.document.getElementById('FloatCalendarDiv').style.display = 'none';
+			window.parent.document.getElementById( window.parent.CALENDAR_PICKER_TRIGGER ).focus();
+		},
+
+		tabNavigate: function(){
+			this.tabElementsNavigation[ this.tabNavigationElActiveIndex ].focus();
+			this.tabNavigationElActiveIndex += 1;
+			if (this.tabNavigationElActiveIndex > this.tabElementsNavigation.length - 1){
+				this.tabNavigationElActiveIndex = 0;
+			}
+		},
+
+		//add data attributes on the html structure
+		setDataAttributes: function(){
+			var parent = this.calendarEl;
+			var activeRows = [].slice.call( parent.rows ); //rows we need navigation for
+
+			//we dont need the first 2 rows and the last row
+			activeRows.splice(0, 2);
+			activeRows.pop();
+
+			this.activeRowsLength = activeRows.length;
+
+			//set data attribute for active rows
+			for (var i = 0; i < activeRows.length; i++) {
+
+				activeRows[i].dataset.rowindex = i;
+				//set data attributes for cells
+				for ( var j = 0; j < activeRows[i].cells.length; j++ ){
+                    if(activeRows[i].cells[j].id === 'datepickerCurrentDay'){
+                        this.currentDateRowIndex  = i; 
+                        this.currentDateCellIndex = j;
+                    }
+					activeRows[i].cells[j].dataset.cellindex = j;
+				}
+			}
+		},
+
+		//navigate to a specified date
+		// @cellIndex: {int}, @rowIndex: {int}
+		navigateTo: function( cellIndex, rowIndex ){
+
+			//if destination is outside monthly bounderies change month
+			window.parent.CALENDAR_FOCUS_COORDS.cellIndex = cellIndex;
+			if (rowIndex < 0) {
+				window.parent.CALENDAR_FOCUS_COORDS.rowIndex = null;
+				this.prevMonthBtn.click();
+			} else if (rowIndex > this.activeRowsLength - 1) {
+				window.parent.CALENDAR_FOCUS_COORDS.rowIndex = 0;
+				this.nextMonthBtn.click();
+			}
+
+			//if destination is outside weekly bounderies change week by looping this function
+			if (cellIndex < 0) {
+				this.navigateTo( 6, rowIndex - 1 );
+			} else if (cellIndex > 6) {
+				this.navigateTo( 0, rowIndex + 1 );
+			}
+
+			//retrieve focusable element
+			var focusEl = this.calendarEl.querySelectorAll('[data-rowindex="' + rowIndex + '"]')[0].cells[cellIndex].querySelector('a');
+			focusEl.focus();
+		},
+		//keydown handler
+		handleKeyDown: function (event) {
+			var target 		= event.target,
+				key 		= event.keyCode.toString(),
+				cellIndex 	= null,
+				rowIndex 	= null,
+				flag		= false,
+				isDayFocus 	= target.parentElement.hasAttribute('data-cellindex') // focus is in the context of days/weeks
+			;
+
+			//arrow keys in the context of day/week navigation
+			if( isDayFocus ){
+				cellIndex 	= parseInt( target.parentElement.getAttribute('data-cellindex') );
+				rowIndex 	= parseInt( target.parentElement.parentElement.getAttribute('data-rowindex') );
+
+				switch (event.keyCode) {
+					case 	this.keyCode.left:
+							this.navigateTo(cellIndex - 1, rowIndex);
+							flag = true;
+						break;
+					case	this.keyCode.right:
+							this.navigateTo(cellIndex + 1, rowIndex);
+							flag = true;
+						break;
+					case 	this.keyCode.up:
+							this.navigateTo(cellIndex, rowIndex - 1);
+							flag = true;
+						break;
+					case 	this.keyCode.down:
+							this.navigateTo(cellIndex, rowIndex + 1);
+							flag = true;
+						break;
+					default:
+						break;
+				}
+			}
+
+			//high level navigation
+			switch (event.keyCode) {
+				case	this.keyCode.tab:
+						this.tabNavigate();
+						flag = true;
+					break;
+				case	this.keyCode.pageUp:
+						this.prevMonthBtn.click();
+						flag = true;
+					break;
+				case	this.keyCode.pageDown:
+						this.nextMonthBtn.click();
+						flag = true;
+					break;
+				case	this.keyCode.home:
+						this.focusFirstDateInSet();
+						flag = true;
+					break;
+				case	this.keyCode.end:
+						this.focusLastDateInSet();
+						flag = true;
+					break;
+				case	this.keyCode.esc:
+						this.closeCalendarPopup();
+						flag = true;
+					break;
+
+				default:
+					break;
+
+			}
+
+			if (flag) {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+		}
+	}
+
+	var calendarNav = new calendarNavigation( document.getElementById('mainCalendarContent') );
+	calendarNav.init();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<input type="button" value="Continue" onclick="continueClicked()">
+<script type = "text/javascript" charset="utf-8">
+var pushNotification;
+function continueClicked(){
+    var options = { dimBackground: false };
+    document.getElementById("BUT_66C7D4FCF0E415F371383").click();
+    document.getElementById("BUT_7FB9DC304733AE791381").click();
+}
+function onDeviceReady() {
+				try
+				{
+                	pushNotification = window.plugins.pushNotification;
+					pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	
+				}
+				catch(err)
+				{
+					txt="There was an error on this page.\n\n";
+					txt+="Error description: " + err.message + "\n\n";
+					alert(txt);
+				}
+            }
+
+function onNotificationAPN(e) {
+                console.log("OnNotification")
+                console.log(e)
+            }
+
+function tokenHandler (result) {
+document.getElementById("QUE_7FB9DC304733AE791408").value = "APN:"+result;
+console.log(result);
+            }
+
+            function successHandler (result) {
+console.log("Logging success");
+console.log(result);
+            }
+
+            function errorHandler (error) {
+console.log("Logging error");
+console.log(error);
+            }
+
+document.addEventListener('deviceready', onDeviceReady, true);
+</script>

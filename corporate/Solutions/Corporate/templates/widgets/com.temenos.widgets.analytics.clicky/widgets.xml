@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget displayName="Clicky Web Analytics" icon="/images/clicky_web_analytics_icon.jpg" name="Clicky" type="Item:">
+    <template type="header" value="clicky_header.wgt"/>
+    <custom>
+      <item help="Enter the Site ID from clicky.com (for more details please check documentation)" includeInDesign="Always" layout="-1" mand="true" name="SiteID" prompt="Website Id" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.temenos.edgehybrid.plugins.openFileInExternalViewer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        version="1.0.0">
+    <engines>
+        <engine name="cordova" version=">=3.7.0"/>
+    </engines>
+    <name>OpenFileInExternalViewer</name>
+    <description>Document viewer cordova plugin for Android</description>
+    <author>Victor Ionescu</author>
+    <email>sionescu@temenos.com</email>
+    <license>commercial</license>
+
+    <js-module src="www/openFileInExternalViewer.js"
+               name="OpenFileInExternalViewer">
+        <clobbers target="cordova.plugins.temenos.OpenFileInExternalViewer"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OpenFileInExternalViewer">
+                <param name="android-package"
+                       value="com.temenos.edgehybrid.plugins.openFileInExternalViewer.OpenFileInExternalViewer"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission
+                    android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        </config-file>
+
+        <!--see http://stackoverflow.com/questions/38200282/android-os-fileuriexposedexception-file-storage-emulated-0-test-txt-exposed-->
+       
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+
+             <provider
+                android:name="com.temenos.edgehybrid.plugins.openFileInExternalViewer.FileProvider"
+                android:authorities="$PACKAGE_NAME.OpenFileInExternalViewer.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+                <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/open_file_in_external_viewer_file_paths" />
+            </provider>
+
+        </config-file>
+        <source-file
+            src="src/android/res/xml/open_file_in_external_viewer_file_paths.xml"
+            target-dir="res/xml"/>
+
+        <source-file
+          src="src/android/com/temenos/edgehybrid/plugins/openFileInExternalViewer/FileProvider.java" 
+          target-dir="src/com/temenos/edgehybrid/plugins/openFileInExternalViewer"/>
+
+        <source-file
+                src="src/android/com/temenos/edgehybrid/plugins/openFileInExternalViewer/OpenFileInExternalViewer.java"
+                target-dir="src/com/temenos/edgehybrid/plugins/openFileInExternalViewer"/>
+     </platform>
+</plugin>

@@ -1,0 +1,76 @@
+$%COMMENT$ $Revision: 1.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$$ITEM.EC_GENERATE()$
+
+<script type = "text/javascript" charset="utf-8">
+    document.getElementById("$$ITEM.ID()$").onclick = null;             $%COMMENT$  remove the button onclick $%ENDCOMMENT$
+
+    document.getElementById("$$ITEM.ID()$")
+            .addEventListener('click', function(e) {                    $%COMMENT$  listen to click event $%ENDCOMMENT$
+                var options = new ContactFindOptions();
+                options.filter="$$ITEM.DI_NAME$";
+                options.multiple=true; 
+                var fields = ["displayName", "name"];
+                navigator.contacts.find(                                $%COMMENT$  search for existing contact $%ENDCOMMENT$
+                    fields, 
+                    function(contacts) {                                $%COMMENT$  callback if search completed ok $%ENDCOMMENT$
+                        $%IF ITEM.DI_NAME == null || ITEM.DI_NAME == ""$ $%COMMENT$  null or empty returns all contacts; no delete should be allowed in this case $%ENDCOMMENT$
+							$%IF ITEM.ErrorMessage != ""$               $%COMMENT$  alert error message if one has been defined $%ENDCOMMENT$
+                                navigator.notification.alert("$$ITEM.ErrorMessage$", function(){}, "Contacts", "Close");
+                            $%ENDIF$
+							return false;
+						$%ENDIF$
+						
+						var diSplitNames = "$$ITEM.DI_NAME$".split(" ");
+						var firstName = diSplitNames[0];
+						var middleName = "";
+						var lastName = "";
+						if (diSplitNames.length > 1) {
+							lastName = diSplitNames[diSplitNames.length - 1];//the last name is the family name
+						}
+						if (diSplitNames.length > 2) {// if there are more than 2 names, the ones between the first and the last are the middleName
+							for(var i = 1; i < diSplitNames.length - 1; i++) {
+								middleName = middleName + diSplitNames[i];
+							}
+						}
+						if (contacts.length > 0) { 
+                            for (var i = contacts.length -1; i >=0; i--) {
+								if (contacts[i].name.givenName == firstName && contacts[i].name.familyName == lastName && contacts[i].name.middleName == middleName)
+									contacts[i].remove();                   $%COMMENT$  remove existing matched contacts - the update didn't work too well - the urls and notes kept being appended to $%ENDCOMMENT$
+                            }
+                        }
+                        var myContact = navigator.contacts.create();    $%COMMENT$  create new contact object and populate $%ENDCOMMENT$
+                        myContact.displayName   = "$$ITEM.DI_NAME$";
+                        myContact.phoneNumbers  = com.temenos.widgets.hybrid.contacts.addContact.makeContactArray("$$ITEM.DI_NUMBERS$");
+                        myContact.emails        = com.temenos.widgets.hybrid.contacts.addContact.makeContactArray("$$ITEM.DI_EMAILS$");
+                        myContact.urls          = com.temenos.widgets.hybrid.contacts.addContact.makeContactArray("$$ITEM.DI_URLS$");
+                        myContact.note          = "$$ITEM.DI_NOTE$";
+
+						var name = new ContactName();
+						name.givenName = firstName;
+						name.middleName = middleName;
+						name.familyName = lastName;
+						myContact.name = name;
+
+                        myContact.save(                                 $%COMMENT$  save $%ENDCOMMENT$
+                          function() {                                  $%COMMENT$  successful save callback $%ENDCOMMENT$
+                            $%IF ITEM.SuccessMessage != ""$             $%COMMENT$  alert successful message if one has been defined $%ENDCOMMENT$
+                                navigator.notification.alert("$$ITEM.SuccessMessage$", function(){}, "Contacts", "Close");
+                            $%ENDIF$
+                            $%IF ITEM.RunButtonRules == "Y"$
+                                $$ITEM.ONCLICK()$                       $%COMMENT$  the button javascript - executed if tick box to run selected $%ENDCOMMENT$
+                            $%ELSE$
+                                e.stopPropagation;
+                                return false;
+                            $%ENDIF$
+                        }, function() {                                 $%COMMENT$  error save callback $%ENDCOMMENT$
+                            $%IF ITEM.ErrorMessage != ""$               $%COMMENT$  alert error message if one has been defined $%ENDCOMMENT$
+                                navigator.notification.alert("$$ITEM.ErrorMessage$", function(){}, "Contacts", "Close");
+                            $%ENDIF$
+                        });
+                    }, 
+                    function(){                                         $%COMMENT$  error during search $%ENDCOMMENT$
+                        alert("$$ITEM.ErrorMessage$")                   $%COMMENT$  alert error message if one has been defined $%ENDCOMMENT$
+                    }, 
+                    options);
+            }, false);
+</script>

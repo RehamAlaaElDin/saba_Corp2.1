@@ -1,0 +1,38 @@
+<script type="text/javascript">
+
+    function $$ITEM.ID()$_render(){  
+    var hangoutBtnOtions=
+{
+$%IF ITEM.topic != ""$ "topic":"$$ITEM.topic$", 
+$%ENDIF$$%IF ITEM.hangout_type != ""$ "hangout_type":"$$ITEM.hangout_type$",
+$%ENDIF$$%IF ITEM.widget_size != ""$ "widget_size":"$$ITEM.widget_size$",
+$%ENDIF$'initial_apps': [{$%IF ITEM.app_id != ""$ "app_type":"$$ITEM.app_type$",$%ENDIF$$%IF ITEM.app_id != ""$ "start_data":"$$ITEM.start_data$",$%ENDIF$$%IF ITEM.app_id != ""$ "app_id":"$$ITEM.app_id$"$%ENDIF$}],
+'render': 'createhangout'};
+        
+    var invites_type="$$ITEM.invites_type$";
+    var invites="$$ITEM.ids$";
+    invites=invites.split(",");
+    if (invites.length>0){
+        hangoutBtnOtions.invites=new Array();
+    for (var i=0; i < invites.length; i++) {
+      hangoutBtnOtions.invites[i]={};
+      hangoutBtnOtions.invites[i].id=invites[i];
+      hangoutBtnOtions.invites[i].invite_type=invites_type;
+    };
+    
+    }
+
+       gapi.hangout.render("googleBtn_$$ITEM.ID()$",hangoutBtnOtions );
+       
+   }
+window.edge.widgets.google.addEvent('googleApiLoaded', function (e) {
+    $$ITEM.ID()$_render();
+});
+if (window.edge.widgets.google.ApiLoaded==true) {
+$$ITEM.ID()$_render();
+}
+</script>
+  <div id="googleBtn_$$ITEM.ID()$"></div>
+
+
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

@@ -1,0 +1,3 @@
+$%COMMENT$ $Revision: 1.6 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<link type="text/css" href="./templates/widgets/css/accordion.css" rel="stylesheet" />
+<script type="text/javascript" src="./templates/widgets/js/accordion.js"></script>

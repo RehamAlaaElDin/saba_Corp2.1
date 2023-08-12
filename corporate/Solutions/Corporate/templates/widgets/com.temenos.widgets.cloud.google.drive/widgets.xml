@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget callback="false"  icon="images/googleDrive.png" name="Google Drive" type="Item:">
+    <template type="source" value="body.wgt"/>
+    <custom>
+      <item help="The identifier of your Google Drive Folder . Ex ( 0B1iqp0kGPjWsNDg5NWFlZjEtN2IwZC00NmZiLWE3MjktYTE2ZjZjNTZiMDY2 )" includeInDesign="true" layout="-1" mand="true" name="folderID" prompt="FolderID" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="list" help="Google Drive folders can be embedded and displayed in list and grid views" includeInDesign="true" layout="-1" mand="false" name="view" prompt="View" type="javax.swing.JComboBox" typeValue="list|grid" usage="7"/>
+      <item defaultValue="800" help="The width of the plugin." includeInDesign="true" layout="-1" mand="false" name="width" prompt="width" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="600" help="The height of the plugin." includeInDesign="true" layout="-1" mand="false" name="height" prompt="height" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

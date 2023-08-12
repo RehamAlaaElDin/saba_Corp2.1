@@ -1,0 +1,95 @@
+$%COMMENT$ $Revision: 1.8 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+<script type="text/javascript">
+window.com=window.com||{};
+window.com.geolocation=window.com.geolocation||{};
+window.com.geolocation.deviceReady=window.com.geolocation.deviceReady||false;
+</script>
+
+$%SCRIPT$
+function GenerateButton() {
+var ecCode = "$$ITEM.EC_GENERATE().ESCAPEFORJS()$";
+var navigation = "$$ITEM.NAVIGATION()$";
+var insertIndex = ecCode.indexOf(navigation);
+var functionCall = "return  $$ITEM.ID()$onDeviceReady()";
+ecCode = ecCode.substring(0, insertIndex) + functionCall + ecCode.substring(insertIndex + navigation.length);
+return ecCode
+};
+GenerateButton();
+$%ENDSCRIPT$
+
+
+$%IF ITEM.NotApplicableAppearance != "Disable" && ITEM.NotApplicableAppearance != "Hide" || ITEM.HideField != "Y" $
+<script type = "text/javascript" charset="utf-8">
+    function getGeolocation_$$ITEM.ID()$_callback() {
+        $$ITEM.NAVIGATION()$
+    }
+    function $$ITEM.ID()$onDeviceReady() {
+
+        if (window.com.geolocation.deviceReady) {
+            navigator.geolocation.getCurrentPosition($$ITEM.ID()$onSuccessCordonations, function onError(error) {
+                alert('code: ' + error.code + '\n' +
+                        'message: ' + error.message + '\n');
+            }
+        )
+        }
+        else{
+
+            alert("Device isn't ready");
+        }
+    }
+
+    function  $$ITEM.ID()$onSuccessCordonations(position) {
+        var element = document.getElementById("$$ITEM.ID()$_container");
+        element.innerHTML = "";
+
+    $%IF ITEM.latitude != ""$
+        var latitude = document.createElement("input");
+        latitude.setAttribute("type", "hidden");
+        latitude.setAttribute("name", "_V_$$ITEM.latitude$");
+        latitude.setAttribute("value", position.coords.latitude);
+        element.appendChild(latitude); // put it into the DOM
+	$%ENDIF$
+
+	$%IF ITEM.longitude != ""$
+        var longitude = document.createElement("input");
+        longitude.setAttribute("type", "hidden");
+        longitude.setAttribute("name", "_V_$$ITEM.longitude$");
+        longitude.setAttribute("value", position.coords.longitude);
+        element.appendChild(longitude); // put it into the DOM
+   	$%ENDIF$
+
+   	$%IF ITEM.altitude != ""$
+        var altitude = document.createElement("input");
+        altitude.setAttribute("type", "hidden");
+        altitude.setAttribute("name", "_V_$$ITEM.altitude$");
+        altitude.setAttribute("value", position.coords.altitude);
+        element.appendChild(altitude); // put it into the DOM
+   	$%ENDIF$
+
+   	$%IF ITEM.accuracy != ""$
+        var accuracy = document.createElement("input");
+        accuracy.setAttribute("type", "hidden");
+        accuracy.setAttribute("name", "_V_$$ITEM.accuracy$");
+        accuracy.setAttribute("value", position.coords.accuracy);
+        element.appendChild(accuracy); // put it into the DOM
+	$%ENDIF$
+
+	$%IF ITEM.timeStamp != ""$
+        var timeStamp = document.createElement("input");
+        timeStamp.setAttribute("type", "hidden");
+        timeStamp.setAttribute("name", "_V_$$ITEM.timeStamp$");
+        timeStamp.setAttribute("value", new Date (position.timestamp));
+        element.appendChild(timeStamp); // put it into the DOM
+   	$%ENDIF$
+
+        getGeolocation_$$ITEM.ID()$_callback();
+
+    }
+
+    document.addEventListener("deviceready", function(){  window.com.geolocation.deviceReady=true; }, false);
+</script>
+$%ENDIF$
+
+<div id="$$ITEM.ID()$_container" >
+
+</div>

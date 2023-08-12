@@ -1,0 +1,5 @@
+Inward Guarantee Claim
+
+Guarantee Reference,Type,Transaction Reference,Issuing Party,Claim Date,Currency,Guarantee Amount,Claim Amount,Status
+$%for 1 to ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].lastInstance() $$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].GteeRef$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].TypeOfMd$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].TransRef$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].IssuingParty$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].ClaimDate$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].Currency$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].GteeAmountForCSVDownload$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].ClaimAmountForCSVDownload$,$$ListingForDisplay[1].ReceivedGuaranteeClaimsList[C].StatusForDisplay$
+$%endfor$

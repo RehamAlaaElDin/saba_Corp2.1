@@ -1,0 +1,37 @@
+<script type="text/javascript">
+  window.___gcfg = {
+    parsetags: 'explicit'
+  };
+function $$ITEM.ID()$_callback(){
+ var func="$$ITEM.NAVIGATION()$";
+ func=func.replace("return", "");
+ eval(func);
+}
+
+function $$ITEM.ID()$_render(){    
+ var plusOneBtnOtions=
+{
+$%IF ITEM.href != ""$ "href":"$$ITEM.href$", 
+$%ENDIF$$%IF ITEM.size != ""$ "size":"$$ITEM.size$", 
+$%ENDIF$$%IF ITEM.annotation != ""$ "annotation":"$$ITEM.annotation$", 
+$%ENDIF$$%IF ITEM.align != ""$ "align":"$$ITEM.align$", 
+$%ENDIF$$%IF ITEM.expandTo != ""$ "expandTo":"$$ITEM.expandTo$", 
+$%ENDIF$$%IF ITEM.width != ""$ "width":"$$ITEM.width$", 
+$%ENDIF$$%IF ITEM.recommendations == "Y"$"recommendations":"true"$%ELSE$"recommendations":"false"$%ENDIF$,
+callback:"$$ITEM.ID()$_callback"
+};
+       gapi.plusone.render("$$ITEM.ID()$",plusOneBtnOtions );
+}
+
+window.edge.widgets.google.addEvent('googleApiLoaded', function (e) {
+$$ITEM.ID()$_render();
+});
+
+if (window.edge.widgets.google.ApiLoaded==true) {
+$$ITEM.ID()$_render();
+}
+
+</script>
+ 
+<button name="__$$ITEM.ENTITYNAME()$" id="$$ITEM.ID()$" onclick="$$ITEM.NAVIGATION()$" class="g-plusone $$ITEM.STYLES().ButtonStyle$"  style="$$ITEM.INLINE_STYLES().ButtonStyle$ cursor: pointer;"><span class="icon">&nbsp;</span><span class="label">$$ITEM.ActionCommand$</span></button>
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

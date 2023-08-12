@@ -1,0 +1,142 @@
+<!--<script src="./templates/widgets/jquery/js/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="./templates/widgets/jquery/jquery-ui.js"></script>-->
+<link rel="stylesheet" type="text/css" href="./templates/widgets/formProgressBar/css/progressbar.css">
+
+<script type="text/javascript">
+   
+	function computeProgress(){
+		var pbVal = 0;
+		var product = "$$ITEM.Product$";
+		var Type = "$$ITEM.Type$";
+		// The below should tkae into consideration just fields completed and NOT in error BUT UXP is incosistent with classes on items in error
+		//$("input.PrgsBarMandatory:not(.tc-error-color-border), select.PrgsBarMandatory:not(.tc-error-color-border), textarea.PrgsBarMandatory:not(.tc-error-color-border)").each(function (index, element) {
+		$("input.PrgsBarMandatory, select.PrgsBarMandatory, textarea.PrgsBarMandatory").each(function (index, element) {
+			var value = $(element).val();
+			var size = parseInt($(".PrgsBarMandatory").size(),10);
+            var progress = 100/size;  
+
+			if ($(element).is('input[type="checkbox"], input[type="radio"]')) {
+				if($(element).is(':checked')) {
+				    if(product == "LetterOfCredit")
+					  {
+	                    pbVal += progress;
+						pbVal += progress;						
+					  }
+					  if(product == "Guarantee")
+					  {
+					    pbVal += progress;
+						pbVal += progress;
+					  }
+					  if(product == "OutwardCollections")
+					  {
+					    pbVal += progress;
+						pbVal += progress;
+					  }
+                }
+            }
+			else if(value.trim() !== "" && value !== "9999")
+			{
+				if(Type == "New")
+				{
+				  pbVal += progress;
+				}
+				else
+				{
+				if((Type == "Modify") && ($(element).hasClass( "IssueDateModify" )))
+				{
+				  pbVal += progress;
+				  pbVal += progress;
+				}
+				else
+				{
+				  pbVal += progress;
+				}
+				}
+				
+            }
+        });
+		$("#progressbar").progressbar("option", "value", pbVal);
+		//var f = $("#progressbar DIV").width() / $('#progressbar DIV').parent().width() * 100;
+		var f = pbVal;
+		f1 =Math.round(f);
+		//console.log(f);
+		console.log(pbVal); 
+	    $("#progress").text(f1 + "% completed" );
+        $("#progress").show();
+		if(f1 == 100) {
+			$('.ui-progressbar-value').addClass('progress-complete');
+		} else {
+			$('.ui-progressbar-value').removeClass('progress-complete');
+		}
+		/*if ($("#progress").text() == '100%') 
+		{
+		   $("#successmessage").addClass("successmessagestyle");
+		}
+		else
+		{
+		  $("#successmessage").removeClass("successmessagestyle");
+		}*/
+}
+
+    $(document).ready(function()
+    {
+	    var attributeOne = $("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeOne$").val();
+		var attributeTwo = $("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeTwo$").val();
+		var attributeThree = $("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeThree$").val();
+
+		if ((attributeOne != '') || (attributeTwo!=''))
+		{
+		$("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeThree$").removeClass("PrgsBarMandatory");
+		}
+		if (attributeThree != '')
+		{
+		$("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeOne$").removeClass("PrgsBarMandatory");
+		$("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeTwo$").removeClass("PrgsBarMandatory");
+		}
+	    $("div .PrgsBarMandatory").find("input").addClass("PrgsBarMandatory").parent().removeClass("PrgsBarMandatory");
+		//$(".hasDatepicker").addClass("PrgsBarMandatory");
+		//$("#C1__QUE_C3E0D9733801F5C9550597").addClass("IssueDateModify");
+    	$("#progress").text("0%");
+
+        $("#progressbar").progressbar(
+		{
+          value: 0
+        });
+			   
+	   computeProgress();
+
+    });
+
+	$(document.body).on('change', '.PrgsBarMandatory' ,function()
+	{
+	var attributeOne = $("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeOne$").val();
+	var attributeTwo = $("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeTwo$").val();
+	var attributeThree = $("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeThree$").val();
+    
+	var supportDoc = $("#C1__QUE_4CB36360E131297A171464").val();
+	//alert(supportDoc);
+	if(supportDoc != '')
+	{	  
+	  computeProgress();
+	}
+	if ((attributeOne != '') || (attributeTwo!=''))
+	{
+	$("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeThree$").removeClass("PrgsBarMandatory");
+	}
+	if (attributeThree != '')
+	{
+	$("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeOne$").removeClass("PrgsBarMandatory");
+	$("#$$ITEM.COMPONENT_PREFIX()$$$ITEM.AttributeTwo$").removeClass("PrgsBarMandatory");
+	}
+	$("div .PrgsBarMandatory").find("input").addClass("PrgsBarMandatory").parent().removeClass("PrgsBarMandatory");
+	//$(".hasDatepicker").addClass("PrgsBarMandatory");
+	$("#C1__QUE_C3E0D9733801F5C9550597").addClass("IssueDateModify");
+	computeProgress();
+	})
+
+</script>
+<div class="progressbarsection">
+<div id="progressbar"></div>
+<div id="progress"></div>
+</div>
+<!-- <div id="successmessage"></div> -->

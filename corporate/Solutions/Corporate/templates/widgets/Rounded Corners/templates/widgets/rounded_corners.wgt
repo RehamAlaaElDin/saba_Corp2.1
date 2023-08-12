@@ -1,0 +1,22 @@
+$%COMMENT$ $Revision: 2.2 $ - DO NOT EDIT - widget file maintained by UXP $%ENDCOMMENT$
+$%IF ITEM.SpacerText != ""$
+    $%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$<tr><td colspan="4">$%ELSE$<div style="width: 100%">$%ENDIF$
+    $$ITEM.SpacerText$
+    $%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$</td></tr>$%ELSE$</div>$%ENDIF$
+$%ENDIF$
+$%SET SpecifiedSectionUnit = $$%IF ITEM.SectionLayout == "Specify in pixels (px)"$px$%ENDIF$$%IF ITEM.SectionLayout == "Specify as percentage (%)"$%$%ENDIF$$%IF ITEM.SectionLayout == "Specify relative to font size (em)"$em$%ENDIF$$%ENDSET$
+$%SET SpecifiedSectionLayout =$$%IF !SpecifiedSectionUnit != ""$
+$%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$$$!SpecifiedSectionUnit$;$%ENDIF$
+$%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$$$!SpecifiedSectionUnit$;$%ELSE$width:100%;$%ENDIF$
+$%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$$$!SpecifiedSectionUnit$;$%ENDIF$
+$%ENDIF$$%ENDSET$
+$%IF ITEM.INNERCOLOR == ""$ $%SET InnerColor = #EEDDEE$ $%ENDSET$ $%ELSE$ $%SET InnerColor := ITEM.INNERCOLOR$ $%ENDSET$ $%ENDIF$
+$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$<tr><td colspan="4">$%ENDIF$
+$%SET BorderRadiusValues = $$%IF ITEM.TL == "Y"$20px $%ELSE$0px $%ENDIF$$%IF ITEM.TR == "Y"$20px $%ELSE$0px $%ENDIF$$%IF ITEM.BR == "Y"$20px $%ELSE$0px $%ENDIF$$%IF ITEM.BL == "Y"$20px$%ELSE$0px$%ENDIF$;$%ENDSET$
+<div id="$$ITEM.ID()$" class="$$ITEM.STYLES().SectionStyle$$%IF !__EC_IS_DESIGNER == 'Y'$ tetris_baseLocation$%ENDIF$" style="$%IF ITEM.IS_HIDDEN() == "true"$display: none; $%ENDIF$position:relative; background:$$!InnerColor$; z-index:0;$$!SpecifiedSectionLayout$ border-radius:$$!BorderRadiusValues$ -webkit-border-radius:$$!BorderRadiusValues$ -moz-border-radius:$$!BorderRadiusValues$ $$ITEM.INLINE_STYLES().SectionStyle$">
+	<div style="$%IF ITEM.PADDING != ""$padding: $$ITEM.PADDING$$%ENDIF$ ">
+		$$FORMCONTENT$
+		<div style="clear: both"></div>
+	</div>
+</div>
+$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$</td></tr>$%ENDIF$

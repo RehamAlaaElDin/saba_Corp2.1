@@ -1,0 +1,31 @@
+<script type="text/javascript">
+function $$ITEM.ID()$_render(){  
+            var options = {
+$%IF ITEM.clientid != ""$"clientid":"$$ITEM.clientid$", 
+$%ENDIF$$%IF ITEM.contenturl != ""$"contenturl":"$$ITEM.contenturl$",
+$%ENDIF$$%IF ITEM.contentdeeplinkid != ""$"contentdeeplinkid":"$$ITEM.contentdeeplinkid$",
+$%ENDIF$$%IF ITEM.calltoactionlabel != ""$"calltoactionlabel":"$$ITEM.calltoactionlabel$",
+$%ENDIF$$%IF ITEM.calltoactionurl != ""$"calltoactionurl":"$$ITEM.calltoactionurl$",
+$%ENDIF$$%IF ITEM.calltoactiondeeplinkid != ""$"calltoactiondeeplinkid":"$$ITEM.calltoactiondeeplinkid$",
+$%ENDIF$$%IF ITEM.prefilltext != ""$"prefilltext":"$$ITEM.prefilltext$",
+$%ENDIF$$%IF ITEM.recipients != ""$"recipients":"$$ITEM.recipients$",
+$%ENDIF$$%IF ITEM.cookiepolicy != "Y"$ "cookiepolicy":"none"$%ELSE$$%IF ITEM.uri != ""$"cookiepolicy":"$$ITEM.uri$"$%ELSE$"cookiepolicy":"single_host_origin"$%ENDIF$$%ENDIF$
+        };
+ //window.edge.widgets.google.shareButton(options);
+         gapi.interactivepost.render('$$ITEM.ID()$', options);
+         
+     }
+     
+window.edge.widgets.google.addEvent('googleApiLoaded', function (e) {
+$$ITEM.ID()$_render();        
+});
+
+
+if (window.edge.widgets.google.ApiLoaded==true) {
+$$ITEM.ID()$_render();
+}
+</script>
+
+<button name="__$$ITEM.ENTITYNAME()$" id="$$ITEM.ID()$" onclick="$$ITEM.NAVIGATION()$" class="$$ITEM.STYLES().ButtonStyle$"  style="$$ITEM.INLINE_STYLES().ButtonStyle$ cursor: pointer;"><span class="icon">&nbsp;</span><span class="label">$$ITEM.ActionCommand$</span></button>
+
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

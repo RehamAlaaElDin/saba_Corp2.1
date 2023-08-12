@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="777">
+  <!--enqTcCountry-->
+<enqTcCountry enqTcCountryCode="AD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="2" Id="AD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="0" ShortName="Andorra"/>
+    <enqTcCountryName enqTcCountryName="Andorra" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="1"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="5" Id="AE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="3" ShortName="U.A.E"/>
+    <enqTcCountryName enqTcCountryName="United Arab Emirates" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="4"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="8" Id="AF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="6" ShortName="Afghanistan"/>
+    <enqTcCountryName enqTcCountryName="Afghanistan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="7"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="11" Id="AG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="9" ShortName="Antigua"/>
+    <enqTcCountryName enqTcCountryName="Antigua And Barbuda" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="10"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="14" Id="AI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="12" ShortName="Anguilla"/>
+    <enqTcCountryName enqTcCountryName="Anguilla" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="13"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="17" Id="AL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="15" ShortName="Albania"/>
+    <enqTcCountryName enqTcCountryName="Albania" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="16"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="20" Id="AM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="18" ShortName="Armenia"/>
+    <enqTcCountryName enqTcCountryName="Armenia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="19"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="23" Id="AN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="21" ShortName="Neth Ant."/>
+    <enqTcCountryName enqTcCountryName="Netherlands Antilles" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="22"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="26" Id="AO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="24" ShortName="Angola"/>
+    <enqTcCountryName enqTcCountryName="Angola" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="25"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AQ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="29" Id="AQ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="27" ShortName="Antarctica"/>
+    <enqTcCountryName enqTcCountryName="Antarctica" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="28"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="32" Id="AR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="30" ShortName="Argentina"/>
+    <enqTcCountryName enqTcCountryName="Argentina" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="31"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="35" Id="AS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="33" ShortName="American Samoa"/>
+    <enqTcCountryName enqTcCountryName="American Samoa" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="34"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="38" Id="AT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="36" ShortName="Austria"/>
+    <enqTcCountryName enqTcCountryName="Austria" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="37"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="41" Id="AU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="39" ShortName="Australia"/>
+    <enqTcCountryName enqTcCountryName="Australia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="40"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="44" Id="AW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="42" ShortName="Aruba"/>
+    <enqTcCountryName enqTcCountryName="Aruba" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="43"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AX" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="47" Id="AX">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="45" ShortName="Aland Islands"/>
+    <enqTcCountryName enqTcCountryName="Alan Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="46"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="AZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="50" Id="AZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="48" ShortName="Azerbaijan"/>
+    <enqTcCountryName enqTcCountryName="Azerbaijan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="49"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="53" Id="BA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="51" ShortName="Bosnia-Herz"/>
+    <enqTcCountryName enqTcCountryName="Bosnia-Herzegovina" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="52"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="56" Id="BB">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="54" ShortName="Barbados"/>
+    <enqTcCountryName enqTcCountryName="Barbados" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="55"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="59" Id="BD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="57" ShortName="Bangladesh"/>
+    <enqTcCountryName enqTcCountryName="Bangladesh" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="58"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="62" Id="BE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="60" ShortName="Belgium"/>
+    <enqTcCountryName enqTcCountryName="Belgium" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="61"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="65" Id="BF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="63" ShortName="Burkina Faso"/>
+    <enqTcCountryName enqTcCountryName="Burkina Faso" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="64"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="68" Id="BG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="66" ShortName="Bulgaria"/>
+    <enqTcCountryName enqTcCountryName="Bulgaria" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="67"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="71" Id="BH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="69" ShortName="Bahrain"/>
+    <enqTcCountryName enqTcCountryName="Bahrain" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="70"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="74" Id="BI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="72" ShortName="Burundi"/>
+    <enqTcCountryName enqTcCountryName="Burundi" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="73"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BJ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="77" Id="BJ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="75" ShortName="Benin"/>
+    <enqTcCountryName enqTcCountryName="Benin" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="76"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="80" Id="BL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="78" ShortName="SaintBarthelemy"/>
+    <enqTcCountryName enqTcCountryName="Saint Barthelemy" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="79"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="83" Id="BM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="81" ShortName="Bermuda"/>
+    <enqTcCountryName enqTcCountryName="Bermuda" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="82"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="86" Id="BN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="84" ShortName="Brunei"/>
+    <enqTcCountryName enqTcCountryName="Brunei Darussalam" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="85"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="89" Id="BO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="87" ShortName="Bolivia"/>
+    <enqTcCountryName enqTcCountryName="Bolivia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="88"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BQ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="92" Id="BQ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="90" ShortName="Bonaire,"/>
+    <enqTcCountryName enqTcCountryName="Bonaire, Sint Eustatius and Saba" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="91"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="95" Id="BR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="93" ShortName="Brazil"/>
+    <enqTcCountryName enqTcCountryName="Brazil" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="94"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="98" Id="BS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="96" ShortName="Bahamas"/>
+    <enqTcCountryName enqTcCountryName="Bahamas" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="97"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="101" Id="BT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="99" ShortName="Bhutan"/>
+    <enqTcCountryName enqTcCountryName="Bhutan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="100"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="104" Id="BV">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="102" ShortName="Bouvet Island"/>
+    <enqTcCountryName enqTcCountryName="Bouvet Island" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="103"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="107" Id="BW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="105" ShortName="Botswana"/>
+    <enqTcCountryName enqTcCountryName="Botswana" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="106"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="110" Id="BY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="108" ShortName="Belarus"/>
+    <enqTcCountryName enqTcCountryName="Belarus" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="109"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="BZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="113" Id="BZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="111" ShortName="Belize"/>
+    <enqTcCountryName enqTcCountryName="Belize" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="112"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="116" Id="CA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="114" ShortName="Canada"/>
+    <enqTcCountryName enqTcCountryName="Canada" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="115"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="119" Id="CC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="117" ShortName="Cocos Islands"/>
+    <enqTcCountryName enqTcCountryName="Cocos (Keeling) Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="118"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="122" Id="CD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="120" ShortName="Congo"/>
+    <enqTcCountryName enqTcCountryName="Congo, Democratic Republic of the" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="121"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="125" Id="CF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="123" ShortName="Cent Afr"/>
+    <enqTcCountryName enqTcCountryName="Central African Republic" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="124"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="128" Id="CG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="126" ShortName="Congo"/>
+    <enqTcCountryName enqTcCountryName="Congo" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="127"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="131" Id="CH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="129" ShortName="Switzerland"/>
+    <enqTcCountryName enqTcCountryName="Switzerland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="130"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="134" Id="CI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="132" ShortName="Ivory"/>
+    <enqTcCountryName enqTcCountryName="Ivory Coast" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="133"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="137" Id="CK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="135" ShortName="Cook Islands"/>
+    <enqTcCountryName enqTcCountryName="Cook Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="136"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="140" Id="CL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="138" ShortName="Chile"/>
+    <enqTcCountryName enqTcCountryName="Chile" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="139"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="143" Id="CM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="141" ShortName="Cameroon"/>
+    <enqTcCountryName enqTcCountryName="Cameroon" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="142"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="146" Id="CN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="144" ShortName="China"/>
+    <enqTcCountryName enqTcCountryName="Peoples Republic of China" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="145"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="149" Id="CO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="147" ShortName="Columbia"/>
+    <enqTcCountryName enqTcCountryName="Columbia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="148"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="152" Id="CR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="150" ShortName="Costa Rica"/>
+    <enqTcCountryName enqTcCountryName="Costa Rica" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="151"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="155" Id="CU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="153" ShortName="Cuba"/>
+    <enqTcCountryName enqTcCountryName="Cuba" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="154"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="158" Id="CV">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="156" ShortName="Cape Verde"/>
+    <enqTcCountryName enqTcCountryName="Cape Verde" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="157"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="161" Id="CW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="159" ShortName="Curacao"/>
+    <enqTcCountryName enqTcCountryName="Curacao" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="160"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CX" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="164" Id="CX">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="162" ShortName="Christmas Is."/>
+    <enqTcCountryName enqTcCountryName="Christmas Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="163"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="167" Id="CY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="165" ShortName="Cyprus"/>
+    <enqTcCountryName enqTcCountryName="Cyprus" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="166"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="CZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="170" Id="CZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="168" ShortName="Czech Republic"/>
+    <enqTcCountryName enqTcCountryName="Czech Republic" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="169"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="DE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="173" Id="DE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="171" ShortName="Germany"/>
+    <enqTcCountryName enqTcCountryName="Germany" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="172"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="DJ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="176" Id="DJ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="174" ShortName="Djibouti"/>
+    <enqTcCountryName enqTcCountryName="Djibouti" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="175"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="DK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="179" Id="DK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="177" ShortName="Denmark"/>
+    <enqTcCountryName enqTcCountryName="Denmark" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="178"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="DM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="182" Id="DM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="180" ShortName="Dominica"/>
+    <enqTcCountryName enqTcCountryName="Dominica" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="181"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="DO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="185" Id="DO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="183" ShortName="Dominican"/>
+    <enqTcCountryName enqTcCountryName="Dominican Republic" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="184"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="DZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="188" Id="DZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="186" ShortName="Algeria"/>
+    <enqTcCountryName enqTcCountryName="Algeria" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="187"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="EC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="191" Id="EC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="189" ShortName="Ecuador"/>
+    <enqTcCountryName enqTcCountryName="Ecuador" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="190"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="EE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="194" Id="EE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="192" ShortName="Estonia"/>
+    <enqTcCountryName enqTcCountryName="Estonia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="193"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="EG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="197" Id="EG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="195" ShortName="Egypt"/>
+    <enqTcCountryName enqTcCountryName="Egypt" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="196"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="EH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="200" Id="EH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="198" ShortName="Western Sahara"/>
+    <enqTcCountryName enqTcCountryName="Western Sahara" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="199"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ER" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="203" Id="ER">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="201" ShortName="Eritrea"/>
+    <enqTcCountryName enqTcCountryName="Eritrea" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="202"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ES" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="206" Id="ES">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="204" ShortName="Spain"/>
+    <enqTcCountryName enqTcCountryName="Spain" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="205"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ET" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="209" Id="ET">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="207" ShortName="Ethiopia"/>
+    <enqTcCountryName enqTcCountryName="Ethiopia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="208"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="EU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="212" Id="EU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="210" ShortName="EUR Countries"/>
+    <enqTcCountryName enqTcCountryName="EU Countries" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="211"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="FI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="215" Id="FI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="213" ShortName="Finland"/>
+    <enqTcCountryName enqTcCountryName="Finland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="214"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="FJ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="218" Id="FJ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="216" ShortName="Fiji"/>
+    <enqTcCountryName enqTcCountryName="Fiji" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="217"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="FK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="221" Id="FK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="219" ShortName="Falkland Is."/>
+    <enqTcCountryName enqTcCountryName="Falkland Islands (Malvinas)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="220"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="FM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="224" Id="FM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="222" ShortName="Micronesia"/>
+    <enqTcCountryName enqTcCountryName="Micronesia, Federated States of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="223"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="FO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="227" Id="FO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="225" ShortName="Faroe Islands"/>
+    <enqTcCountryName enqTcCountryName="Faroe Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="226"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="FR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="230" Id="FR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="228" ShortName="France"/>
+    <enqTcCountryName enqTcCountryName="France" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="229"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="233" Id="GA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="231" ShortName="Gabon"/>
+    <enqTcCountryName enqTcCountryName="Gabon" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="232"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="236" Id="GB">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="234" ShortName="G.B."/>
+    <enqTcCountryName enqTcCountryName="Great Britain" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="235"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="239" Id="GD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="237" ShortName="Grenada"/>
+    <enqTcCountryName enqTcCountryName="Grenada" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="238"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="242" Id="GE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="240" ShortName="Georgia"/>
+    <enqTcCountryName enqTcCountryName="Georgia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="241"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="245" Id="GF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="243" ShortName="French Guiana"/>
+    <enqTcCountryName enqTcCountryName="French Guiana" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="244"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="248" Id="GG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="246" ShortName="Channel Islands"/>
+    <enqTcCountryName enqTcCountryName="Channel Islands and Guernsey" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="247"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="251" Id="GH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="249" ShortName="Ghana"/>
+    <enqTcCountryName enqTcCountryName="Ghana" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="250"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="254" Id="GI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="252" ShortName="Gibraltar"/>
+    <enqTcCountryName enqTcCountryName="Gibraltar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="253"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="257" Id="GL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="255" ShortName="Greenland"/>
+    <enqTcCountryName enqTcCountryName="Greenland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="256"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="260" Id="GM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="258" ShortName="Gambia"/>
+    <enqTcCountryName enqTcCountryName="Gambia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="259"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="263" Id="GN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="261" ShortName="Guinea"/>
+    <enqTcCountryName enqTcCountryName="Guinea" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="262"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="266" Id="GP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="264" ShortName="Guadeloupe"/>
+    <enqTcCountryName enqTcCountryName="Guadeloupe" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="265"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GQ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="269" Id="GQ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="267" ShortName="Equ. Guinea"/>
+    <enqTcCountryName enqTcCountryName="Equatorial Guinea" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="268"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="272" Id="GR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="270" ShortName="Greece"/>
+    <enqTcCountryName enqTcCountryName="Greece" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="271"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="275" Id="GS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="273" ShortName="S Georgia"/>
+    <enqTcCountryName enqTcCountryName="South Georgia &amp; South Sandwich Is" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="274"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="278" Id="GT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="276" ShortName="Guatemala"/>
+    <enqTcCountryName enqTcCountryName="Guatemala" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="277"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="281" Id="GU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="279" ShortName="Guam"/>
+    <enqTcCountryName enqTcCountryName="Guam" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="280"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="284" Id="GW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="282" ShortName="Guinea-Bissau"/>
+    <enqTcCountryName enqTcCountryName="Guinea-Bissau" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="283"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="GY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="287" Id="GY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="285" ShortName="Guyana"/>
+    <enqTcCountryName enqTcCountryName="Guyana" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="286"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="HK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="290" Id="HK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="288" ShortName="H.K."/>
+    <enqTcCountryName enqTcCountryName="Hong Kong" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="289"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="HM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="293" Id="HM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="291" ShortName="Heard .McDonald"/>
+    <enqTcCountryName enqTcCountryName="Heard and Mcdonald Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="292"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="HN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="296" Id="HN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="294" ShortName="Honduras"/>
+    <enqTcCountryName enqTcCountryName="Honduras" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="295"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="HR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="299" Id="HR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="297" ShortName="Croatia"/>
+    <enqTcCountryName enqTcCountryName="Croatia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="298"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="HT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="302" Id="HT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="300" ShortName="Haiti"/>
+    <enqTcCountryName enqTcCountryName="Haiti" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="301"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="HU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="305" Id="HU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="303" ShortName="Hungary"/>
+    <enqTcCountryName enqTcCountryName="Hungary" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="304"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ID" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="308" Id="ID">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="306" ShortName="Indonesia"/>
+    <enqTcCountryName enqTcCountryName="Indonesia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="307"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="311" Id="IE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="309" ShortName="Ireland"/>
+    <enqTcCountryName enqTcCountryName="Ireland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="310"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="314" Id="IL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="312" ShortName="Israel"/>
+    <enqTcCountryName enqTcCountryName="Israel" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="313"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="317" Id="IM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="315" ShortName="Isle of Man"/>
+    <enqTcCountryName enqTcCountryName="Isle of Man" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="316"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="320" Id="IN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="318" ShortName="India"/>
+    <enqTcCountryName enqTcCountryName="India" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="319"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="323" Id="IO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="321" ShortName="Br Ind. Oc. Ter"/>
+    <enqTcCountryName enqTcCountryName="British Indian Ocean Territory" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="322"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IQ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="326" Id="IQ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="324" ShortName="Iraq"/>
+    <enqTcCountryName enqTcCountryName="Iraq" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="325"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="329" Id="IR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="327" ShortName="Iran"/>
+    <enqTcCountryName enqTcCountryName="Iran (Islamic Republic of)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="328"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="332" Id="IS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="330" ShortName="Iceland"/>
+    <enqTcCountryName enqTcCountryName="Iceland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="331"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="IT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="335" Id="IT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="333" ShortName="Italy"/>
+    <enqTcCountryName enqTcCountryName="Italy" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="334"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="JE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="338" Id="JE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="336" ShortName="Jersey"/>
+    <enqTcCountryName enqTcCountryName="Jersey" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="337"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="JM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="341" Id="JM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="339" ShortName="Jamaica"/>
+    <enqTcCountryName enqTcCountryName="Jamaica" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="340"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="JO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="344" Id="JO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="342" ShortName="Jordan"/>
+    <enqTcCountryName enqTcCountryName="Jordan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="343"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="JP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="347" Id="JP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="345" ShortName="Japan"/>
+    <enqTcCountryName enqTcCountryName="Japan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="346"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="350" Id="KE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="348" ShortName="Kenya"/>
+    <enqTcCountryName enqTcCountryName="Kenya" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="349"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="353" Id="KG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="351" ShortName="Kyrgyzstan"/>
+    <enqTcCountryName enqTcCountryName="Kyrgyzstan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="352"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="356" Id="KH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="354" ShortName="Cambodia"/>
+    <enqTcCountryName enqTcCountryName="Cambodia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="355"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="359" Id="KI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="357" ShortName="Kiribati"/>
+    <enqTcCountryName enqTcCountryName="Kiribati" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="358"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="362" Id="KM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="360" ShortName="Comoro"/>
+    <enqTcCountryName enqTcCountryName="Comoro Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="361"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="365" Id="KN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="363" ShortName="St Kitts .Nevis"/>
+    <enqTcCountryName enqTcCountryName="Saint Kitts and Nevis" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="364"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="368" Id="KP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="366" ShortName="Korea"/>
+    <enqTcCountryName enqTcCountryName="Korea, Democratic Peoples Rep. of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="367"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="371" Id="KR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="369" ShortName="Korea, Rep. of"/>
+    <enqTcCountryName enqTcCountryName="Korea, Republic of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="370"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="374" Id="KW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="372" ShortName="Kuwait"/>
+    <enqTcCountryName enqTcCountryName="Kuwait" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="373"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="377" Id="KY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="375" ShortName="Cayman Islands"/>
+    <enqTcCountryName enqTcCountryName="Cayman Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="376"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="KZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="380" Id="KZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="378" ShortName="Kazakstan"/>
+    <enqTcCountryName enqTcCountryName="Kazakstan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="379"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="383" Id="LA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="381" ShortName="Lao"/>
+    <enqTcCountryName enqTcCountryName="Lao Peoples Democratic Republic" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="382"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="386" Id="LB">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="384" ShortName="Lebanon"/>
+    <enqTcCountryName enqTcCountryName="Lebanon" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="385"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="389" Id="LC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="387" ShortName="St. Lucia"/>
+    <enqTcCountryName enqTcCountryName="Saint Lucia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="388"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="392" Id="LI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="390" ShortName="Liecht"/>
+    <enqTcCountryName enqTcCountryName="Liechtenstein" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="391"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="395" Id="LK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="393" ShortName="Sri Lanka"/>
+    <enqTcCountryName enqTcCountryName="Sri Lanka" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="394"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="398" Id="LR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="396" ShortName="Liberia"/>
+    <enqTcCountryName enqTcCountryName="Liberia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="397"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="401" Id="LS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="399" ShortName="Lesotho"/>
+    <enqTcCountryName enqTcCountryName="Lesotho" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="400"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="404" Id="LT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="402" ShortName="Lithuania"/>
+    <enqTcCountryName enqTcCountryName="Lithuania" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="403"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="407" Id="LU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="405" ShortName="Luxembourg"/>
+    <enqTcCountryName enqTcCountryName="Luxembourg" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="406"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="410" Id="LV">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="408" ShortName="Latvia"/>
+    <enqTcCountryName enqTcCountryName="Latvia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="409"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="LY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="413" Id="LY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="411" ShortName="Libya"/>
+    <enqTcCountryName enqTcCountryName="Libyan Arab Jamahiriya" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="412"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="416" Id="MA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="414" ShortName="Morocco"/>
+    <enqTcCountryName enqTcCountryName="Morocco" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="415"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="419" Id="MC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="417" ShortName="Monaco"/>
+    <enqTcCountryName enqTcCountryName="Monaco" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="418"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="422" Id="MD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="420" ShortName="Moldova, Rep of"/>
+    <enqTcCountryName enqTcCountryName="Moldova, Republic of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="421"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ME" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="425" Id="ME">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="423" ShortName="Montenegro"/>
+    <enqTcCountryName enqTcCountryName="Montenegro" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="424"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="428" Id="MF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="426" ShortName="Saint Martin"/>
+    <enqTcCountryName enqTcCountryName="Saint Martin(French part)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="427"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="431" Id="MG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="429" ShortName="Madagascar"/>
+    <enqTcCountryName enqTcCountryName="Madagascar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="430"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="434" Id="MH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="432" ShortName="Marshall Is."/>
+    <enqTcCountryName enqTcCountryName="Marshall Islands, Republic of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="433"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="437" Id="MK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="435" ShortName="Macedonia"/>
+    <enqTcCountryName enqTcCountryName="Macedonia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="436"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ML" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="440" Id="ML">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="438" ShortName="Mali"/>
+    <enqTcCountryName enqTcCountryName="Mali" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="439"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="443" Id="MM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="441" ShortName="Myanmar"/>
+    <enqTcCountryName enqTcCountryName="Myanmar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="442"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="446" Id="MN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="444" ShortName="Mongolia"/>
+    <enqTcCountryName enqTcCountryName="Mongolia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="445"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="449" Id="MO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="447" ShortName="Macau"/>
+    <enqTcCountryName enqTcCountryName="Macau" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="448"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="452" Id="MP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="450" ShortName="N. Mariana Is."/>
+    <enqTcCountryName enqTcCountryName="Northern Mariana Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="451"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MQ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="455" Id="MQ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="453" ShortName="Martinique"/>
+    <enqTcCountryName enqTcCountryName="Martinique" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="454"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="458" Id="MR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="456" ShortName="Mauritania"/>
+    <enqTcCountryName enqTcCountryName="Mauritania" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="457"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="461" Id="MS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="459" ShortName="Monserrat"/>
+    <enqTcCountryName enqTcCountryName="Monserrat" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="460"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="464" Id="MT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="462" ShortName="Malta"/>
+    <enqTcCountryName enqTcCountryName="Malta" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="463"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="467" Id="MU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="465" ShortName="Mauritius"/>
+    <enqTcCountryName enqTcCountryName="Mauritius" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="466"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="470" Id="MV">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="468" ShortName="Maldives"/>
+    <enqTcCountryName enqTcCountryName="Maldives" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="469"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="473" Id="MW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="471" ShortName="Malawi"/>
+    <enqTcCountryName enqTcCountryName="Malawi" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="472"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MX" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="476" Id="MX">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="474" ShortName="Mexico"/>
+    <enqTcCountryName enqTcCountryName="Mexico" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="475"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="479" Id="MY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="477" ShortName="Malaysia"/>
+    <enqTcCountryName enqTcCountryName="Malaysia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="478"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="MZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="482" Id="MZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="480" ShortName="Mozambique"/>
+    <enqTcCountryName enqTcCountryName="Mozambique" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="481"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="485" Id="NA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="483" ShortName="Namibia"/>
+    <enqTcCountryName enqTcCountryName="Namibia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="484"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="488" Id="NC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="486" ShortName="New Caledonia"/>
+    <enqTcCountryName enqTcCountryName="New Caledonia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="487"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="491" Id="NE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="489" ShortName="Niger"/>
+    <enqTcCountryName enqTcCountryName="Niger" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="490"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="494" Id="NF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="492" ShortName="Norfolk Island"/>
+    <enqTcCountryName enqTcCountryName="Norfolk Island" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="493"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="497" Id="NG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="495" ShortName="Nigeria"/>
+    <enqTcCountryName enqTcCountryName="Nigeria" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="496"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="500" Id="NI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="498" ShortName="Nicaragua"/>
+    <enqTcCountryName enqTcCountryName="Nicaragua" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="499"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="503" Id="NL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="501" ShortName="Netherlands"/>
+    <enqTcCountryName enqTcCountryName="Netherlands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="502"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="506" Id="NO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="504" ShortName="Norway"/>
+    <enqTcCountryName enqTcCountryName="Norway" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="505"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="509" Id="NP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="507" ShortName="Nepal"/>
+    <enqTcCountryName enqTcCountryName="Nepal" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="508"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="512" Id="NR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="510" ShortName="Nauru"/>
+    <enqTcCountryName enqTcCountryName="Nauru" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="511"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="515" Id="NU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="513" ShortName="Niue"/>
+    <enqTcCountryName enqTcCountryName="Niue" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="514"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="NZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="518" Id="NZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="516" ShortName="N.Z."/>
+    <enqTcCountryName enqTcCountryName="New Zealand" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="517"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="OM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="521" Id="OM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="519" ShortName="Oman"/>
+    <enqTcCountryName enqTcCountryName="Oman" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="520"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="524" Id="PA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="522" ShortName="Panama"/>
+    <enqTcCountryName enqTcCountryName="Panama" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="523"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="527" Id="PE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="525" ShortName="Peru"/>
+    <enqTcCountryName enqTcCountryName="Peru" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="526"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="530" Id="PF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="528" ShortName="Fr. Polynesia"/>
+    <enqTcCountryName enqTcCountryName="French Polynesia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="529"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="533" Id="PG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="531" ShortName="Pap. New Guinea"/>
+    <enqTcCountryName enqTcCountryName="Papua New Guinea" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="532"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="536" Id="PH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="534" ShortName="Philippines"/>
+    <enqTcCountryName enqTcCountryName="Philippines" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="535"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="539" Id="PK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="537" ShortName="Pakistan"/>
+    <enqTcCountryName enqTcCountryName="Pakistan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="538"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="542" Id="PL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="540" ShortName="Poland"/>
+    <enqTcCountryName enqTcCountryName="Poland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="541"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="545" Id="PM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="543" ShortName="St. Pierre"/>
+    <enqTcCountryName enqTcCountryName="St. Pierre and Miquelon" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="544"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="548" Id="PN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="546" ShortName="Pitcairn"/>
+    <enqTcCountryName enqTcCountryName="Pitcairn" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="547"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="551" Id="PR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="549" ShortName="Puerto Rico"/>
+    <enqTcCountryName enqTcCountryName="Puerto Rico" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="550"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="554" Id="PS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="552" ShortName="Palestine"/>
+    <enqTcCountryName enqTcCountryName="Palestine, State of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="553"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="557" Id="PT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="555" ShortName="Portugal"/>
+    <enqTcCountryName enqTcCountryName="Portugal" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="556"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="560" Id="PW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="558" ShortName="Palau"/>
+    <enqTcCountryName enqTcCountryName="Palau" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="559"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="PY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="563" Id="PY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="561" ShortName="Paraguay"/>
+    <enqTcCountryName enqTcCountryName="Paraguay" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="562"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="QA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="566" Id="QA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="564" ShortName="Qatar"/>
+    <enqTcCountryName enqTcCountryName="Qatar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="565"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="RE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="569" Id="RE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="567" ShortName="Reunion"/>
+    <enqTcCountryName enqTcCountryName="Reunion" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="568"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="RO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="572" Id="RO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="570" ShortName="Romania"/>
+    <enqTcCountryName enqTcCountryName="Romania" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="571"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="RS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="575" Id="RS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="573" ShortName="Serbia"/>
+    <enqTcCountryName enqTcCountryName="Serbia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="574"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="RU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="578" Id="RU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="576" ShortName="Russian Fed"/>
+    <enqTcCountryName enqTcCountryName="Russian Federation" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="577"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="RW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="581" Id="RW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="579" ShortName="Rwanda"/>
+    <enqTcCountryName enqTcCountryName="Rwanda" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="580"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="584" Id="SA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="582" ShortName="Saudi Arabia"/>
+    <enqTcCountryName enqTcCountryName="Saudi Arabia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="583"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SB" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="587" Id="SB">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="585" ShortName="Solomon Islands"/>
+    <enqTcCountryName enqTcCountryName="Solomon Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="586"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="590" Id="SC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="588" ShortName="Seychelles"/>
+    <enqTcCountryName enqTcCountryName="Seychelles" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="589"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="593" Id="SD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="591" ShortName="Sudan"/>
+    <enqTcCountryName enqTcCountryName="Sudan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="592"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="596" Id="SE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="594" ShortName="Sweden"/>
+    <enqTcCountryName enqTcCountryName="Sweden" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="595"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="599" Id="SG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="597" ShortName="Singapore"/>
+    <enqTcCountryName enqTcCountryName="Singapore" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="598"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="602" Id="SH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="600" ShortName="St. Helena"/>
+    <enqTcCountryName enqTcCountryName="St. Helena" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="601"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="605" Id="SI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="603" ShortName="Slovenia"/>
+    <enqTcCountryName enqTcCountryName="Slovenia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="604"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SJ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="608" Id="SJ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="606" ShortName="Svalbard"/>
+    <enqTcCountryName enqTcCountryName="Svalbard and Jan Mayen Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="607"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="611" Id="SK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="609" ShortName="Slovakia"/>
+    <enqTcCountryName enqTcCountryName="Slovakia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="610"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="614" Id="SL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="612" ShortName="Sierra Leone"/>
+    <enqTcCountryName enqTcCountryName="Sierra Leone" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="613"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="617" Id="SM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="615" ShortName="San Marino"/>
+    <enqTcCountryName enqTcCountryName="San Marino" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="616"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="620" Id="SN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="618" ShortName="Senegal"/>
+    <enqTcCountryName enqTcCountryName="Senegal" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="619"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="623" Id="SO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="621" ShortName="Somalia"/>
+    <enqTcCountryName enqTcCountryName="Somalia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="622"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="626" Id="SR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="624" ShortName="Suriname"/>
+    <enqTcCountryName enqTcCountryName="Suriname" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="625"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="629" Id="SS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="627" ShortName="South Sudan"/>
+    <enqTcCountryName enqTcCountryName="South Sudan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="628"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ST" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="632" Id="ST">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="630" ShortName="Sao Tome"/>
+    <enqTcCountryName enqTcCountryName="Sao Tome and Principe" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="631"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="635" Id="SV">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="633" ShortName="El Salvador"/>
+    <enqTcCountryName enqTcCountryName="El Salvador" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="634"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SX" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="638" Id="SX">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="636" ShortName="Sint Maarten"/>
+    <enqTcCountryName enqTcCountryName="Sint Maarten (Dutch part)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="637"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="641" Id="SY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="639" ShortName="Syria"/>
+    <enqTcCountryName enqTcCountryName="Syrian Arab Republic" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="640"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="SZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="644" Id="SZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="642" ShortName="Swaziland"/>
+    <enqTcCountryName enqTcCountryName="Swaziland" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="643"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="647" Id="TC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="645" ShortName="Turks . Caicos"/>
+    <enqTcCountryName enqTcCountryName="Turks and Caicos Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="646"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="650" Id="TD">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="648" ShortName="Chad"/>
+    <enqTcCountryName enqTcCountryName="Chad" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="649"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="653" Id="TF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="651" ShortName="Fr. S. Territ."/>
+    <enqTcCountryName enqTcCountryName="French Southern Territories" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="652"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="656" Id="TG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="654" ShortName="Togo"/>
+    <enqTcCountryName enqTcCountryName="Togo" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="655"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TH" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="659" Id="TH">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="657" ShortName="Thailand"/>
+    <enqTcCountryName enqTcCountryName="Thailand" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="658"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TJ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="662" Id="TJ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="660" ShortName="Tajikistan"/>
+    <enqTcCountryName enqTcCountryName="Tajikistan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="661"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TK" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="665" Id="TK">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="663" ShortName="Tokelau"/>
+    <enqTcCountryName enqTcCountryName="Tokelau" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="664"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TL" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="668" Id="TL">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="666" ShortName="Timor-Leste"/>
+    <enqTcCountryName enqTcCountryName="Timor-Leste" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="667"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="671" Id="TM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="669" ShortName="Turkmenistan"/>
+    <enqTcCountryName enqTcCountryName="Turkmenistan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="670"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="674" Id="TN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="672" ShortName="Tunisia"/>
+    <enqTcCountryName enqTcCountryName="Tunisia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="673"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TO" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="677" Id="TO">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="675" ShortName="Tonga"/>
+    <enqTcCountryName enqTcCountryName="Tonga" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="676"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="680" Id="TP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="678" ShortName="East Timor"/>
+    <enqTcCountryName enqTcCountryName="East Timor" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="679"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TR" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="683" Id="TR">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="681" ShortName="Turkey"/>
+    <enqTcCountryName enqTcCountryName="Turkey" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="682"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="686" Id="TT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="684" ShortName="Trinidad Tobago"/>
+    <enqTcCountryName enqTcCountryName="Trinidad and Tobago" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="685"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TV" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="689" Id="TV">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="687" ShortName="Tuvalu"/>
+    <enqTcCountryName enqTcCountryName="Tuvalu" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="688"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="692" Id="TW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="690" ShortName="Taiwan"/>
+    <enqTcCountryName enqTcCountryName="Republic of China (Taiwan)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="691"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="TZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="695" Id="TZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="693" ShortName="Tanzania"/>
+    <enqTcCountryName enqTcCountryName="Tanzania, United Republic of" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="694"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="UA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="698" Id="UA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="696" ShortName="Ukraine"/>
+    <enqTcCountryName enqTcCountryName="Ukraine" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="697"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="UG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="701" Id="UG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="699" ShortName="Uganda"/>
+    <enqTcCountryName enqTcCountryName="Uganda" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="700"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="UM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="704" Id="UM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="702" ShortName="US Minor Out Is"/>
+    <enqTcCountryName enqTcCountryName="United States Minor Outlying Is." DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="703"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="US" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="707" Id="US">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="705" ShortName="USA"/>
+    <enqTcCountryName enqTcCountryName="United States of America" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="706"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="UY" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="710" Id="UY">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="708" ShortName="Uruguay"/>
+    <enqTcCountryName enqTcCountryName="Uruguay" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="709"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="UZ" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="713" Id="UZ">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="711" ShortName="Uzbekistan"/>
+    <enqTcCountryName enqTcCountryName="Uzbekistan" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="712"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="716" Id="VA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="714" ShortName="Vatican"/>
+    <enqTcCountryName enqTcCountryName="Holy See (Vatican City State)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="715"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="719" Id="VC">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="717" ShortName="St. Vincent"/>
+    <enqTcCountryName enqTcCountryName="St. Vincent and the Grenadines" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="718"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="722" Id="VE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="720" ShortName="Venezuala"/>
+    <enqTcCountryName enqTcCountryName="Venezuela" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="721"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="725" Id="VG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="723" ShortName="Virgin Islands"/>
+    <enqTcCountryName enqTcCountryName="British Virgin Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="724"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VI" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="728" Id="VI">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="726" ShortName="Virgin Islands"/>
+    <enqTcCountryName enqTcCountryName="Virgin Islands, U.S." DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="727"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VN" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="731" Id="VN">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="729" ShortName="Vietnam"/>
+    <enqTcCountryName enqTcCountryName="Vietnam" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="730"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="VU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="734" Id="VU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="732" ShortName="Vanuatu"/>
+    <enqTcCountryName enqTcCountryName="Vanuatu" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="733"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="WF" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="737" Id="WF">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="735" ShortName="Wallis .Futuna"/>
+    <enqTcCountryName enqTcCountryName="Wallis and Futuna Islands" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="736"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="WS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="740" Id="WS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="738" ShortName="Samoa"/>
+    <enqTcCountryName enqTcCountryName="Samoa" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="739"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="XA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="743" Id="XA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="741" ShortName="XAU and XAG"/>
+    <enqTcCountryName enqTcCountryName="Gold and Silver" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="742"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="XE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="746" Id="XE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="744" ShortName="Europa"/>
+    <enqTcCountryName enqTcCountryName="Europa" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="745"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="XG" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="749" Id="XG">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="747" ShortName="Gold"/>
+    <enqTcCountryName enqTcCountryName="Gold" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="748"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="XP" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="752" Id="XP">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="750" ShortName="XPD AND XPT"/>
+    <enqTcCountryName enqTcCountryName="enqTcCountry for XPD and XPT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="751"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="XS" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="755" Id="XS">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="753" ShortName="Silver"/>
+    <enqTcCountryName enqTcCountryName="Silver" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="754"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="XX" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="758" Id="XX">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="756" ShortName="Worldwide"/>
+    <enqTcCountryName enqTcCountryName="Worldwide" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="757"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="YE" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="761" Id="YE">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="759" ShortName="Yemen"/>
+    <enqTcCountryName enqTcCountryName="Yemen" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="760"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="YT" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="764" Id="YT">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="762" ShortName="Mayotte"/>
+    <enqTcCountryName enqTcCountryName="Mayotte" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="763"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="YU" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="767" Id="YU">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="765" ShortName="Yugoslavia"/>
+    <enqTcCountryName enqTcCountryName="Yugoslavia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="766"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ZA" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="770" Id="ZA">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="768" ShortName="South Afr"/>
+    <enqTcCountryName enqTcCountryName="South Africa" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="769"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ZM" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="773" Id="ZM">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="771" ShortName="Zambia"/>
+    <enqTcCountryName enqTcCountryName="Zambia" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="772"/>
+  </enqTcCountry>
+  <enqTcCountry enqTcCountryCode="ZW" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[A]" DS_UID="776" Id="ZW">
+    <ShortName DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].ShortName" DS_UID="774" ShortName="Zimbabwe"/>
+    <enqTcCountryName enqTcCountryName="Zimbabwe" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCountry[C].enqTcCountryName" DS_UID="775"/>
+  </enqTcCountry>
+</DataSetRoot>

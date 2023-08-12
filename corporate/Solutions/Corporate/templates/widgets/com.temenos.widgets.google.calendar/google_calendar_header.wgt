@@ -1,0 +1,9 @@
+<script src="https://apis.google.com/js/client.js"></script>
+<script>
+window.googleWidget={};
+window.googleWidget.postProcessResponses = function(ns, ajaxCaller, result) {
+if ("ajaxQLR" == ajaxCaller && window.valck){
+auth();
+} 
+}
+</script>

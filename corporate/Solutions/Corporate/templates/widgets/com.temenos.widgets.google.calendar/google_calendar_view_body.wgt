@@ -1,0 +1,12 @@
+<button onclick="auth_gv({ClientID: '$$ITEM.ClientID$',
+                       GoogleAccount: '$$ITEM.GoogleAccount$',
+					   Language: '$$ITEM.Language$',
+					   DefaultView: '$$ITEM.DefaultView$',
+					   BackgroundColour: '$$ITEM.BackgroundColour$',
+					   BorderColor: '$$ITEM.BorderColour$',
+					   TextColour: '$$ITEM.TextColour$',
+					   BtnId: '$$ITEM.ID()$_auth',
+					   CId: '$$ITEM.ID()$'
+					   });" 
+					   id="$$ITEM.ID()$_auth" class="$$ITEM.ButtonClass$">$$ITEM.ButtonText$</button>
+<div id='$$ITEM.ID()$'></div>

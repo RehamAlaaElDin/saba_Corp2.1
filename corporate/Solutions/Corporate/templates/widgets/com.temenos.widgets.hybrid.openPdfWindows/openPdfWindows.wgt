@@ -1,0 +1,17 @@
+<!-- $Revision: 1.2 $ -->
+$$ITEM.EC_GENERATE()$
+  
+<script type = "text/javascript" charset="utf-8">
+    document.getElementById("$$ITEM.ID()$").onclick = null;             $%COMMENT$  remove the button onclick $%ENDCOMMENT$
+			document.getElementById("$$ITEM.ID()$").addEventListener('click', function(e) {  $%COMMENT$  listen to click event $%ENDCOMMENT$
+			$%IF DEVICE_INFO.platform == "windows8" || DEVICE_INFO.platform == "windows"$
+			if ((typeof(window.external) !=='undefined') && (typeof(window.external.notify) !=='undefined')) {
+				window.external.notify("OPEN_IN_APP_PDF_NOTIFY"+"$$ITEM.pdfURL$");
+			} else {
+				window.open("$$ITEM.pdfURL$");
+			}
+			$%ELSE$
+				window.open("$$ITEM.pdfURL$");
+			$%ENDIF$
+		}, false);
+</script>

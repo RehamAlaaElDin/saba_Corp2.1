@@ -1,0 +1,21 @@
+@media (max-width: 567px) {
+    #EDGE_CONNECT_PROCESS.Card { max-width: 327px; }
+    .ResponsiveColumn {width:100% !important;}
+    .ResponsiveColumn_hiddenXS {display: none;}
+    .QuestionText {text-align: left !important; width: 100% !important;}
+    .Prefix   	  {width: 0% !important;}
+    .Answer   	  {width: 95% !important;}
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    #EDGE_CONNECT_PROCESS.Card { max-width: 568px; }
+    .ResponsiveColumn {width:100% !important;}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #EDGE_CONNECT_PROCESS.Card { max-width: 768px; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #EDGE_CONNECT_PROCESS.Card { max-width: 1024px; }
+}
+@media (min-width: 1280px) {
+    #EDGE_CONNECT_PROCESS.Card { max-width: 1280px; }
+}

@@ -1,0 +1,3 @@
+<button name="__$$ITEM.ENTITYNAME()$"   style="$$ITEM.INLINE_STYLES().ButtonStyle$ cursor: pointer;" id="$$ITEM.ID()$" onclick="window.edge.widgets.google.logout();$$ITEM.NAVIGATION()$" class="$$ITEM.STYLES().ButtonStyle$"><span class="icon">&nbsp;</span><span class="label">$$ITEM.ActionCommand$</span></button>
+
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

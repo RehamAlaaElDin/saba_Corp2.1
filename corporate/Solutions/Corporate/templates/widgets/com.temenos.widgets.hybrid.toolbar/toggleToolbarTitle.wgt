@@ -1,0 +1,3 @@
+<button onclick='EdgeJavascriptInterface.toggleView("toolbarTitle")'>
+		$$ITEM.DISPLAY_TEXT()$
+</button>

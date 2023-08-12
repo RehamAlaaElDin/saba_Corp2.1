@@ -1,0 +1,399 @@
+[2023-05-25 12:31:07.016] [2023-05-25 12:31:07.015]  [2023-05-25 12:31:07.016] log4j:ERROR A "org.apache.log4j.ConsoleAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:31:07.016] [2023-05-25 12:31:07.016]  [2023-05-25 12:31:07.016] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:31:07.016] [2023-05-25 12:31:07.016]  [2023-05-25 12:31:07.016] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:31:07.016] [2023-05-25 12:31:07.016]  [2023-05-25 12:31:07.016] log4j:ERROR "org.apache.log4j.ConsoleAppender" was loaded by [WebAppClassLoader{1010450271}@3c3a3f5f].
+[2023-05-25 12:31:07.016] [2023-05-25 12:31:07.016]  [2023-05-25 12:31:07.017] log4j:ERROR Could not instantiate appender named "console".
+[2023-05-25 12:31:07.018] [2023-05-25 12:31:07.018]  [2023-05-25 12:31:07.018] log4j:WARN No appenders could be found for logger (com.temenos.commons.logging.LoggerFactory).
+[2023-05-25 12:31:07.018] [2023-05-25 12:31:07.018]  [2023-05-25 12:31:07.018] log4j:WARN Please initialize the log4j system properly.
+[2023-05-25 12:54:04.224] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '320 kBits'
+[2023-05-25 12:54:04.227] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '384 kBits'
+[2023-05-25 12:54:04.228] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '\b3'
+[2023-05-25 12:54:04.229] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '\b2'
+[2023-05-25 12:54:04.232] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Mono'
+[2023-05-25 12:54:04.233] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '- %d frames,'
+[2023-05-25 12:54:04.233] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'width=%d pixels,'
+[2023-05-25 12:54:04.234] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'height=%d pixels,'
+[2023-05-25 12:54:04.235] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'depth=%d,'
+[2023-05-25 12:54:04.236] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'ticks/frame=%d'
+[2023-05-25 12:54:04.236] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '- %d frames'
+[2023-05-25 12:54:04.237] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'width=%d pixels,'
+[2023-05-25 12:54:04.238] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'height=%d pixels,'
+[2023-05-25 12:54:04.239] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'depth=%d,'
+[2023-05-25 12:54:04.239] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'ticks/frame=%d'
+[2023-05-25 12:54:04.241] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ''
+[2023-05-25 12:54:04.241] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %d'
+[2023-05-25 12:54:04.242] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '\b.%d,'
+[2023-05-25 12:54:04.242] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d instruments'
+[2023-05-25 12:54:04.243] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d bits'
+[2023-05-25 12:54:04.244] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'ASCII,'
+[2023-05-25 12:54:04.245] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'continuation,'
+[2023-05-25 12:54:04.245] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'extra field,'
+[2023-05-25 12:54:04.245] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'original filename,'
+[2023-05-25 12:54:04.246] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'comment,'
+[2023-05-25 12:54:04.246] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'encrypted,'
+[2023-05-25 12:54:04.246] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'last modified: %s,'
+[2023-05-25 12:54:04.247] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %d'
+[2023-05-25 12:54:04.248] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%c)'
+[2023-05-25 12:54:04.248] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%c)'
+[2023-05-25 12:54:04.249] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%ld x'
+[2023-05-25 12:54:04.249] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%ld,'
+[2023-05-25 12:54:04.251] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%s'
+[2023-05-25 12:54:04.252] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%ld x'
+[2023-05-25 12:54:04.252] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%ld,'
+[2023-05-25 12:54:04.253] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d-bit'
+[2023-05-25 12:54:04.254] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'interlaced'
+[2023-05-25 12:54:04.255] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %.3s'
+[2023-05-25 12:54:04.256] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.256] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.256] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.256] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.256] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.257] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.257] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.257] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher ': %s'
+[2023-05-25 12:54:04.257] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%s'
+[2023-05-25 12:54:04.258] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%s'
+[2023-05-25 12:54:04.258] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'POSIX'
+[2023-05-25 12:54:04.259] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %c'
+[2023-05-25 12:54:04.260] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '\b.%c'
+[2023-05-25 12:54:04.260] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'length %d'
+[2023-05-25 12:54:04.260] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'length %d'
+[2023-05-25 12:54:04.260] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'length %d'
+[2023-05-25 12:54:04.260] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'length %d'
+[2023-05-25 12:54:04.261] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'length %d'
+[2023-05-25 12:54:04.261] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'length %d'
+[2023-05-25 12:54:04.261] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 've'
+[2023-05-25 12:54:04.261] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %d'
+[2023-05-25 12:54:04.261] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d entries'
+[2023-05-25 12:54:04.262] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.262] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.262] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.262] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.263] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.263] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.263] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.263] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.264] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %d'
+[2023-05-25 12:54:04.264] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d entries'
+[2023-05-25 12:54:04.264] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.264] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.264] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.265] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.265] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.265] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d x'
+[2023-05-25 12:54:04.266] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.266] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%d'
+[2023-05-25 12:54:04.266] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'v%d'
+[2023-05-25 12:54:04.267] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%s'
+[2023-05-25 12:54:04.267] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher '%s'
+[2023-05-25 12:54:04.267] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'version %c,'
+[2023-05-25 12:54:04.268] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect macro'
+[2023-05-25 12:54:04.269] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect help file'
+[2023-05-25 12:54:04.269] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect keyboard file'
+[2023-05-25 12:54:04.269] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect document'
+[2023-05-25 12:54:04.270] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect dictionary'
+[2023-05-25 12:54:04.271] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect thesaurus'
+[2023-05-25 12:54:04.271] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect block'
+[2023-05-25 12:54:04.271] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect rectangular block'
+[2023-05-25 12:54:04.272] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect column block'
+[2023-05-25 12:54:04.272] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect printer data'
+[2023-05-25 12:54:04.272] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect printer data'
+[2023-05-25 12:54:04.272] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect driver resource data'
+[2023-05-25 12:54:04.273] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect hyphenation code'
+[2023-05-25 12:54:04.273] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect hyphenation data'
+[2023-05-25 12:54:04.273] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect macro resource data'
+[2023-05-25 12:54:04.273] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect hyphenation lex'
+[2023-05-25 12:54:04.274] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect wordlist'
+[2023-05-25 12:54:04.274] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect equation resource data'
+[2023-05-25 12:54:04.274] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect spell rules'
+[2023-05-25 12:54:04.274] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect dictionary rules'
+[2023-05-25 12:54:04.274] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect spell rules (Microlytics)'
+[2023-05-25 12:54:04.275] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect settings file'
+[2023-05-25 12:54:04.275] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect 4.2 document'
+[2023-05-25 12:54:04.275] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect dialog file'
+[2023-05-25 12:54:04.275] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect button bar'
+[2023-05-25 12:54:04.275] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Shell macro'
+[2023-05-25 12:54:04.275] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Shell definition'
+[2023-05-25 12:54:04.276] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Notebook macro'
+[2023-05-25 12:54:04.276] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Notebook help file'
+[2023-05-25 12:54:04.276] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Notebook keyboard file'
+[2023-05-25 12:54:04.276] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Notebook definition'
+[2023-05-25 12:54:04.276] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Calculator help file'
+[2023-05-25 12:54:04.276] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Calendar help file'
+[2023-05-25 12:54:04.277] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Calendar data file'
+[2023-05-25 12:54:04.277] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Editor macro'
+[2023-05-25 12:54:04.277] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Editor help file'
+[2023-05-25 12:54:04.277] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Editor keyboard file'
+[2023-05-25 12:54:04.277] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Editor macro resource file'
+[2023-05-25 12:54:04.277] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Macro editor macro'
+[2023-05-25 12:54:04.278] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Macro editor help file'
+[2023-05-25 12:54:04.278] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Macro editor keyboard file'
+[2023-05-25 12:54:04.278] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect macro'
+[2023-05-25 12:54:04.278] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect help file'
+[2023-05-25 12:54:04.279] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect keyboard file'
+[2023-05-25 12:54:04.279] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect worksheet'
+[2023-05-25 12:54:04.279] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect printer definition'
+[2023-05-25 12:54:04.279] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect graphic definition'
+[2023-05-25 12:54:04.279] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect data'
+[2023-05-25 12:54:04.280] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect temporary printer'
+[2023-05-25 12:54:04.280] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'PlanPerfect macro resource data'
+[2023-05-25 12:54:04.280] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'help file'
+[2023-05-25 12:54:04.280] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'distribution list'
+[2023-05-25 12:54:04.281] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'out box'
+[2023-05-25 12:54:04.281] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'in box'
+[2023-05-25 12:54:04.281] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'users archived mailbox'
+[2023-05-25 12:54:04.281] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'archived message database'
+[2023-05-25 12:54:04.281] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'archived attachments'
+[2023-05-25 12:54:04.281] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Printer temporary file'
+[2023-05-25 12:54:04.282] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Scheduler help file'
+[2023-05-25 12:54:04.282] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Scheduler in file'
+[2023-05-25 12:54:04.282] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Scheduler out file'
+[2023-05-25 12:54:04.282] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise settings file'
+[2023-05-25 12:54:04.282] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise directory services'
+[2023-05-25 12:54:04.282] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise settings file'
+[2023-05-25 12:54:04.283] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Terminal resource data'
+[2023-05-25 12:54:04.283] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Terminal resource data'
+[2023-05-25 12:54:04.283] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Terminal resource data'
+[2023-05-25 12:54:04.283] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GUI loadable text'
+[2023-05-25 12:54:04.283] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'graphics resource data'
+[2023-05-25 12:54:04.284] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'printer settings file'
+[2023-05-25 12:54:04.284] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'port definition file'
+[2023-05-25 12:54:04.284] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'print queue parameters'
+[2023-05-25 12:54:04.285] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'compressed file'
+[2023-05-25 12:54:04.285] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Network service msg file'
+[2023-05-25 12:54:04.285] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Network service msg file'
+[2023-05-25 12:54:04.285] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'Async gateway login msg'
+[2023-05-25 12:54:04.285] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise message file'
+[2023-05-25 12:54:04.285] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise admin domain database'
+[2023-05-25 12:54:04.286] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise admin host database'
+[2023-05-25 12:54:04.286] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise admin remote host database'
+[2023-05-25 12:54:04.286] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'GroupWise admin ADS deferment data file'
+[2023-05-25 12:54:04.286] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'IntelliTAG (SGML) compiled DTD'
+[2023-05-25 12:54:04.286] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect graphic image (1.0)'
+[2023-05-25 12:54:04.287] May 25, 2023 12:54:04 PM net.sf.jmimemagic.MagicParser endElement
+INFO: endElement(): not adding invalid matcher 'WordPerfect graphic image (2.0)'
+[2023-05-25 12:54:04.911] [2023-05-25 12:54:04.911]  [2023-05-25 12:54:04.911] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.911] [2023-05-25 12:54:04.911]  [2023-05-25 12:54:04.911] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.911] [2023-05-25 12:54:04.911]  [2023-05-25 12:54:04.911] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.911] [2023-05-25 12:54:04.911]  [2023-05-25 12:54:04.911] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.911] [2023-05-25 12:54:04.911]  [2023-05-25 12:54:04.911] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.912] [2023-05-25 12:54:04.912]  [2023-05-25 12:54:04.912] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.913] [2023-05-25 12:54:04.913]  [2023-05-25 12:54:04.913] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.914] [2023-05-25 12:54:04.914]  [2023-05-25 12:54:04.914] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.927] [2023-05-25 12:54:04.927]  [2023-05-25 12:54:04.928] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:04.928] [2023-05-25 12:54:04.928]  [2023-05-25 12:54:04.928] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:05.354] [2023-05-25 12:54:05.354]  [2023-05-25 12:54:05.355] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR Could not instantiate appender named "file".
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR A "org.apache.log4j.RollingFileAppender" object is not assignable to a "org.apache.log4j.Appender" variable.
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR The class "org.apache.log4j.Appender" was loaded by 
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR [java.net.URLClassLoader@45c4d617] whereas object of type 
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR "org.apache.log4j.RollingFileAppender" was loaded by [WebAppClassLoader{910952061}@364c067d].
+[2023-05-25 12:54:05.355] [2023-05-25 12:54:05.355]  [2023-05-25 12:54:05.355] log4j:ERROR Could not instantiate appender named "file".

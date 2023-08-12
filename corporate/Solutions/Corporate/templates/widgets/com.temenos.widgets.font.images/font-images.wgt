@@ -1,0 +1,1 @@
+<i class="$$ITEM.ICON$ $%IF ITEM.SPINICON == 'Y'$ fa-spin$%ENDIF$ $%IF ITEM.BORDER == 'Y'$ fa-border$%ENDIF$" style="font-size:$$ITEM.SIZE$px;color:$$ITEM.COLOR$; text-shadow: $$ITEM.SHADOWH$px $$ITEM.SHADOWV$px $$ITEM.SHADOWB$px $$ITEM.COLORSHADOW$;"></i> $$ITEM.TEXT$

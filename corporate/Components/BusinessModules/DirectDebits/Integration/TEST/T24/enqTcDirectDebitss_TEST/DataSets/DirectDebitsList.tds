@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="2">
+  <!---->
+<enqTcDirectDebits AccountName="Acorn Engineering Company" AccountNo="74357" AccountNumber="74357" BcSortCode="DDCLG" Currency="USD" CurrencyName="US Dollar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDirectDebits[A]" DS_UID="1" DestAcctName="Acorn Safety NZ" DestAcctNo="892223" Direction="OUTWARD" Id="74357.2" NextPaymentDate="01/05/2016" StDate="01/05/2016" StandAloneAmt="300.00" StandAloneDdi="Y" Status="AVAILABLE">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcDirectDebits[C].Description" DS_UID="0" Description="Electricity bill payment"/>
+  </enqTcDirectDebits>
+</DataSetRoot>

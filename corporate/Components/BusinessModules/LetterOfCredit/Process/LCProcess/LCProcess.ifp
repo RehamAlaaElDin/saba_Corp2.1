@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" CmsFlag="N" Comment="This component handles the processing logic related to LC" Connect="version 6.1.2__1" HybridFlag="N" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root" Name="LCProcess" ParentId="12446633" ProjectExtension=".ifp" ProjectFolder="D:/TCIB2.0/TCIB_CORP/trunk/Components/BusinessModules/LetterOfCredit/Process/LCProcess" ProjectType="Y" StatefulComponent="N" eid="C2F486AB7A84B1B31361971"><![CDATA[
+  ]]>
+  <Types Name="Types Root" eid="C2F486AB7A84B1B31361973"><![CDATA[
+    ]]>
+    <Lists Name="Lists" eid="C2F486AB7A84B1B31362117"><![CDATA[
+      ]]>
+      <List BaseType="com.acquire.intelligentforms.entities.FormList" DynamicList="N" Name="YesNo" eid="C2F486AB7A84B1B31362796"><![CDATA[
+        ]]>
+        <Item Key="Y" Name="572D9B3F5338285F List Item 1" Value="Yes" eid="C2F486AB7A84B1B31362797"/>
+        <Item Key="N" Name="572D9B3F5338285F List Item 2" Value="No" eid="C2F486AB7A84B1B31362798"/>
+      </List>
+    </Lists>
+    <DataTypes Name="Data Types" eid="C2F486AB7A84B1B31362118"><![CDATA[
+      ]]>
+      <DataType Name="Text" eid="C2F486AB7A84B1B31362119"/>
+      <DataType Name="Number" Type="Number" eid="C2F486AB7A84B1B31362120"/>
+      <DataType Name="Decimal" Type="Decimal" eid="C2F486AB7A84B1B31362121"/>
+      <DataType Name="Date" Type="Date" eid="C2F486AB7A84B1B31362122"/>
+      <DataType Name="File" Type="File" eid="C2F486AB7A84B1B31362123"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="C2F486AB7A84B1B31362124"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="C2F486AB7A84B1B31362125"/>
+  </Types>
+  <Dictionary Name="C2F486AB7A84B1B3 DataDictionary 1" eid="C2F486AB7A84B1B31361974"><![CDATA[
+    ]]>
+    <PropertyGroup Name="Data Store Root" eid="C2F486AB7A84B1B31361976"><![CDATA[
+      ]]>
+      <PropertyGroup BaseType="com.acquire.intelligentforms.entities.PropertyGroup" FixedSize="N" MaxInstances="0" Name="StatusForDisplay" eid="C2F486AB7A84B1B31362788"><![CDATA[
+        ]]>
+        <Property Name="RecentTrans" eid="C2F486AB7A84B1B31362789"/>
+        <Property Name="Status" eid="C2F486AB7A84B1B31362790"/>
+        <Property Name="StatusForDisplay" eid="C2F486AB7A84B1B31362791"/>
+      </PropertyGroup>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="C2F486AB7A84B1B31361980"><![CDATA[
+    ]]>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="C2F486AB7A84B1B31362129"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="C2F486AB7A84B1B31362130"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="C2F486AB7A84B1B31362131"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="C2F486AB7A84B1B31362132"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="C2F486AB7A84B1B31361978"/>
+  <Products Name="Processes Root" eid="C2F486AB7A84B1B31361982"><![CDATA[
+    ]]>
+    <Product BaseType="com.acquire.intelligentforms.entities.Product" Componentcomment="This component computes the status for display in listing.&#10;&#10;Input Parameters : Status and RecentTrans&#10;&#10;Output Parameters : StatusForDisplay" FetchStatusDetailsComponentComment="This component computes the status for display in listing and record view navigations&#10;&#10;Input Parameters : EventStatus&#10;&#10;Output Parameters : StatusForDisplay" FetchStatusDetailsForDisplay0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForDisplay0_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" FetchStatusDetailsForDisplay0_0_0_ExportedProperty="StatusForDisplay[1].RecentTrans" FetchStatusDetailsForDisplay0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |StatusForDisplay[1].RecentTrans" FetchStatusDetailsForDisplay0_0_0_LinkedEntityName="RecentTrans" FetchStatusDetailsForDisplay0_0_0_OriginalEntityEID="572D9B3F5338285F1206" FetchStatusDetailsForDisplay0_0_0_OriginalEntityName="RecentTrans" FetchStatusDetailsForDisplay0_0_0_PropertyKey="StatusForDisplay[A].RecentTrans" FetchStatusDetailsForDisplay0_0_0_PubIn="Y" FetchStatusDetailsForDisplay0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForDisplay0_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" FetchStatusDetailsForDisplay0_0_1_ExportedProperty="StatusForDisplay[1].Status" FetchStatusDetailsForDisplay0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |StatusForDisplay[1].Status" FetchStatusDetailsForDisplay0_0_1_LinkedEntityName="Status" FetchStatusDetailsForDisplay0_0_1_OriginalEntityEID="572D9B3F5338285F1211" FetchStatusDetailsForDisplay0_0_1_OriginalEntityName="EventStatus" FetchStatusDetailsForDisplay0_0_1_PropertyKey="StatusForDisplay[A].Status" FetchStatusDetailsForDisplay0_0_1_PubIn="Y" FetchStatusDetailsForDisplay0_0_2_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForDisplay0_0_2_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" FetchStatusDetailsForDisplay0_0_2_ExportedProperty="StatusForDisplay[1].StatusForDisplay" FetchStatusDetailsForDisplay0_0_2_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |StatusForDisplay[1].StatusForDisplay" FetchStatusDetailsForDisplay0_0_2_LinkedEntityName="StatusForDisplay" FetchStatusDetailsForDisplay0_0_2_OriginalEntityEID="572D9B3F5338285F1216" FetchStatusDetailsForDisplay0_0_2_OriginalEntityName="StatusForDisplay" FetchStatusDetailsForDisplay0_0_2_PropertyKey="StatusForDisplay[A].StatusForDisplay" FetchStatusDetailsForDisplay0_0_2_PubOut="Y" FetchStatusDetailsForDisplay0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForDisplay0_0_DGInst="A" FetchStatusDetailsForDisplay0_0_ExportedPropertyGroup="StatusForDisplay[1]" FetchStatusDetailsForDisplay0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |StatusForDisplay" FetchStatusDetailsForDisplay0_0_LinkedEntityBaseType="com.acquire.intelligentforms.entities.PropertyGroup" FetchStatusDetailsForDisplay0_0_LinkedEntityFixedSize="N" FetchStatusDetailsForDisplay0_0_LinkedEntityMaxInstances="0" FetchStatusDetailsForDisplay0_0_LinkedEntityName="StatusForDisplay" FetchStatusDetailsForDisplay0_0_NumChildren="3" FetchStatusDetailsForDisplay0_0_OriginalEntityEID="572D9B3F5338285F1203" FetchStatusDetailsForDisplay0_0_OriginalEntityName="GuaranteeListDetails" FetchStatusDetailsForDisplay0_0_PropertyKey="StatusForDisplay" FetchStatusDetailsForDisplay0_0_PubIn="Y" FetchStatusDetailsForDisplay0_0_PubOut="Y" FetchStatusDetailsForDisplay0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForDisplay0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.DictionaryRoot| |Data Store Root" FetchStatusDetailsForDisplay0_LinkedEntityName="Data Store Root" FetchStatusDetailsForDisplay0_NumChildren="1" FetchStatusDetailsForDisplay0_OriginalEntityEID="5DC32A50D3168829309344" FetchStatusDetailsForDisplay0_OriginalEntityName="Data Store Root" FetchStatusDetailsForDisplay0_PubIn="Y" FetchStatusDetailsForDisplay0_PubOut="Y" FetchStatusDetailsForDisplayClassType="com.acquire.intelligentforms.entities.component.Component" FetchStatusDetailsForDisplayComponentComment="This component computes the status for display in listing.&#10;&#10;Input Parameters : Status and RecentTrans&#10;&#10;Output Parameters : StatusForDisplay" FetchStatusDetailsForDisplayNumChildren="1" FetchStatusDetailsForDisplayProjectName="LCProcess" FetchStatusDetailsForDisplayRulesOnly="Y" InitialPhase="FetchStatusDetailsForDisplay.FetchStatusDetailsForDisplay" Name="FetchStatusDetailsForDisplay" PublishAsComponent="Y" RulesOnly="Y" eid="C2F486AB7A84B1B31362821"><![CDATA[
+      ]]>
+      <Phase Name="FetchStatusDetailsForDisplay" ProcessRulesOnly="Y" eid="C2F486AB7A84B1B31362835"><![CDATA[
+        ]]>
+        <Rule DataGroupName="StatusForDisplay[C]" EndInstance="$$StatusForDisplay[C].lastInstance()$" IgnoreChildRuleResults="Y" Name="Repeat Over GuaranteeListDetails group" OutputWarning="N" RepeatType="DATA_GROUP" RuleClassName="com.acquire.intelligentforms.rules.RepeatRule" RuleDisabled="N" RuleType="PostPhase" SaveCounter="N" StopRepeat="N" eid="C2F486AB7A84B1B31362836"><![CDATA[
+          ]]>
+          <Rule Expression="$$StatusForDisplay[C].RecentTrans$ != ''" Name="Evaluation - Check if RecentTrans is blank" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="True" eid="C2F486AB7A84B1B31362837"><![CDATA[
+            ]]>
+            <Rule FromPropertyName="StatusForDisplay[C].RecentTrans" FromType="Data Item" Name="Set - EventStatus" PropertyName="StatusForDisplay[C].Status" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362838"/>
+          </Rule>
+          <Rule Expression="$$StatusForDisplay[C].Status$ == 'With Customer' OR $$StatusForDisplay[C].Status$ == 'With Customer2D' OR $$StatusForDisplay[C].Status$ == ''" Name="Evaluation - Check if EventStatus is WithCustomer or WithCustomer2D" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="True" eid="C2F486AB7A84B1B31362839"><![CDATA[
+            ]]>
+            <Rule FromType="Value" FromValue="Pend Auth" Name="Set - StatusForDisplay as Pend Auth" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362840"/>
+            <Rule Expression="$$StatusForDisplay[C].Status$ == 'With Bank' OR $$StatusForDisplay[C].Status$ == 'With Bank2D'" Name="Evaluation - Check if EventStatus is WithBank or WithBank2D" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362841"><![CDATA[
+              ]]>
+              <Rule FromType="Value" FromValue="Pend Bank Approval" Name="Set - StatusForDisplay as Pend Bank Approval" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362842"/>
+              <Rule Expression="$$StatusForDisplay[C].Status$ == 'Approved' OR $$StatusForDisplay[C].Status$ == 'Approved2D'" Name="Evaluation - Check if EventStatus is Approved or Approved2D" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362843"><![CDATA[
+                ]]>
+                <Rule FromType="Value" FromValue="Approved" Name="Set - StatusForDisplay as Approved" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362844"/>
+                <Rule BreakPoint="X" Expression="$$StatusForDisplay[C].Status$ == 'Rejected' OR $$StatusForDisplay[C].Status$ == 'Rejected2D'" Name="Evaluation - Check if EventStatus is Rejected or Rejected2D" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362845"><![CDATA[
+                  ]]>
+                  <Rule FromType="Value" FromValue="Rejected" Name="Set - StatusForDisplay as Rejected" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362846"/>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Phase>
+    </Product>
+    <Product BaseType="com.acquire.intelligentforms.entities.Product" Componentcomment="This component computes the status for display in listing.&#10;&#10;Input Parameters : EventStatus and RecentTrans&#10;&#10;Output Parameters : StatusForDisplay" FetchStatusDetailsComponentComment="This component computes the status for display in listing and record view navigations&#10;&#10;Input Parameters : EventStatus&#10;&#10;Output Parameters : StatusForDisplay" FetchStatusDetailsForNavigation0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForNavigation0_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" FetchStatusDetailsForNavigation0_0_0_ExportedProperty="StatusForDisplay[1].Status" FetchStatusDetailsForNavigation0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |StatusForDisplay[1].Status" FetchStatusDetailsForNavigation0_0_0_LinkedEntityName="Status" FetchStatusDetailsForNavigation0_0_0_OriginalEntityEID="572D9B3F5338285F1211" FetchStatusDetailsForNavigation0_0_0_OriginalEntityName="EventStatus" FetchStatusDetailsForNavigation0_0_0_PropertyKey="StatusForDisplay[A].Status" FetchStatusDetailsForNavigation0_0_0_PubIn="Y" FetchStatusDetailsForNavigation0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForNavigation0_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" FetchStatusDetailsForNavigation0_0_1_ExportedProperty="StatusForDisplay[1].StatusForDisplay" FetchStatusDetailsForNavigation0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |StatusForDisplay[1].StatusForDisplay" FetchStatusDetailsForNavigation0_0_1_LinkedEntityName="StatusForDisplay" FetchStatusDetailsForNavigation0_0_1_OriginalEntityEID="572D9B3F5338285F1216" FetchStatusDetailsForNavigation0_0_1_OriginalEntityName="StatusForDisplay" FetchStatusDetailsForNavigation0_0_1_PropertyKey="StatusForDisplay[A].StatusForDisplay" FetchStatusDetailsForNavigation0_0_1_PubOut="Y" FetchStatusDetailsForNavigation0_0_2_List_0_ClassType="com.acquire.intelligentforms.entities.ListItem" FetchStatusDetailsForNavigation0_0_2_List_0_Key="Y" FetchStatusDetailsForNavigation0_0_2_List_0_Value="Yes" FetchStatusDetailsForNavigation0_0_2_List_1_ClassType="com.acquire.intelligentforms.entities.ListItem" FetchStatusDetailsForNavigation0_0_2_List_1_Key="N" FetchStatusDetailsForNavigation0_0_2_List_1_Value="No" FetchStatusDetailsForNavigation0_0_2_List_ClassType="com.acquire.intelligentforms.entities.FormList" FetchStatusDetailsForNavigation0_0_2_List_NumChildren="2" FetchStatusDetailsForNavigation0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForNavigation0_0_DGInst="A" FetchStatusDetailsForNavigation0_0_ExportedPropertyGroup="StatusForDisplay[1]" FetchStatusDetailsForNavigation0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |StatusForDisplay" FetchStatusDetailsForNavigation0_0_LinkedEntityBaseType="com.acquire.intelligentforms.entities.PropertyGroup" FetchStatusDetailsForNavigation0_0_LinkedEntityFixedSize="N" FetchStatusDetailsForNavigation0_0_LinkedEntityMaxInstances="0" FetchStatusDetailsForNavigation0_0_LinkedEntityName="StatusForDisplay" FetchStatusDetailsForNavigation0_0_NumChildren="2" FetchStatusDetailsForNavigation0_0_OriginalEntityEID="572D9B3F5338285F1203" FetchStatusDetailsForNavigation0_0_OriginalEntityName="GuaranteeListDetails" FetchStatusDetailsForNavigation0_0_PropertyKey="StatusForDisplay" FetchStatusDetailsForNavigation0_0_PubIn="Y" FetchStatusDetailsForNavigation0_0_PubOut="Y" FetchStatusDetailsForNavigation0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" FetchStatusDetailsForNavigation0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.DictionaryRoot| |Data Store Root" FetchStatusDetailsForNavigation0_LinkedEntityName="Data Store Root" FetchStatusDetailsForNavigation0_NumChildren="1" FetchStatusDetailsForNavigation0_OriginalEntityEID="5DC32A50D3168829309344" FetchStatusDetailsForNavigation0_OriginalEntityName="Data Store Root" FetchStatusDetailsForNavigation0_PubIn="Y" FetchStatusDetailsForNavigation0_PubOut="Y" FetchStatusDetailsForNavigationClassType="com.acquire.intelligentforms.entities.component.Component" FetchStatusDetailsForNavigationComponentComment="This component computes the status for display in listing.&#10;&#10;Input Parameters : EventStatus and RecentTrans&#10;&#10;Output Parameters : StatusForDisplay" FetchStatusDetailsForNavigationNumChildren="1" FetchStatusDetailsForNavigationProjectName="FetchStatusDetails" FetchStatusDetailsForNavigationRulesOnly="Y" InitialPhase="FetchStatusDetailsForNavigation.FetchStatusDetailsForNavigation" Name="FetchStatusDetailsForNavigation" PublishAsComponent="Y" RulesOnly="Y" eid="C2F486AB7A84B1B31362874"><![CDATA[
+      ]]>
+      <Phase Name="FetchStatusDetailsForNavigation" ProcessRulesOnly="Y" eid="C2F486AB7A84B1B31362888"><![CDATA[
+        ]]>
+        <Rule BreakPointEnabled="Y" DataGroupName="StatusForDisplay[C]" EndInstance="$$StatusForDisplay[C].lastInstance()$" IgnoreChildRuleResults="Y" Name="Repeat Over GuaranteeListDetails group" OutputWarning="N" RepeatType="DATA_GROUP" RuleClassName="com.acquire.intelligentforms.rules.RepeatRule" RuleDisabled="N" RuleType="PostPhase" SaveCounter="N" StopRepeat="N" eid="C2F486AB7A84B1B31362889"><![CDATA[
+          ]]>
+          <Rule Expression="$$StatusForDisplay[C].Status$ == 'With Customer' OR $$StatusForDisplay[C].Status$ == ''" Name="Evaluation - Check if EventStatus is WithCustomer or Blank" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="True" eid="C2F486AB7A84B1B31362890"><![CDATA[
+            ]]>
+            <Rule FromType="Value" FromValue="PendAuth" Name="Set - StatusForDisplay as PendAuth" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362891"/>
+            <Rule BreakPoint="X" Expression="$$StatusForDisplay[C].Status$ == 'With Bank'" Name="Evaluation - Check if EventStatus is WithBank" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362892"><![CDATA[
+              ]]>
+              <Rule FromType="Value" FromValue="PendBankApproval" Name="Set - StatusForDisplay as PendBankApproval" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362893"/>
+              <Rule BreakPoint="X" Expression="$$StatusForDisplay[C].Status$ == 'Approved'" Name="Evaluation - Check if EventStatus is Approved" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362894"><![CDATA[
+                ]]>
+                <Rule FromType="Value" FromValue="Approved" Name="Set - StatusForDisplay as Approved" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362895"/>
+                <Rule BreakPoint="X" Expression="$$StatusForDisplay[C].Status$ == 'Rejected'" Name="Evaluation - Check if EventStatus is Rejected" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362898"><![CDATA[
+                  ]]>
+                  <Rule FromType="Value" FromValue="Rejected" Name="Set - StatusForDisplay as Rejected" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362899"/>
+                  <Rule Expression="$$StatusForDisplay[C].Status$ == 'Draft'" Name="Evaluation - Check if EventStatus is Draft" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362900"><![CDATA[
+                    ]]>
+                    <Rule FromType="Value" FromValue="Draft" Name="Set - StatusForDisplay as Draft" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362901"/>
+                    <Rule Expression="$$StatusForDisplay[C].Status$ == 'PendAuth'" Name="Evaluation - Check if EventStatus is PendAuth" RuleClassName="com.acquire.intelligentforms.rules.EvaluateRule" RuleDisabled="N" RuleType="False" eid="C2F486AB7A84B1B31362902"><![CDATA[
+                      ]]>
+                      <Rule FromType="Value" FromValue="PendAuth" Name="Set - StatusForDisplay as PendAuth" PropertyName="StatusForDisplay[C].StatusForDisplay" RuleClassName="com.acquire.intelligentforms.rules.SetValueRule" RuleDisabled="N" RuleType="True" Trim="N" Type="Data Item" eid="C2F486AB7A84B1B31362903"/>
+                    </Rule>
+                  </Rule>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="C2F486AB7A84B1B31361984"/>
+  <EVANotes Name="Note Root" eid="C2F486AB7A84B1B31361986"><![CDATA[
+    ]]>
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="C2F486AB7A84B1B31362126"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="C2F486AB7A84B1B31362127"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="C2F486AB7A84B1B31362128"/>
+  </EVANotes>
+  <LanguageMapDefinitionsRoot Name="Languages Root" eid="C2F486AB7A84B1B31361988"/>
+  <CordovaPluginsRoot Name="CordovaPlugins Root" eid="C2F486AB7A84B1B31361992"/>
+</Project>

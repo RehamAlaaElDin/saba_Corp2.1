@@ -1,0 +1,20 @@
+<input type="button" value="Activate" onclick="activateClicked()">
+<script type = "text/javascript" charset="utf-8">
+function activateClicked(){
+    var options = { dimBackground: false };
+    var activationCode = document.getElementById("QUE_B17704E5B0FEF2431445").value;
+    var pin = document.getElementById("QUE_B17704E5B0FEF2431429").value;
+    var userId=document.getElementById("QUE_B17704E5B0FEF2431441").value;
+    cordova.plugins.KobilPlugin.activateWithActivationcodePinAndUsername(function(){
+        console.log("App is Activated");
+        document.getElementById("QUE_B17704E5B0FEF2431926").value = "true";
+        document.getElementById("BUT_B17704E5B0FEF2431918").click();
+        document.getElementById("BUT_B17704E5B0FEF2431922").click();
+    },function(e){
+        console.log("App is not Activated");
+        document.getElementById("QUE_B17704E5B0FEF2431926").value = "false";
+        document.getElementById("BUT_B17704E5B0FEF2431918").click();
+        document.getElementById("BUT_B17704E5B0FEF2431922").click();
+    },activationCode,pin,userId);
+}
+</script>

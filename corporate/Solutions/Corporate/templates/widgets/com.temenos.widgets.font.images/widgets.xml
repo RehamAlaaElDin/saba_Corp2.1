@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+<widget name="Font-Images" icon="images/fontimages-icon.png" type="Item:">
+    <template type="source" value="font-images.wgt"/>
+    <custom>
+      <item layout="-1" mand="false" name="ICON" prompt="Icon" type="javax.swing.JTextField" usage="7"/>
+    <item defaultValue="14" layout="-1" mand="false" name="SIZE" prompt="Size (1-1000)" type="javax.swing.JTextField" usage="7"/>
+    <item layout="-1" mand="false" name="COLOR" prompt="Icon Color" type="com.acquire.util.ui.StyleSheetColorChooser" typeValue="standard" usage="7"/>
+      <item layout="-1" mand="false" name="TEXT" prompt="Text" type="javax.swing.JTextField" usage="7"/>
+    <item layout="-1" mand="false" name="SPINICON" prompt="Spin Icon?" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item layout="-1" mand="false" name="BORDER" prompt="Border?" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item layout="-1" mand="false" name="COLORSHADOW" prompt="Shadow Color" type="com.acquire.util.ui.StyleSheetColorChooser" typeValue="standard" usage="7"/>
+    <item layout="-1" mand="false" name="SHADOWH" prompt="Shadow Horizontal (px)" type="javax.swing.JComboBox" typeValue="0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20" usage="7"/>
+      <item layout="-1" mand="false" name="SHADOWV" prompt="Shadow Vertical (px)" type="javax.swing.JComboBox" typeValue="0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20" usage="7"/>
+      <item layout="-1" mand="false" name="SHADOWB" prompt="Shadow Blur (px)" type="javax.swing.JComboBox" typeValue="0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20" usage="7"/>
+    
+    </custom>
+  <template type="header" value="font-images-header.wgt"/>
+  </widget>
+</widgets>

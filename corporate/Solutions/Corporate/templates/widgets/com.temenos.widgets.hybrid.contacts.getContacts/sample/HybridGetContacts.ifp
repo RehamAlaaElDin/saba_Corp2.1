@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" Connect="version 5.3.1__17" HybridFlag="Y" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root 1" Name="HybridGetContacts" ProjectExtension=".ifp" ProjectFolder="D:/Projects/Connect_53/53_TestProjects/HybridGetContacts" ProjectType="N" eid="B7FD95CB2D8D60A21048">
+  <Types Name="Types Root" eid="B7FD95CB2D8D60A21049">
+    <Lists Name="Lists" eid="B7FD95CB2D8D60A21050"/>
+    <DataTypes Name="Data Types" eid="B7FD95CB2D8D60A21051">
+      <DataType Name="Text" eid="B7FD95CB2D8D60A21297"/>
+      <DataType Name="Number" Type="Number" eid="B7FD95CB2D8D60A21298"/>
+      <DataType Name="Decimal" Type="Decimal" eid="B7FD95CB2D8D60A21299"/>
+      <DataType Name="Date" Type="Date" eid="B7FD95CB2D8D60A21300"/>
+      <DataType Name="File" Type="File" eid="B7FD95CB2D8D60A21301"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="B7FD95CB2D8D60A21302"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="B7FD95CB2D8D60A21058"/>
+  </Types>
+  <Dictionary Name="B7FD95CB2D8D60A2 DataDictionary 1" eid="B7FD95CB2D8D60A21059">
+    <PropertyGroup Name="Data Store Root" eid="B7FD95CB2D8D60A21061">
+      <PropertyGroup LinkToStructure="N" MaxInstances="50" Name="Contacts" eid="B7FD95CB2D8D60A21595">
+        <Property Name="displayName" eid="B7FD95CB2D8D60A21597"/>
+        <Property Name="notes" eid="B7FD95CB2D8D60A21620"/>
+        <PropertyGroup LinkToStructure="N" MaxInstances="5" Name="Numbers" eid="B7FD95CB2D8D60A21606">
+          <Property Name="number" eid="B7FD95CB2D8D60A21602"/>
+          <Property Name="type" eid="B7FD95CB2D8D60A21608"/>
+        </PropertyGroup>
+        <PropertyGroup LinkToStructure="N" MaxInstances="5" Name="Emails" eid="B7FD95CB2D8D60A21610">
+          <Property Name="email_address" eid="B7FD95CB2D8D60A21604"/>
+          <Property Name="type" eid="B7FD95CB2D8D60A21612"/>
+        </PropertyGroup>
+        <PropertyGroup LinkToStructure="N" MaxInstances="5" Name="URLS" eid="B7FD95CB2D8D60A21614">
+          <Property Name="url" eid="B7FD95CB2D8D60A21616"/>
+          <Property Name="type" eid="B7FD95CB2D8D60A21618"/>
+        </PropertyGroup>
+      </PropertyGroup>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="B7FD95CB2D8D60A21063">
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="B7FD95CB2D8D60A21306"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="B7FD95CB2D8D60A21307"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="B7FD95CB2D8D60A21308"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="B7FD95CB2D8D60A21309"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="B7FD95CB2D8D60A21062"/>
+  <Products Name="Processes Root" eid="B7FD95CB2D8D60A21068">
+    <Product Name="Proc1" eid="B7FD95CB2D8D60A21623">
+      <Phase Name="Phase1" OutputPhaseToFile="N" StaticPhase="N" eid="B7FD95CB2D8D60A21626">
+        <Heading HeaderText="HYBRID: $$DEVICE_INFO.isHybrid$" Name="B7FD95CB2D8D60A2 Heading 3" eid="B7FD95CB2D8D60A22530"/>
+        <Button ActionCommand="go" CheckMandatoryFields="N" DependencyType="Previous questions in phase" Name="B7FD95CB2D8D60A2 FormButton 1" eid="B7FD95CB2D8D60A22499">
+          <Rule Name="Goto Phase" OperationType="Go Forward to a Named Phase" Phase="Proc1.Phase2" RuleClassName="com.acquire.intelligentforms.rules.GotoRule" RuleDisabled="N" eid="B7FD95CB2D8D60A22506"/>
+        </Button>
+        <Button ActionCommand="reload" CheckMandatoryFields="N" DependencyType="All questions in phase" Name="B7FD95CB2D8D60A2 FormButton 3" eid="B7FD95CB2D8D60A22792"/>
+        <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 4" SelectorMand="N" TableTitle="Contacts" eid="B7FD95CB2D8D60A21649">
+          <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 1" PropertyKey="Contacts[C].displayName" QuestionText="displayName" eid="B7FD95CB2D8D60A21638"/>
+          <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 2" PropertyKey="Contacts[C].notes" QuestionText="notes" eid="B7FD95CB2D8D60A21639"/>
+          <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 1" SelectorMand="N" TableTitle="Numbers" eid="B7FD95CB2D8D60A21642">
+            <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 3" PropertyKey="Contacts[C].Numbers[C].type" QuestionText="type" eid="B7FD95CB2D8D60A21640"/>
+            <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 4" PropertyKey="Contacts[C].Numbers[C].number" QuestionText="number" eid="B7FD95CB2D8D60A21641"/>
+          </Table>
+          <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 8" SelectorMand="N" TableTitle="Emails" eid="B7FD95CB2D8D60A21645">
+            <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 5" PropertyKey="Contacts[C].Emails[C].type" QuestionText="type" eid="B7FD95CB2D8D60A21643"/>
+            <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 6" PropertyKey="Contacts[C].Emails[C].email_address" QuestionText="email_address" eid="B7FD95CB2D8D60A21644"/>
+          </Table>
+          <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 12" SelectorMand="N" TableTitle="URLS" eid="B7FD95CB2D8D60A21648">
+            <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 7" PropertyKey="Contacts[C].URLS[C].type" QuestionText="type" eid="B7FD95CB2D8D60A21646"/>
+            <Question DataType="Text" Name="B7FD95CB2D8D60A2 Question 8" PropertyKey="Contacts[C].URLS[C].url" QuestionText="url" eid="B7FD95CB2D8D60A21647"/>
+          </Table>
+        </Table>
+      </Phase>
+      <Phase Name="Phase2" OfflinePhase="N" OutputPhaseToFile="N" StaticPhase="N" eid="B7FD95CB2D8D60A22503">
+        <Button ActionCommand="Back" ButtonType="Back" Name="B7FD95CB2D8D60A2 FormButton 2" eid="B7FD95CB2D8D60A22787"/>
+        <Button ActionCommand="refresh" CheckMandatoryFields="N" DependencyType="All questions in phase" Name="B7FD95CB2D8D60A2 FormButton 4" eid="B7FD95CB2D8D60A23017"/>
+        <Heading HeaderText="Here" Name="B7FD95CB2D8D60A2 Heading 2" eid="B7FD95CB2D8D60A22511"/>
+        <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 16" SelectorMand="N" TableTitle="Contacts" eid="B7FD95CB2D8D60A22828">
+          <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 9" PropertyKey="Contacts[C].displayName" QuestionText="displayName" ReadOnly="Y" eid="B7FD95CB2D8D60A22826"/>
+          <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 10" PropertyKey="Contacts[C].notes" QuestionText="notes" ReadOnly="Y" eid="B7FD95CB2D8D60A22827"/>
+          <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 17" SelectorMand="N" TableTitle="Numbers" eid="B7FD95CB2D8D60A22889">
+            <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 12" PropertyKey="Contacts[C].Numbers[C].number" QuestionText="number" ReadOnly="Y" eid="B7FD95CB2D8D60A22888"/>
+            <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 11" PropertyKey="Contacts[C].Numbers[C].type" QuestionText="type" ReadOnly="Y" eid="B7FD95CB2D8D60A22887"/>
+          </Table>
+          <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 18" SelectorMand="N" TableTitle="Emails" eid="B7FD95CB2D8D60A22938">
+            <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 14" PropertyKey="Contacts[C].Emails[C].email_address" QuestionText="email_address" ReadOnly="Y" eid="B7FD95CB2D8D60A22937"/>
+            <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 13" PropertyKey="Contacts[C].Emails[C].type" QuestionText="type" ReadOnly="Y" eid="B7FD95CB2D8D60A22936"/>
+          </Table>
+          <Table AutoSelector="Y" Name="B7FD95CB2D8D60A2 FormTable 19" SelectorMand="N" TableTitle="URLS" eid="B7FD95CB2D8D60A22981">
+            <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 16" PropertyKey="Contacts[C].URLS[C].url" QuestionText="url" ReadOnly="Y" eid="B7FD95CB2D8D60A22980"/>
+            <Question DataType="Text" Mandatory="N" Name="B7FD95CB2D8D60A2 Question 15" PropertyKey="Contacts[C].URLS[C].type" QuestionText="type" ReadOnly="Y" eid="B7FD95CB2D8D60A22979"/>
+          </Table>
+        </Table>
+      </Phase>
+      <Phase Name="Error" OfflinePhase="Y" OutputPhaseToFile="N" StaticPhase="N" eid="B7FD95CB2D8D60A22436">
+        <Heading HeaderText="Error" Name="B7FD95CB2D8D60A2 Heading 1" eid="B7FD95CB2D8D60A22441"/>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="B7FD95CB2D8D60A21095">
+    <PresentationType ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" EditTheme="N" EntityEID="B7FD95CB2D8D60A21068" MessagesOrder="Errors, Warnings, Info" MessagesSeparator="&lt;br/&gt;" Name="Rich" PresentationDefinitionClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationDefinition" QuestionListDefault="- Please Select" UseOptimised="N" UseTracking="N" eid="B7FD95CB2D8D60A21653">
+      <PresentationProduct ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" EntityClassType="com.acquire.intelligentforms.entities.Product" EntityEID="B7FD95CB2D8D60A21623" Name="B7FD95CB2D8D60A2 RichHTMLPresentationProduct 3" RuntimeId="B7FD95CB2D8D60A21659" TabPaneStyle="Use Default" eid="B7FD95CB2D8D60A21659">
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="B7FD95CB2D8D60A21626" Name="B7FD95CB2D8D60A2 RichHTMLPresentationPhase 4" RuntimeId="B7FD95CB2D8D60A21660" eid="B7FD95CB2D8D60A21660">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="B7FD95CB2D8D60A22530" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 31" NumberOfRows="5" RuntimeId="HEAD_B7FD95CB2D8D60A22764" eid="B7FD95CB2D8D60A22764"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="B7FD95CB2D8D60A22499" Name="B7FD95CB2D8D60A2 RichHTMLPresentationButton 25" RuntimeId="BUT_B7FD95CB2D8D60A22500" eid="B7FD95CB2D8D60A22500"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="B7FD95CB2D8D60A22792" Name="B7FD95CB2D8D60A2 RichHTMLPresentationButton 38" RuntimeId="BUT_B7FD95CB2D8D60A22793" eid="B7FD95CB2D8D60A22793"/>
+          <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" DefaultButtonName="Use Default" DesignToUse="Custom" DisplayType="GANObject:com.acquire.intelligentforms.ide.presentationeditor.widgets.WidgetDialog|com.temenos.widgets.hybrid.contacts.getContacts" DisplayTypeDI_EMAILS="Contacts[C].Emails[C].email_address" DisplayTypeDI_EMAILS_TYPE="Contacts[C].Emails[C].type" DisplayTypeDI_NAME="Contacts[C].displayName" DisplayTypeDI_NOTE="Contacts[C].notes" DisplayTypeDI_NUMBERS="Contacts[C].Numbers[C].number" DisplayTypeDI_NUMBERS_TYPE="Contacts[C].Numbers[C].type" DisplayTypeDI_URLS="Contacts[C].URLS[C].url" DisplayTypeDI_URLS_TYPE="Contacts[C].URLS[C].type" DisplayTypel2="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." DisplayTypel3="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." DisplayTypel4="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A21649" HIDDEN_GROUP_ATTRIBUE="style=null" HideSelector="Y" LineAbove="N" LineBelow="N" MinimumRowsToDisplay="2" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 5" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" NoEmptyRows="N" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A21661" Sortable="N" eid="B7FD95CB2D8D60A21661">
+            <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21638" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 6" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21662" eid="B7FD95CB2D8D60A21662"/>
+            <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21639" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 7" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21663" eid="B7FD95CB2D8D60A21663"/>
+            <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" DefaultButtonName="Use Default" DesignToUse="Custom" DisplayType="edgeConnect Table" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A21642" HIDDEN_GROUP_ATTRIBUE="style=null" HideSelector="Y" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 8" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" NoEmptyRows="N" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A21664" Sortable="N" eid="B7FD95CB2D8D60A21664">
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21640" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 9" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21665" eid="B7FD95CB2D8D60A21665"/>
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21641" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 10" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21666" eid="B7FD95CB2D8D60A21666"/>
+            </PresentationTable>
+            <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" DefaultButtonName="Use Default" DesignToUse="Custom" DisplayType="edgeConnect Table" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A21645" HIDDEN_GROUP_ATTRIBUE="style=null" HideSelector="Y" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 11" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" NoEmptyRows="N" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A21667" Sortable="N" eid="B7FD95CB2D8D60A21667">
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21643" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 12" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21668" eid="B7FD95CB2D8D60A21668"/>
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21644" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 13" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21669" eid="B7FD95CB2D8D60A21669"/>
+            </PresentationTable>
+            <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" DefaultButtonName="Use Default" DesignToUse="Custom" DisplayType="edgeConnect Table" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A21648" HIDDEN_GROUP_ATTRIBUE="style=null" HideSelector="Y" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 14" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" NoEmptyRows="N" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A21670" Sortable="N" eid="B7FD95CB2D8D60A21670">
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21646" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 15" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21671" eid="B7FD95CB2D8D60A21671"/>
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A21647" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 16" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A21672" eid="B7FD95CB2D8D60A21672"/>
+            </PresentationTable>
+          </PresentationTable>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="B7FD95CB2D8D60A22503" Name="B7FD95CB2D8D60A2 RichHTMLPresentationPhase 26" RuntimeId="B7FD95CB2D8D60A22504" eid="B7FD95CB2D8D60A22504">
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="B7FD95CB2D8D60A22787" Name="B7FD95CB2D8D60A2 RichHTMLPresentationButton 37" RuntimeId="BUT_B7FD95CB2D8D60A22788" eid="B7FD95CB2D8D60A22788"/>
+          <PresentationButton ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.FormButton" EntityEID="B7FD95CB2D8D60A23017" Name="B7FD95CB2D8D60A2 RichHTMLPresentationButton 55" RuntimeId="BUT_B7FD95CB2D8D60A23018" eid="B7FD95CB2D8D60A23018"/>
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="B7FD95CB2D8D60A22511" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 27" NumberOfRows="5" RuntimeId="HEAD_B7FD95CB2D8D60A22512" eid="B7FD95CB2D8D60A22512"/>
+          <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" DefaultButtonName="Use Default" DesignToUse="Custom" DisplayType="edgeConnect Linear Table" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A22828" EvenRowsStyle="TableRow" HIDDEN_GROUP_ATTRIBUE="style=null" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 40" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" OddRowsStyle="TableRow" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A22829" TableStyle="{border: 1px solid #ddf}" eid="B7FD95CB2D8D60A22829">
+            <PresentationFormatBreak ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" DefaultButtonName="Use Default" DisplayType="Standard section" Name="B7FD95CB2D8D60A2 RichHTMLPresentationFormatBreak 57" RuntimeId="FMT_B7FD95CB2D8D60A23033" SectionStyle="{background-color: #eeeeee; border: 2px solid #aaa; margin: 5px 0px; border-radius: 5px}" eid="B7FD95CB2D8D60A23033">
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22826" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 41" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22830" eid="B7FD95CB2D8D60A22830"/>
+              <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22827" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 42" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22831" eid="B7FD95CB2D8D60A22831"/>
+              <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" ColumnSizing="Specify as percentage (%)" ColumnWidths="50,50" DefaultButtonName="Use Default" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A22889" HIDDEN_GROUP_ATTRIBUE="style=null" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 43" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A22890" eid="B7FD95CB2D8D60A22890">
+                <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22888" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 45" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22892" eid="B7FD95CB2D8D60A22892"/>
+                <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22887" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 44" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22891" eid="B7FD95CB2D8D60A22891"/>
+              </PresentationTable>
+              <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" ColumnSizing="Specify as percentage (%)" ColumnWidths="50,50" DefaultButtonName="Use Default" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A22938" HIDDEN_GROUP_ATTRIBUE="style=null" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 46" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A22939" eid="B7FD95CB2D8D60A22939">
+                <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22937" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 48" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22941" eid="B7FD95CB2D8D60A22941"/>
+                <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22936" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 47" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22940" eid="B7FD95CB2D8D60A22940"/>
+              </PresentationTable>
+              <PresentationTable ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTable" ColumnHeadingJustification="Left" ColumnSizing="Specify as percentage (%)" ColumnWidths="50,50" DefaultButtonName="Use Default" EditDesignToUse="N" EntityClassType="com.acquire.intelligentforms.entities.FormTable" EntityEID="B7FD95CB2D8D60A22981" HIDDEN_GROUP_ATTRIBUE="style=null" LineAbove="N" LineBelow="N" Name="B7FD95CB2D8D60A2 RichHTMLPresentationTable 49" NavigationInformationMessage="Page $$TABLE_CURRENT_PAGE$ of $$TABLE_LAST_PAGE$" ResultSet="N" RuntimeId="TBL_B7FD95CB2D8D60A22982" eid="B7FD95CB2D8D60A22982">
+                <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22980" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 51" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22984" eid="B7FD95CB2D8D60A22984"/>
+                <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Question" EntityEID="B7FD95CB2D8D60A22979" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 50" NumberOfRows="5" RuntimeId="QUE_B7FD95CB2D8D60A22983" eid="B7FD95CB2D8D60A22983"/>
+              </PresentationTable>
+            </PresentationFormatBreak>
+          </PresentationTable>
+        </PresentationPhase>
+        <PresentationPhase ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" EntityClassType="com.acquire.intelligentforms.entities.Phase" EntityEID="B7FD95CB2D8D60A22436" Name="B7FD95CB2D8D60A2 RichHTMLPresentationPhase 17" RuntimeId="B7FD95CB2D8D60A22437" eid="B7FD95CB2D8D60A22437">
+          <PresentationQuestion ClassType="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" ColumnHeadingJustification="Left" EntityClassType="com.acquire.intelligentforms.entities.Heading" EntityEID="B7FD95CB2D8D60A22441" FieldSize="15" Name="B7FD95CB2D8D60A2 RichHTMLPresentationQuestion 18" NumberOfRows="5" RuntimeId="HEAD_B7FD95CB2D8D60A22442" eid="B7FD95CB2D8D60A22442"/>
+        </PresentationPhase>
+      </PresentationProduct>
+    </PresentationType>
+  </PresentationTypes>
+  <EVANotes Name="Notes Root" eid="B7FD95CB2D8D60A21109">
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="B7FD95CB2D8D60A21303"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="B7FD95CB2D8D60A21304"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="B7FD95CB2D8D60A21305"/>
+  </EVANotes>
+</Project>

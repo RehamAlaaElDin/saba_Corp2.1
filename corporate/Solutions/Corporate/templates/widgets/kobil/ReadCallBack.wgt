@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+   <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        .modal {
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            padding: 0 25px;
+            background-color: rgba(0,0,0,0.4);
+        }
+        button{
+            cursor: pointer;
+        }
+        .modal-content {
+            margin: 80px auto 0;
+            width: 280px;
+            background: #ffffff;
+            padding: 20px;
+        }
+        #accept{
+            background: #0F9D58;
+            color: #ffffff;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #decline{
+            background: #DB4437;
+            color: #ffffff;
+            display: block;
+            width: 100%;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #time{
+            text-align: center;
+            position: relative;
+            width: 100px;
+            margin: 0 auto 10px;
+            line-height: 20px;
+        }
+        #time:before{
+            content:"";
+            background-image: url('data:image/png;base64,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');
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-size: 100%;
+            left: 0;
+            top: 0;
+        }
+        #outputValue > div{
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            max-height: 380px;
+            overflow: auto;
+        }
+        p{
+            word-break: break-all;
+            margin: 0;
+        }
+        strong{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button id="myBtn">Invalid Data</button>
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div id="time"></div>
+            <div id="outputValue"></div>
+            <button id="accept">Accept</button>
+            <button id="decline">Decline</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        /* Timer */
+        window.onload = function () {
+            var timeout =$('input[id*="_2FATIMEOUT"]').val();
+            startTimer(timeout-5, document.querySelector('#time'));
+            //time.style.display = "block";
+        };
+        var time = document.getElementById("time");
+        function startTimer(duration, display) {
+                var timer = duration, minutes, seconds;
+                 minutes = parseInt(duration / 60, 10);
+                seconds = parseInt(duration % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+            var setTimer = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+                if (--timer < 0) {
+                 timer = duration;
+    //  $('button[id*="_TRANS_TIME_OUT"]').click();
+                }
+            }, 1000);
+        }
+        /* Timer */
+        /* Button Actions */
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var accept = document.getElementById("accept");
+        var decline = document.getElementById("decline");
+        btn.click(function() {
+            modal.style.display = "block";
+        })
+     var msg = $('input[id*="_2FAMSG"]').val();
+        accept.onclick = function() {
+          modal.style.display = "none";
+      
+      var options = { dimBackground: false };
+      cordova.plugins.KobilPlugin.doTransaction(function(result){
+      },function(error){
+      },1,msg);
+     // $('button[id*="_EVATRANS"]').click();
+      };
+      
+      decline.onclick = function() {
+      modal.style.display = "none";
+      var options = { dimBackground: false };
+      cordova.plugins.KobilPlugin.doTransaction(function(result){
+      },function(error){
+      },0,msg);
+     // $('button[id*="_EVATRANS"]').click();
+      };
+        btn.style.display = "none";
+        btn.click();
+        /* Button Actions */
+        /* For Transaction Content*/
+        var outputValue = document.getElementById("outputValue");
+        var content = document.getElementsByTagName("p strong");
+
+
+        var sampleString = $('input[id*="_2FAMSG"]').val();
+        var output = sampleString
+        .replace(new RegExp("\sP\b", "gi"), "<p><strong>")
+        .replace(new RegExp("\b\cP", "gi"), "</strong></p>")
+        .replace(new RegExp("\sP", "gi"), "<p>")
+        .replace(new RegExp("\cP", "gi"), "</p>")
+        .replace(new RegExp("\cB", "gi"), "</strong>")
+        .replace(new RegExp("-", "gi"), " - ")
+        .replace(new RegExp("\cF", "gi"), "<p>")
+        .replace(new RegExp("\s8", "gi"), "<span style='font-size: 16px; font-weight: bold;'>")
+        .replace(new RegExp("\n", "gi"), "</p><p>")
+        .replace(new RegExp("\s4", "gi"), "<span style='font-size: 13px'>") 
+        .replace(new RegExp("\bg1", "gi"), "<div style='background: #DB4437; color: #ffffff;'>")
+        .replace(new RegExp("\bg6", "gi"), "<div style='background: #f3f3f3; color: #000000;'>");
+
+        outputValue.innerHTML += output;
+        setTimeout(function(){
+            if(sampleString){
+                modal.style.display = "block";
+            }
+        }, 1000);
+        /* For Transaction Content*/
+    </script>
+</body>
+</html>

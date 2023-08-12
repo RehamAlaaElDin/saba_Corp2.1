@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget callback="false" icon="images/gplus-16.png" name="Google Sign In" type="Button">
+    <template type="source" value="googleSignIn.wgt"/>
+    <template alwaysAddHeader="false" type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="Scopes enable access to particular resources, such as user data." includeInDesign="true" layout="-1" mand="false" name="Sign-in" prompt="Sign-in button attributes" type="com.acquire.util.ui.Legend" typeValue="3|N" usage="7"/>
+      <item help="Your OAuth 2.0 client ID that you obtained from the Google Developers Console." includeInDesign="true" layout="-1" mand="true" name="clientid" prompt="Client ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="Allows control over when the user is re-prompted for consent. When set to auto, the user only sees the OAuth consent dialog if they have not authorized your application. When set to force, the user is shown the OAuth consent dialog each time that they click the sign-in button." includeInDesign="true" layout="-1" mand="false" name="approvalprompt" prompt="Approval Prompt" type="javax.swing.JComboBox" typeValue="auto|force" usage="7"/>
+      <item help="Directs the interactive share button to store user and session information in a session cookie and HTML5 session storage on the user's client for the purpose of minimizing HTTP traffic and distinguishing between multiple Google accounts a user might be signed into. We call these two means of storage the &quot;client storage&quot;." includeInDesign="true" layout="-1" mand="false" name="cookiepolicy_legend" prompt="Cookie Policy" type="com.acquire.util.ui.Legend" typeValue="2|N" usage="7"/>
+      <item help="This checkbox  value enable/disable the usage of cookies or session storage for the interactive share button." includeInDesign="true" layout="-1" mand="false" name="cookiepolicy" prompt="Enable cookie" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="The uri includes the scheme, site-domain and possibly port to be set for your site. The value you provide determines the scope of the cookie. The more general the uri, the broader the scope of the cookie. More details --&gt; https://developers.google.com/+/web/signin/reference#determining_a_value_for_cookie_policy" includeInDesign="true" layout="-1" mand="false" name="uri" prompt="URI" type="javax.swing.JTextField" usage="7"/>
+      <item help="Where to store data after a successful login." includeInDesign="true" layout="-1" mand="false" name="data-store" prompt="Data store settings" type="com.acquire.util.ui.Legend" typeValue="4|N" usage="7"/>
+      <item help="Specify where to save display name in data store." includeInDesign="true" layout="-1" mand="false" name="data-name" prompt="Display Name" type="PropertyChooser" usage="7"/>
+      <item help="Specify where to save email in data store." includeInDesign="true" layout="-1" mand="false" name="data-email" prompt="Email" type="PropertyChooser" usage="7"/>
+      <item help="Specify where to save user google ID in data store." includeInDesign="true" layout="-1" mand="false" name="data-id" prompt="User ID" type="PropertyChooser" usage="7"/>
+    </custom>
+  </widget>
+  <widget callback="false" icon="images/gplus-16.png" name="Sharing interactive posts" type="Button">
+    <template type="source" value="googleSharePosts.wgt"/>
+    <template type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="Interactive share button attributes" includeInDesign="true" layout="-1" mand="false" name="button_legend" prompt="Interactive share button attributes" type="com.acquire.util.ui.Legend" typeValue="8|N" usage="7"/>
+      <item help="Your OAuth 2.0 client ID that you obtained from the Google Developers Console." includeInDesign="true" layout="-1" mand="true" name="clientid" prompt="Client ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="The content URL points to the page that you want to render in the preview snippet in the share post. This URL can differ from the call-to-action button's URL, for example, you might link to an overview with the content URL and to a form with the call-to-action button." includeInDesign="true" layout="-1" mand="true" name="contenturl" prompt="Content URL" type="javax.swing.JTextField" usage="7"/>
+      <item help="Specify a URI path as a deep link ID for the content link in the shared post. The value must be 512 characters or fewer in length." includeInDesign="true" layout="-1" mand="false" name="contentdeeplinkid" prompt="Content Deep Link ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="The label that renders in the stream post that prompts the reader to act. This field should be a verb that accurately describe the action that will be taken." includeInDesign="true" layout="-1" mand="false" name="calltoactionlabel" prompt="Call to Action Label" type="javax.swing.JComboBox" typeValue="ACCEPT|ACCEPT_GIFT|ADD|ADD_FRIEND|ADD_ME|ADD_TO_CALENDAR|ADD_TO_CART|ADD_TO_FAVORITES|ADD_TO_QUEUE|ADD_TO_WISH_LIST|ANSWER|ANSWER_QUIZ|APPLY|ASK|ATTACK|BEAT|BID|BOOK|BOOKMARK|BROWSE|BUY|CAPTURE|CHALLENGE|CHANGE|CHAT|CHECKIN|COLLECT|COMMENT|COMPARE|COMPLAIN|CONFIRM|CONNECT|CONTRIBUTE|COOK|CREATE|DEFEND|DINE|DISCOVER|DISCUSS|DONATE|DOWNLOAD|EARN|EAT|EXPLAIN|FIND|FIND_A_TABLE|FOLLOW|GET|GIFT|GIVE|GO|HELP|IDENTIFY|INSTALL|INSTALL_APP|INTRODUCE|INVITE|JOIN|JOIN_ME|LEARN|LEARN_MORE|LISTEN|MAKE|MATCH|MESSAGE|OPEN|OPEN_APP|OWN|PAY|PIN|PIN_IT|PLAN|PLAY|PURCHASE|RATE|READ|READ_MORE|RECOMMEND|RECORD|REDEEM|REGISTER|REPLY|RESERVE|REVIEW|RSVP|SAVE|SAVE_OFFER|SEE_DEMO|SELL|SEND|SIGN_IN|SIGN_UP|START|STOP|SUBSCRIBE|TAKE_QUIZ|TAKE_TEST|TRY_IT|UPVOTE|USE|VIEW|VIEW_ITEM|VIEW_MENU|VIEW_PROFILE|VISIT|VOTE|WANT|WANT_TO_SEE|WANT_TO_SEE_IT|WATCH|WATCH_TRAILER|WISH|WRITE" usage="7"/>
+      <item help="The URL that the user will be taken to when the call-to-action button is clicked from a web browser. If the button is clicked on a mobile device, the Google+ app launches your app and passes the calltoactiondeeplinkid for your app to use to determine the location within your app to take the user." includeInDesign="true" layout="-1" mand="true" name="calltoactionurl" prompt="Call To Action URL" type="javax.swing.JTextField" usage="7"/>
+      <item help="Specify a URI path as a deep link ID for the call to action button. The value must be 512 characters or fewer in length." includeInDesign="true" layout="-1" mand="false" name="calltoactiondeeplinkid" prompt="Call to Action Deep Link ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="Text that is prefilled in the comment area of the share box on behalf of the user. The user can edit or remove the prefilled text." includeInDesign="true" layout="-1" mand="false" name="prefilltext" prompt="Prefill Text" type="javax.swing.JTextField" usage="7"/>
+      <item help="A comma-separated list of user IDs and email addresses that you want to prefill the share settings with" includeInDesign="true" layout="-1" mand="false" name="recipients" prompt="Recipients" type="javax.swing.JTextField" usage="7"/>
+      <item help="Directs the interactive share button to store user and session information in a session cookie and HTML5 session storage on the user's client for the purpose of minimizing HTTP traffic and distinguishing between multiple Google accounts a user might be signed into. We call these two means of storage the &quot;client storage&quot;." includeInDesign="true" layout="-1" mand="false" name="cookiepolicy_legend" prompt="Cookie Policy" type="com.acquire.util.ui.Legend" typeValue="2|N" usage="7"/>
+      <item help="This checkbox  value enable/disable the usage of cookies or session storage for the interactive share button." includeInDesign="true" layout="-1" mand="false" name="cookiepolicy" prompt="Enable cookie" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="The uri includes the scheme, site-domain and possibly port to be set for your site. The value you provide determines the scope of the cookie. The more general the uri, the broader the scope of the cookie. More details --&gt; https://developers.google.com/+/web/signin/reference#determining_a_value_for_cookie_policy" includeInDesign="true" layout="-1" mand="false" name="uri" prompt="URI" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/gplus-16.png" name="Google +1 Button " type="Button">
+    <template type="source" value="google+1button.wgt"/>
+    <template type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="default value is current page URL" includeInDesign="true" layout="-1" mand="false" name="href" prompt="URL to +1" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="standard" help="Button size" includeInDesign="true" layout="-1" mand="false" name="size" prompt="Button size" type="javax.swing.JComboBox" typeValue="small|medium|standard|tall" usage="7"/>
+      <item help="Sets the annotation to display next to the button" includeInDesign="true" layout="-1" mand="false" name="annotation" prompt="Annotation" type="javax.swing.JComboBox" typeValue="none|bubble|inline" usage="7"/>
+      <item help="If Annotation is set to &quot;inline&quot;, this parameter sets the width in pixels to use for the button and its inline annotation.This attribute is applicable only  for inline annotation." includeInDesign="true" layout="-1" mand="false" name="width" prompt="Width" type="javax.swing.JTextField" usage="7"/>
+      <item help="Sets the horizontal alignment of the button assets within its frame.This attribute is applicable only  for inline annotation." includeInDesign="true" layout="-1" mand="false" name="align" prompt="Align" type="javax.swing.JComboBox" typeValue="left|right" usage="7"/>
+      <item help="Sets the preferred positions to display hover and confirmation bubbles, which are relative to the button." includeInDesign="true" layout="-1" mand="false" name="expandTo" prompt="Expand To" type="javax.swing.JComboBox" typeValue="top|right|bottom|left" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/gplus-16.png" name="Google Share Button" type="Item:">
+    <template type="source" value="googleShareButton.wgt"/>
+    <custom>
+      <item help="default value is current page URL . Example : http://www.google.com" includeInDesign="true" layout="-1" mand="false" name="href" prompt="URL to share" type="javax.swing.JTextField" usage="7"/>
+      <item help="Sets the annotation to display next to the button" includeInDesign="true" layout="-1" mand="false" name="annotation" prompt="Annotation" type="javax.swing.JComboBox" typeValue="none|bubble|inline|vertical-bubble" usage="7"/>
+      <item help="The maximum width to allocate to the entire share plugin." includeInDesign="true" layout="-1" mand="false" name="width" prompt="Width" type="javax.swing.JTextField" usage="7"/>
+      <item help="The height to assign the button. This may be 15, 20, 24 or 60." includeInDesign="true" layout="-1" mand="false" name="height" prompt="Height" type="javax.swing.JComboBox" typeValue="15|20|24|60" usage="7"/>
+      <item help="Sets the horizontal alignment of the button assets within its frame." includeInDesign="true" layout="-1" mand="false" name="align" prompt="Align" type="javax.swing.JComboBox" typeValue="left|right" usage="7"/>
+      <item help="Sets the preferred positions to display hover and confirmation bubbles, which are relative to the button." includeInDesign="true" layout="-1" mand="false" name="expandTo" prompt="Expand To" type="javax.swing.JComboBox" typeValue="top|right|bottom|left" usage="7"/>
+    </custom>
+    <template type="header" value="google_header.wgt"/>
+  </widget>
+  <widget icon="images/gplus-16.png" name="Google Embedded Post" type="Item:">
+    <template type="source" value="googleEmbeddedPost.wgt"/>
+    <template type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="The link to the Google+ post must be in its canonical format:" includeInDesign="true" layout="-1" mand="true" name="href" prompt="The link to the Google+ post" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/gplus-16.png" name="Google Follow Button" type="Item:">
+    <template type="source" value="googleFollowButton.wgt"/>
+    <template type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="The URL of the Google+ page or user profile that the user might choose to follow" includeInDesign="true" layout="-1" mand="true" name="href" prompt="The URL of the Google+ page or user profile " type="javax.swing.JTextField" usage="7"/>
+      <item help="Sets the annotation to display next to the button." includeInDesign="true" layout="-1" mand="false" name="annotation" prompt="Annotation" type="javax.swing.JComboBox" typeValue="none|bubble|vertical-bubble" usage="7"/>
+      <item help="The pixel height of the button to render.This height controls only the height of the button. If you use the vertical annotation, the actual height of the full widget will be larger." includeInDesign="true" layout="-1" mand="false" name="height" prompt="Height" type="javax.swing.JComboBox" typeValue="15|20|24" usage="7"/>
+      <item help="Describes the relationship of the entity defined at the href location to the page the badge is embedded." includeInDesign="true" layout="-1" mand="false" name="rel" prompt="relationship" type="javax.swing.JComboBox" typeValue="author|publisher" usage="7"/>
+    </custom>
+  </widget>
+  <widget alwaysAddHeader="true" icon="images/gplus-16.png" name="Google Hangout button" type="Item:">
+    <template type="source" value="googleHangoutsButton.wgt"/>
+    <template alwaysAddHeader="false" type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="These parameters specify the applications that are started along with the Google+ Hangout when a user clicks the button" includeInDesign="true" layout="-1" mand="false" name="initial_apps_legend" prompt="Initial app parameters" type="com.acquire.util.ui.Legend" typeValue="3|N" usage="7"/>
+      <item help="The project number retrieved from the Google Developers Console that corresponds to the application that this button launches." includeInDesign="true" layout="-1" mand="false" name="app_id" prompt="App ID" type="javax.swing.JTextField" usage="7"/>
+      <item help="This optional parameter specifies the type of Hangout app created when the user clicks the button. Setting this parameter changes the way that Hangout applications are loaded for the Hangout and its participants" includeInDesign="true" layout="-1" mand="false" name="app_type" prompt="App Type" type="javax.swing.JComboBox" typeValue="LOCAL_APP|ROOM_APP" usage="7"/>
+      <item help="his optional parameter specifies data to be passed to the initial instantiation of the app. Only the first participant to join the application has this value present in the response from gapi.hangout.getStartData." includeInDesign="true" layout="-1" mand="false" name="start_data" prompt="Start Data" type="javax.swing.JTextField" usage="7"/>
+      <item help="The following parameters are used to initialize the Hangout button. These parameters determine the type of Hangout to create and the apps to launch when the Hangout starts." includeInDesign="true" layout="-1" mand="false" name="button_settings_legend" prompt="Hangout button options" type="com.acquire.util.ui.Legend" typeValue="3|N" usage="7"/>
+      <item help="Pre-populates the topic field for Hangouts on Air. Note that users can change the topic of the Hangout after they have joined." includeInDesign="true" layout="-1" mand="false" name="topic" prompt="Topic" type="javax.swing.JTextField" usage="7"/>
+      <item help="Specifies what type of Hangout should be started." includeInDesign="true" layout="-1" mand="false" name="hangout_type" prompt="Hangout Type" type="javax.swing.JComboBox" typeValue="normal|onair|party|moderated" usage="7"/>
+      <item help="Specifies the width of the button. The default value is 136." includeInDesign="true" layout="-1" mand="false" name="widget_size" prompt="Widget Size" type="javax.swing.JTextField" usage="7"/>
+      <item help="These parameters specify the people invited to the Google+ Hangout when the user clicks the button" includeInDesign="true" layout="-1" mand="false" name="invites" prompt="Invites List" type="com.acquire.util.ui.Legend" typeValue="2|N" usage="7"/>
+      <item help="Specifies the type of invites." includeInDesign="true" layout="-1" mand="false" name="invites_type" prompt="Invites type" type="javax.swing.JComboBox" typeValue="PROFILE|CIRCLE|EMAIL|PHONE" usage="7"/>
+      <item help="Invites' identifiers  with comma delimiter" includeInDesign="true" layout="-1" mand="false" name="ids" prompt="Invites IDS" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget callback="false" icon="images/gplus-16.png" name="Google Logout" type="Button">
+    <template type="source" value="googleLogout.wgt"/>
+    <template type="header" value="google_header.wgt"/>
+  </widget>
+  <widget icon="images/gplus-16.png" name="Google Badge" type="Item:">
+    <template type="source" value="googleBadge.wgt"/>
+    <template type="header" value="google_header.wgt"/>
+    <custom>
+      <item help="Badge Type" includeInDesign="true" layout="-1" mand="true" name="badgetype" prompt="Badge Type" type="javax.swing.JComboBox" typeValue="Profile|Pages|Community" usage="7"/>
+      <item help="The URL of the Google+ profile or of the Google+ page or  of the Google+ community ." includeInDesign="true" layout="-1" mand="true" name="href" prompt="URL" type="javax.swing.JTextField" usage="7"/>
+      <item help="Sets the orientation of the badge." includeInDesign="true" layout="-1" mand="false" name="layout" prompt="Layout" type="javax.swing.JComboBox" typeValue="landscape|portrait" usage="7"/>
+      <item help="Displays the cover photo in the badge if set to true and the photo exists.This attribute isn't applicable for landscape layout." includeInDesign="true" layout="-1" mand="false" name="showcoverphoto" prompt="Show Cover Photo" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="Displays the tag line if set to true.This attribute isn't applicable for landscape layout." includeInDesign="true" layout="-1" mand="false" name="showtagline" prompt="Show Tag Line" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="The color theme of the badge. Use dark when placing the badge on a page with a dark background." includeInDesign="true" layout="-1" mand="false" name="theme" prompt="Theme" type="javax.swing.JComboBox" typeValue="light|dark" usage="7"/>
+      <item help="Displays a list of community owners if set to true. It's available only for badge of community type." includeInDesign="true" layout="-1" mand="false" name="showowners" prompt="Show Owners" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="The pixel width of the badge to render. The following ranges are valid: Portrait layout 180-450 pixels , Landscape layout 273-450 pixels" includeInDesign="true" layout="-1" mand="false" name="width" prompt="Width" type="javax.swing.JTextField" usage="7"/>
+      <item help="The pixel height of the badge to render" includeInDesign="true" layout="-1" mand="false" name="height" prompt="Height" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget callback="false" icon="images/gplus-16.png" name="Google Snippet" type="Item:">
+    <template alwaysAddHeader="true" type="header" value="googleSnippet.wgt"/>
+    <custom>
+      <item help="Title" includeInDesign="true" layout="-1" mand="false" name="title" prompt="Title" type="javax.swing.JTextField" usage="7"/>
+      <item help="Description" includeInDesign="true" layout="-1" mand="false" name="description" prompt="Description" type="javax.swing.JTextField" usage="7"/>
+      <item help="Image Url" includeInDesign="true" layout="-1" mand="false" name="image" prompt="Image Url" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="images/gplus-16.png" name="Google Analytics" type="Item:">
+    <template alwaysAddHeader="true" type="header" value="googleAnalytics.wgt"/>
+    <custom>
+      <item help="The full web property ID (e.g. UA-65432-1) for the tracker object." includeInDesign="true" layout="-1" mand="true" name="accountID" prompt="accountID" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>

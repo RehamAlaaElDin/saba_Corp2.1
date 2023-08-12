@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="ImportLetterOfCredit" project="LetterOfCredits" sourcelanguage="en-GB" targetlanguage="fr" updated="26/03/18 14:58" version="1">
+  <Comment/>
+  <ProcessEntities>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ImportLetterOfCredit" eid="C2F486AB7A84B1B3131438" path="ImportLetterOfCredit" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="EA952528513A8D2B377415:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="07AF4D80A0B389C22247593:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="07AF4D80A0B389C22247596:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="07AF4D80A0B389C22247595:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="07AF4D80A0B389C22247597:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="07AF4D80A0B389C22247599:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="3E3E277E2E771210354109:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="3E3E277E2E771210354108:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="BC7D1391BDFB1D706704682:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="07AF4D80A0B389C22247590:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="07AF4D80A0B389C22247592:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="C2F486AB7A84B1B3989829:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="EA952528513A8D2B377420:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="3E3E277E2E771210501556:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="C2F486AB7A84B1B3156026:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="C2F486AB7A84B1B3961150:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="3E3E277E2E771210354110:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="3E3E277E2E771210501555:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="3E3E277E2E771210501554:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="C2F486AB7A84B1B3156025:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="C2F486AB7A84B1B3963399:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C22247585:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="07AF4D80A0B389C22247587:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="07AF4D80A0B389C22247586:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="07AF4D80A0B389C22247589:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="07AF4D80A0B389C22247588:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="C2F486AB7A84B1B3989833:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="C2F486AB7A84B1B3961168:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3131438:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ImportLetterOfCredit" eid="C2F486AB7A84B1B3151667" type="Phase">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Import LC" eid="C2F486AB7A84B1B3152724" path="ImportLetterOfCredit.ImportLetterOfCredit.Import LC" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156028:ImportLetterOfCredit" mappingType="OVERRIDE" original="Import LC" specifiedBy="C2F486AB7A84B1B3152724:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156028:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3152724:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156028:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3152724:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156028:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3152724:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156028:ImportLetterOfCredit" mappingType="OVERRIDE" original="Import LC" specifiedBy="C2F486AB7A84B1B3152724:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Amendments" eid="C2F486AB7A84B1B3153880" path="ImportLetterOfCredit.ImportLetterOfCredit.Amendments" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156030:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="C2F486AB7A84B1B3153880:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156030:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3153880:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156030:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3153880:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156030:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3153880:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156030:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="C2F486AB7A84B1B3153880:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Drawings" eid="C2F486AB7A84B1B3154941" path="ImportLetterOfCredit.ImportLetterOfCredit.Drawings" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156032:ImportLetterOfCredit" mappingType="OVERRIDE" original="Drawings" specifiedBy="C2F486AB7A84B1B3154941:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156032:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3154941:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156032:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3154941:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156032:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="C2F486AB7A84B1B3154941:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="C2F486AB7A84B1B3156032:ImportLetterOfCredit" mappingType="OVERRIDE" original="Drawings" specifiedBy="C2F486AB7A84B1B3154941:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+      </Container>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ExportLetterOfCredit" eid="F3106C8FA77CA47C206541" path="ExportLetterOfCredit" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="03DB78A3C6EB5F765168908:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="1A869379080D5B3F3571800:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="1A869379080D5B3F3569553:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="B198A2E0360E32E311097145:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="03DB78A3C6EB5F765168910:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="1A869379080D5B3F3569574:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="B198A2E0360E32E39471646:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="03DB78A3C6EB5F763881552:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="F3106C8FA77CA47C206542:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="A1CF8840B7F0CC5B161238:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="F3106C8FA77CA47C210995:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="03DB78A3C6EB5F763881551:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="03DB78A3C6EB5F763881550:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="62597DFC39E8D590192836:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="62597DFC39E8D590192837:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="816EED1BEA0E8169296250:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="1A869379080D5B3F3559054:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="62597DFC39E8D590192833:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="1A869379080D5B3F3569608:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="03DB78A3C6EB5F765168909:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C206541:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ExportLetterOfCredit" eid="F3106C8FA77CA47C210992" type="Phase">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Export LC" eid="F3106C8FA77CA47C213210" path="ExportLetterOfCredit.ExportLetterOfCredit.Export LC" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="F3106C8FA77CA47C213211:ImportLetterOfCredit" mappingType="OVERRIDE" original="Export LC" specifiedBy="F3106C8FA77CA47C213210:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="F3106C8FA77CA47C213211:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C213210:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="F3106C8FA77CA47C213211:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C213210:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="F3106C8FA77CA47C213211:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="F3106C8FA77CA47C213210:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="F3106C8FA77CA47C213211:ImportLetterOfCredit" mappingType="OVERRIDE" original="Export LC" specifiedBy="F3106C8FA77CA47C213210:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Amendments" eid="B198A2E0360E32E39399368" path="ExportLetterOfCredit.ExportLetterOfCredit.Amendments" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E39399370:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="B198A2E0360E32E39399368:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E39399370:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E39399368:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E39399370:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E39399368:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E39399370:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E39399368:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E39399370:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="B198A2E0360E32E39399368:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Drawings" eid="B198A2E0360E32E311075306" path="ExportLetterOfCredit.ExportLetterOfCredit.Drawings" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E311075308:ImportLetterOfCredit" mappingType="OVERRIDE" original="Drawings" specifiedBy="B198A2E0360E32E311075306:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E311075308:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E311075306:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E311075308:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E311075306:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E311075308:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E311075306:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="B198A2E0360E32E311075308:ImportLetterOfCredit" mappingType="OVERRIDE" original="Drawings" specifiedBy="B198A2E0360E32E311075306:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+      </Container>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="LCIssuance" eid="AD3A841FCD6F644C630392" path="LCIssuance" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="AD3A841FCD6F644C630919:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="AD3A841FCD6F644C630392:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="AD3A841FCD6F644C630393:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="AD3A841FCD6F644C630392:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="InwardCollections" eid="9C3B5733A891DA501812913" path="InwardCollections" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="9B1C142B7C46CB722304832:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="9C3B5733A891DA501816229:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="9C3B5733A891DA501819548:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="9C3B5733A891DA501812914:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="9C3B5733A891DA501819545:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="9C3B5733A891DA501819544:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="9C3B5733A891DA501819543:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="9C3B5733A891DA501819542:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="9C3B5733A891DA501819541:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501812913:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="Home" eid="9C3B5733A891DA501816226" type="Phase">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Inward Collections" eid="9C3B5733A891DA501869556" path="InwardCollections.Home.Inward Collections" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869557:ImportLetterOfCredit" mappingType="OVERRIDE" original="Inward Collections" specifiedBy="9C3B5733A891DA501869556:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869557:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501869556:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869557:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501869556:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869557:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501869556:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869557:ImportLetterOfCredit" mappingType="OVERRIDE" original="Inward Collections" specifiedBy="9C3B5733A891DA501869556:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Amendments" eid="9C3B5733A891DA501869561" path="InwardCollections.Home.Amendments" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869562:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="9C3B5733A891DA501869561:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869562:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501869561:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869562:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501869561:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869562:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA501869561:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA501869562:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="9C3B5733A891DA501869561:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+      </Container>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="OutwardCollections" eid="9C3B5733A891DA502145814" path="OutwardCollections" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="9C3B5733A891DA502211842:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="9C3B5733A891DA502145815:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="9C3B5733A891DA502211843:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="9C3B5733A891DA502211844:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="9C3B5733A891DA502211840:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="9C3B5733A891DA502211841:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="9C3B5733A891DA502150217:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" forPresObjects="9C3B5733A891DA502211847:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502145814:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="Home" eid="9C3B5733A891DA502150214" type="Phase">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Outward Collections" eid="9C3B5733A891DA502178427" path="OutwardCollections.Home.Outward Collections" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178428:ImportLetterOfCredit" mappingType="OVERRIDE" original="Outward Collections" specifiedBy="9C3B5733A891DA502178427:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178428:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502178427:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178428:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502178427:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178428:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502178427:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178428:ImportLetterOfCredit" mappingType="OVERRIDE" original="Outward Collections" specifiedBy="9C3B5733A891DA502178427:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Amendments" eid="9C3B5733A891DA502178432" path="OutwardCollections.Home.Amendments" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178433:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="9C3B5733A891DA502178432:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178433:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502178432:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178433:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502178432:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178433:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="9C3B5733A891DA502178432:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="9C3B5733A891DA502178433:ImportLetterOfCredit" mappingType="OVERRIDE" original="Amendments" specifiedBy="9C3B5733A891DA502178432:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+      </Container>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="InwardCollectionsRecordView" eid="7D3E87CEDB0DA0AA610917" path="InwardCollectionsRecordView" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="7D3E87CEDB0DA0AA610980:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="7D3E87CEDB0DA0AA610917:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="7D3E87CEDB0DA0AA610918:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="7D3E87CEDB0DA0AA610917:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="7D3E87CEDB0DA0AA610981:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="7D3E87CEDB0DA0AA610917:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="7D3E87CEDB0DA0AA610977:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="7D3E87CEDB0DA0AA610917:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="OutwardCollectionRecordView" eid="BDA18363DB161FAE382463" path="OutwardCollectionRecordView" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="BDA18363DB161FAE393523:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="BDA18363DB161FAE382463:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="BDA18363DB161FAE382464:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="BDA18363DB161FAE382463:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="BDA18363DB161FAE393526:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="BDA18363DB161FAE382463:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="BDA18363DB161FAE393527:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="BDA18363DB161FAE382463:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ImportLCRecordView" eid="B198A2E0360E32E316055469" path="ImportLCRecordView" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="B198A2E0360E32E316055455:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E316055469:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="B198A2E0360E32E316055453:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E316055469:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="B198A2E0360E32E316055454:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E316055469:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="B198A2E0360E32E316055470:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="B198A2E0360E32E316055469:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ImportLCAmendmentRecordView" eid="81752AE215329ECA7008573" path="ImportLCAmendmentRecordView" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="81752AE215329ECA7008559:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="81752AE215329ECA7008573:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="81752AE215329ECA7008574:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="81752AE215329ECA7008573:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="81752AE215329ECA7008558:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="81752AE215329ECA7008573:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="81752AE215329ECA7008557:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="81752AE215329ECA7008573:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="ImportLCDrawingOverview" eid="A1FA3C4500F484501513354" path="ImportLCDrawingOverview" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="A1FA3C4500F484501513355:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="A1FA3C4500F484501513354:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="A1FA3C4500F484501515365:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="A1FA3C4500F484501513354:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" forPresObjects="A1FA3C4500F484501515367:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="A1FA3C4500F484501513354:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" forPresObjects="A1FA3C4500F484501515366:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="A1FA3C4500F484501513354:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="LetterOfCreditAuthorisation" eid="07AF4D80A0B389C21234886" path="LetterOfCreditAuthorisation" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21246082:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21262829:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="07AF4D80A0B389C21234887:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21285187:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21307588:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21274008:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="9B1C142B7C46CB721909541:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21301934:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21234886:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+    <ProcessEntity class="com.acquire.intelligentforms.entities.Product" displayString="OutwardCollectionsrequest" eid="07AF4D80A0B389C21434281" path="OutwardCollectionsrequest" type="Process">
+      <ProcessEntityAttr default="" name="HelpIconHint" original="" state="NEW">
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" forPresObjects="07AF4D80A0B389C21434341:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21434281:Process" state="NEW" status="NEW" value=""/>
+        <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" forPresObjects="07AF4D80A0B389C21434282:ImportLetterOfCredit" mappingType="PLACEHOLDER" original="" specifiedBy="07AF4D80A0B389C21434281:Process" state="NEW" status="NEW" value=""/>
+      </ProcessEntityAttr>
+    </ProcessEntity>
+  </ProcessEntities>
+  <Designs/>
+  <PresentationOnlyObjects>
+    <PresentationType class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationType" displayString="ImportLetterOfCredit" eid="C2F486AB7A84B1B3156019" path="ImportLetterOfCredit" type="Rich Presentation Type">
+      <Attribute mappingType="OVERRIDE" name="BackButtonText" original="Back" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackConfirmationMessage" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackHelpText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="BackHintText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DateFormat" original="DD/MM/YYYY" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DecimalSymbol" original="." state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="DigitGroupSymbol" original="," state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="EditTheme" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ForwardButtonText" original="Continue" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardConfirmationMessage" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardHelpText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="PLACEHOLDER" name="ForwardHintText" original="" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="HelpIconHint" original="Help" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidAlphaMessage" original="Please re-enter using letters" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidAlphaNumericMessage" original="Please re-enter using letters and numbers" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDateMessage" original="Please enter a valid date in the form: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDaysInMonthMessage" original="There are not that many days in the specified month" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidDecimalMessage" original="Please enter a valid decimal number" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidLeapYearMessage" original="The specified year is not a leap year" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxDateMessage" original="The latest date is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxFileSizeMessage" original="The maximum file size allowed is $$QUESTION_CONSTRAINT$k" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxLengthMessage" original="The maximum length is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMaxValueMessage" original="The maximum value is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinDateMessage" original="The earliest date is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinLengthMessage" original="The minimum length is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidMinValueMessage" original="The minimum value is $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidNumMessage" original="Please enter a valid number" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidTimeMessage" original="Please enter a valid time in the form: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="InvalidUploadTypeMessage" original="The valid file types you are allowed to upload are: $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="LayoutDirection" original="ltr" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandMessage" original="Please answer all the required questions marked with a $$QUESTION_CONSTRAINT$" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptImgAltVal" original="This field is mandatory" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptImgVal" original="mandatory_image.gif" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="MandOptTxtVal" original="*" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="QuestionListDefault" original="- Please Select" state="NEW" status="NEW" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ValidationMessage" original="Please enter a valid value" state="NEW" status="NEW" value=""/>
+      <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="ImportLetterOfCredit" eid="C2F486AB7A84B1B3156025" type="Rich Presentation Process">
+        <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="ImportLetterOfCredit" eid="C2F486AB7A84B1B3156026" type="Rich Presentation Phase">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Column" eid="EA952528513A8D2B377415" type="Rich Presentation Column">
+            <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="EA952528513A8D2B377420" type="Rich Presentation Section">
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="C2F486AB7A84B1B3961150" type="Rich Presentation Section">
+                <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="C2F486AB7A84B1B3961168" type="Rich Presentation Section">
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Import LC" eid="C2F486AB7A84B1B3963399" path="ImportLetterOfCredit.ImportLetterOfCredit.ImportLetterOfCredit.Column.Section.Section.Section.Tab Pane Import LC" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Import LC" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Amendments" eid="C2F486AB7A84B1B3989829" path="ImportLetterOfCredit.ImportLetterOfCredit.ImportLetterOfCredit.Column.Section.Section.Section.Tab Pane Amendments" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Amendments" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Drawings" eid="C2F486AB7A84B1B3989833" path="ImportLetterOfCredit.ImportLetterOfCredit.ImportLetterOfCredit.Column.Section.Section.Section.Tab Pane Drawings" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Drawings" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="ExportLetterOfCredit" eid="F3106C8FA77CA47C206542" type="Rich Presentation Process">
+        <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="ExportLetterOfCredit" eid="F3106C8FA77CA47C210995" type="Rich Presentation Phase">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Column" eid="1A869379080D5B3F3569553" type="Rich Presentation Column">
+            <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="1A869379080D5B3F3569574" type="Rich Presentation Section">
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="1A869379080D5B3F3569608" type="Rich Presentation Section">
+                <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="1A869379080D5B3F3571800" type="Rich Presentation Section">
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Export LC" eid="1A869379080D5B3F3559054" path="ImportLetterOfCredit.ExportLetterOfCredit.ExportLetterOfCredit.Column.Section.Section.Section.Tab Pane Export LC" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Export LC" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Amendments" eid="B198A2E0360E32E39471646" path="ImportLetterOfCredit.ExportLetterOfCredit.ExportLetterOfCredit.Column.Section.Section.Section.Tab Pane Amendments" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Amendments" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Drawings" eid="B198A2E0360E32E311097145" path="ImportLetterOfCredit.ExportLetterOfCredit.ExportLetterOfCredit.Column.Section.Section.Section.Tab Pane Drawings" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Drawings" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="InwardCollections" eid="9C3B5733A891DA501812914" type="Rich Presentation Process">
+        <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="Home" eid="9C3B5733A891DA501816229" type="Rich Presentation Phase">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Column" eid="9C3B5733A891DA501819541" type="Rich Presentation Column">
+            <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="9C3B5733A891DA501819542" type="Rich Presentation Section">
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="9C3B5733A891DA501819543" type="Rich Presentation Section">
+                <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="9C3B5733A891DA501819544" type="Rich Presentation Section">
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Inward Collections" eid="9C3B5733A891DA501819545" path="ImportLetterOfCredit.InwardCollections.Home.Column.Section.Section.Section.Tab Pane Inward Collections" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Inward Collections" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Amendments" eid="9C3B5733A891DA501819548" path="ImportLetterOfCredit.InwardCollections.Home.Column.Section.Section.Section.Tab Pane Amendments" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Amendments" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="OutwardCollections" eid="9C3B5733A891DA502145815" type="Rich Presentation Process">
+        <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="Home" eid="9C3B5733A891DA502150217" type="Rich Presentation Phase">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Column" eid="9C3B5733A891DA502211840" type="Rich Presentation Column">
+            <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="9C3B5733A891DA502211841" type="Rich Presentation Section">
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="9C3B5733A891DA502211842" type="Rich Presentation Section">
+                <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="9C3B5733A891DA502211843" type="Rich Presentation Section">
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Outward Collections" eid="9C3B5733A891DA502211844" path="ImportLetterOfCredit.OutwardCollections.Home.Column.Section.Section.Section.Tab Pane Outward Collections" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Outward Collections" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                  <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationTabPane" displayString="Tab Pane Amendments" eid="9C3B5733A891DA502211847" path="ImportLetterOfCredit.OutwardCollections.Home.Column.Section.Section.Section.Tab Pane Amendments" type="Rich Presentation Tab Pane">
+                    <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="NEW" value=""/>
+                    <Attribute mappingType="OVERRIDE" name="TabName" original="Amendments" state="NEW" status="NEW" value=""/>
+                  </PresentationObject>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+    </PresentationType>
+  </PresentationOnlyObjects>
+  <Rules>
+    <MasterRules/>
+  </Rules>
+  <Component/>
+  <Lists>
+    <List eid="EF514026D13571E11293905" listName="InwardCollectionType" reset="True">
+      <ListItem eid="EF514026D13571E11293906" group="" groupState="NEW" key="0" original="InwardCollection" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="EF514026D13571E11293907" group="" groupState="NEW" key="1" original="InwardCollectionAmendment" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="BDA18363DB161FAE461581" listName="OutwardCollectionType" reset="True">
+      <ListItem eid="BDA18363DB161FAE461582" group="" groupState="NEW" key="0" original="OutwardCollection" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="BDA18363DB161FAE461583" group="" groupState="NEW" key="1" original="OutwardCollectionAmendment" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="07AF4D80A0B389C21437689" listName="YesNo" reset="True">
+      <ListItem eid="07AF4D80A0B389C21437690" group="" groupState="NEW" key="Y" original="Yes" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="07AF4D80A0B389C21437691" group="" groupState="NEW" key="N" original="No" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+  </Lists>
+</LanguageMap>

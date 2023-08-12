@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><Project AllowEditFromSolution="Y" CheckedInChangeSetsSinceGetLatest="" Connect="version 7.0.2__1" Imports0_ClassType="com.acquire.intelligentforms.entities.swagger.SwaggerImportRecord" Imports0_Comment="Importing BulkPayments APIs, version:v1.0.0." Imports0_GenAsComponents="N" Imports0_GenIntgr="Y" Imports0_GenLibraryProject="N" Imports0_GenLists="Y" Imports0_GenTypes="Y" Imports0_GetData="Y" Imports0_ImportName="getUploadFiles" Imports0_ListsParent="Lists" Imports0_Name="6B59D0A8678E58B2 SwaggerImportRecord 1" Imports0_PublishAsComponent="Y" Imports0_RequiredResources="/bulkPayments/uploads/files" Imports0_Sources="getUploadFiles" Imports0_SwaggerDocument="http://localhost:9089/tc-channels-api/api/v1.0.0/meta/apidocs/tc-bulkPayments-service-v1.0.0" Imports0_Timestamp="Tue Oct 01 14:58:21 IST 2019" Imports0_TypesParent="Data Types" ImportsClassType="com.acquire.intelligentforms.entities.mapping.ImportRecordRoot" ImportsName="Import Records Root" ImportsNumChildren="1" Name="getUploadFiles" ParentId="12345863" ProjectType="Y" ShowJSONMappings="Y" ShowSolutionTheme="Y" eid="6B59D0A8678E58B2542855"><![CDATA[
+  ]]>
+  <Types Name="Types Root" eid="6B59D0A8678E58B2542857"><![CDATA[
+    ]]>
+    <Lists Name="Lists" eid="6B59D0A8678E58B2542877"><![CDATA[
+      ]]>
+      <List DynamicList="N" Name="boolean" eid="6B59D0A8678E58B2543279"><![CDATA[
+        ]]>
+        <Item Key="true" Name="6B59D0A8678E58B2 List Item 1" Value="true" eid="6B59D0A8678E58B2543280"/>
+        <Item Key="false" Name="6B59D0A8678E58B2 List Item 2" Value="false" eid="6B59D0A8678E58B2543281"/>
+      </List>
+    </Lists>
+    <DataTypes Name="Data Types" eid="6B59D0A8678E58B2542878"><![CDATA[
+      ]]>
+      <DataType Name="Text" eid="6B59D0A8678E58B2542879"/>
+      <DataType Name="Number" Type="Number" eid="6B59D0A8678E58B2542880"/>
+      <DataType Name="Decimal" Type="Decimal" eid="6B59D0A8678E58B2542881"/>
+      <DataType Name="Date" Type="Date" eid="6B59D0A8678E58B2542882"/>
+      <DataType Name="File" Type="File" eid="6B59D0A8678E58B2542883"/>
+      <CustomType MaxFieldLength="60" MinFieldLength="0" Name="Email" RegularExpression="^([a-zA-Z0-9_\.\-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" Type="Text" ValidationType="Regular Expression" eid="6B59D0A8678E58B2542884"/>
+      <CustomType Name="int32" Type="Number" eid="6B59D0A8678E58B2542906"/>
+    </DataTypes>
+    <Structures Name="Data Structures" eid="6B59D0A8678E58B2542885"/>
+  </Types>
+  <Dictionary Name="6B59D0A8678E58B2 DataDictionary 2" eid="6B59D0A8678E58B2542858"><![CDATA[
+    ]]>
+    <PropertyGroup Name="Data Store Root" eid="6B59D0A8678E58B2542860"><![CDATA[
+      ]]>
+      <PropertyGroup Name="ErrorHandling" eid="6B59D0A8678E58B2542894"><![CDATA[
+        ]]>
+        <Property Name="ErrorMessage" eid="6B59D0A8678E58B2542895"/>
+        <Property Name="ErrorCode" eid="6B59D0A8678E58B2542896"/>
+      </PropertyGroup>
+      <PropertyGroup Name="bulkPaymentsUploadsFiles" eid="6B59D0A8678E58B2542897"><![CDATA[
+        ]]>
+        <PropertyGroup Name="getUploadFiles" eid="6B59D0A8678E58B2542900"><![CDATA[
+          ]]>
+          <PropertyGroup Name="Request" eid="6B59D0A8678E58B2542901"><![CDATA[
+            ]]>
+            <PropertyGroup Name="Query" eid="6B59D0A8678E58B2542902"><![CDATA[
+              ]]>
+              <Property JSONName="systemFileName" Name="systemFileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542903"/>
+              <Property JSONName="externalUserId" Name="externalUserId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542904"/>
+              <Property JSONName="fileUploadId" Name="fileUploadId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542905"/>
+              <Property JSONName="page_size" Name="pageSize" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542907"/>
+              <Property JSONName="page_start" Name="pageStart" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542908"/>
+              <Property JSONName="page_token" Name="pageToken" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542909"/>
+            </PropertyGroup>
+          </PropertyGroup>
+          <PropertyGroup Name="Response" eid="6B59D0A8678E58B2542910"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="UploadFilesResponse" Name="UploadFilesResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542911"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542912"><![CDATA[
+                ]]>
+                <Property JSONName="page_size" Name="pageSize" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542917"/>
+                <Property JSONName="page_start" Name="pageStart" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542918"/>
+                <Property JSONName="total_size" Name="totalSize" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542919"/>
+                <Property JSONName="page_token" Name="pageToken" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542920"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542913"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542914"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542915"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542916"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="body" MaxInstances="0" Name="body" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542921"><![CDATA[
+                ]]>
+                <Property JSONName="fileUploadId" MaxFieldLength="35" Name="fileUploadId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542922"/>
+                <Property JSONName="displayName" MaxFieldLength="50" Name="displayName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542923"/>
+                <Property JSONName="fileName" MaxFieldLength="90" Name="fileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542924"/>
+                <Property JSONName="status" MaxFieldLength="35" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542925"/>
+                <Property JSONName="dateTime" MaxFieldLength="15" Name="dateTime" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542926"/>
+                <Property JSONName="errorMessage" Name="errorMessage" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542927"/>
+                <Property JSONName="systemFileName" MaxFieldLength="35" Name="systemFileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542928"/>
+                <Property JSONName="uploadTypeId" MaxFieldLength="36" Name="uploadTypeId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542929"/>
+                <Property JSONName="uploadSize" MaxFieldLength="35" Name="uploadSize" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542930"/>
+                <Property JSONName="companyId" MaxFieldLength="11" Name="companyId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542931"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="BusinessQueryErrorResponse" Name="BusinessQueryErrorResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542932"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542933"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542934"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542935"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542936"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542937"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542938"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542939"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542940"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542941"><![CDATA[
+                ]]>
+                <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542942"/>
+                <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542943"/>
+                <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542944"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="SystemQueryErrorResponse" Name="SystemQueryErrorResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542945"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542946"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542947"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542948"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542949"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542950"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542951"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542952"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542953"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542954"><![CDATA[
+                ]]>
+                <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542955"/>
+                <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542956"/>
+                <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542957"/>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="QueryErrorResponse" Name="QueryErrorResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542958"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542959"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542960"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542961"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542962"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542963"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542964"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542965"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2542966"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542967"><![CDATA[
+                ]]>
+                <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542968"/>
+                <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542969"/>
+                <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="6B59D0A8678E58B2542970"/>
+              </PropertyGroup>
+            </PropertyGroup>
+          </PropertyGroup>
+        </PropertyGroup>
+        <PropertyGroup Name="uploadFile" eid="6B59D0A8678E58B2543257"><![CDATA[
+          ]]>
+          <PropertyGroup Name="Request" eid="6B59D0A8678E58B2543258"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="payload" Name="payload" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543259"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543260"><![CDATA[
+                ]]>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="override" Name="override" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543261"><![CDATA[
+                  ]]>
+                  <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="overrideDetails" MaxInstances="0" Name="overrideDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543262"><![CDATA[
+                    ]]>
+                    <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543263"/>
+                    <Property JSONName="description" Name="description" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543264"/>
+                    <Property JSONName="responseCode" Name="responseCode" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543265"/>
+                  </PropertyGroup>
+                </PropertyGroup>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543266"><![CDATA[
+                  ]]>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543267"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="body" Name="body" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543268"><![CDATA[
+                ]]>
+                <Property JSONName="displayName" Name="displayName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543271"/>
+                <Property JSONName="systemFileName" Name="systemFileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543272"/>
+                <Property JSONName="fileName" Name="fileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543273"/>
+                <Property JSONName="uploadTypeId" Name="uploadTypeId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543274"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543275"/>
+                <Property JSONName="uploadSize" Name="uploadSize" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543276"/>
+                <Property JSONName="companyId" Name="companyId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543277"/>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="overrides" MaxInstances="0" Name="overrides" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543269"><![CDATA[
+                  ]]>
+                  <Property JSONName="override" Name="override" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543270"/>
+                </PropertyGroup>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup Name="Query" eid="6B59D0A8678E58B2543278"><![CDATA[
+              ]]>
+              <Property JSONName="validate_only" Name="validateOnly" ShowJSONMapping="Y" Type="boolean List" eid="6B59D0A8678E58B2543282"/>
+            </PropertyGroup>
+          </PropertyGroup>
+          <PropertyGroup Name="Response" eid="6B59D0A8678E58B2543283"><![CDATA[
+            ]]>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="FileResponse" Name="FileResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543284"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543285"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543286"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543287"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543288"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543289"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543290"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543291"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543292"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="body" Name="body" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543293"><![CDATA[
+                ]]>
+                <Property JSONName="displayName" Name="displayName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543296"/>
+                <Property JSONName="systemFileName" Name="systemFileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543297"/>
+                <Property JSONName="fileName" Name="fileName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543298"/>
+                <Property JSONName="uploadTypeId" Name="uploadTypeId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543299"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543300"/>
+                <Property JSONName="uploadSize" Name="uploadSize" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543301"/>
+                <Property JSONName="companyId" Name="companyId" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543302"/>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="overrides" MaxInstances="0" Name="overrides" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543294"><![CDATA[
+                  ]]>
+                  <Property JSONName="override" Name="override" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543295"/>
+                </PropertyGroup>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="BusinessScreenErrorResponse" Name="BusinessScreenErrorResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543303"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543304"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543305"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543306"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543307"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543308"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543309"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543310"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543311"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543312"><![CDATA[
+                ]]>
+                <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543317"/>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="errorDetails" MaxInstances="0" Name="errorDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543313"><![CDATA[
+                  ]]>
+                  <Property JSONName="fieldName" Name="fieldName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543314"/>
+                  <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543315"/>
+                  <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543316"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="override" Name="override" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543318"><![CDATA[
+                ]]>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="overrideDetails" MaxInstances="0" Name="overrideDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543319"><![CDATA[
+                  ]]>
+                  <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543320"/>
+                  <Property JSONName="description" Name="description" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543321"/>
+                </PropertyGroup>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="SystemScreenErrorResponse" Name="SystemScreenErrorResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543322"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543323"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543324"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543325"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543326"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543327"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543328"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543329"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543330"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543331"><![CDATA[
+                ]]>
+                <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543336"/>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="errorDetails" MaxInstances="0" Name="errorDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543332"><![CDATA[
+                  ]]>
+                  <Property JSONName="fieldName" Name="fieldName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543333"/>
+                  <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543334"/>
+                  <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543335"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="override" Name="override" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543337"><![CDATA[
+                ]]>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="overrideDetails" MaxInstances="0" Name="overrideDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543338"><![CDATA[
+                  ]]>
+                  <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543339"/>
+                  <Property JSONName="description" Name="description" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543340"/>
+                </PropertyGroup>
+              </PropertyGroup>
+            </PropertyGroup>
+            <PropertyGroup JSONCollectionKind="Object" JSONName="ScreenErrorResponse" Name="ScreenErrorResponse" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543341"><![CDATA[
+              ]]>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="header" Name="header" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543342"><![CDATA[
+                ]]>
+                <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543343"/>
+                <Property JSONName="status" Name="status" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543344"/>
+                <Property JSONName="transactionStatus" Name="transactionStatus" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543345"/>
+                <PropertyGroup JSONCollectionKind="Object" JSONName="audit" Name="audit" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543346"><![CDATA[
+                  ]]>
+                  <Property JSONName="T24_time" Name="T24Time" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543347"/>
+                  <Property JSONName="versionNumber" Name="versionNumber" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543348"/>
+                  <Property JSONName="parse_time" Name="parseTime" ShowJSONMapping="Y" Type="int32" eid="6B59D0A8678E58B2543349"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="error" Name="error" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543350"><![CDATA[
+                ]]>
+                <Property JSONName="type" Name="type" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543355"/>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="errorDetails" MaxInstances="0" Name="errorDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543351"><![CDATA[
+                  ]]>
+                  <Property JSONName="fieldName" Name="fieldName" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543352"/>
+                  <Property JSONName="code" Name="code" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543353"/>
+                  <Property JSONName="message" Name="message" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543354"/>
+                </PropertyGroup>
+              </PropertyGroup>
+              <PropertyGroup JSONCollectionKind="Object" JSONName="override" Name="override" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543356"><![CDATA[
+                ]]>
+                <PropertyGroup FixedSize="N" JSONCollectionKind="ObjectArray" JSONName="overrideDetails" MaxInstances="0" Name="overrideDetails" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543357"><![CDATA[
+                  ]]>
+                  <Property JSONName="id" Name="id" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543358"/>
+                  <Property JSONName="description" Name="description" ShowJSONMapping="Y" eid="6B59D0A8678E58B2543359"/>
+                </PropertyGroup>
+              </PropertyGroup>
+            </PropertyGroup>
+          </PropertyGroup>
+        </PropertyGroup>
+      </PropertyGroup>
+    </PropertyGroup>
+  </Dictionary>
+  <DataMapping Name="Integration Root" eid="6B59D0A8678E58B2542864"><![CDATA[
+    ]]>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.DebugLogDataSource" FileName="logs/Debug.log" FileRotation="New log file at file size limit" Name="Connect DebugLog" NewPerSize="512" eid="6B59D0A8678E58B2542889"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SyserrLogDataSource" FileName="logs/Syserr.log" FileRotation="New log file each session" Name="Connect SyserrLog" NewPerSize="512" eid="6B59D0A8678E58B2542890"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SysoutLogDataSource" FileName="logs/Sysout.log" FileRotation="New log file each session" Name="Connect SysoutLog" NewPerSize="512" eid="6B59D0A8678E58B2542891"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.log.SecurityLogDataSource" FileName="logs/Security.log" FileRotation="New log file at file size limit" Name="Connect SecurityLog" NewPerSize="512" eid="6B59D0A8678E58B2542892"/>
+    <DataSource ClassType="com.acquire.intelligentforms.entities.swagger.SwaggerDataSource" ConnectionAttempts="5" ConnectionTimeout="5000" EndPointURL="$$!IRIS_SERVICE_ROOT_URI$/$$!SERVICE_NAME$/api/v1.0.0" HTTPHeaderNames="credentials,$$!MAINSESSION.HEADER_NAME_REQUEST$,$$!MAINSESSION.AUTH_HEADER_NAME$" HTTPHeaderValues="$$!MAINSESSION.IRIS_USER_NAME$/$$!MAINSESSION.IRIS_PASSWORD$,$$!MAINSESSION.HEADER_VALUE_REQUEST$,$$!MAINSESSION.AUTH_HEADER_VALUE$" Name="getUploadFiles" SocketTimeout="60000" SwaggerDocument="$$!IRIS_SERVICE_ROOT_URI$/$$!SERVICE_NAME$/api/v1.0.0/meta/apidocs/tc-bulkPayments-service-v1.0.0" UseSecurityCertificate="N" eid="6B59D0A8678E58B2543938"/>
+  </DataMapping>
+  <Rules Name="Rules Root" eid="6B59D0A8678E58B2542862"/>
+  <Products Name="Processes Root" eid="6B59D0A8678E58B2542866"><![CDATA[
+    ]]>
+    <Product InitialPhase="getUploadFiles.getUploadFiles" Name="getUploadFiles" PublishAsComponent="Y" RulesOnly="Y" eid="6B59D0A8678E58B2542898" getUploadFiles0_0_0_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_0_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_0_0_0_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1].systemFileName" getUploadFiles0_0_0_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1].systemFileName" getUploadFiles0_0_0_0_0_0_LinkedEntityJSONName="systemFileName" getUploadFiles0_0_0_0_0_0_LinkedEntityName="systemFileName" getUploadFiles0_0_0_0_0_0_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_0_0_0_OriginalEntityEID="6B59D0A8678E58B2542903" getUploadFiles0_0_0_0_0_0_OriginalEntityName="systemFileName" getUploadFiles0_0_0_0_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1].systemFileName" getUploadFiles0_0_0_0_0_0_PubIn="Y" getUploadFiles0_0_0_0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_0_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_0_0_1_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1].externalUserId" getUploadFiles0_0_0_0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1].externalUserId" getUploadFiles0_0_0_0_0_1_LinkedEntityJSONName="externalUserId" getUploadFiles0_0_0_0_0_1_LinkedEntityName="externalUserId" getUploadFiles0_0_0_0_0_1_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_0_0_1_OriginalEntityEID="6B59D0A8678E58B2542904" getUploadFiles0_0_0_0_0_1_OriginalEntityName="externalUserId" getUploadFiles0_0_0_0_0_1_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1].externalUserId" getUploadFiles0_0_0_0_0_1_PubIn="True" getUploadFiles0_0_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_0_0_DGInst="1" getUploadFiles0_0_0_0_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1]" getUploadFiles0_0_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query" getUploadFiles0_0_0_0_0_LinkedEntityName="Query" getUploadFiles0_0_0_0_0_NumChildren="2" getUploadFiles0_0_0_0_0_OriginalEntityEID="6B59D0A8678E58B2542902" getUploadFiles0_0_0_0_0_OriginalEntityName="Query" getUploadFiles0_0_0_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query" getUploadFiles0_0_0_0_0_PubIn="Y" getUploadFiles0_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_0_DGInst="1" getUploadFiles0_0_0_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1]" getUploadFiles0_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request" getUploadFiles0_0_0_0_LinkedEntityName="Request" getUploadFiles0_0_0_0_NumChildren="1" getUploadFiles0_0_0_0_OriginalEntityEID="6B59D0A8678E58B2542901" getUploadFiles0_0_0_0_OriginalEntityName="Request" getUploadFiles0_0_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request" getUploadFiles0_0_0_0_PubIn="Y" getUploadFiles0_0_0_1_0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_0_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].fileUploadId" getUploadFiles0_0_0_1_0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].fileUploadId" getUploadFiles0_0_0_1_0_0_0_LinkedEntityJSONName="fileUploadId" getUploadFiles0_0_0_1_0_0_0_LinkedEntityMaxFieldLength="35" getUploadFiles0_0_0_1_0_0_0_LinkedEntityName="fileUploadId" getUploadFiles0_0_0_1_0_0_0_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_0_OriginalEntityEID="6B59D0A8678E58B2542922" getUploadFiles0_0_0_1_0_0_0_OriginalEntityName="fileUploadId" getUploadFiles0_0_0_1_0_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].fileUploadId" getUploadFiles0_0_0_1_0_0_0_PubOut="Y" getUploadFiles0_0_0_1_0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_1_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].displayName" getUploadFiles0_0_0_1_0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].displayName" getUploadFiles0_0_0_1_0_0_1_LinkedEntityJSONName="displayName" getUploadFiles0_0_0_1_0_0_1_LinkedEntityMaxFieldLength="50" getUploadFiles0_0_0_1_0_0_1_LinkedEntityName="displayName" getUploadFiles0_0_0_1_0_0_1_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_1_OriginalEntityEID="6B59D0A8678E58B2542923" getUploadFiles0_0_0_1_0_0_1_OriginalEntityName="displayName" getUploadFiles0_0_0_1_0_0_1_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].displayName" getUploadFiles0_0_0_1_0_0_1_PubOut="Y" getUploadFiles0_0_0_1_0_0_2_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_2_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_2_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].fileName" getUploadFiles0_0_0_1_0_0_2_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].fileName" getUploadFiles0_0_0_1_0_0_2_LinkedEntityJSONName="fileName" getUploadFiles0_0_0_1_0_0_2_LinkedEntityMaxFieldLength="90" getUploadFiles0_0_0_1_0_0_2_LinkedEntityName="fileName" getUploadFiles0_0_0_1_0_0_2_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_2_OriginalEntityEID="6B59D0A8678E58B2542924" getUploadFiles0_0_0_1_0_0_2_OriginalEntityName="fileName" getUploadFiles0_0_0_1_0_0_2_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].fileName" getUploadFiles0_0_0_1_0_0_2_PubOut="Y" getUploadFiles0_0_0_1_0_0_3_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_3_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_3_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].status" getUploadFiles0_0_0_1_0_0_3_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].status" getUploadFiles0_0_0_1_0_0_3_LinkedEntityJSONName="status" getUploadFiles0_0_0_1_0_0_3_LinkedEntityMaxFieldLength="35" getUploadFiles0_0_0_1_0_0_3_LinkedEntityName="status" getUploadFiles0_0_0_1_0_0_3_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_3_OriginalEntityEID="6B59D0A8678E58B2542925" getUploadFiles0_0_0_1_0_0_3_OriginalEntityName="status" getUploadFiles0_0_0_1_0_0_3_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].status" getUploadFiles0_0_0_1_0_0_3_PubOut="Y" getUploadFiles0_0_0_1_0_0_4_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_4_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_4_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].dateTime" getUploadFiles0_0_0_1_0_0_4_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].dateTime" getUploadFiles0_0_0_1_0_0_4_LinkedEntityJSONName="dateTime" getUploadFiles0_0_0_1_0_0_4_LinkedEntityMaxFieldLength="15" getUploadFiles0_0_0_1_0_0_4_LinkedEntityName="dateTime" getUploadFiles0_0_0_1_0_0_4_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_4_OriginalEntityEID="6B59D0A8678E58B2542926" getUploadFiles0_0_0_1_0_0_4_OriginalEntityName="dateTime" getUploadFiles0_0_0_1_0_0_4_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].dateTime" getUploadFiles0_0_0_1_0_0_4_PubOut="Y" getUploadFiles0_0_0_1_0_0_5_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_5_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_5_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].errorMessage" getUploadFiles0_0_0_1_0_0_5_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].errorMessage" getUploadFiles0_0_0_1_0_0_5_LinkedEntityJSONName="errorMessage" getUploadFiles0_0_0_1_0_0_5_LinkedEntityName="errorMessage" getUploadFiles0_0_0_1_0_0_5_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_5_OriginalEntityEID="6B59D0A8678E58B2542927" getUploadFiles0_0_0_1_0_0_5_OriginalEntityName="errorMessage" getUploadFiles0_0_0_1_0_0_5_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].errorMessage" getUploadFiles0_0_0_1_0_0_5_PubOut="Y" getUploadFiles0_0_0_1_0_0_6_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_6_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_0_0_6_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].systemFileName" getUploadFiles0_0_0_1_0_0_6_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[1].systemFileName" getUploadFiles0_0_0_1_0_0_6_LinkedEntityJSONName="systemFileName" getUploadFiles0_0_0_1_0_0_6_LinkedEntityMaxFieldLength="35" getUploadFiles0_0_0_1_0_0_6_LinkedEntityName="systemFileName" getUploadFiles0_0_0_1_0_0_6_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_6_OriginalEntityEID="6B59D0A8678E58B2542928" getUploadFiles0_0_0_1_0_0_6_OriginalEntityName="systemFileName" getUploadFiles0_0_0_1_0_0_6_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A].systemFileName" getUploadFiles0_0_0_1_0_0_6_PubOut="Y" getUploadFiles0_0_0_1_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_0_DGInst="A" getUploadFiles0_0_0_1_0_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body[A]" getUploadFiles0_0_0_1_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body" getUploadFiles0_0_0_1_0_0_LinkedEntityFixedSize="N" getUploadFiles0_0_0_1_0_0_LinkedEntityJSONCollectionKind="ObjectArray" getUploadFiles0_0_0_1_0_0_LinkedEntityJSONName="body" getUploadFiles0_0_0_1_0_0_LinkedEntityMaxInstances="0" getUploadFiles0_0_0_1_0_0_LinkedEntityName="body" getUploadFiles0_0_0_1_0_0_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_0_NumChildren="7" getUploadFiles0_0_0_1_0_0_OriginalEntityEID="6B59D0A8678E58B2542921" getUploadFiles0_0_0_1_0_0_OriginalEntityName="body" getUploadFiles0_0_0_1_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1].body" getUploadFiles0_0_0_1_0_0_PubOut="Y" getUploadFiles0_0_0_1_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_0_DGInst="1" getUploadFiles0_0_0_1_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1]" getUploadFiles0_0_0_1_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse" getUploadFiles0_0_0_1_0_LinkedEntityJSONCollectionKind="Object" getUploadFiles0_0_0_1_0_LinkedEntityJSONName="UploadFilesResponse" getUploadFiles0_0_0_1_0_LinkedEntityName="UploadFilesResponse" getUploadFiles0_0_0_1_0_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_0_NumChildren="1" getUploadFiles0_0_0_1_0_OriginalEntityEID="6B59D0A8678E58B2542911" getUploadFiles0_0_0_1_0_OriginalEntityName="UploadFilesResponse" getUploadFiles0_0_0_1_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse" getUploadFiles0_0_0_1_0_PubOut="Y" getUploadFiles0_0_0_1_1_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_1_0_0_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_1_0_0_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].code" getUploadFiles0_0_0_1_1_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].code" getUploadFiles0_0_0_1_1_0_0_LinkedEntityJSONName="code" getUploadFiles0_0_0_1_1_0_0_LinkedEntityName="code" getUploadFiles0_0_0_1_1_0_0_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_1_0_0_OriginalEntityEID="6B59D0A8678E58B2542942" getUploadFiles0_0_0_1_1_0_0_OriginalEntityName="code" getUploadFiles0_0_0_1_1_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].code" getUploadFiles0_0_0_1_1_0_0_PubOut="Y" getUploadFiles0_0_0_1_1_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_1_0_1_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_1_0_1_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].message" getUploadFiles0_0_0_1_1_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].message" getUploadFiles0_0_0_1_1_0_1_LinkedEntityJSONName="message" getUploadFiles0_0_0_1_1_0_1_LinkedEntityName="message" getUploadFiles0_0_0_1_1_0_1_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_1_0_1_OriginalEntityEID="6B59D0A8678E58B2542943" getUploadFiles0_0_0_1_1_0_1_OriginalEntityName="message" getUploadFiles0_0_0_1_1_0_1_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].message" getUploadFiles0_0_0_1_1_0_1_PubOut="Y" getUploadFiles0_0_0_1_1_0_2_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_1_0_2_ComponentLinkedDataItemType="LinkedGANObject:com.acquire.intelligentforms.entities.DataType|com.acquire.intelligentforms.entities.types.TextType|Text" getUploadFiles0_0_0_1_1_0_2_ExportedProperty="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].type" getUploadFiles0_0_0_1_1_0_2_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.Property| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].type" getUploadFiles0_0_0_1_1_0_2_LinkedEntityJSONName="type" getUploadFiles0_0_0_1_1_0_2_LinkedEntityName="type" getUploadFiles0_0_0_1_1_0_2_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_1_0_2_OriginalEntityEID="6B59D0A8678E58B2542944" getUploadFiles0_0_0_1_1_0_2_OriginalEntityName="type" getUploadFiles0_0_0_1_1_0_2_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1].type" getUploadFiles0_0_0_1_1_0_2_PubOut="Y" getUploadFiles0_0_0_1_1_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_1_0_DGInst="1" getUploadFiles0_0_0_1_1_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error[1]" getUploadFiles0_0_0_1_1_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error" getUploadFiles0_0_0_1_1_0_LinkedEntityJSONCollectionKind="Object" getUploadFiles0_0_0_1_1_0_LinkedEntityJSONName="error" getUploadFiles0_0_0_1_1_0_LinkedEntityName="error" getUploadFiles0_0_0_1_1_0_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_1_0_NumChildren="3" getUploadFiles0_0_0_1_1_0_OriginalEntityEID="6B59D0A8678E58B2542941" getUploadFiles0_0_0_1_1_0_OriginalEntityName="error" getUploadFiles0_0_0_1_1_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1].error" getUploadFiles0_0_0_1_1_0_PubOut="Y" getUploadFiles0_0_0_1_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_1_DGInst="1" getUploadFiles0_0_0_1_1_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1]" getUploadFiles0_0_0_1_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse" getUploadFiles0_0_0_1_1_LinkedEntityJSONCollectionKind="Object" getUploadFiles0_0_0_1_1_LinkedEntityJSONName="BusinessQueryErrorResponse" getUploadFiles0_0_0_1_1_LinkedEntityName="BusinessQueryErrorResponse" getUploadFiles0_0_0_1_1_LinkedEntityShowJSONMapping="Y" getUploadFiles0_0_0_1_1_NumChildren="1" getUploadFiles0_0_0_1_1_OriginalEntityEID="6B59D0A8678E58B2542932" getUploadFiles0_0_0_1_1_OriginalEntityName="BusinessQueryErrorResponse" getUploadFiles0_0_0_1_1_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse" getUploadFiles0_0_0_1_1_PubOut="Y" getUploadFiles0_0_0_1_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_1_DGInst="1" getUploadFiles0_0_0_1_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1]" getUploadFiles0_0_0_1_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response" getUploadFiles0_0_0_1_LinkedEntityName="Response" getUploadFiles0_0_0_1_NumChildren="2" getUploadFiles0_0_0_1_OriginalEntityEID="6B59D0A8678E58B2542910" getUploadFiles0_0_0_1_OriginalEntityName="Response" getUploadFiles0_0_0_1_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response" getUploadFiles0_0_0_1_PubOut="Y" getUploadFiles0_0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_0_DGInst="1" getUploadFiles0_0_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1]" getUploadFiles0_0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles[1].getUploadFiles" getUploadFiles0_0_0_LinkedEntityName="getUploadFiles" getUploadFiles0_0_0_NumChildren="2" getUploadFiles0_0_0_OriginalEntityEID="6B59D0A8678E58B2542900" getUploadFiles0_0_0_OriginalEntityName="getUploadFiles" getUploadFiles0_0_0_PropertyKey="bulkPaymentsUploadsFiles[1].getUploadFiles" getUploadFiles0_0_0_PubIn="Y" getUploadFiles0_0_0_PubOut="Y" getUploadFiles0_0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_0_DGInst="1" getUploadFiles0_0_ExportedPropertyGroup="bulkPaymentsUploadsFiles[1]" getUploadFiles0_0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.PropertyGroup| |bulkPaymentsUploadsFiles" getUploadFiles0_0_LinkedEntityName="bulkPaymentsUploadsFiles" getUploadFiles0_0_NumChildren="1" getUploadFiles0_0_OriginalEntityEID="6B59D0A8678E58B2542897" getUploadFiles0_0_OriginalEntityName="bulkPaymentsUploadsFiles" getUploadFiles0_0_PropertyKey="bulkPaymentsUploadsFiles" getUploadFiles0_0_PubIn="Y" getUploadFiles0_0_PubOut="Y" getUploadFiles0_ClassType="com.acquire.intelligentforms.entities.component.ComponentMapping" getUploadFiles0_DGInst="1" getUploadFiles0_LinkedEntity="LinkedGANObject:com.acquire.intelligentforms.entities.DictionaryRoot| |Data Store Root" getUploadFiles0_LinkedEntityName="Data Store Root" getUploadFiles0_NumChildren="1" getUploadFiles0_OriginalEntityEID="6B59D0A8678E58B2542860" getUploadFiles0_OriginalEntityName="Data Store Root" getUploadFiles0_PubIn="Y" getUploadFiles0_PubOut="Y" getUploadFilesClassType="com.acquire.intelligentforms.entities.component.Component" getUploadFilesComponentComment="" getUploadFilesNumChildren="1" getUploadFilesProjectName="getUploadFiles" getUploadFilesRulesOnly="Y"><![CDATA[
+      ]]>
+      <Phase Name="getUploadFiles" ProcessRulesOnly="Y" eid="6B59D0A8678E58B2542899"><![CDATA[
+        ]]>
+        <Rule Name="Process getUploadFiles" RuleClassName="com.acquire.intelligentforms.rules.ContainerRule" RuleType="PostPhase" eid="6B59D0A8678E58B2542971"><![CDATA[
+          ]]>
+          <Rule AdditionalHTTPCodesToParse="400,500,default" AdditionalHTTPDataGroups="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].BusinessQueryErrorResponse[1]" DSDataGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1]" DSOperationType="Read" DataSetToUse="Use Default" ErrorCodeDataItem="ErrorHandling[1].ErrorCode" ErrorHandlingType="Pass Up" ErrorMsgDataItem="ErrorHandling[1].ErrorMessage" HTTPMethod="GET" Name="Invoke getUploadFiles" Output="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Response[1].UploadFilesResponse[1]" QueryInputDataGroup="bulkPaymentsUploadsFiles[1].getUploadFiles[1].Request[1].Query[1]" ResourcePath="/bulkPayments/uploads/files" RuleClassName="com.acquire.intelligentforms.rules.SwaggerIntegrationRule" RuleDisabled="N" RuleType="True" SourceName="getUploadFiles" eid="6B59D0A8678E58B2542972"/>
+        </Rule>
+      </Phase>
+    </Product>
+  </Products>
+  <PresentationTypes Name="Presentation Types Root" eid="6B59D0A8678E58B2542868"/>
+  <EVANotes Name="Note Root" eid="6B59D0A8678E58B2542870"><![CDATA[
+    ]]>
+    <EVANoteDefinition Name="ToDo" NoteName="ToDo" StatusRequired="Y" eid="6B59D0A8678E58B2542886"/>
+    <EVANoteDefinition Name="Specification" NoteName="Specification" StatusRequired="N" eid="6B59D0A8678E58B2542887"/>
+    <EVANoteDefinition Name="Comment" NoteName="Comment" StatusRequired="N" eid="6B59D0A8678E58B2542888"/>
+  </EVANotes>
+  <LanguageMapDefinitionsRoot Name="Languages Root" eid="6B59D0A8678E58B2542872"/>
+  <CordovaPluginsRoot Name="CordovaPlugins Root" eid="6B59D0A8678E58B2542876"/>
+</Project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+<widget callback="false" displayName="Hybrid Offline Navigation" name="HybridOfflineNavigation" type="Button">
+	<template type="source" value="hybridOfflineNavigation.wgt"/>
+	<custom>
+	  <item help="Select Phase to Navigate to if the Device is Off-line" includeInDesign="true" layout="-1" mand="true" name="GoToPhaseIfOffline" prompt="Select Phase to Navigate to if the Device is Off-line" type="com.acquire.intelligentforms.ide.producteditor.PhaseChooser" typeValue="Phase Chooser|-1|true|true|com.acquire.intelligentforms.entities.Phase" usage="7"/>
+	</custom>
+</widget>
+</widgets>

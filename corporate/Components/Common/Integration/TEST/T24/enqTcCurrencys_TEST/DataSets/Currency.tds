@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="39">
+  <!--Currency-->
+<Currency BuyRate="3.67" CcyName="United Arab Emirates Dirhams" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="0" Id="AED" SellRate="3.67"/>
+  <Currency BuyRate="415.07" CcyName="Armenian Dram" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="1" Id="AMD" SellRate="413.05"/>
+  <Currency BuyRate="3.54" CcyName="Argentine Peso" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="2" Id="ARS" SellRate="3.54"/>
+  <Currency BuyRate="0.94" CcyName="Australian Dollars" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="3" Id="AUD" SellRate="0.96"/>
+  <Currency BuyRate="0.79" CcyName="Azerbaijanian Manat" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="4" Id="AZN" SellRate="0.78"/>
+  <Currency BuyRate="1.30" CcyName="Canadian Dollar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="5" Id="CAD" SellRate="1.30"/>
+  <Currency BuyRate="0.98" CcyName="Swiss Franc" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="6" Id="CHF" SellRate="0.96"/>
+  <Currency BuyRate="6.47" CcyName="Yuan Renminbi" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="7" Id="CNY" SellRate="6.47"/>
+  <Currency BuyRate="6.59" CcyName="Danish Krone" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="8" Id="DKK" SellRate="6.58"/>
+  <Currency BuyRate="1.08" CcyName="Euro" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="9" Id="EUR" SellRate="1.18"/>
+  <Currency BuyRate="1.38" CcyName="Pound Sterling" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="10" Id="GBP" SellRate="1.51"/>
+  <Currency BuyRate="1.76" CcyName="Lari" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="11" Id="GEL" SellRate="1.74"/>
+  <Currency BuyRate="7.76" CcyName="Hong Kong Dollar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="12" Id="HKD" SellRate="7.76"/>
+  <Currency BuyRate="66.54" CcyName="Indian Rupee" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="13" Id="INR" SellRate="66.53"/>
+  <Currency BuyRate="112" CcyName="Japanese Yen" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="14" Id="JPY" SellRate="111"/>
+  <Currency BuyRate="54.52" CcyName="Som" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="15" Id="KGS" SellRate="54.32"/>
+  <Currency BuyRate="0.302" CcyName="Kuwait Dinars" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="16" Id="KWD" SellRate="0.300"/>
+  <Currency BuyRate="183.03" CcyName="Tenge (Kazakhstan)" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="17" Id="KZT" SellRate="181.03"/>
+  <Currency BuyRate="1,508.00" CcyName="Lebanese Pounds" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="18" Id="LBP" SellRate="1,498.00"/>
+  <Currency BuyRate="145.73" CcyName="Sri Lankan Rupee" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="19" Id="LKR" SellRate="144.73"/>
+  <Currency BuyRate="106.71" CcyName="Nepali Rupee" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="20" Id="NPR" SellRate="106.70"/>
+  <Currency BuyRate="0.67" CcyName="New Zealand Dollars" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="21" Id="NZD" SellRate="0.70"/>
+  <Currency BuyRate="46.19" CcyName="Philippines Pesos" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="22" Id="PHP" SellRate="46.17"/>
+  <Currency BuyRate="3.79" CcyName="Polish Zloty" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="23" Id="PLN" SellRate="3.78"/>
+  <Currency BuyRate="3.64" CcyName="Quatari Riyals" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="24" Id="QAR" SellRate="3.64"/>
+  <Currency BuyRate="35.81" CcyName="Russian Ruble New" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="25" Id="RUB" SellRate="35.61"/>
+  <Currency BuyRate="3.76" CcyName="Saudi Arabia Riyals" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="26" Id="SAR" SellRate="3.74"/>
+  <Currency BuyRate="8.19" CcyName="Swedish Krone" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="27" Id="SEK" SellRate="8.19"/>
+  <Currency BuyRate="1.35" CcyName="Singapore Dollars" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="28" Id="SGD" SellRate="1.35"/>
+  <Currency BuyRate="34.79" CcyName="Thailand Baht" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="29" Id="THB" SellRate="34.77"/>
+  <Currency BuyRate="32.34" CcyName="Taiwan New Dollars" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="30" Id="TWD" SellRate="32.32"/>
+  <Currency CcyName="US Dollar" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="31" Id="USD"/>
+  <Currency BuyRate="2,283.00" CcyName="Uzbekistan Som" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="32" Id="UZS" SellRate="2,263.00"/>
+  <Currency BuyRate="14.823" CcyName="SILVER in Ounces" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="33" Id="XAG" SellRate="15.823"/>
+  <Currency BuyRate="1.00" CcyName="Aimia Point" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="34" Id="XAI" SellRate="1.00"/>
+  <Currency BuyRate="1,234.518" CcyName="Gold in Ounces" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="35" Id="XAU" SellRate="1,234.618"/>
+  <Currency BuyRate="1.00" CcyName="Avios Points" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="36" Id="XAV" SellRate="1.00"/>
+  <Currency BuyRate="1.00" CcyName="Internal Points" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="37" Id="XIN" SellRate="1.00"/>
+  <Currency BuyRate="15.20" CcyName="South African Rand" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcCurrency[A]" DS_UID="38" Id="ZAR" SellRate="15.18"/>
+</DataSetRoot>

@@ -1,0 +1,18 @@
+<script type="text/javascript">
+var clientid="$$ITEM.clientid$";
+var cookiepolicy    = $%IF ITEM.cookiepolicy != "Y"$"none"$%ELSE$$%IF ITEM.uri != ""$"$$ITEM.uri$"$%ELSE$"single_host_origin"$%ENDIF$$%ENDIF$;
+var scope           ="https://www.googleapis.com/auth/plus.profile.emails.read";
+var accesstype      ="$%IF ITEM.accesstype != ""$$$ITEM.accesstype$$%ELSE$online$%ENDIF$";
+var approvalprompt  ="$%IF ITEM.approvalprompt != ""$$$ITEM.approvalprompt$$%ELSE$auto$%ENDIF$";
+var data_store      = {
+    displayname:   "$$:ITEM.data-name$",
+    email:         "$$:ITEM.data-email$",
+    id:            "$$:ITEM.data-id$"    
+}
+window.edge.widgets.google.setTriggerButton("$$ITEM.NAVIGATION()$");
+window.edge.widgets.google.setSignInParams(clientid,cookiepolicy,scope,accesstype,approvalprompt,data_store);
+
+</script>
+<button name="__$$ITEM.ENTITYNAME()$" id="$$ITEM.ID()$" onclick="window.edge.widgets.google.login();" class="$$ITEM.STYLES().ButtonStyle$"  style="$$ITEM.INLINE_STYLES().ButtonStyle$ cursor: pointer;"><span class="icon">&nbsp;</span><span class="label">$$ITEM.ActionCommand$</span></button>
+
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="51">
+  <!--enqTcPaymentOrderCountryRules-->
+<enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="2">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="0" Description="Rules for AT Country&#10;ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;ATBLZ&#10;5N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;65_INPUTTER__OFS_GCS&#10;1602051252&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="1"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="5">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="3" Description="Rules for AU Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;AUBSB&#10;6N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051252&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="4"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="8">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="6" Description="Rules for CN Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;CNAPS&#10;12..14N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051253&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="7"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="11">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="9" Description="Rules for DE Country&#10;ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;DEBLZ&#10;8N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051253&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="10"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="14">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="12" Description="Rules for ES Country&#10;ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;ESNCC&#10;8..9N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051253&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="13"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="ALLOWED" AllowIban="ALLOWED" AllowSortCode="ALLOWED" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="17">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="15" Description="Rules for GB Country"/>
+    <ClearingChannel ClearingChannel="GBDSC" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="16"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="20">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="18" Description="Rules for HK Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;HKNCC&#10;3N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051253&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="19"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="23">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="21" Description="Rules for IE Country&#10;ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;IENCC&#10;6N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;2&#10;68_INPUTTER__OFS_GCS&#10;1602051308&#10;95159_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="22"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="26">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="24" Description="Rules for IN Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;INFSC&#10;11A&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051254&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="25"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="29">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="27" Description="Rules for IT Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;ITNCC&#10;10N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051254&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="28"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="32">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="30" Description="Rules for NZ Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;NZNCC&#10;6N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051254&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="31"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="35">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="33" Description="Rules for PL Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;PLKNR&#10;8N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051255&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="34"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="38">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="36" Description="Rules for PT Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;PTNCC&#10;9N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;65_INPUTTER__OFS_GCS&#10;1602051255&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="37"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="41">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="39" Description="Rules for RU Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;RUCBC&#10;9N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;65_INPUTTER__OFS_GCS&#10;1602051255&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="40"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="44">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="42" Description="Rules for SG Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;SGIBG&#10;9N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;2&#10;68_INPUTTER__OFS_GCS&#10;1602051308&#10;95159_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="43"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="47">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="45" Description="Rules for SZ Country&#10;ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;CHBCC&#10;3..5N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;65_INPUTTER__OFS_GCS&#10;1602051256&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="46"/>
+  </enqTcPaymentOrderCountryRules>
+  <enqTcPaymentOrderCountryRules AllowBic="2" AllowIban="NOT ALLOWED" AllowSortCode="1_R16_C" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[A]" DS_UID="50">
+    <Description DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].Description" DS_UID="48" Description="Rules for US Country&#10;NOT ALLOWED&#10;ALLOWED&#10;ALLOWED&#10;USABA&#10;9N&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;1&#10;68_INPUTTER__OFS_GCS&#10;1602051256&#10;3142_AUTHORISER&#10;GB0010001&#10;1&#10;&lt;double-byte-sep/&gt;"/>
+    <ClearingChannel ClearingChannel="1604291919" DS_REF_DATAGROUP_ATTRIBUTE_NAME="enqTcPaymentOrderCountryRules[C].ClearingChannel" DS_UID="49"/>
+  </enqTcPaymentOrderCountryRules>
+</DataSetRoot>

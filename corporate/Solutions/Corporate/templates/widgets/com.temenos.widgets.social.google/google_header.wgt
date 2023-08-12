@@ -1,0 +1,247 @@
+<style type="text/css">
+  .sharePost.btn {
+    padding: 5px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+  }
+  .sharePost.btn .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('./templates/widgets/com.temenos.widgets.social.google/images/btn_icons_sprite.png') transparent 0 -40px no-repeat;
+  }
+  .sharePost.btn:hover {
+    background-color: #cc3732;
+    color: #fff;
+    border: #dd4b39;
+  }
+  .sharePost.btn:hover .icon {
+    background: url('./templates/widgets/com.temenos.widgets.social.google/images/btn_icons_sprite.png') transparent 0 0px no-repeat;
+  }
+</style>
+<script type="text/javascript">
+window.edge=
+window.edge || {};
+window.edge.widgets = window.edge.widgets || {};
+window.edge.widgets = window.edge.widgets || {};
+window.edge.widgets.google = window.edge.widgets.google || {};
+
+/*
+if ( typeof Event == "function") {
+    window.googleApiLoaded = new Event('googleApiLoaded');
+} else {
+    var event;
+    if (document.createEvent) {
+        event = document.createEvent('Event');
+        event.initEvent('googleApiLoaded', true, true);
+
+    } else if (document.createEventObject) {// IE < 9
+        event = document.createEventObject();
+        event.eventType = "googleApiLoaded";
+    }
+    window.googleApiLoaded = event;
+
+}*/
+
+window.edge.widgets.google = (function() {
+    var googleApi = {};
+    var _refreshInd = false;
+
+    googleApi.startup = (function() {
+        window.edgeWidgetsGoogleCallback = window.edge.widgets.google.render;//this.render;
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/client:plusone.js?onload=edgeWidgetsGoogleCallback';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    });
+
+    googleApi.params = {};
+
+    googleApi.setSignInParams = function(clientid, cookiepolicy, scope, accesstype,approvalprompt,data_store) {
+
+        if ( typeof requestvisibleactions === "undefined" || requestvisibleactions === "")
+            requestvisibleactions = 'http://schema.org/AddAction';
+        this.params.signIn = {
+            'callback' : loginCallback,
+            'clientid' : clientid,
+            'cookiepolicy' : cookiepolicy,
+            'requestvisibleactions' : requestvisibleactions,
+            'scope' : scope,
+            'accesstype':accesstype,
+            'approvalprompt':approvalprompt
+        };
+        this.params.dataStore=data_store;
+
+    };
+
+    googleApi.setClientId = function(id) {
+        this.params.signIn = this.params.signIn || {};
+        this.params.signIn.clientid = id;
+    };
+    googleApi.getClientId = function() {
+        if (typeof this.params.signIn  === "undefined") return null;
+        return (( typeof this.params.signIn.clientid != "undefined") ? this.params.signIn.clientid : null);
+    }; 
+
+    googleApi.setCookiePolicy = function(policy) {
+        this.params.signIn = this.params.signIn || {};
+        this.params.signIn.cookiepolicy = policy;
+    };
+    googleApi.getCookiePolicy = function() {
+        if (typeof this.params.signIn  === "undefined") return null;
+        return (( typeof this.params.signIn.cookiepolicy != "undefined") ? this.params.signIn.cookiepolicy : null);
+    }; 
+
+
+
+    googleApi.setTriggerButton = function(itemNavigation) {
+        this.params.triggerButton = itemNavigation;
+    }
+    /* Executed when the APIs finish loading */
+    googleApi.render = function() {
+        gapi.client.load('plus', 'v1', function() {
+        });
+
+      window.edge.widgets.google.triggerEvent('googleApiLoaded');
+        
+    };
+
+    //crude attempt to process data item name - doesn't replace [C]
+    function processName(name) {
+        name = name.toUpperCase();
+        name = trim(name);
+        while (name.indexOf(" ") >= 0){
+            name = name.substring(0, name.indexOf(" ")) + name.substring(name.indexOf(" ") + 1);
+        }
+        return name;
+    }
+
+    function loginCallback(result) {
+        if (result['status']['signed_in']) {
+            var request = gapi.client.plus.people.get({
+                'userId' : 'me'
+            });
+            request.execute(function(resp) {
+                var email = '';
+                if (resp['emails']) {
+                    for ( i = 0; i < resp['emails'].length; i++) {
+                        if (resp['emails'][i]['type'] == 'account') {
+                            email = resp['emails'][i]['value'];
+                        }
+                    }
+                }
+                
+          
+                var dataStore = window.edge.widgets.google.params.dataStore;
+
+                if ( dataStore['displayname'] != "")
+                    window.edge.widgets.google.setElementValue(processName(dataStore['displayname']), resp['displayName']);
+
+                if (  dataStore['email'] != "")
+                    window.edge.widgets.google.setElementValue(processName(dataStore['email']), email);
+
+                if (  dataStore['id'] != "")
+                    window.edge.widgets.google.setElementValue(processName(dataStore['id']), resp['id']);
+
+                if (window.edge.widgets.google.params.triggerButton != null)
+                    eval(window.edge.widgets.google.params.triggerButton);
+
+            });
+        }
+    }
+
+
+    googleApi.setElementValue = function(elName, elValue) {
+        if (document.getElementsByName(elName).length > 0)
+            document.getElementsByName(elName)[0].value = elValue;
+    };
+
+    googleApi.logout = function() {
+        gapi.auth.signOut();
+        //location.reload();
+    };
+
+  
+   googleApi.login=function(){   
+        gapi.auth.signIn(this.params.signIn);
+   }
+          
+    googleApi.shareButton = function(options) {
+
+        //options=shareButtonGetOption(options);
+        
+        // Call the render method when appropriate within your app to display
+        // the button.
+        gapi.interactivepost.render('sharePost', options);
+    }
+    
+    
+    function shareButtonGetOption(options) { 
+       //mechanism for default value 
+        var defaults = {
+                clientid : window.edge.widgets.google.getClientId(),
+                cookiepolicy : window.edge.widgets.google.getCookiePolicy()        
+        };
+        for (var i in defaults) {
+            if (typeof  options[i] === "undefined") {options[i]= defaults[i]; }
+        }
+        return  options;  
+    }
+
+    googleApi.triggerEvent=function (eventName) {
+        if(document.createEvent) {
+            var event = document.createEvent('Event');
+            event.initEvent(eventName, true, true);
+            document.dispatchEvent(event);
+        } else {
+            document.documentElement[eventName]++;
+        }
+    }
+     googleApi.addEvent= function (eventName, callback) {
+        if(document.addEventListener) {
+            document.addEventListener(eventName, callback, false);
+        } else {    
+            document.documentElement.attachEvent('onpropertychange', function (e) {
+                if(e.propertyName  == eventName) {
+                    callback();
+                }            
+            });
+        }
+    }
+
+    googleApi.removeEvent = function (eventName, callback) {
+        if (document.removeEventListener) {
+          document.removeEventListener(eventName, callback, false);
+        } else {
+          document.documentElement.detachEvent('onpropertychange', callback);
+        }
+    }
+
+    googleApi.setRefreshInd = function(state) {
+        _refreshInd = state;
+    }
+    googleApi.getRefreshInd = function() {
+        return _refreshInd;
+    }
+
+    return googleApi;
+})();
+
+window.edge.widgets.google.postProcessResponses = function(ns, ajaxCaller, result) {    
+    if (window.edge.widgets.google.getRefreshInd() ) {
+        edgeWidgetsGoogleCallback();
+        window.edge.widgets.google.setRefreshInd(false);
+    }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", window.edge.widgets.google.startup, false);
+else if (window.attachEvent)
+window.attachEvent("onload", window.edge.widgets.google.startup);
+else window.onload = window.edge.widgets.google.startup;
+</script>

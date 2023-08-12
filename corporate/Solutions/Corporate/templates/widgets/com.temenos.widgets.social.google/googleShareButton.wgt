@@ -1,0 +1,28 @@
+<script type="text/javascript">
+
+        function $$ITEM.ID()$_render(){  
+    var ShareBtnOtions=
+{
+$%IF ITEM.href != ""$ "href":"$$ITEM.href$", 
+$%ENDIF$$%IF ITEM.annotation != ""$ "annotation":"$$ITEM.annotation$", 
+$%ENDIF$$%IF ITEM.align != ""$ "align":"$$ITEM.align$", 
+$%ENDIF$$%IF ITEM.expandTo != ""$ "expandTo":"$$ITEM.expandTo$", 
+$%ENDIF$$%IF ITEM.width != ""$ "width":"$$ITEM.width$", 
+$%ENDIF$$%IF ITEM.height != ""$ "height":"$$ITEM.height$",
+$%ENDIF$action: "share"
+};
+       gapi.plus.render("googleBtn_$$ITEM.ID()$",ShareBtnOtions );
+       
+       }
+       
+window.edge.widgets.google.addEvent('googleApiLoaded', function (e) {
+       $$ITEM.ID()$_render();    
+});
+
+if (window.edge.widgets.google.ApiLoaded==true) {
+$$ITEM.ID()$_render();
+}
+</script>
+  <div id="googleBtn_$$ITEM.ID()$"></div>
+ 
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

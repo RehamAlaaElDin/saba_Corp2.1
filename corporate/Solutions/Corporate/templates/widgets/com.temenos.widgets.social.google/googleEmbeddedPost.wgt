@@ -1,0 +1,27 @@
+<script type="text/javascript">
+function $$ITEM.ID()$_render(){    
+    var postOtions=
+{
+$%IF ITEM.href != ""$ "href":"$$ITEM.href$"$%ENDIF$
+};
+       gapi.post.render("googleBtn_$$ITEM.ID()$",postOtions );
+
+}
+window.edge.widgets.google.addEvent('googleApiLoaded', function (e) {
+$$ITEM.ID()$_render();
+});
+
+if (window.edge.widgets.google.ApiLoaded==true) {
+$$ITEM.ID()$_render();
+}
+
+</script>
+<style>
+
+#googleBtn_$$ITEM.ID()$,#googleBtn_$$ITEM.ID()$ iframe{
+ min-width:100% !important; 
+}
+</style>
+  <div id="googleBtn_$$ITEM.ID()$"></div>
+ 
+$%INCLUDE widgets/com.temenos.widgets.social.google/inc_googleRegisterWidget.wgt$$%ENDINCLUDE$

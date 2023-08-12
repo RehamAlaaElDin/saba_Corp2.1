@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget callback="false" displayName="EdgeFeed - RSSFeed" icon="image/atom_feed.png" name="EdgeFeed - RSSFeed" type="Item:">
+    <template type="source" value="content.wgt"/>
+    <template type="header" value="header.wgt"/>
+    <custom>
+      <item help="The Feed URL" includeInDesign="Always" layout="-1" mand="true" name="feedUrl" prompt="Feed Url" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="5" help="Feed Item Count" includeInDesign="Always" layout="-1" mand="false" name="maxCount" prompt="Max Count" type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="Y" help="Option to show Feed Item Description" includeInDesign="Always" layout="-1" mand="false" name="showDesc" prompt="Show Description" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="Y" help="Option to show Feed Item Publish Date" includeInDesign="Always" layout="-1" mand="false" name="showPubDate" prompt="Show Publish Date" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="0" help="Feed Description Characters Limit Count . 0 mean no limit." includeInDesign="Always" layout="-1" mand="false" name="descCharacterLimit" prompt="Description Characters Limit " type="javax.swing.JTextField" usage="7"/>
+      <item defaultValue="_blank" help="Option for Feed Title Link Target" includeInDesign="Always" layout="-1" mand="false" name="titleLinkTarget" prompt="Title Link Target" type="javax.swing.JComboBox" typeValue="_blank|_parent|_top" usage="7"/>
+      <item defaultValue="300" includeInDesign="Always" layout="-1" mand="false" name="width" prompt="Width" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="height" prompt="Height" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+</widgets>
